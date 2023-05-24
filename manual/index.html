@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>TAssetBundle Manual </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="TAssetBundle Manual ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/blob/main/docfx_project/manual/index.md/#L1">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="tassetbundle-manual">TAssetBundle Manual</h1>
+
+<p>TAssetBundle is a system that uses the folder structure used in the project as it is and organizes and builds asset bundles as the user wants.</p>
+<p>Users can focus on development without worrying about AssetBundles at all.</p>
+<hr>
+<h1 id="index">Index</h1>
+<ul>
+<li><a href="#using-an-tassetbundle-asset">Using an TAssetBundle Asset</a>
+<ul>
+<li><a href="#using-asset-path">Using Asset Path</a></li>
+<li><a href="#using-asset-reference">Using Asset Reference</a></li>
+<li><a href="#unload-with-assethandle">Unload With AssetHandle</a></li>
+</ul>
+</li>
+<li><a href="#2-play-with-assets-directly-only-editor">Play with Assets Directly (Only Editor)</a></li>
+<li><a href="#3-play-with-asset-bundle">Play with Asset Bundle</a>
+<ul>
+<li><a href="#what-is-tassetbundlemanifest">What is TAssetBundleManifest</a></li>
+<li><a href="#create-tassetbundlemanifest">Create TAssetBundleManifest</a></li>
+<li><a href="#configure-assetbundles">Configure AssetBundles</a>
+<ul>
+<li><a href="#manual-configuration">Manual Configuration</a></li>
+<li><a href="#auto-configuration">Auto Configuration</a></li>
+</ul>
+</li>
+<li><a href="#build-asset-bundle">Build Asset Bundle</a></li>
+<li><a href="#editor-play-mode-to-assetbundle">Editor Play Mode to AssetBundle</a></li>
+</ul>
+</li>
+<li><a href="#remote-download-assets">Remote Download Assets</a></li>
+<li><a href="#tassetbundlemanifest">TAssetBundleManifest</a></li>
+<li><a href="#default-composition-strategies">Default Composition Strategies</a></li>
+<li><a href="#tassetbundle-menu">TAssetBundle Menu</a></li>
+<li><a href="#tassetbundle-browser">TAssetBundle Browser</a></li>
+<li><a href="#tassetbundle-settings">TAssetBundle Settings</a></li>
+</ul>
+<hr>
+<h1 id="using-an-tassetbundle-asset">Using an TAssetBundle Asset</h1>
+<p>TAssetBundle provides two ways to load assets.</p>
+<ul>
+<li><a href="#using-asset-path">Using Asset Path</a></li>
+<li><a href="#using-asset-reference">Using Asset Reference</a></li>
+<li><a href="#unload-with-assethandle">Unload With AssetHandle</a></li>
+</ul>
+<h2 id="using-asset-path">Using Asset Path</h2>
+<p>How to get asset path?</p>
+<p><img src="images/01_load_asset_get_asset_path.jpg" alt="get_asset_path"></p>
+<pre><code class="lang-C#">using TAssetBundle;
+public class TestLoadAsset : MonoBehaviour
+{
+    public string prefabPath; //Asset Path        
+
+    void Awake()
+    {
+        //Load as Asset Path
+        var loadAssetAsyncOp = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefabPath);
+        loadAssetAsyncOp.OnCompleted += (IAssetHandle&lt;GameObject&gt; assetHandle)
+        {
+            var asset = assetHandle.Get();
+
+            //use asset
+            Instantiate(asset);
+        };
+    }
+
+    void OnDestroy()
+    {
+        //Unload as Asset Path
+        AssetManager.UnloadAsset(prefabPath);
+    }
+}
+</code></pre>
+<h2 id="using-asset-reference">Using Asset Reference</h2>
+<p>Load and unload assets using Asset Reference.</p>
+<p>Asset Reference allow you to drag and drop or select assets on the editor.</p>
+<p>Asset References no problem if assets are moved.</p>
+<p><img src="images/01_load_asset_assetref_inspector.jpg" alt="drag_and_drop_asset"></p>
+<pre><code class="lang-C#">using TAssetBundle;
+public class TestLoadAssetReference : MonoBehaviour
+{
+    [AssetType(typeof(GameObject))]
+    public AssetRef prefab;
+
+    void Awake()
+    {
+        //Load as Asset Reference
+        var loadAssetAsyncp = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefab);
+        loadAssetAsyncOp.OnComplete += (IAssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        {
+            var asset = assetHandle.Get();
+
+            //use asset
+            Instantiate(asset);
+        };
+    }
+
+    void OnDestroy()
+    {
+        //Unload as Asset Reference
+        AssetManager.UnloadAsset(prefab);
+    }
+}
+</code></pre>
+<h2 id="unload-with-assethandle">Unload With AssetHandle</h2>
+<p>It's fast because it skips one key lookup when unloading into an asset handle.</p>
+<pre><code class="lang-C#">using TAssetBundle;
+public class TestLoadAssetReference : MonoBehaviour
+{
+    [AssetType(typeof(GameObject))]
+    public AssetRef prefab;
+
+    private IAssetHandle prefabHandle;
+
+    void Awake()
+    {
+        //Load as Asset Reference
+        var loadAssetAsyncOp = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefab);
+        loadAssetAsyncOp.OnComplete += (IAssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        {
+            prefabHandle = assetHandle;
+            var asset = assetHandle.Get();
+
+            //use asset
+            Instantiate(asset);
+        };
+    }
+
+    void OnDestroy()
+    {
+        //Unload as Asset Handle
+        AssetManager.UnloadAsset(prefabHandle);
+    }
+}
+</code></pre>
+<hr>
+<h1 id="2-play-with-assets-directly-only-editor">2. Play with Assets Directly (Only Editor)</h1>
+<p>Using assets directly allows you to run right away without having to configure or build asset bundles.</p>
+<p>Select TAssetBundle/Settings Menu</p>
+<p><img src="images/settings_hilight.jpg" alt="settings_hilght"></p>
+<p>Select Editor Play Mode as Editor Asset</p>
+<p><img src="images/editor_asset_hilight.jpg" alt="editor_asset_mode"></p>
+<h2 id="play">Play!!</h2>
+<h1 id="3-play-with-asset-bundle">3. Play with Asset Bundle</h1>
+<p>Play using AssetBundles. To use an AssetBundle, you mut fsirst configure the AssetBundle using <strong>TAssetBundleManifest</strong>.</p>
+<ul>
+<li><a href="#what-is-tassetbundlemanifest">What is TAssetBundleManifest</a></li>
+<li><a href="#create-tassetbundlemanifest">Create TAssetBundleManifest</a></li>
+<li><a href="#configure-assetbundle">Configure AssetBundle</a>
+<ul>
+<li><a href="#manual-configuration">Manual Configuration</a></li>
+<li><a href="#auto-configuration">Auto Configuration</a></li>
+</ul>
+</li>
+<li><a href="#build-asset-bundle">Build Asset Bundle</a></li>
+<li><a href="#editor-play-mode-to-assetbundle">Editor Play Mode to AssetBundle</a></li>
+</ul>
+<h2 id="what-is-tassetbundlemanifest">What is TAssetBundleManifest</h2>
+<ul>
+<li>Configures the AssetBundle Composition Strategy for the assets in the folder.</li>
+<li>You can setup built-in, encryption, tags, etc to AssetBundle.</li>
+<li>Indicates configured AssetBundle information</li>
+</ul>
+<h2 id="create-tassetbundlemanifest">Create TAssetBundleManifest</h2>
+<p>Create <strong>TAssetBundleManifest</strong> in the folder where you want to bundle assets.</p>
+<p><img src="images/create_manifest.jpg" alt="create_manifest"></p>
+<p>Select TAssetBundleManifest file</p>
+<p><img src="images/select_manifest.jpg" alt="select_manifest"></p>
+<h2 id="configure-assetbundle">Configure AssetBundle</h2>
+<p>There are two ways to organize your AssetBundles.</p>
+<ul>
+<li><a href="#manual-configuration">Manual Configuration</a></li>
+<li><a href="#auto-configuration">Auto Configuration</a></li>
+</ul>
+<h2 id="manual-configuration">Manual Configuration</h2>
+<p><img src="images/add_assetbundle_build_info.jpg" alt="add_assetbundle_build_info"></p>
+<p>Add asset bundle build information</p>
+<p><img src="images/drag_and_drop_assets_manifest.jpg" alt="drag_and_drop_assets"></p>
+<p>Finish!</p>
+<h2 id="auto-configuration">Auto Configuration</h2>
+<p>Automatically configure AssetBundles using a Composition Strategy</p>
+<p>What is Composition Strategy</p>
+<ul>
+<li>Individual elements when strategy is executed in TAssetBundleManifest</li>
+<li>Click <strong>Run Composition Strategy</strong> in the context menu to run the strategies in the order in the list.</li>
+</ul>
+<p><img src="images/add_composition_strategy.jpg" alt="add_composition_strategy"></p>
+<p>Add Composition Strategy</p>
+<p><img src="images/select_composition_strategy.jpg" alt="select_composition_strategy">
+<img src="images/select_composition_strategy2.jpg" alt="select_composition_strategy2"></p>
+<p>Select <strong>all_together</strong> Composition Strategy</p>
+<p><strong>all_together</strong> is a strategy to organize assets in a folder into one AssetBundle.</p>
+<p><img src="images/run_composition_strategy.jpg" alt="run_composition_strategy"></p>
+<p><strong>Run Composition Strategy</strong> in the context menu of TAssetBundleManifest</p>
+<p>Finish!</p>
+<h2 id="build-asset-bundle">Build Asset Bundle</h2>
+<p><img src="images/build_asset_bundle.jpg" alt="build_asset_bundle"></p>
+<p>Build asset bundle</p>
+<h2 id="editor-play-mode-to-assetbundle">Editor Play Mode to AssetBundle</h2>
+<p>Select TAssetBundle/Settings Menu</p>
+<p><img src="images/setting_playmode_assetbundle.jpg" alt="setting_playmode_assetbundle"></p>
+<p>Select Editor Play Mode as Asset Bundle</p>
+<p>Play!!</p>
+<hr>
+<h1 id="remote-download-assets">Remote Download Assets</h1>
+<p>Remote download assets flow</p>
+<ol>
+<li>Check Catalog Update</li>
+<li>Update Catalog</li>
+<li>Get Download Size</li>
+<li>Download Assets</li>
+</ol>
+<p>Assets that have been downloaded are cached and will not be downloaded again</p>
+<pre><code class="lang-C#">using UnityEngine;
+using TAssetBundle;
+
+public class RemoteDownloadAssets : MonoBehaviour
+{
+    public string remoteDownloadUrl;
+    public GameObjectAssetRef needDownloadAsset;
+
+    private void Awake()
+    {
+        AssetManager.SetRemoteUrls(new string[] { remoteDownloadUrl });
+    }
+
+    private void OnGUI()
+    {
+        GUILayout.BeginVertical();
+
+        if (GUILayout.Button(&quot;Check Catalog Update&quot;))
+        {
+            var checkCatalogUpdateAsync = AssetManager.CheckCatalogUpdateAsync();
+
+            checkCatalogUpdateAsync.OnComplete += (result) =&gt;
+            {
+                Debug.Log(&quot;need catalog update - &quot; + result);
+            };
+        }
+
+        if (GUILayout.Button(&quot;Update Catalog&quot;))
+        {
+            var updateCatalogAsync = AssetManager.UpdateCatalogAsync();
+
+            updateCatalogAsync.OnComplete += (result) =&gt;
+            {
+                Debug.Log(&quot;update catalog - &quot; + result);
+            };
+        }
+
+        if (GUILayout.Button(&quot;Get Download Size All&quot;))
+        {
+            var downloadSizeAsync = AssetManager.GetDownloadSizeAsync();
+
+            downloadSizeAsync.OnComplete += size =&gt;
+            {
+                Debug.Log(&quot;download size - &quot; + size);
+            };
+        }
+
+        if (GUILayout.Button(&quot;Download All&quot;))
+        {
+            var downloadAsync = AssetManager.DownloadAsync();
+            downloadAsync.OnProgress += OnDownloadProgress;
+            downloadAsync.OnComplete += OnDownloadComplete;
+        }
+
+        if (GUILayout.Button(&quot;Get Download Size By Tags&quot;))
+        {
+            var downloadSizeAsync = AssetManager.GetDownloadSizeByTagsAsync(new string[] 
+            { 
+                &quot;character&quot; 
+            });
+
+            downloadSizeAsync.OnComplete += size =&gt;
+            {
+                Debug.Log(&quot;download size - &quot; + size);
+            };
+        }
+
+        if (GUILayout.Button(&quot;Download By Tags&quot;))
+        {
+            var downloadAsync = AssetManager.DownloadByTagsAsync(new string[] 
+            { 
+                &quot;character&quot;
+            });
+
+            downloadAsync.OnProgress += OnDownloadProgress;
+            downloadAsync.OnComplete += OnDownloadComplete;
+        }
+
+        if (GUILayout.Button(&quot;Get Download Size By Assets&quot;))
+        {
+            var downloadSizeAsync = AssetManager.GetDownloadSizeByAssetsAsync(new AssetRef[] 
+            { 
+                needDownloadAsset 
+            });
+
+            downloadSizeAsync.OnComplete += size =&gt;
+            {
+                Debug.Log(&quot;download size - &quot; + size);
+            };
+        }
+
+        if (GUILayout.Button(&quot;Download By Assets&quot;))
+        {
+            var downloadAsync = AssetManager.DownloadByAssetsAsync(new AssetRef[] 
+            { 
+                needDownloadAsset 
+            });
+
+            downloadAsync.OnProgress += OnDownloadProgress;
+            downloadAsync.OnComplete += OnDownloadComplete;
+        }
+
+        GUILayout.EndVertical();
+    }    
+
+    private void OnDownloadProgress(AssetBundleDownloadInfo downloadInfo)
+    {
+        double value = downloadInfo.DownloadedSize / (double)downloadInfo.TotalDownloadSize;
+
+        Debug.Log(string.Format(&quot;downloading - {0:0.00}%, {1}/{2}&quot;, 
+            value * 100, downloadInfo.DownloadedSize, downloadInfo.TotalDownloadSize));
+    }
+
+    private void OnDownloadComplete(AssetBundleDownloadInfo downloadInfo)
+    {
+        if (downloadInfo.TotalDownloadSize == 0)
+        {
+            Debug.Log(&quot;don't need to download&quot;);
+        }
+        else if (downloadInfo.IsDownloadComplete())
+        {
+            Debug.Log(&quot;download complete&quot;);
+        }
+        else
+        {
+            Debug.Log(&quot;download fail&quot;);
+        }
+    }
+}
+</code></pre>
+<hr>
+<h1 id="tassetbundlemanifest">TAssetBundleManifest</h1>
+<p><img src="images/tassetbundle_manifest.jpg" alt="tassetbundle_manifest"></p>
+<ol>
+<li>If enabled, it is included in the AssetBundle build target.</li>
+<li>If built-in is enabled, the configured AssetBundles are included in the app.</li>
+<li>If encrypt is enabled, it encrypts the configured AssetBundle.</li>
+<li>Set tags for configured AssetBundles.</li>
+<li>A list of composition strategies, strategies are always run in order.</li>
+<li>AssetBundle build list, AssetBundle build information that has been configured.</li>
+</ol>
+<hr>
+<h1 id="default-composition-strategies">Default Composition Strategies</h1>
+<p><img src="images/default_composition_strategy.jpg" alt="default_composition_strategy"></p>
+<ul>
+<li><strong>all_separatly</strong>: Add assets as individual asset bundles.</li>
+<li><strong>all_together</strong>: Add assets as one asset bundle.</li>
+<li><strong>clear</strong>: Clear asset bundle build information.</li>
+<li><strong>exclude_objects</strong>: Exclude specific assets from asset bundle build information.</li>
+<li><strong>file_separatly</strong>: Add only the files as individual asset bundles.</li>
+<li><strong>file_together</strong>: Add only the files as one asset bundle.</li>
+<li><strong>fixed_objects</strong>: Add only specific assets to one asset bundle.</li>
+<li><strong>folder_separatly</strong>: Add only folders as individual asset bundles.</li>
+<li><strong>fodler_together</strong>: Add only the folder as one asset bundle.</li>
+<li><strong>regex_match</strong>: Only assets whose file names match the regular expression are added to one asset bundle.</li>
+<li><strong>regex_match_delete</strong>: Remove asset bundle build information if asset filename matches regular expression</li>
+<li><strong>regex_not_match_delete</strong>: Remove AssetBundle build information if asset file name does not match regular expression</li>
+<li><strong>same_name_together</strong>: Add assets with the same file name as one asset bundle</li>
+</ul>
+<hr>
+<h1 id="tassetbundle-menu">TAssetBundle Menu</h1>
+<p><img src="images/tassetbundle_menu.jpg" alt="tassetbundle_menu"></p>
+<ol>
+<li>Open TAssetBundle Settings File</li>
+<li>Remove build cache information for current platform</li>
+<li>Build Asset Bundle</li>
+<li>Run the composition strategy on all TAssetBundleManifest</li>
+<li>Clear AssetBundle build information for all TAssetBundleManifest using Composition Strategy</li>
+<li>Open Build Output Folder</li>
+<li>Open Download Cached Assets Folder</li>
+<li>Remove Download Cached Assets</li>
+<li>Open TAssetBundle Browser</li>
+<li>Open Tag Editor</li>
+<li>Open Web Server Test Window</li>
+<li>Open AssetBundle Dependency Checker</li>
+<li>Open Asset Reference Tracker</li>
+</ol>
+<hr>
+<h1 id="tassetbundle-browser">TAssetBundle Browser</h1>
+<p>The TAssetBundle Browser is a browser that allows you to view all TAssetBundleManifests and current AssetBundle information at once.</p>
+<p>Select TAssetBundle/TAssetBundle Browser Menu</p>
+<p><img src="images/tassetbundle_browser.jpg" alt="tassetbundle_browser"></p>
+<ol>
+<li>Clear AssetBundle build information for all TAssetBundleManifest using Composition Strategy</li>
+<li>Run the composition strategy on all TAssetBundleManifest</li>
+<li>Build Asset Bundle</li>
+<li>Check dependencies between AssetBundles</li>
+<li>Total Asset Bundle Count</li>
+<li>A single AssetBundle build name and the assets it contains</li>
+<li>TAssetBundleManifest and file path</li>
+<li>Count of AssetBundles configured in TAssetBundleManifest</li>
+<li>Assets not yet configured as AssetBundle in TAssetBundleManifest</li>
+</ol>
+<hr>
+<h1 id="tassetbundle-settings">TAssetBundle Settings</h1>
+<p>All settings used by TAssetBundle</p>
+<p><img src="images/tassetbundle_settings.jpg" alt="tassetbundle_settings"></p>
+<ol>
+<li>The name of the catalog file generated when building the AssetBundle</li>
+<li>AssetBundle Build Output Folder Name</li>
+<li>Catalog file extension</li>
+<li>Asset Bundle file extension</li>
+<li>Enable catalog compression</li>
+<li>Enable catalog encryption</li>
+<li>encryption key</li>
+<li>Add the hash of the asset bundle file name</li>
+<li>Editor Play Mode (Editor Only)</li>
+<li>Forced in editor to use only remote AssetBundles. (Editor only)</li>
+<li>Maximum count of concurrent web requests</li>
+<li>Maximum count of web request retries</li>
+<li>Retry request wait duration</li>
+<li>Using the build cache only builds the AssetBundles that need to be built.</li>
+<li>Enable Debugging Log</li>
+<li>Include catalog in app</li>
+<li>How to embed AssetBundles into app</li>
+<li>Recompress the AssetBundles built-in in your app to lz4 (very efficient, but slightly increases file size).</li>
+<li>If enabled, the UnityRemoteAssetBundleProvider is used. When disabled, always uses a SpecificManagedAssetBundleProvider. SpecificManagedAssetBundleProvider are default used for crypto asset bundles.</li>
+<li>Set the custom catalog serializer</li>
+<li>Set the custom crypto serializer</li>
+<li>Set default remote url</li>
+</ol>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/tigu77/TAssetBundle/blob/main/docfx_project/manual/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

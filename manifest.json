@@ -1720,6 +1720,219 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "manual/images/01_load_asset_assetref_inspector.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/01_load_asset_assetref_inspector.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/01_load_asset_get_asset_path.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/01_load_asset_get_asset_path.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/add_assetbundle_build_info.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/add_assetbundle_build_info.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/add_composition_strategy.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/add_composition_strategy.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/build_asset_bundle.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/build_asset_bundle.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/create_manifest.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/create_manifest.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/default_composition_strategy.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/default_composition_strategy.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/drag_and_drop_assets_manifest.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/drag_and_drop_assets_manifest.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/editor_asset_hilight.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/editor_asset_hilight.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/run_composition_strategy.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/run_composition_strategy.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/select_composition_strategy.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/select_composition_strategy.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/select_composition_strategy2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/select_composition_strategy2.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/select_manifest.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/select_manifest.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/setting_playmode_assetbundle.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/setting_playmode_assetbundle.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/settings_hilight.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/settings_hilight.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/tassetbundle_browser.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/tassetbundle_browser.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/tassetbundle_manifest.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/tassetbundle_manifest.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/tassetbundle_menu.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/tassetbundle_menu.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/tassetbundle_settings.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/tassetbundle_settings.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/manual.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/manual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
