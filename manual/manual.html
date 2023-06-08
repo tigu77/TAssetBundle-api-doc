@@ -117,9 +117,12 @@
 <li><a href="#unload-with-assethandle">Unload With AssetHandle</a></li>
 </ul>
 <h2 id="using-asset-path">Using Asset Path</h2>
+<p>The asset path is the full path to the asset and needs to be modified if the asset is moved.</p>
 <p>How to get asset path?</p>
 <p><img src="images/01_load_asset_get_asset_path.jpg" alt="get_asset_path"></p>
-<pre><code class="lang-C#">using TAssetBundle;
+<pre><code class="lang-C#">using UnityEngine;
+using TAssetBundle;
+
 public class TestLoadAsset : MonoBehaviour
 {
     public string prefabPath; //Asset Path        
@@ -127,8 +130,8 @@ public class TestLoadAsset : MonoBehaviour
     void Awake()
     {
         //Load as Asset Path
-        var loadAssetAsyncOp = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefabPath);
-        loadAssetAsyncOp.OnCompleted += (IAssetHandle&lt;GameObject&gt; assetHandle)
+        var loadAsset = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefabPath);
+        loadAsset.OnComplete += (IAssetHandle&lt;GameObject&gt; assetHandle) =&gt;
         {
             var asset = assetHandle.Get();
 
@@ -145,11 +148,12 @@ public class TestLoadAsset : MonoBehaviour
 }
 </code></pre>
 <h2 id="using-asset-reference">Using Asset Reference</h2>
-<p>Load and unload assets using Asset Reference.</p>
-<p>Asset Reference allow you to drag and drop or select assets on the editor.</p>
-<p>Asset References no problem if assets are moved.</p>
+<p>Asset references allow you to drag and drop or select assets in the editor.</p>
+<p>Asset references do not require modification if the asset is moved.</p>
 <p><img src="images/01_load_asset_assetref_inspector.jpg" alt="drag_and_drop_asset"></p>
-<pre><code class="lang-C#">using TAssetBundle;
+<pre><code class="lang-C#">using UnityEngine;
+using TAssetBundle;
+
 public class TestLoadAssetReference : MonoBehaviour
 {
     [AssetType(typeof(GameObject))]
@@ -158,8 +162,8 @@ public class TestLoadAssetReference : MonoBehaviour
     void Awake()
     {
         //Load as Asset Reference
-        var loadAssetAsyncp = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefab);
-        loadAssetAsyncOp.OnComplete += (IAssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        var loadAsset = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefab);
+        loadAsset.OnComplete += (IAssetHandle&lt;GameObject&gt; assetHandle) =&gt;
         {
             var asset = assetHandle.Get();
 
@@ -177,7 +181,9 @@ public class TestLoadAssetReference : MonoBehaviour
 </code></pre>
 <h2 id="unload-with-assethandle">Unload With AssetHandle</h2>
 <p>It's fast because it skips one key lookup when unloading into an asset handle.</p>
-<pre><code class="lang-C#">using TAssetBundle;
+<pre><code class="lang-C#">using UnityEngine;
+using TAssetBundle;
+
 public class TestLoadAssetReference : MonoBehaviour
 {
     [AssetType(typeof(GameObject))]
@@ -188,8 +194,8 @@ public class TestLoadAssetReference : MonoBehaviour
     void Awake()
     {
         //Load as Asset Reference
-        var loadAssetAsyncOp = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefab);
-        loadAssetAsyncOp.OnComplete += (IAssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        var loadAsset = AssetManager.LoadAssetAsync&lt;GameObject&gt;(prefab);
+        loadAsset.OnComplete += (IAssetHandle&lt;GameObject&gt; assetHandle) =&gt;
         {
             prefabHandle = assetHandle;
             var asset = assetHandle.Get();
