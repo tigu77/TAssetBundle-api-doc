@@ -5,76 +5,6 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleAssetProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleAssetProvider.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleBuildInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleBuildInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleBuilder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleCacheData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleCacheData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleCacheInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleCacheInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleCacheManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleCacheManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleCacheVersion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleCacheVersion.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.yml",
       "output": {
         ".html": {
@@ -115,26 +45,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetBundleProviderBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetBundleProviderBase.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.AssetBundleRuntimeInfo.yml",
       "output": {
         ".html": {
@@ -149,16 +59,6 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.AssetCatalog.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetCatalogInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetCatalogInfo.html"
         }
       },
       "version": ""
@@ -185,26 +85,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetRefPropertyDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetRefPropertyDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetReferenceTrackWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetReferenceTrackWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.AssetTypeAttribute.yml",
       "output": {
         ".html": {
@@ -219,86 +99,6 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.AsyncOperationExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.BuildCache.PreprocessResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.BuildCache.PreprocessResult.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.BuildCache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.BuildCache.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.BuildInfo.AssetBundleCacheInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.BuildInfo.AssetBundleCacheInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.BuildInfo.DiffInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.BuildInfo.DiffInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.BuildInfo.EModifyType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.BuildInfo.EModifyType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.BuildInfo.FileInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.BuildInfo.FileInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.BuildInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.BuildInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Cache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Cache.html"
         }
       },
       "version": ""
@@ -325,80 +125,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.ClearCompositionStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.ClearCompositionStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.CompositionStrategyBuildData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.CompositionStrategyBuildData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.CompositionStrategyInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.CompositionStrategyInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.CompositionStrategyInfoPropertyDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.CompositionStrategyInfoPropertyDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.CoroutineHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.CoroutineHandler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.CryptoSerializer.yml",
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.CryptoSerializer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.DefaultCompositionStrategy.ECompositionType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.DefaultCompositionStrategy.ECompositionType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.DefaultCompositionStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.DefaultCompositionStrategy.html"
         }
       },
       "version": ""
@@ -419,26 +149,6 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.Defines.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.DependencyCheckWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.DependencyCheckWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.EAssetBundleBuildName.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.EAssetBundleBuildName.html"
         }
       },
       "version": ""
@@ -479,106 +189,6 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.Editor.AssetBundleBuilder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.AssetRefPropertyDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.AssetRefPropertyDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.AssetReferenceTrackWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.AssetReferenceTrackWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.BuildCache.PreprocessResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.BuildCache.PreprocessResult.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.BuildCache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.BuildCache.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.AssetBundleCacheInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.AssetBundleCacheInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.DiffInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.DiffInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.EModifyType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.EModifyType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.FileInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.FileInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.BuildInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.Cache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.Cache.html"
         }
       },
       "version": ""
@@ -639,16 +249,6 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.Editor.DefaultCompositionStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.DependencyCheckWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.DependencyCheckWindow.html"
         }
       },
       "version": ""
@@ -775,16 +375,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleBrowserWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleBrowserWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleCompositionStrategy-1.yml",
       "output": {
         ".html": {
@@ -825,80 +415,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestUtil.yml",
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestUtil.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestValidator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleTagEditorWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleTagEditorWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleTagRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleTagRepository.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleTagUtil.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleTagUtil.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleWebServer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleWebServer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleWebServerWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TAssetBundleWebServerWindow.html"
         }
       },
       "version": ""
@@ -915,100 +435,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TagInfoPropertyDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TagInfoPropertyDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TagRepositoryInspectorDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TagRepositoryInspectorDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.Editor.TextFieldEditorWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.Editor.TextFieldEditorWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.Editor.yml",
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.Editor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.EditorGUIUtil.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.EditorGUIUtil.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.EditorUtil.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.EditorUtil.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.ExcludeObjectsCompositionStrategyData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.ExcludeObjectsCompositionStrategyData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.ExcludeObjectsStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.ExcludeObjectsStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.FixedCompositionStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.FixedCompositionStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.FixedCompositionStrategyData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.FixedCompositionStrategyData.html"
         }
       },
       "version": ""
@@ -1029,26 +459,6 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.IActiveAssetBundleInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.IAssetBundleManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.IAssetBundleManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.IAssetBundleProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.IAssetBundleProvider.html"
         }
       },
       "version": ""
@@ -1095,16 +505,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.IAssetProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.IAssetProvider.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.IReferenceCount.yml",
       "output": {
         ".html": {
@@ -1135,10 +535,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.LocalAssetBundleProvider.yml",
+      "source_relative_path": "api/TAssetBundle.LoadSceneInfo.AllowSceneActivationCallback.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TAssetBundle.LocalAssetBundleProvider.html"
+          "relative_path": "api/TAssetBundle.LoadSceneInfo.AllowSceneActivationCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.LoadSceneInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.LoadSceneInfo.html"
         }
       },
       "version": ""
@@ -1155,90 +565,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.RegexMatchCompositionStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.RegexMatchCompositionStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.RegexMatchCompositionStrategyData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.RegexMatchCompositionStrategyData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.RegexMatchDeleteCompositionStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.RegexMatchDeleteCompositionStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.RemoteAssetBundleProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.RemoteAssetBundleProvider.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.ReorderableListHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.ReorderableListHelper.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.ReturnValue-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.ReturnValue-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.RijndaelCryptoSerializer.yml",
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.RijndaelCryptoSerializer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.SameNameCompositionStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.SameNameCompositionStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.SceneAssetBundleUnloader.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.SceneAssetBundleUnloader.html"
         }
       },
       "version": ""
@@ -1275,170 +605,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.SpecificManagedAssetBundleProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.SpecificManagedAssetBundleProvider.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleBrowserWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleBrowserWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleCompositionStrategy-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleCompositionStrategy-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleCompositionStrategy.Data.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleCompositionStrategy.Data.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleCompositionStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleCompositionStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleManifest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleManifest.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleManifestEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleManifestEditor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleManifestUtil.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleManifestUtil.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleManifestValidator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleManifestValidator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleTagEditorWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleTagEditorWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleTagRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleTagRepository.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleTagUtil.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleTagUtil.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleWebServer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleWebServer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAssetBundleWebServerWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAssetBundleWebServerWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAsyncOperation-1.Runner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAsyncOperation-1.Runner.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.TAsyncOperation-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.TAsyncOperation-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAsyncOperation.Runner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAsyncOperation.Runner.html"
         }
       },
       "version": ""
@@ -1475,80 +645,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TAsyncOperationProgress-1.Runner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TAsyncOperationProgress-1.Runner.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.TAsyncOperationProgress-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.TAsyncOperationProgress-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TagComparerExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TagComparerExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TagInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TagInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TagInfoPropertyDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TagInfoPropertyDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TagRepositoryInspectorDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TagRepositoryInspectorDrawer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.TextFieldEditorWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.TextFieldEditorWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.UnityDefaultAssetBundleProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.UnityDefaultAssetBundleProvider.html"
         }
       },
       "version": ""
@@ -1579,26 +679,6 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.Util.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.WebRequest.Option.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.WebRequest.Option.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.WebRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.WebRequest.html"
         }
       },
       "version": ""

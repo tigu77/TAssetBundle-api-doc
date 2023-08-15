@@ -79,7 +79,7 @@
 
   <h1 id="TAssetBundle_TAsyncOperation" data-uid="TAssetBundle.TAsyncOperation" class="text-break">
     Class TAsyncOperation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -124,16 +124,13 @@
       <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_Current">TAsyncOperationBase.Current</a>
     </div>
     <div>
-      <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_OnComplete">TAsyncOperationBase.OnComplete</a>
+      <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_Progress">TAsyncOperationBase.Progress</a>
     </div>
     <div>
       <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_MoveNext">TAsyncOperationBase.MoveNext()</a>
     </div>
     <div>
       <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_Reset">TAsyncOperationBase.Reset()</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_Complete">TAsyncOperationBase.Complete()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -170,34 +167,33 @@
 
 
 
-  <h2 class="section" id="constructors">Constructors
+  <h2 class="section" id="events">Events
 </h2>
 
 
-  <a id="TAssetBundle_TAsyncOperation__ctor_" data-uid="TAssetBundle.TAsyncOperation.#ctor*"></a>
 
-  <h3 id="TAssetBundle_TAsyncOperation__ctor_TAssetBundle_TAsyncOperation_Runner_" data-uid="TAssetBundle.TAsyncOperation.#ctor(TAssetBundle.TAsyncOperation.Runner)">
-  TAsyncOperation(Runner)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TAssetBundle_TAsyncOperation_OnComplete" data-uid="TAssetBundle.TAsyncOperation.OnComplete">
+  OnComplete
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TAsyncOperation(TAsyncOperation.Runner runner)</code></pre>
+    <pre><code class="lang-csharp hljs">public event Action OnComplete</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><code>runner</code> <a class="xref" href="TAssetBundle.TAsyncOperation.html">TAsyncOperation</a>.<a class="xref" href="TAssetBundle.TAsyncOperation.Runner.html">Runner</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
 
 
 

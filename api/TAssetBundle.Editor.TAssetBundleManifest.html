@@ -252,7 +252,7 @@ public class TAssetBundleManifest : ScriptableObject</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_assetBundleBuildInfos" data-uid="TAssetBundle.Editor.TAssetBundleManifest.assetBundleBuildInfos">
   assetBundleBuildInfos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>asset bundle build infos</p>
@@ -408,6 +408,37 @@ public bool encrypt</code></pre>
 
 
 
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_ignoreAssets" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ignoreAssets">
+  ignoreAssets
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ignore assets are not made up of AssetBundle Build</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Object&gt; ignoreAssets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_tag" data-uid="TAssetBundle.Editor.TAssetBundleManifest.tag">
   tag
   <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L76"><i class="bi bi-code-slash"></i></a>
@@ -447,7 +478,7 @@ public TagInfo tag</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_Depth" data-uid="TAssetBundle.Editor.TAssetBundleManifest.Depth">
   Depth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Manifest Depth</p>
@@ -475,11 +506,43 @@ public TagInfo tag</code></pre>
 
 
 
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_IsPersistent_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsPersistent*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_IsPersistent" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsPersistent">
+  IsPersistent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>checks if saved to disk</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPersistent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Editor_TAssetBundleManifest_ManifestPath_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ManifestPath*"></a>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_ManifestPath" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ManifestPath">
   ManifestPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Manifest file path</p>
@@ -515,7 +578,7 @@ public TagInfo tag</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_AddAssetBundleBuildInfo_TAssetBundle_Editor_AssetBundleBuildInfo_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.AddAssetBundleBuildInfo(TAssetBundle.Editor.AssetBundleBuildInfo)">
   AddAssetBundleBuildInfo(AssetBundleBuildInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Add asset bundle build information</p>
@@ -547,7 +610,7 @@ public TagInfo tag</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_AddNewAssetsAllTogether" data-uid="TAssetBundle.Editor.TAssetBundleManifest.AddNewAssetsAllTogether">
   AddNewAssetsAllTogether()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds not included assets as a single AssetBundle.</p>
@@ -575,7 +638,7 @@ public void AddNewAssetsAllTogether()</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_ClearAssetBundleBuildInfos" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ClearAssetBundleBuildInfos">
   ClearAssetBundleBuildInfos()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clear asset bundle build infos</p>
@@ -599,240 +662,11 @@ public void ClearAssetBundleBuildInfos()</code></pre>
 
 
 
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_CollectAssetPaths_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.CollectAssetPaths*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_CollectAssetPaths_System_Collections_Generic_List_System_String__TAssetBundle_Editor_AssetBundleBuildInfo_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.CollectAssetPaths(System.Collections.Generic.List{System.String},TAssetBundle.Editor.AssetBundleBuildInfo)">
-  CollectAssetPaths(List&lt;string&gt;, AssetBundleBuildInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L313"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CollectAssetPaths(List&lt;string&gt; assetPaths, AssetBundleBuildInfo assetBundleBuildInfo)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>assetPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>assetBundleBuildInfo</code> <a class="xref" href="TAssetBundle.Editor.AssetBundleBuildInfo.html">AssetBundleBuildInfo</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetAssetBundleBuilds_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetAssetBundleBuilds*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetAssetBundleBuilds" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetAssetBundleBuilds">
-  GetAssetBundleBuilds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L296"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;AssetBundleBuild&gt; GetAssetBundleBuilds()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">AssetBundleBuild</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetAssetBundleName_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetAssetBundleName*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetAssetBundleName_TAssetBundle_Editor_AssetBundleBuildInfo_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetAssetBundleName(TAssetBundle.Editor.AssetBundleBuildInfo)">
-  GetAssetBundleName(AssetBundleBuildInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L254"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetAssetBundleName(AssetBundleBuildInfo assetBundleBuildInfo)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>assetBundleBuildInfo</code> <a class="xref" href="TAssetBundle.Editor.AssetBundleBuildInfo.html">AssetBundleBuildInfo</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestAll_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestAll*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestAll" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestAll">
-  GetManifestAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L334"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TAssetBundleManifest&gt; GetManifestAll()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TAssetBundle.Editor.TAssetBundleManifest.html">TAssetBundleManifest</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestDirectoryPath_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestDirectoryPath*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestDirectoryPath" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestDirectoryPath">
-  GetManifestDirectoryPath()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L367"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetManifestDirectoryPath()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestTree_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestTree*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestTree" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestTree">
-  GetManifestTree()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L343"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;TAssetBundleManifest&gt; GetManifestTree()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TAssetBundle.Editor.TAssetBundleManifest.html">TAssetBundleManifest</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestTree_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestTree*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetManifestTree_System_String_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetManifestTree(System.String)">
-  GetManifestTree(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L358"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;TAssetBundleManifest&gt; GetManifestTree(string targetPath)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>targetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TAssetBundle.Editor.TAssetBundleManifest.html">TAssetBundleManifest</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssetPaths_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssetPaths*"></a>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssetPaths" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssetPaths">
   GetNotIncludedAssetPaths()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get assets path not included in the manifest</p>
@@ -847,7 +681,8 @@ public void ClearAssetBundleBuildInfos()</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>asset paths</p>
+</dd>
   </dl>
 
 
@@ -860,164 +695,27 @@ public void ClearAssetBundleBuildInfos()</code></pre>
 
 
 
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetValidAssetPaths_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetValidAssetPaths*"></a>
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssets_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssets*"></a>
 
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetValidAssetPaths" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetValidAssetPaths">
-  GetValidAssetPaths()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssets" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssets">
+  GetNotIncludedAssets()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get assets not included in the manifest</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetValidAssetPaths()</code></pre>
+    <pre><code class="lang-csharp hljs">public Object[] GetNotIncludedAssets()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetValidAssets_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetValidAssets*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetValidAssets" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetValidAssets">
-  GetValidAssets()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L372"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Object&gt; GetValidAssets()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Object</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_IsChild_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsChild*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_IsChild_System_String_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsChild(System.String)">
-  IsChild(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L353"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsChild(string path)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_IsIncludedAsset_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsIncludedAsset*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_IsIncludedAsset_System_String_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsIncludedAsset(System.String)">
-  IsIncludedAsset(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L385"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsIncludedAsset(string assetPath)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="TAssetBundle_Editor_TAssetBundleManifest_IsParent_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsParent*"></a>
-
-  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_IsParent_System_String_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsParent(System.String)">
-  IsParent(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L348"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsParent(string path)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dt><span class="xref">Object</span>[]</dt>
+    <dd><p>assets</p>
+</dd>
   </dl>
 
 
@@ -1034,7 +732,7 @@ public void ClearAssetBundleBuildInfos()</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_MarkAsDirty" data-uid="TAssetBundle.Editor.TAssetBundleManifest.MarkAsDirty">
   MarkAsDirty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>mark as dirty</p>
@@ -1061,7 +759,7 @@ public void ClearAssetBundleBuildInfos()</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_RunCompositionStrategy" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RunCompositionStrategy">
   RunCompositionStrategy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run composition strategy</p>
@@ -1089,7 +787,7 @@ public void RunCompositionStrategy()</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_Save" data-uid="TAssetBundle.Editor.TAssetBundleManifest.Save">
   Save()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Save the manifest file</p>
@@ -1120,7 +818,7 @@ public void Save()</code></pre>
 
   <h3 id="TAssetBundle_Editor_TAssetBundleManifest_OnChanged" data-uid="TAssetBundle.Editor.TAssetBundleManifest.OnChanged">
   OnChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/TAssetBundleManifest.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event raised when manifest changes</p>

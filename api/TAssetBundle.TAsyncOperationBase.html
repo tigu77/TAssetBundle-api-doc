@@ -116,8 +116,8 @@
     <dt>Derived</dt>
     <dd>
       <div><a class="xref" href="TAssetBundle.TAsyncOperation.html">TAsyncOperation</a></div>
-      <div><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation&lt;ResultType&gt;</a></div>
       <div><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress&lt;ResultType&gt;</a></div>
+      <div><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation&lt;ResultType&gt;</a></div>
     </dd>
   </dl>
 
@@ -167,7 +167,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase__ctor" data-uid="TAssetBundle.TAsyncOperationBase.#ctor">
   TAsyncOperationBase()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -197,7 +197,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_Current" data-uid="TAssetBundle.TAsyncOperationBase.Current">
   Current
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -228,7 +228,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_IsDone" data-uid="TAssetBundle.TAsyncOperationBase.IsDone">
   IsDone
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -255,41 +255,46 @@
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
+  <a id="TAssetBundle_TAsyncOperationBase_Progress_" data-uid="TAssetBundle.TAsyncOperationBase.Progress*"></a>
 
-
-  <a id="TAssetBundle_TAsyncOperationBase_Complete_" data-uid="TAssetBundle.TAsyncOperationBase.Complete*"></a>
-
-  <h3 id="TAssetBundle_TAsyncOperationBase_Complete" data-uid="TAssetBundle.TAsyncOperationBase.Complete">
-  Complete()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TAssetBundle_TAsyncOperationBase_Progress" data-uid="TAssetBundle.TAsyncOperationBase.Progress">
+  Progress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Complete()</code></pre>
+    <pre><code class="lang-csharp hljs">public float Progress { get; }</code></pre>
   </div>
 
 
 
 
 
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
 
 
 
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
 
 
   <a id="TAssetBundle_TAsyncOperationBase_MoveNext_" data-uid="TAssetBundle.TAsyncOperationBase.MoveNext*"></a>
 
   <h3 id="TAssetBundle_TAsyncOperationBase_MoveNext" data-uid="TAssetBundle.TAsyncOperationBase.MoveNext">
   MoveNext()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -320,7 +325,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_Reset" data-uid="TAssetBundle.TAsyncOperationBase.Reset">
   Reset()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -349,7 +354,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_OnComplete" data-uid="TAssetBundle.TAsyncOperationBase.OnComplete">
   OnComplete
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
