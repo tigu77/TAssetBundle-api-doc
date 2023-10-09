@@ -495,6 +495,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.AssetManager.CheckCatalogUpdateAsync
   nameWithType: AssetManager.CheckCatalogUpdateAsync
+- uid: TAssetBundle.AssetManager.ClearCache
+  name: ClearCache()
+  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_ClearCache
+  commentId: M:TAssetBundle.AssetManager.ClearCache
+  fullName: TAssetBundle.AssetManager.ClearCache()
+  nameWithType: AssetManager.ClearCache()
+- uid: TAssetBundle.AssetManager.ClearCache*
+  name: ClearCache
+  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_ClearCache_
+  commentId: Overload:TAssetBundle.AssetManager.ClearCache
+  isSpec: "True"
+  fullName: TAssetBundle.AssetManager.ClearCache
+  nameWithType: AssetManager.ClearCache
 - uid: TAssetBundle.AssetManager.DownloadAsync
   name: DownloadAsync()
   href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadAsync
@@ -1314,12 +1327,6 @@ references:
   commentId: T:TAssetBundle.Defines
   fullName: TAssetBundle.Defines
   nameWithType: Defines
-- uid: TAssetBundle.Defines.CachePath
-  name: CachePath
-  href: api/TAssetBundle.Defines.html#TAssetBundle_Defines_CachePath
-  commentId: F:TAssetBundle.Defines.CachePath
-  fullName: TAssetBundle.Defines.CachePath
-  nameWithType: Defines.CachePath
 - uid: TAssetBundle.Defines.CatalogVersion
   name: CatalogVersion
   href: api/TAssetBundle.Defines.html#TAssetBundle_Defines_CatalogVersion
@@ -1746,6 +1753,28 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.AssetBundleBuilder.Settings
   nameWithType: AssetBundleBuilder.Settings
+- uid: TAssetBundle.Editor.AssetListWindow
+  name: AssetListWindow
+  href: api/TAssetBundle.Editor.AssetListWindow.html
+  commentId: T:TAssetBundle.Editor.AssetListWindow
+  fullName: TAssetBundle.Editor.AssetListWindow
+  nameWithType: AssetListWindow
+- uid: TAssetBundle.Editor.AssetListWindow.Show(System.String,UnityEngine.Object[],System.Action{UnityEngine.Object})
+  name: Show(string, Object[], Action<Object>)
+  href: api/TAssetBundle.Editor.AssetListWindow.html#TAssetBundle_Editor_AssetListWindow_Show_System_String_UnityEngine_Object___System_Action_UnityEngine_Object__
+  commentId: M:TAssetBundle.Editor.AssetListWindow.Show(System.String,UnityEngine.Object[],System.Action{UnityEngine.Object})
+  name.vb: Show(String, Object(), Action(Of Object))
+  fullName: TAssetBundle.Editor.AssetListWindow.Show(string, UnityEngine.Object[], System.Action<UnityEngine.Object>)
+  fullName.vb: TAssetBundle.Editor.AssetListWindow.Show(String, UnityEngine.Object(), System.Action(Of UnityEngine.Object))
+  nameWithType: AssetListWindow.Show(string, Object[], Action<Object>)
+  nameWithType.vb: AssetListWindow.Show(String, Object(), Action(Of Object))
+- uid: TAssetBundle.Editor.AssetListWindow.Show*
+  name: Show
+  href: api/TAssetBundle.Editor.AssetListWindow.html#TAssetBundle_Editor_AssetListWindow_Show_
+  commentId: Overload:TAssetBundle.Editor.AssetListWindow.Show
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.AssetListWindow.Show
+  nameWithType: AssetListWindow.Show
 - uid: TAssetBundle.Editor.ClearCompositionStrategy
   name: ClearCompositionStrategy
   href: api/TAssetBundle.Editor.ClearCompositionStrategy.html
@@ -2604,6 +2633,38 @@ references:
   commentId: E:TAssetBundle.Editor.TAssetBundleManifest.OnChanged
   fullName: TAssetBundle.Editor.TAssetBundleManifest.OnChanged
   nameWithType: TAssetBundleManifest.OnChanged
+- uid: TAssetBundle.Editor.TAssetBundleManifest.RemoveTag(System.String)
+  name: RemoveTag(string)
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RemoveTag_System_String_
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.RemoveTag(System.String)
+  name.vb: RemoveTag(String)
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.RemoveTag(string)
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifest.RemoveTag(String)
+  nameWithType: TAssetBundleManifest.RemoveTag(string)
+  nameWithType.vb: TAssetBundleManifest.RemoveTag(String)
+- uid: TAssetBundle.Editor.TAssetBundleManifest.RemoveTag*
+  name: RemoveTag
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RemoveTag_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.RemoveTag
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.RemoveTag
+  nameWithType: TAssetBundleManifest.RemoveTag
+- uid: TAssetBundle.Editor.TAssetBundleManifest.RenameTag(System.String,System.String)
+  name: RenameTag(string, string)
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RenameTag_System_String_System_String_
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.RenameTag(System.String,System.String)
+  name.vb: RenameTag(String, String)
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.RenameTag(string, string)
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifest.RenameTag(String, String)
+  nameWithType: TAssetBundleManifest.RenameTag(string, string)
+  nameWithType.vb: TAssetBundleManifest.RenameTag(String, String)
+- uid: TAssetBundle.Editor.TAssetBundleManifest.RenameTag*
+  name: RenameTag
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RenameTag_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.RenameTag
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.RenameTag
+  nameWithType: TAssetBundleManifest.RenameTag
 - uid: TAssetBundle.Editor.TAssetBundleManifest.RunCompositionStrategy
   name: RunCompositionStrategy()
   href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RunCompositionStrategy
@@ -2738,6 +2799,52 @@ references:
   commentId: F:TAssetBundle.Editor.TagInfo.tags
   fullName: TAssetBundle.Editor.TagInfo.tags
   nameWithType: TagInfo.tags
+- uid: TAssetBundle.Editor.TextFieldEditorWindow
+  name: TextFieldEditorWindow
+  href: api/TAssetBundle.Editor.TextFieldEditorWindow.html
+  commentId: T:TAssetBundle.Editor.TextFieldEditorWindow
+  fullName: TAssetBundle.Editor.TextFieldEditorWindow
+  nameWithType: TextFieldEditorWindow
+- uid: TAssetBundle.Editor.TextFieldEditorWindow.Show(UnityEngine.Rect,System.String,System.String,System.String,System.Action{System.String},System.Predicate{System.String})
+  name: Show(Rect, string, string, string, Action<string>, Predicate<string>)
+  href: api/TAssetBundle.Editor.TextFieldEditorWindow.html#TAssetBundle_Editor_TextFieldEditorWindow_Show_UnityEngine_Rect_System_String_System_String_System_String_System_Action_System_String__System_Predicate_System_String__
+  commentId: M:TAssetBundle.Editor.TextFieldEditorWindow.Show(UnityEngine.Rect,System.String,System.String,System.String,System.Action{System.String},System.Predicate{System.String})
+  name.vb: Show(Rect, String, String, String, Action(Of String), Predicate(Of String))
+  fullName: TAssetBundle.Editor.TextFieldEditorWindow.Show(UnityEngine.Rect, string, string, string, System.Action<string>, System.Predicate<string>)
+  fullName.vb: TAssetBundle.Editor.TextFieldEditorWindow.Show(UnityEngine.Rect, String, String, String, System.Action(Of String), System.Predicate(Of String))
+  nameWithType: TextFieldEditorWindow.Show(Rect, string, string, string, Action<string>, Predicate<string>)
+  nameWithType.vb: TextFieldEditorWindow.Show(Rect, String, String, String, Action(Of String), Predicate(Of String))
+- uid: TAssetBundle.Editor.TextFieldEditorWindow.Show*
+  name: Show
+  href: api/TAssetBundle.Editor.TextFieldEditorWindow.html#TAssetBundle_Editor_TextFieldEditorWindow_Show_
+  commentId: Overload:TAssetBundle.Editor.TextFieldEditorWindow.Show
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TextFieldEditorWindow.Show
+  nameWithType: TextFieldEditorWindow.Show
+- uid: TAssetBundle.Editor.TextFieldEditorWindow.buttonTitle
+  name: buttonTitle
+  href: api/TAssetBundle.Editor.TextFieldEditorWindow.html#TAssetBundle_Editor_TextFieldEditorWindow_buttonTitle
+  commentId: F:TAssetBundle.Editor.TextFieldEditorWindow.buttonTitle
+  fullName: TAssetBundle.Editor.TextFieldEditorWindow.buttonTitle
+  nameWithType: TextFieldEditorWindow.buttonTitle
+- uid: TAssetBundle.Editor.TextFieldEditorWindow.onChanged
+  name: onChanged
+  href: api/TAssetBundle.Editor.TextFieldEditorWindow.html#TAssetBundle_Editor_TextFieldEditorWindow_onChanged
+  commentId: F:TAssetBundle.Editor.TextFieldEditorWindow.onChanged
+  fullName: TAssetBundle.Editor.TextFieldEditorWindow.onChanged
+  nameWithType: TextFieldEditorWindow.onChanged
+- uid: TAssetBundle.Editor.TextFieldEditorWindow.text
+  name: text
+  href: api/TAssetBundle.Editor.TextFieldEditorWindow.html#TAssetBundle_Editor_TextFieldEditorWindow_text
+  commentId: F:TAssetBundle.Editor.TextFieldEditorWindow.text
+  fullName: TAssetBundle.Editor.TextFieldEditorWindow.text
+  nameWithType: TextFieldEditorWindow.text
+- uid: TAssetBundle.Editor.TextFieldEditorWindow.validator
+  name: validator
+  href: api/TAssetBundle.Editor.TextFieldEditorWindow.html#TAssetBundle_Editor_TextFieldEditorWindow_validator
+  commentId: F:TAssetBundle.Editor.TextFieldEditorWindow.validator
+  fullName: TAssetBundle.Editor.TextFieldEditorWindow.validator
+  nameWithType: TextFieldEditorWindow.validator
 - uid: TAssetBundle.GameObjectAssetRef
   name: GameObjectAssetRef
   href: api/TAssetBundle.GameObjectAssetRef.html
@@ -3960,6 +4067,22 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Util.GetSHA256HashFromString
   nameWithType: Util.GetSHA256HashFromString
+- uid: TAssetBundle.Util.IsWebRequestFilePath(System.String)
+  name: IsWebRequestFilePath(string)
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_IsWebRequestFilePath_System_String_
+  commentId: M:TAssetBundle.Util.IsWebRequestFilePath(System.String)
+  name.vb: IsWebRequestFilePath(String)
+  fullName: TAssetBundle.Util.IsWebRequestFilePath(string)
+  fullName.vb: TAssetBundle.Util.IsWebRequestFilePath(String)
+  nameWithType: Util.IsWebRequestFilePath(string)
+  nameWithType.vb: Util.IsWebRequestFilePath(String)
+- uid: TAssetBundle.Util.IsWebRequestFilePath*
+  name: IsWebRequestFilePath
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_IsWebRequestFilePath_
+  commentId: Overload:TAssetBundle.Util.IsWebRequestFilePath
+  isSpec: "True"
+  fullName: TAssetBundle.Util.IsWebRequestFilePath
+  nameWithType: Util.IsWebRequestFilePath
 - uid: TAssetBundle.WebRequestAsync
   name: WebRequestAsync
   href: api/TAssetBundle.WebRequestAsync.html
