@@ -755,6 +755,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.WebRequestCommandHead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.WebRequestCommandHead.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.yml",
       "output": {
         ".html": {
