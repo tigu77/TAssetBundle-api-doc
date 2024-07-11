@@ -271,9 +271,41 @@ public string assetBundleOutputPath</code></pre>
 
 
 
+  <h3 id="TAssetBundle_Settings_autoTimeoutSeconds" data-uid="TAssetBundle.Settings.autoTimeoutSeconds">
+  autoTimeoutSeconds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Aborts the request if the download latency exceeds the specified time of seconds. (disabled if 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Aborts the request if the download latency exceeds the specified time of seconds. (disabled if 0)&quot;)]
+public float autoTimeoutSeconds</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="TAssetBundle_Settings_build" data-uid="TAssetBundle.Settings.build">
   build
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Build setting information (Build cache is initialized according to options)</p>
@@ -305,7 +337,7 @@ public Settings.BuildSetting build</code></pre>
 
   <h3 id="TAssetBundle_Settings_buildIncludeAssetBundle" data-uid="TAssetBundle.Settings.buildIncludeAssetBundle">
   buildIncludeAssetBundle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Include AssetBundles in app</p>
@@ -337,7 +369,7 @@ public EBuildIncludeAssetBundle buildIncludeAssetBundle</code></pre>
 
   <h3 id="TAssetBundle_Settings_buildIncludeCatalog" data-uid="TAssetBundle.Settings.buildIncludeCatalog">
   buildIncludeCatalog
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Include catalog in app</p>
@@ -367,9 +399,41 @@ public bool buildIncludeCatalog</code></pre>
 
 
 
+  <h3 id="TAssetBundle_Settings_buildNumber" data-uid="TAssetBundle.Settings.buildNumber">
+  buildNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The build number will use the catalog with the higher build number between the local and remote catalogs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The build number will use the catalog with the higher build number between the local and remote catalogs.&quot;)]
+public int buildNumber</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="TAssetBundle_Settings_buildTarget" data-uid="TAssetBundle.Settings.buildTarget">
   buildTarget
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>build target string</p>
@@ -388,6 +452,38 @@ public string buildTarget</code></pre>
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Settings_builtinAssetBundlesUseSeparateFolder" data-uid="TAssetBundle.Settings.builtinAssetBundlesUseSeparateFolder">
+  builtinAssetBundlesUseSeparateFolder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Built-in asset bundles are output to a separate folder. (AssetBundle Output Path + 'Builtin')</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Built-in asset bundles are output to a separate folder. (AssetBundle Output Path + &#39;Builtin&#39;)&quot;)]
+public bool builtinAssetBundlesUseSeparateFolder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -434,7 +530,7 @@ public string catalogName</code></pre>
 
   <h3 id="TAssetBundle_Settings_customCatalogSerializer" data-uid="TAssetBundle.Settings.customCatalogSerializer">
   customCatalogSerializer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Custom catalog serializer</p>
@@ -466,7 +562,7 @@ public CatalogSerializer customCatalogSerializer</code></pre>
 
   <h3 id="TAssetBundle_Settings_customCryptoSerializer" data-uid="TAssetBundle.Settings.customCryptoSerializer">
   customCryptoSerializer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Custom crypto serializer</p>
@@ -498,7 +594,7 @@ public CryptoSerializer customCryptoSerializer</code></pre>
 
   <h3 id="TAssetBundle_Settings_defaultRemoteUrl" data-uid="TAssetBundle.Settings.defaultRemoteUrl">
   defaultRemoteUrl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>default remote url</p>
@@ -530,7 +626,7 @@ public string defaultRemoteUrl</code></pre>
 
   <h3 id="TAssetBundle_Settings_enableDebuggingLog" data-uid="TAssetBundle.Settings.enableDebuggingLog">
   enableDebuggingLog
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enable Debugging Log</p>
@@ -562,7 +658,7 @@ public bool enableDebuggingLog</code></pre>
 
   <h3 id="TAssetBundle_Settings_maxConcurrentRequestCount" data-uid="TAssetBundle.Settings.maxConcurrentRequestCount">
   maxConcurrentRequestCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Maximum count of concurrent web requests</p>
@@ -594,15 +690,15 @@ public int maxConcurrentRequestCount</code></pre>
 
   <h3 id="TAssetBundle_Settings_maxRetryRequestCount" data-uid="TAssetBundle.Settings.maxRetryRequestCount">
   maxRetryRequestCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Maximum count of web request retries</p>
+  <div class="markdown level1 summary"><p>Maximum count of retry requests (-1 is infinite)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Maximum count of web request retries&quot;)]
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Maximum count of retry requests (-1 is infinite)&quot;)]
 public int maxRetryRequestCount</code></pre>
   </div>
 
@@ -626,15 +722,15 @@ public int maxRetryRequestCount</code></pre>
 
   <h3 id="TAssetBundle_Settings_retryRequestWaitDuration" data-uid="TAssetBundle.Settings.retryRequestWaitDuration">
   retryRequestWaitDuration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Retry request wait duration</p>
+  <div class="markdown level1 summary"><p>Retry request wait time (seconds)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Retry request wait duration&quot;)]
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Retry request wait time (seconds)&quot;)]
 public float retryRequestWaitDuration</code></pre>
   </div>
 
@@ -658,7 +754,7 @@ public float retryRequestWaitDuration</code></pre>
 
   <h3 id="TAssetBundle_Settings_useBuildCache" data-uid="TAssetBundle.Settings.useBuildCache">
   useBuildCache
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Use Build Cache</p>
@@ -690,15 +786,15 @@ public bool useBuildCache</code></pre>
 
   <h3 id="TAssetBundle_Settings_useBuiltinAssetBundleLZ4Recompress" data-uid="TAssetBundle.Settings.useBuiltinAssetBundleLZ4Recompress">
   useBuiltinAssetBundleLZ4Recompress
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Recompress the AssetBundles built-in in your app to lz4 (very efficient, but slightly increases file size).</p>
+  <div class="markdown level1 summary"><p>When enabled, built-in AssetBundles are recompressed to LZ4 during the app build (efficient but increases app size). When disabled, smaller LZMA-compressed AssetBundles are included, and AssetBundles are cached and recompressed to LZ4 during the initial load (similar to the remote download method).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Recompress the AssetBundles built-in in your app to lz4 (very efficient, but slightly increases file size).&quot;)]
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;When enabled, built-in AssetBundles are recompressed to LZ4 during the app build (efficient but increases app size). When disabled, smaller LZMA-compressed AssetBundles are included, and AssetBundles are cached and recompressed to LZ4 during the initial load (similar to the remote download method).&quot;)]
 public bool useBuiltinAssetBundleLZ4Recompress</code></pre>
   </div>
 
@@ -722,15 +818,15 @@ public bool useBuiltinAssetBundleLZ4Recompress</code></pre>
 
   <h3 id="TAssetBundle_Settings_useUnityRemoteAssetBundleProvider" data-uid="TAssetBundle.Settings.useUnityRemoteAssetBundleProvider">
   useUnityRemoteAssetBundleProvider
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>If enabled, the UnityRemoteAssetBundleProvider is used. When disabled, always uses a SpecificManagedAssetBundleProvider. SpecificManagedAssetBundleProvider are default used for crypto asset bundles.</p>
+  <div class="markdown level1 summary"><p>When enabled, Unity's default AssetBundle provider is used. When disabled, the SpecificManagedAssetBundleProvider is always used. The SpecificManagedAssetBundleProvider is primarily used for encrypted asset bundles or when targeting the WebGL platform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;If enabled, the UnityRemoteAssetBundleProvider is used. When disabled, always uses a SpecificManagedAssetBundleProvider. SpecificManagedAssetBundleProvider are default used for crypto asset bundles.&quot;)]
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;When enabled, Unity&#39;s default AssetBundle provider is used. When disabled, the SpecificManagedAssetBundleProvider is always used. The SpecificManagedAssetBundleProvider is primarily used for encrypted asset bundles or when targeting the WebGL platform.&quot;)]
 public bool useUnityRemoteAssetBundleProvider</code></pre>
   </div>
 
@@ -759,7 +855,7 @@ public bool useUnityRemoteAssetBundleProvider</code></pre>
 
   <h3 id="TAssetBundle_Settings_GenerateNewCryptoKey" data-uid="TAssetBundle.Settings.GenerateNewCryptoKey">
   GenerateNewCryptoKey()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generate New Crypto Key</p>
@@ -787,7 +883,7 @@ public void GenerateNewCryptoKey()</code></pre>
 
   <h3 id="TAssetBundle_Settings_GetBuildTarget" data-uid="TAssetBundle.Settings.GetBuildTarget">
   GetBuildTarget()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L269"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the BuildTarget as a string from the currently running platform</p>
@@ -820,7 +916,7 @@ public void GenerateNewCryptoKey()</code></pre>
 
   <h3 id="TAssetBundle_Settings_GetCatalogFileHandler" data-uid="TAssetBundle.Settings.GetCatalogFileHandler">
   GetCatalogFileHandler()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get Catalog File Handler</p>
@@ -852,7 +948,7 @@ public void GenerateNewCryptoKey()</code></pre>
 
   <h3 id="TAssetBundle_Settings_GetCatalogSerializer" data-uid="TAssetBundle.Settings.GetCatalogSerializer">
   GetCatalogSerializer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get Catalog Serializer</p>
@@ -885,7 +981,7 @@ public void GenerateNewCryptoKey()</code></pre>
 
   <h3 id="TAssetBundle_Settings_GetCryptoSerializer" data-uid="TAssetBundle.Settings.GetCryptoSerializer">
   GetCryptoSerializer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Settings.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get Crypto Serializer</p>

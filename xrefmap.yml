@@ -455,6 +455,12 @@ references:
   commentId: F:TAssetBundle.AssetCatalog.assetBundleInfos
   fullName: TAssetBundle.AssetCatalog.assetBundleInfos
   nameWithType: AssetCatalog.assetBundleInfos
+- uid: TAssetBundle.AssetCatalog.buildNumber
+  name: buildNumber
+  href: api/TAssetBundle.AssetCatalog.html#TAssetBundle_AssetCatalog_buildNumber
+  commentId: F:TAssetBundle.AssetCatalog.buildNumber
+  fullName: TAssetBundle.AssetCatalog.buildNumber
+  nameWithType: AssetCatalog.buildNumber
 - uid: TAssetBundle.AssetCatalog.buildVersion
   name: buildVersion
   href: api/TAssetBundle.AssetCatalog.html#TAssetBundle_AssetCatalog_buildVersion
@@ -1574,6 +1580,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.AssetBundleBuilder.GetAssetBundleBuilds
   nameWithType: AssetBundleBuilder.GetAssetBundleBuilds
+- uid: TAssetBundle.Editor.AssetBundleBuilder.GetBuiltinOutputPath(UnityEditor.BuildTarget)
+  name: GetBuiltinOutputPath(BuildTarget)
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_GetBuiltinOutputPath_UnityEditor_BuildTarget_
+  commentId: M:TAssetBundle.Editor.AssetBundleBuilder.GetBuiltinOutputPath(UnityEditor.BuildTarget)
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.GetBuiltinOutputPath(UnityEditor.BuildTarget)
+  nameWithType: AssetBundleBuilder.GetBuiltinOutputPath(BuildTarget)
+- uid: TAssetBundle.Editor.AssetBundleBuilder.GetBuiltinOutputPath*
+  name: GetBuiltinOutputPath
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_GetBuiltinOutputPath_
+  commentId: Overload:TAssetBundle.Editor.AssetBundleBuilder.GetBuiltinOutputPath
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.GetBuiltinOutputPath
+  nameWithType: AssetBundleBuilder.GetBuiltinOutputPath
 - uid: TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget)
   name: GetOutputPath(BuildTarget)
   href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_GetOutputPath_UnityEditor_BuildTarget_
@@ -2807,19 +2826,6 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.IAssetCatalogInfo.AssetBundleInfos
   nameWithType: IAssetCatalogInfo.AssetBundleInfos
-- uid: TAssetBundle.IAssetCatalogInfo.Md5Hash
-  name: Md5Hash
-  href: api/TAssetBundle.IAssetCatalogInfo.html#TAssetBundle_IAssetCatalogInfo_Md5Hash
-  commentId: P:TAssetBundle.IAssetCatalogInfo.Md5Hash
-  fullName: TAssetBundle.IAssetCatalogInfo.Md5Hash
-  nameWithType: IAssetCatalogInfo.Md5Hash
-- uid: TAssetBundle.IAssetCatalogInfo.Md5Hash*
-  name: Md5Hash
-  href: api/TAssetBundle.IAssetCatalogInfo.html#TAssetBundle_IAssetCatalogInfo_Md5Hash_
-  commentId: Overload:TAssetBundle.IAssetCatalogInfo.Md5Hash
-  isSpec: "True"
-  fullName: TAssetBundle.IAssetCatalogInfo.Md5Hash
-  nameWithType: IAssetCatalogInfo.Md5Hash
 - uid: TAssetBundle.IAssetCatalogInfo.Name
   name: Name
   href: api/TAssetBundle.IAssetCatalogInfo.html#TAssetBundle_IAssetCatalogInfo_Name
@@ -3366,6 +3372,12 @@ references:
   commentId: F:TAssetBundle.Settings.assetBundleOutputPath
   fullName: TAssetBundle.Settings.assetBundleOutputPath
   nameWithType: Settings.assetBundleOutputPath
+- uid: TAssetBundle.Settings.autoTimeoutSeconds
+  name: autoTimeoutSeconds
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_autoTimeoutSeconds
+  commentId: F:TAssetBundle.Settings.autoTimeoutSeconds
+  fullName: TAssetBundle.Settings.autoTimeoutSeconds
+  nameWithType: Settings.autoTimeoutSeconds
 - uid: TAssetBundle.Settings.build
   name: build
   href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_build
@@ -3384,12 +3396,24 @@ references:
   commentId: F:TAssetBundle.Settings.buildIncludeCatalog
   fullName: TAssetBundle.Settings.buildIncludeCatalog
   nameWithType: Settings.buildIncludeCatalog
+- uid: TAssetBundle.Settings.buildNumber
+  name: buildNumber
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_buildNumber
+  commentId: F:TAssetBundle.Settings.buildNumber
+  fullName: TAssetBundle.Settings.buildNumber
+  nameWithType: Settings.buildNumber
 - uid: TAssetBundle.Settings.buildTarget
   name: buildTarget
   href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_buildTarget
   commentId: F:TAssetBundle.Settings.buildTarget
   fullName: TAssetBundle.Settings.buildTarget
   nameWithType: Settings.buildTarget
+- uid: TAssetBundle.Settings.builtinAssetBundlesUseSeparateFolder
+  name: builtinAssetBundlesUseSeparateFolder
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_builtinAssetBundlesUseSeparateFolder
+  commentId: F:TAssetBundle.Settings.builtinAssetBundlesUseSeparateFolder
+  fullName: TAssetBundle.Settings.builtinAssetBundlesUseSeparateFolder
+  nameWithType: Settings.builtinAssetBundlesUseSeparateFolder
 - uid: TAssetBundle.Settings.catalogName
   name: catalogName
   href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_catalogName
@@ -3601,6 +3625,19 @@ references:
   fullName.vb: TAssetBundle.TAsyncOperationExtensions.ToTask(Of T)(TAssetBundle.TAsyncOperation(Of T))
   nameWithType: TAsyncOperationExtensions.ToTask<T>(TAsyncOperation<T>)
   nameWithType.vb: TAsyncOperationExtensions.ToTask(Of T)(TAsyncOperation(Of T))
+- uid: TAssetBundle.TAsyncOperationExtensions.WaitForCompletion(System.Threading.Tasks.Task)
+  name: WaitForCompletion(Task)
+  href: api/TAssetBundle.TAsyncOperationExtensions.html#TAssetBundle_TAsyncOperationExtensions_WaitForCompletion_System_Threading_Tasks_Task_
+  commentId: M:TAssetBundle.TAsyncOperationExtensions.WaitForCompletion(System.Threading.Tasks.Task)
+  fullName: TAssetBundle.TAsyncOperationExtensions.WaitForCompletion(System.Threading.Tasks.Task)
+  nameWithType: TAsyncOperationExtensions.WaitForCompletion(Task)
+- uid: TAssetBundle.TAsyncOperationExtensions.WaitForCompletion*
+  name: WaitForCompletion
+  href: api/TAssetBundle.TAsyncOperationExtensions.html#TAssetBundle_TAsyncOperationExtensions_WaitForCompletion_
+  commentId: Overload:TAssetBundle.TAsyncOperationExtensions.WaitForCompletion
+  isSpec: "True"
+  fullName: TAssetBundle.TAsyncOperationExtensions.WaitForCompletion
+  nameWithType: TAsyncOperationExtensions.WaitForCompletion
 - uid: TAssetBundle.TAsyncOperationProgress`1
   name: TAsyncOperationProgress<ResultType>
   href: api/TAssetBundle.TAsyncOperationProgress-1.html
@@ -4062,6 +4099,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.WebRequestAsync.IsDone
   nameWithType: WebRequestAsync.IsDone
+- uid: TAssetBundle.WebRequestAsync.IsProgress
+  name: IsProgress
+  href: api/TAssetBundle.WebRequestAsync.html#TAssetBundle_WebRequestAsync_IsProgress
+  commentId: P:TAssetBundle.WebRequestAsync.IsProgress
+  fullName: TAssetBundle.WebRequestAsync.IsProgress
+  nameWithType: WebRequestAsync.IsProgress
+- uid: TAssetBundle.WebRequestAsync.IsProgress*
+  name: IsProgress
+  href: api/TAssetBundle.WebRequestAsync.html#TAssetBundle_WebRequestAsync_IsProgress_
+  commentId: Overload:TAssetBundle.WebRequestAsync.IsProgress
+  isSpec: "True"
+  fullName: TAssetBundle.WebRequestAsync.IsProgress
+  nameWithType: WebRequestAsync.IsProgress
 - uid: TAssetBundle.WebRequestAsync.MoveNext
   name: MoveNext()
   href: api/TAssetBundle.WebRequestAsync.html#TAssetBundle_WebRequestAsync_MoveNext
@@ -4119,6 +4169,31 @@ references:
   commentId: T:TAssetBundle.WebRequestCommand
   fullName: TAssetBundle.WebRequestCommand
   nameWithType: WebRequestCommand
+- uid: TAssetBundle.WebRequestCommand.LastDownloadTime
+  name: LastDownloadTime
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_LastDownloadTime
+  commentId: P:TAssetBundle.WebRequestCommand.LastDownloadTime
+  fullName: TAssetBundle.WebRequestCommand.LastDownloadTime
+  nameWithType: WebRequestCommand.LastDownloadTime
+- uid: TAssetBundle.WebRequestCommand.LastDownloadTime*
+  name: LastDownloadTime
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_LastDownloadTime_
+  commentId: Overload:TAssetBundle.WebRequestCommand.LastDownloadTime
+  isSpec: "True"
+  fullName: TAssetBundle.WebRequestCommand.LastDownloadTime
+  nameWithType: WebRequestCommand.LastDownloadTime
+- uid: TAssetBundle.WebRequestCommand.OnRetry
+  name: OnRetry
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_OnRetry
+  commentId: F:TAssetBundle.WebRequestCommand.OnRetry
+  fullName: TAssetBundle.WebRequestCommand.OnRetry
+  nameWithType: WebRequestCommand.OnRetry
+- uid: TAssetBundle.WebRequestCommand.OnStart
+  name: OnStart
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_OnStart
+  commentId: F:TAssetBundle.WebRequestCommand.OnStart
+  fullName: TAssetBundle.WebRequestCommand.OnStart
+  nameWithType: WebRequestCommand.OnStart
 - uid: TAssetBundle.WebRequestCommand.Url
   name: Url
   href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_Url

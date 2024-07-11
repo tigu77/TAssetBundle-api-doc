@@ -79,7 +79,7 @@
 
   <h1 id="TAssetBundle_TAsyncOperationExtensions" data-uid="TAssetBundle.TAsyncOperationExtensions" class="text-break">
     Class TAsyncOperationExtensions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -146,7 +146,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationExtensions_ToTask_TAssetBundle_TAsyncOperationBase_" data-uid="TAssetBundle.TAsyncOperationExtensions.ToTask(TAssetBundle.TAsyncOperationBase)">
   ToTask(TAsyncOperationBase)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Return TAsyncOperation as a Task</p>
@@ -183,7 +183,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationExtensions_ToTask__1_TAssetBundle_TAsyncOperationProgress___0__" data-uid="TAssetBundle.TAsyncOperationExtensions.ToTask``1(TAssetBundle.TAsyncOperationProgress{``0})">
   ToTask&lt;T&gt;(TAsyncOperationProgress&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Return TAsyncOperation as a Task</p>
@@ -225,7 +225,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationExtensions_ToTask__1_TAssetBundle_TAsyncOperation___0__" data-uid="TAssetBundle.TAsyncOperationExtensions.ToTask``1(TAssetBundle.TAsyncOperation{``0})">
   ToTask&lt;T&gt;(TAsyncOperation&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Return TAsyncOperation as a Task</p>
@@ -253,6 +253,45 @@
     <dt><code>T</code></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAsyncOperationExtensions_WaitForCompletion_" data-uid="TAssetBundle.TAsyncOperationExtensions.WaitForCompletion*"></a>
+
+  <h3 id="TAssetBundle_TAsyncOperationExtensions_WaitForCompletion_System_Threading_Tasks_Task_" data-uid="TAssetBundle.TAsyncOperationExtensions.WaitForCompletion(System.Threading.Tasks.Task)">
+  WaitForCompletion(Task)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperationExtensions.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Waiting for a task in a coroutine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator WaitForCompletion(this Task task)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Task</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>IEnumerator</p>
+</dd>
+  </dl>
+
 
 
 
