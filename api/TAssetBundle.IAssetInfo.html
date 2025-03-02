@@ -79,7 +79,7 @@
 
   <h1 id="TAssetBundle_IAssetInfo" data-uid="TAssetBundle.IAssetInfo" class="text-break">
     Interface IAssetInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -87,7 +87,7 @@
   <dl><dt>Assembly</dt><dd>TAssetBundle.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Asset Information</p>
+  <div class="markdown summary"><p>Interface that provides information about individual assets.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -109,6 +109,13 @@
     </div>
   </dd></dl>
 
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="TAssetBundle.DataStructureExtensions.html#TAssetBundle_DataStructureExtensions_IsLoaded_TAssetBundle_IAssetInfo_">DataStructureExtensions.IsLoaded(IAssetInfo)</a>
+  </div>
+  </dd></dl>
 
 
 
@@ -122,10 +129,11 @@
 
   <h3 id="TAssetBundle_IAssetInfo_ActiveAssetBundle" data-uid="TAssetBundle.IAssetInfo.ActiveAssetBundle">
   ActiveAssetBundle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the active AssetBundle information to which this asset belongs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -153,10 +161,11 @@
 
   <h3 id="TAssetBundle_IAssetInfo_Asset" data-uid="TAssetBundle.IAssetInfo.Asset">
   Asset
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the asset as a Unity object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -184,10 +193,11 @@
 
   <h3 id="TAssetBundle_IAssetInfo_AssetPath" data-uid="TAssetBundle.IAssetInfo.AssetPath">
   AssetPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the asset path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -201,6 +211,38 @@
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_IAssetInfo_StartTime_" data-uid="TAssetBundle.IAssetInfo.StartTime*"></a>
+
+  <h3 id="TAssetBundle_IAssetInfo_StartTime" data-uid="TAssetBundle.IAssetInfo.StartTime">
+  StartTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/DataStructure.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the start time when the asset was used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float StartTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 

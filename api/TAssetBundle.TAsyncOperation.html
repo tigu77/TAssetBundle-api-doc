@@ -79,7 +79,7 @@
 
   <h1 id="TAssetBundle_TAsyncOperation" data-uid="TAssetBundle.TAsyncOperation" class="text-break">
     Class TAsyncOperation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -87,11 +87,12 @@
   <dl><dt>Assembly</dt><dd>TAssetBundle.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Asynchronous operation (no parameters)</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TAsyncOperation : TAsyncOperationBase, IEnumerator</code></pre>
+    <pre><code class="lang-csharp hljs">public class TAsyncOperation : TAsyncOperationBase, IAsyncOperation, IEnumerator</code></pre>
   </div>
 
 
@@ -109,6 +110,7 @@
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="TAssetBundle.IAsyncOperation.html">IAsyncOperation</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
     </dd>
   </dl>
@@ -117,6 +119,9 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_Pool">TAsyncOperationBase.Pool</a>
+    </div>
     <div>
       <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_IsDone">TAsyncOperationBase.IsDone</a>
     </div>
@@ -131,6 +136,9 @@
     </div>
     <div>
       <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_Reset">TAsyncOperationBase.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="TAssetBundle.TAsyncOperationBase.html#TAssetBundle_TAsyncOperationBase_GetProgress">TAsyncOperationBase.GetProgress()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -167,6 +175,37 @@
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TAssetBundle_TAsyncOperation_Clear_" data-uid="TAssetBundle.TAsyncOperation.Clear*"></a>
+
+  <h3 id="TAssetBundle_TAsyncOperation_Clear" data-uid="TAssetBundle.TAsyncOperation.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the asynchronous operation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="events">Events
 </h2>
 
@@ -174,10 +213,11 @@
 
   <h3 id="TAssetBundle_TAsyncOperation_OnComplete" data-uid="TAssetBundle.TAsyncOperation.OnComplete">
   OnComplete
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event triggered when the operation is completed</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
