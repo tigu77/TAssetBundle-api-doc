@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/tigu7/work/TAssetBundle/docfx_project",
+  "source_base_path": "E:/work/TAssetBundle/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -65,6 +65,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetHandle-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetHandle-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.AssetManager.yml",
       "output": {
         ".html": {
@@ -105,6 +125,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AsyncOperationPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AsyncOperationPool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AudioClipAssetRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AudioClipAssetRef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.CatalogFileHandler.yml",
       "output": {
         ".html": {
@@ -125,10 +165,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.CoreObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.CoreObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.CryptoSerializer.yml",
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.CryptoSerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.DataStructureExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.DataStructureExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.DefaultAssetCatalogComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.DefaultAssetCatalogComparer.html"
         }
       },
       "version": ""
@@ -425,6 +495,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestCache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestUtil.yml",
       "output": {
         ".html": {
@@ -465,6 +545,246 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetInfo-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetInfo-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetInfo.EFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetInfo.EFlag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetLinker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetLinker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetLinkerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetLinkerExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetLinkerInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetLinkerInspector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetManager.LoadPrefabDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetManager.LoadPrefabDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetPrefabPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetPrefabPool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AssetPrefabPoolInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AssetPrefabPoolInspector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AsyncOperation-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AsyncOperation-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AsyncOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AsyncOperation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.AsyncOperationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.AsyncOperationExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.GetProgressDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.GetProgressDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.IGetProgressable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.IGetProgressable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PrefabPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PrefabPool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PrefabPoolDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PrefabPoolDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PrefabPoolInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PrefabPoolInspector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PrefabPoolManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PrefabPoolManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PrefabPooledObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PrefabPooledObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PrefabPooledObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PrefabPooledObjectExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.FolderAssetRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.FolderAssetRef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.FolderAssetTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.FolderAssetTypeAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.GameObjectAssetRef.yml",
       "output": {
         ".html": {
@@ -479,6 +799,16 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.IActiveAssetBundleInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAssetCatalogComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAssetCatalogComparer.html"
         }
       },
       "version": ""
@@ -519,6 +849,26 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.IAssetInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAsyncOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAsyncOperation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAsyncOperationPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAsyncOperationPool.html"
         }
       },
       "version": ""
@@ -619,6 +969,26 @@
       "output": {
         ".html": {
           "relative_path": "api/TAssetBundle.Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.SpriteAssetRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.SpriteAssetRef.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.TAssetBundles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.TAssetBundles.html"
         }
       },
       "version": ""
@@ -774,6 +1144,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -865,6 +1238,16 @@
       "output": {
         "resource": {
           "relative_path": "manual/images/add_composition_strategy.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/asset_usage_tracker.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/asset_usage_tracker.jpg"
         }
       },
       "version": ""

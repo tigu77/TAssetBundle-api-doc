@@ -79,7 +79,7 @@
 
   <h1 id="TAssetBundle_Editor_EditorGUIUtil" data-uid="TAssetBundle.Editor.EditorGUIUtil" class="text-break">
     Class EditorGUIUtil
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -146,7 +146,7 @@
 
   <h3 id="TAssetBundle_Editor_EditorGUIUtil_BeginColor_UnityEngine_Color_" data-uid="TAssetBundle.Editor.EditorGUIUtil.BeginColor(UnityEngine.Color)">
   BeginColor(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -182,7 +182,7 @@
 
   <h3 id="TAssetBundle_Editor_EditorGUIUtil_BeginContentColor_UnityEngine_Color_" data-uid="TAssetBundle.Editor.EditorGUIUtil.BeginContentColor(UnityEngine.Color)">
   BeginContentColor(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -214,11 +214,186 @@
 
 
 
+  <a id="TAssetBundle_Editor_EditorGUIUtil_DrawActiveAssetBundle_" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawActiveAssetBundle*"></a>
+
+  <h3 id="TAssetBundle_Editor_EditorGUIUtil_DrawActiveAssetBundle_System_String_TAssetBundle_IActiveAssetBundleInfo_System_Boolean_" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawActiveAssetBundle(System.String,TAssetBundle.IActiveAssetBundleInfo,System.Boolean)">
+  DrawActiveAssetBundle(string, IActiveAssetBundleInfo, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawActiveAssetBundle(string foldoutKey, IActiveAssetBundleInfo activeAssetBundle, bool defaultFoldout = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>foldoutKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>activeAssetBundle</code> <a class="xref" href="TAssetBundle.IActiveAssetBundleInfo.html">IActiveAssetBundleInfo</a></dt>
+    <dd></dd>
+    <dt><code>defaultFoldout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_EditorGUIUtil_DrawAsset_" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawAsset*"></a>
+
+  <h3 id="TAssetBundle_Editor_EditorGUIUtil_DrawAsset_TAssetBundle_IAssetInfo_UnityEngine_GUILayoutOption___" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawAsset(TAssetBundle.IAssetInfo,UnityEngine.GUILayoutOption[])">
+  DrawAsset(IAssetInfo, params GUILayoutOption[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawAsset(IAssetInfo assetInfo, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="TAssetBundle.IAssetInfo.html">IAssetInfo</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_EditorGUIUtil_DrawSort_" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawSort*"></a>
+
+  <h3 id="TAssetBundle_Editor_EditorGUIUtil_DrawSort_System_String_System_Boolean_System_Action_System_Boolean__UnityEngine_GUILayoutOption___" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawSort(System.String,System.Boolean,System.Action{System.Boolean},UnityEngine.GUILayoutOption[])">
+  DrawSort(string, bool, Action&lt;bool&gt;, params GUILayoutOption[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawSort(string label, bool value, Action&lt;bool&gt; onChanged, params GUILayoutOption[] options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>onChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">GUILayoutOption</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_EditorGUIUtil_DrawTextField_" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawTextField*"></a>
+
+  <h3 id="TAssetBundle_Editor_EditorGUIUtil_DrawTextField_System_String_System_String_System_Action_System_String__" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawTextField(System.String,System.String,System.Action{System.String})">
+  DrawTextField(string, string, Action&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawTextField(string label, string value, Action&lt;string&gt; onChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_EditorGUIUtil_DrawToggle_" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawToggle*"></a>
+
+  <h3 id="TAssetBundle_Editor_EditorGUIUtil_DrawToggle_System_String_System_Boolean_System_Action_System_Boolean__" data-uid="TAssetBundle.Editor.EditorGUIUtil.DrawToggle(System.String,System.Boolean,System.Action{System.Boolean})">
+  DrawToggle(string, bool, Action&lt;bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawToggle(string label, bool value, Action&lt;bool&gt; onChanged)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>onChanged</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Editor_EditorGUIUtil_EndColor_" data-uid="TAssetBundle.Editor.EditorGUIUtil.EndColor*"></a>
 
   <h3 id="TAssetBundle_Editor_EditorGUIUtil_EndColor_UnityEngine_Color_" data-uid="TAssetBundle.Editor.EditorGUIUtil.EndColor(UnityEngine.Color)">
   EndColor(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -249,7 +424,7 @@
 
   <h3 id="TAssetBundle_Editor_EditorGUIUtil_EndContentColor_UnityEngine_Color_" data-uid="TAssetBundle.Editor.EditorGUIUtil.EndContentColor(UnityEngine.Color)">
   EndContentColor(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -276,11 +451,51 @@
 
 
 
+  <a id="TAssetBundle_Editor_EditorGUIUtil_FloatField_" data-uid="TAssetBundle.Editor.EditorGUIUtil.FloatField*"></a>
+
+  <h3 id="TAssetBundle_Editor_EditorGUIUtil_FloatField_System_String_System_String_System_Single_" data-uid="TAssetBundle.Editor.EditorGUIUtil.FloatField(System.String,System.String,System.Single)">
+  FloatField(string, string, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FloatField(string key, string name, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Editor_EditorGUIUtil_FoldoutHeaderGroup_" data-uid="TAssetBundle.Editor.EditorGUIUtil.FoldoutHeaderGroup*"></a>
 
   <h3 id="TAssetBundle_Editor_EditorGUIUtil_FoldoutHeaderGroup_System_Boolean_System_String_UnityEngine_Color_System_Action_" data-uid="TAssetBundle.Editor.EditorGUIUtil.FoldoutHeaderGroup(System.Boolean,System.String,UnityEngine.Color,System.Action)">
   FoldoutHeaderGroup(bool, string, Color, Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -322,7 +537,7 @@
 
   <h3 id="TAssetBundle_Editor_EditorGUIUtil_FoldoutHeaderGroup_System_String_System_String_UnityEngine_Color_System_Boolean_System_Action_" data-uid="TAssetBundle.Editor.EditorGUIUtil.FoldoutHeaderGroup(System.String,System.String,UnityEngine.Color,System.Boolean,System.Action)">
   FoldoutHeaderGroup(string, string, Color, bool, Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -366,7 +581,7 @@
 
   <h3 id="TAssetBundle_Editor_EditorGUIUtil_LabelFieldColor_System_String_UnityEngine_Color_" data-uid="TAssetBundle.Editor.EditorGUIUtil.LabelFieldColor(System.String,UnityEngine.Color)">
   LabelFieldColor(string, Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorUtil.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

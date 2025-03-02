@@ -79,7 +79,7 @@
 
   <h1 id="TAssetBundle_TAsyncOperationBase" data-uid="TAssetBundle.TAsyncOperationBase" class="text-break">
     Class TAsyncOperationBase
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -87,11 +87,12 @@
   <dl><dt>Assembly</dt><dd>TAssetBundle.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base class for asynchronous operations</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TAsyncOperationBase : IEnumerator</code></pre>
+    <pre><code class="lang-csharp hljs">public class TAsyncOperationBase : IAsyncOperation, IEnumerator</code></pre>
   </div>
 
 
@@ -108,6 +109,7 @@
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="TAssetBundle.IAsyncOperation.html">IAsyncOperation</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
     </dd>
   </dl>
@@ -167,10 +169,11 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase__ctor" data-uid="TAssetBundle.TAsyncOperationBase.#ctor">
   TAsyncOperationBase()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -197,10 +200,11 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_Current" data-uid="TAssetBundle.TAsyncOperationBase.Current">
   Current
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Current state (Property for IEnumerator implementation)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -228,10 +232,11 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_IsDone" data-uid="TAssetBundle.TAsyncOperationBase.IsDone">
   IsDone
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Whether the operation is completed</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -255,14 +260,47 @@
 
 
 
+  <a id="TAssetBundle_TAsyncOperationBase_Pool_" data-uid="TAssetBundle.TAsyncOperationBase.Pool*"></a>
+
+  <h3 id="TAssetBundle_TAsyncOperationBase_Pool" data-uid="TAssetBundle.TAsyncOperationBase.Pool">
+  Pool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pool for managing asynchronous operations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAsyncOperationPool Pool { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.IAsyncOperationPool.html">IAsyncOperationPool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_TAsyncOperationBase_Progress_" data-uid="TAssetBundle.TAsyncOperationBase.Progress*"></a>
 
   <h3 id="TAssetBundle_TAsyncOperationBase_Progress" data-uid="TAssetBundle.TAsyncOperationBase.Progress">
   Progress
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Progress of the operation (0.0 to 1.0)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -290,14 +328,74 @@
 </h2>
 
 
+  <a id="TAssetBundle_TAsyncOperationBase_Clear_" data-uid="TAssetBundle.TAsyncOperationBase.Clear*"></a>
+
+  <h3 id="TAssetBundle_TAsyncOperationBase_Clear" data-uid="TAssetBundle.TAsyncOperationBase.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the asynchronous operation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAsyncOperationBase_GetProgress_" data-uid="TAssetBundle.TAsyncOperationBase.GetProgress*"></a>
+
+  <h3 id="TAssetBundle_TAsyncOperationBase_GetProgress" data-uid="TAssetBundle.TAsyncOperationBase.GetProgress">
+  GetProgress()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the progress of the operation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetProgress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_TAsyncOperationBase_MoveNext_" data-uid="TAssetBundle.TAsyncOperationBase.MoveNext*"></a>
 
   <h3 id="TAssetBundle_TAsyncOperationBase_MoveNext" data-uid="TAssetBundle.TAsyncOperationBase.MoveNext">
   MoveNext()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if the operation is done</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -325,7 +423,7 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_Reset" data-uid="TAssetBundle.TAsyncOperationBase.Reset">
   Reset()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -354,10 +452,11 @@
 
   <h3 id="TAssetBundle_TAsyncOperationBase_OnComplete" data-uid="TAssetBundle.TAsyncOperationBase.OnComplete">
   OnComplete
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/AsyncOperations.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event triggered when the operation is completed</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

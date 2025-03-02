@@ -74,8 +74,8 @@
         <article data-uid="">
 <h1 id="tassetbundle">TAssetBundle</h1>
 
-<p>All copyrights to TAssetBundle belong to tigu77.</p>
-<p>TAssetBundle is a powerful asset bundle integrated management system.</p>
+<p>All copyrights for TAssetBundle are owned by tigu77.</p>
+<p><em>TAssetBundle is a powerful, integrated asset bundle management system.</em></p>
 <hr>
 <ul>
 <li><p><a href="manual/manual.html">Manual</a></p>
@@ -84,63 +84,91 @@
 </li>
 <li><p><a href="https://www.youtube.com/playlist?list=PLB3Wee-5ukiFD7RUFiFaxbp8OQ8PTbJ0d">Video Tutorials</a></p>
 </li>
+<li><p><a href="https://discussions.unity.com/t/released-tassetbundle-powerful-asset-bundle-integrated-management-system/918946">Forum</a></p>
+</li>
 </ul>
 <hr>
 <h2 id="good-points">Good Points</h2>
 <ul>
-<li>Very easy!</li>
-<li>Very powerful!</li>
-<li>Very simple!</li>
+<li>Very Easy to Use!</li>
+<li>Very Powerful!</li>
+<li>Very Simple!</li>
 <li>Customizable!</li>
 </ul>
 <hr>
-<h2 id="key-advantages-of-tassetbundle">Key Advantages of TAssetBundle</h2>
-<ol>
-<li><p><strong>Flexibility in Asset Bundle Configuration</strong>: Using TAssetBundleManifest, you can maintain the project folder structure while easily configuring asset bundles as desired and modifying them at any time.</p>
-</li>
-<li><p><strong>Dependency Management Between Asset Bundles</strong>: TAssetBundle automatically manages dependencies between asset bundles, eliminating the need for developers to manually handle dependencies or names.</p>
-</li>
-<li><p><strong>Build Cache</strong>: Unchanged assets are automatically excluded during the build process, saving build time and enhancing efficiency.</p>
-</li>
-<li><p><strong>Path-Based Asset Loading</strong>: Operates solely based on asset paths rather than bundle or asset names, making it very convenient to use.</p>
-</li>
-<li><p><strong>Two Play Modes in Editor</strong>: Play asset bundles directly or individual assets within the editor, speeding up development and providing flexibility.</p>
-</li>
-<li><p><strong>Asset Reference Feature</strong>: Connect assets via drag-and-drop in the inspector, ensuring links remain intact even if assets are moved, thus enhancing workflow efficiency.</p>
-</li>
-<li><p><strong>Support for Split Download</strong>: Split asset bundles based on assets, tags, or scenes for efficient downloading of necessary assets.</p>
-</li>
-<li><p><strong>Asset Bundle Configuration Strategies</strong>: Utilize asset bundle configuration strategies to automatically configure bundles as needed.</p>
-</li>
-<li><p><strong>Asset Reference Tracker</strong>: Monitor active assets and asset bundles during editor runtime, facilitating debugging and optimization.</p>
-</li>
-<li><p><strong>Asset Bundle Dependency Checker</strong>: Preview how asset bundles are interconnected to preemptively prevent dependency issues.</p>
-</li>
-<li><p><strong>Security Features</strong>: Encrypt asset bundles and catalogs to enhance security.</p>
-</li>
-<li><p><strong>Built-in Web Server for Remote Download Testing</strong>: Provides a feature to download asset bundles from remote locations via an embedded web server during editor play, enabling immediate testing in a local environment.</p>
-</li>
-<li><p><strong>Cross-Platform Functionality</strong>: TAssetBundle operates on all major platforms (Windows, Mac, iOS, Android, WebGL, etc.), ensuring compatibility across diverse environments.</p>
-</li>
-<li><p><strong>Full Source Code Inclusion</strong></p>
-</li>
-</ol>
-<p>These features collectively enhance asset management, asset downloading, deployment efficiency, security, and overall workflow efficiency in Unity development.</p>
-<hr>
-<h2 id="content-update-flow">Content Update Flow</h2>
-<ol>
-<li>Configure asset bundles
+<h3 id="key-advantages-of-tassetbundle"><strong>Key Advantages of TAssetBundle</strong></h3>
+<p><strong>Flexible Asset Bundle Composition</strong><br>
+With <code>TAssetBundleManifest</code>, you can organize asset bundles according to your desired structure while maintaining the project folder hierarchy, and modify them at any time.</p>
+<p><strong>Asset Bundle Dependency Management</strong><br>
+TAssetBundle automatically manages dependencies between asset bundles, eliminating the need for developers to handle dependencies or names manually.</p>
+<p><strong>Build Cache</strong><br>
+Unchanged assets are automatically excluded from the build process, significantly reducing build times and maximizing efficiency.</p>
+<p><strong>Path-Based Asset Loading</strong><br>
+The system operates based on asset paths rather than asset bundles or names, providing greater convenience and flexibility.</p>
+<p><strong>Two Play Modes in the Editor</strong><br>
+Supports two play modes: running asset bundles directly or executing individual assets, optimizing development efficiency.</p>
+<p><strong>Asset Reference Functionality</strong><br>
+Assets can be linked using drag-and-drop in the inspector, with links preserved even after asset movement, enhancing workflow efficiency.</p>
+<p><strong>Support for Split Downloads</strong><br>
+Asset bundles can be split by assets, tags, or scenes, allowing efficient downloads of only the necessary assets.</p>
+<p><strong>Asset Bundle Configuration Strategy</strong><br>
+Offers various strategies for automatically configuring asset bundles.</p>
+<p><strong>Asset Reference Tracker</strong><br>
+Monitors active assets and asset bundles during editor runtime, facilitating debugging and optimization processes.</p>
 <ul>
-<li>Configure manually</li>
-<li>Configure Automatically Using Composition Strategies</li>
+<li><strong>New:</strong> Added sorting and regex search functionality for improved asset tracking.</li>
+</ul>
+<p><strong>Asset Unloading and Memory Management</strong><br>
+<code>AssetManager</code> provides powerful asset unloading features, such as unloading assets that haven't been used for a specified period and cleaning up unused prefab pools, ensuring optimal memory usage and performance.</p>
+<p><strong>Asset Usage Tracker</strong><br>
+Using <code>AssetManager</code>, it tracks in real-time which objects are utilizing specific assets. Key features include:</p>
+<ul>
+<li>Viewing objects currently using assets during play mode.</li>
+<li>Sorting and regex filtering for easy search of specific asset usage.</li>
+<li>Enhanced workflow for debugging and optimization.</li>
+</ul>
+<p><strong>Asset Bundle Dependency Checker</strong><br>
+Preemptively checks dependency relationships between asset bundles, preventing potential dependency issues.</p>
+<p><strong>Security Features</strong><br>
+Provides options to encrypt asset bundles and catalogs, enhancing security by protecting assets.</p>
+<p><strong>Built-In Web Server for Remote Download Testing</strong><br>
+Allows the download of asset bundles from remote locations during editor play using an internal web server, enabling immediate testing in the local environment.</p>
+<p><strong>Cross-Platform Support</strong><br>
+TAssetBundle functions across all major platforms, including Windows, Mac, iOS, Android, and WebGL, ensuring compatibility in various environments.</p>
+<p><strong>Full Source Code Inclusion</strong><br>
+Includes the full source code, allowing for modifications or extensions as needed.</p>
+<hr>
+<h2 id="content-update-flow"><strong>Content Update Flow</strong></h2>
+<ol>
+<li><p><strong>Configure Asset Bundles</strong></p>
+<ul>
+<li><em>Manually</em></li>
+<li><em>Automatically with Composition Strategies</em></li>
 </ul>
 </li>
-<li>Build the AssetBundle</li>
-<li>Upload the result to a remote storage</li>
-<li>Finish!</li>
+<li><p><strong>Build Asset Bundles</strong></p>
+</li>
+<li><p><strong>Upload to Remote Storage</strong></p>
+</li>
+<li><p><strong>Complete!</strong></p>
+</li>
 </ol>
 <hr>
 <h2 id="change-logs">Change Logs</h2>
+<h3 id="400">4.0.0</h3>
+<ul>
+<li>Changed <code>TAssetBundle.AssetManager</code> to <code>TAssetBundle.TAssetBundles</code> for a clearer API.</li>
+<li>Added an extended <code>AssetManager</code> with easy asset loading, unloading, prefab pooling, and object usage tracking using <code>TAssetBundle</code>.</li>
+<li>Added <code>Asset Usage Tracker</code> to the editor, allowing users to view, sort, and search objects currently using specific assets during play mode with regex.</li>
+<li>Added a new <code>PrefabPoolManager</code> for efficient pooling of frequently used prefabs..</li>
+<li>Made asset bundles containing video assets uncompressed.</li>
+<li>Added sorting and regex search features to the <code>Asset Reference Tracker</code>.</li>
+<li>Various bug fixes, refactoring, and optimization.</li>
+</ul>
+<h3 id="3111">3.11.1</h3>
+<ul>
+<li>Fixed null reference error in list field when generating TAssetBundleManifest in Unity versions after 2022.</li>
+</ul>
 <h3 id="3110">3.11.0</h3>
 <ul>
 <li>When building AssetBundles, an option has been added to output built-in AssetBundles to a separate folder. The option is named &quot;Builtin Asset Bundles Use Separate Folder&quot;</li>

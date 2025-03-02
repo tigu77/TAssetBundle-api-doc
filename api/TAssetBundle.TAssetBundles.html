@@ -1,0 +1,1776 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TAssetBundles
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TAssetBundles
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/new/main/apiSpec/new?filename=TAssetBundle_TAssetBundles.md&amp;value=---%0Auid%3A%20TAssetBundle.TAssetBundles%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TAssetBundle.TAssetBundles">
+
+
+
+  <h1 id="TAssetBundle_TAssetBundles" data-uid="TAssetBundle.TAssetBundles" class="text-break">
+    Class TAssetBundles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_Internal.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TAssetBundle.html">TAssetBundle</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TAssetBundle.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>TAssetBundle integrated manager class
+Provides core functionalities of the TAssetBundle system, including asset initialization,
+catalog management, asset loading/unloading, scene transitions, downloads, etc.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TAssetBundles</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TAssetBundles</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TAssetBundle_TAssetBundles_Settings_" data-uid="TAssetBundle.TAssetBundles.Settings*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_Settings" data-uid="TAssetBundle.TAssetBundles.Settings">
+  Settings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Access system settings information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Settings Settings { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Settings.html">Settings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TAssetBundle_TAssetBundles_CheckCatalogUpdateAsync_" data-uid="TAssetBundle.TAssetBundles.CheckCatalogUpdateAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_CheckCatalogUpdateAsync" data-uid="TAssetBundle.TAssetBundles.CheckCatalogUpdateAsync">
+  CheckCatalogUpdateAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously checks if the default catalog needs to be updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;bool&gt; CheckCatalogUpdateAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>TAsyncOperation object that returns true if an update is required, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_CheckCatalogUpdateAsync_" data-uid="TAssetBundle.TAssetBundles.CheckCatalogUpdateAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_CheckCatalogUpdateAsync_System_String_" data-uid="TAssetBundle.TAssetBundles.CheckCatalogUpdateAsync(System.String)">
+  CheckCatalogUpdateAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously checks if the specified catalog needs to be updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;bool&gt; CheckCatalogUpdateAsync(string catalogName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalogName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Catalog name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>TAsyncOperation object that returns true if an update is required, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_DownloadAsync_" data-uid="TAssetBundle.TAssetBundles.DownloadAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_DownloadAsync" data-uid="TAssetBundle.TAssetBundles.DownloadAsync">
+  DownloadAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously downloads the asset bundles from the default catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperationProgress&lt;AssetBundleDownloadInfo&gt; DownloadAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress</a>&lt;<a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a>&gt;</dt>
+    <dd><p>TAsyncOperationProgress object containing download progress and information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_DownloadAsync_" data-uid="TAssetBundle.TAssetBundles.DownloadAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_DownloadAsync_System_String_" data-uid="TAssetBundle.TAssetBundles.DownloadAsync(System.String)">
+  DownloadAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously downloads the asset bundles from the specified catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperationProgress&lt;AssetBundleDownloadInfo&gt; DownloadAsync(string catalogName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalogName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Catalog name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress</a>&lt;<a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a>&gt;</dt>
+    <dd><p>TAsyncOperationProgress object containing download progress and information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_DownloadByAssetsAsync_" data-uid="TAssetBundle.TAssetBundles.DownloadByAssetsAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_DownloadByAssetsAsync_System_String___" data-uid="TAssetBundle.TAssetBundles.DownloadByAssetsAsync(System.String[])">
+  DownloadByAssetsAsync(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously downloads the asset bundles containing the specified assets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperationProgress&lt;AssetBundleDownloadInfo&gt; DownloadByAssetsAsync(string[] assetPaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of asset paths</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress</a>&lt;<a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a>&gt;</dt>
+    <dd><p>TAsyncOperationProgress object containing download progress and information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_DownloadByAssetsAsync_" data-uid="TAssetBundle.TAssetBundles.DownloadByAssetsAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_DownloadByAssetsAsync_TAssetBundle_AssetRef___" data-uid="TAssetBundle.TAssetBundles.DownloadByAssetsAsync(TAssetBundle.AssetRef[])">
+  DownloadByAssetsAsync(AssetRef[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Download files that need to be downloaded among the asset bundles used by the assets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperationProgress&lt;AssetBundleDownloadInfo&gt; DownloadByAssetsAsync(AssetRef[] assetRefs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRefs</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a>[]</dt>
+    <dd><p>asset references</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress</a>&lt;<a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a>&gt;</dt>
+    <dd><p>asset bundle download info</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_DownloadByScenesAsync_" data-uid="TAssetBundle.TAssetBundles.DownloadByScenesAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_DownloadByScenesAsync_System_String___" data-uid="TAssetBundle.TAssetBundles.DownloadByScenesAsync(System.String[])">
+  DownloadByScenesAsync(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously downloads the asset bundles containing the specified scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperationProgress&lt;AssetBundleDownloadInfo&gt; DownloadByScenesAsync(string[] sceneNameOrPaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneNameOrPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of scene names or paths</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress</a>&lt;<a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a>&gt;</dt>
+    <dd><p>TAsyncOperationProgress object containing download progress and information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_DownloadByScenesAsync_" data-uid="TAssetBundle.TAssetBundles.DownloadByScenesAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_DownloadByScenesAsync_TAssetBundle_SceneAssetRef___" data-uid="TAssetBundle.TAssetBundles.DownloadByScenesAsync(TAssetBundle.SceneAssetRef[])">
+  DownloadByScenesAsync(SceneAssetRef[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Download the files that need to be downloaded among the asset bundles used by the scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperationProgress&lt;AssetBundleDownloadInfo&gt; DownloadByScenesAsync(SceneAssetRef[] sceneAssetRefs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneAssetRefs</code> <a class="xref" href="TAssetBundle.SceneAssetRef.html">SceneAssetRef</a>[]</dt>
+    <dd><p>scene asset references</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress</a>&lt;<a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a>&gt;</dt>
+    <dd><p>asset bundle download info</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_DownloadByTagsAsync_" data-uid="TAssetBundle.TAssetBundles.DownloadByTagsAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_DownloadByTagsAsync_System_String___" data-uid="TAssetBundle.TAssetBundles.DownloadByTagsAsync(System.String[])">
+  DownloadByTagsAsync(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously downloads the asset bundles with the specified tags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperationProgress&lt;AssetBundleDownloadInfo&gt; DownloadByTagsAsync(string[] tags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of tags</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperationProgress-1.html">TAsyncOperationProgress</a>&lt;<a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a>&gt;</dt>
+    <dd><p>TAsyncOperationProgress object containing download progress and information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_ExistAsset_" data-uid="TAssetBundle.TAssetBundles.ExistAsset*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_ExistAsset_System_String_" data-uid="TAssetBundle.TAssetBundles.ExistAsset(System.String)">
+  ExistAsset(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if an asset at the specified path exists in the catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ExistAsset(string assetPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Asset path</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset exists, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_ExistAsset_" data-uid="TAssetBundle.TAssetBundles.ExistAsset*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_ExistAsset_TAssetBundle_AssetRef_" data-uid="TAssetBundle.TAssetBundles.ExistAsset(TAssetBundle.AssetRef)">
+  ExistAsset(AssetRef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the asset exists in the catalog</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ExistAsset(AssetRef assetRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>asset reference</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the asset exists, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_ExistScene_" data-uid="TAssetBundle.TAssetBundles.ExistScene*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_ExistScene_System_String_" data-uid="TAssetBundle.TAssetBundles.ExistScene(System.String)">
+  ExistScene(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a scene with the specified name or path exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ExistScene(string sceneNameOrPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneNameOrPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Scene name or path</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the scene exists, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetActiveAssetBundles_" data-uid="TAssetBundle.TAssetBundles.GetActiveAssetBundles*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetActiveAssetBundles" data-uid="TAssetBundle.TAssetBundles.GetActiveAssetBundles">
+  GetActiveAssetBundles()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the currently active asset bundle information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IActiveAssetBundleInfo&gt; GetActiveAssetBundles()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TAssetBundle.IActiveAssetBundleInfo.html">IActiveAssetBundleInfo</a>&gt;</dt>
+    <dd><p>Collection of active asset bundle information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetDownloadSizeAsync_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetDownloadSizeAsync" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeAsync">
+  GetDownloadSizeAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously returns the total file size of the asset bundles to download from the default catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;long&gt; GetDownloadSizeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>TAsyncOperation object containing the total file size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetDownloadSizeAsync_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetDownloadSizeAsync_System_String_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeAsync(System.String)">
+  GetDownloadSizeAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously returns the total file size of the asset bundles to download from the specified catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;long&gt; GetDownloadSizeAsync(string catalogName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalogName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Catalog name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>TAsyncOperation object containing the total file size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetDownloadSizeByAssetsAsync_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByAssetsAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetDownloadSizeByAssetsAsync_System_String___" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByAssetsAsync(System.String[])">
+  GetDownloadSizeByAssetsAsync(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously returns the total file size of the asset bundles to download containing the specified assets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;long&gt; GetDownloadSizeByAssetsAsync(string[] assetPaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of asset paths</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>TAsyncOperation object containing the total file size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetDownloadSizeByAssetsAsync_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByAssetsAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetDownloadSizeByAssetsAsync_TAssetBundle_AssetRef___" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByAssetsAsync(TAssetBundle.AssetRef[])">
+  GetDownloadSizeByAssetsAsync(AssetRef[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the total size of the files that need to be downloaded out of the asset bundles required by the asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;long&gt; GetDownloadSizeByAssetsAsync(AssetRef[] assetRefs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRefs</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a>[]</dt>
+    <dd><p>asset references</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>file size</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetDownloadSizeByScenesAsync_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByScenesAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetDownloadSizeByScenesAsync_System_String___" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByScenesAsync(System.String[])">
+  GetDownloadSizeByScenesAsync(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously returns the total file size of the asset bundles to download containing the specified scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;long&gt; GetDownloadSizeByScenesAsync(string[] sceneNameOrPaths)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneNameOrPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of scene names or paths</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>TAsyncOperation object containing the total file size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetDownloadSizeByScenesAsync_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByScenesAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetDownloadSizeByScenesAsync_TAssetBundle_SceneAssetRef___" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByScenesAsync(TAssetBundle.SceneAssetRef[])">
+  GetDownloadSizeByScenesAsync(SceneAssetRef[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the total size of the files that need to be downloaded out of the asset bundles required for the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;long&gt; GetDownloadSizeByScenesAsync(SceneAssetRef[] sceneAssetRefs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneAssetRefs</code> <a class="xref" href="TAssetBundle.SceneAssetRef.html">SceneAssetRef</a>[]</dt>
+    <dd><p>scene asset references</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>file size</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetDownloadSizeByTagsAsync_" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByTagsAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetDownloadSizeByTagsAsync_System_String___" data-uid="TAssetBundle.TAssetBundles.GetDownloadSizeByTagsAsync(System.String[])">
+  GetDownloadSizeByTagsAsync(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously returns the total file size of the asset bundles to download with the specified tags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;long&gt; GetDownloadSizeByTagsAsync(string[] tags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of tags</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd><p>TAsyncOperation object containing the total file size.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetLastWebRequestError_" data-uid="TAssetBundle.TAssetBundles.GetLastWebRequestError*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetLastWebRequestError" data-uid="TAssetBundle.TAssetBundles.GetLastWebRequestError">
+  GetLastWebRequestError()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the error information from the last web request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnityWebRequestError GetLastWebRequestError()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.UnityWebRequestError.html">UnityWebRequestError</a></dt>
+    <dd><p>UnityWebRequestError containing the last web request error information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_GetLoadedAssets_" data-uid="TAssetBundle.TAssetBundles.GetLoadedAssets*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_GetLoadedAssets" data-uid="TAssetBundle.TAssetBundles.GetLoadedAssets">
+  GetLoadedAssets()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the collection of all loaded asset information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IAssetInfo&gt; GetLoadedAssets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TAssetBundle.IAssetInfo.html">IAssetInfo</a>&gt;</dt>
+    <dd><p>Collection of loaded asset information.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_InitializeAsync_" data-uid="TAssetBundle.TAssetBundles.InitializeAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_InitializeAsync" data-uid="TAssetBundle.TAssetBundles.InitializeAsync">
+  InitializeAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the TAssetBundle system asynchronously.
+Even if not called explicitly, it will be automatically invoked internally.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation InitializeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation.html">TAsyncOperation</a></dt>
+    <dd><p>TAsyncOperation object indicating initialization progress.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_IsLoadedAsset_" data-uid="TAssetBundle.TAssetBundles.IsLoadedAsset*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_IsLoadedAsset_System_String_" data-uid="TAssetBundle.TAssetBundles.IsLoadedAsset(System.String)">
+  IsLoadedAsset(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the asset at the specified path is already loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLoadedAsset(string assetPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Asset path</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset is loaded, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_IsLoadedAsset_" data-uid="TAssetBundle.TAssetBundles.IsLoadedAsset*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_IsLoadedAsset_TAssetBundle_AssetRef_" data-uid="TAssetBundle.TAssetBundles.IsLoadedAsset(TAssetBundle.AssetRef)">
+  IsLoadedAsset(AssetRef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Is the asset for that assetRef loaded?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLoadedAsset(AssetRef assetRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>asset reference</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the asset has been loaded false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_LoadAssetAsync_" data-uid="TAssetBundle.TAssetBundles.LoadAssetAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_LoadAssetAsync__1_System_String_" data-uid="TAssetBundle.TAssetBundles.LoadAssetAsync``1(System.String)">
+  LoadAssetAsync&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads an asset at the specified path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;AssetHandle&lt;T&gt;&gt; LoadAssetAsync&lt;T&gt;(string assetPath) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Asset path</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="TAssetBundle.AssetHandle-1.html">AssetHandle</a>&lt;T&gt;&gt;</dt>
+    <dd><p>TAsyncOperation object containing the loaded asset handle.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of asset to load (a class that inherits from UnityEngine.Object).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_LoadAssetAsync_" data-uid="TAssetBundle.TAssetBundles.LoadAssetAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_LoadAssetAsync__1_TAssetBundle_AssetRef_" data-uid="TAssetBundle.TAssetBundles.LoadAssetAsync``1(TAssetBundle.AssetRef)">
+  LoadAssetAsync&lt;T&gt;(AssetRef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Load asset by asset reference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;AssetHandle&lt;T&gt;&gt; LoadAssetAsync&lt;T&gt;(AssetRef assetRef) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>asset reference</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="TAssetBundle.AssetHandle-1.html">AssetHandle</a>&lt;T&gt;&gt;</dt>
+    <dd><p>A handle to that asset</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>asset type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_LoadCatalogInfoAsync_" data-uid="TAssetBundle.TAssetBundles.LoadCatalogInfoAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_LoadCatalogInfoAsync_System_String_" data-uid="TAssetBundle.TAssetBundles.LoadCatalogInfoAsync(System.String)">
+  LoadCatalogInfoAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads the catalog information of the specified catalog name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;IAssetCatalogInfo&gt; LoadCatalogInfoAsync(string catalogName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalogName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Catalog name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="TAssetBundle.IAssetCatalogInfo.html">IAssetCatalogInfo</a>&gt;</dt>
+    <dd><p>TAsyncOperation object containing the loaded catalog information (IAssetCatalogInfo).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_LoadSceneAsync_" data-uid="TAssetBundle.TAssetBundles.LoadSceneAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_LoadSceneAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="TAssetBundle.TAssetBundles.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)">
+  LoadSceneAsync(string, LoadSceneMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads a scene using the specified name or path and load scene mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation LoadSceneAsync(string sceneNameOrPath, LoadSceneMode loadSceneMode = LoadSceneMode.Single)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneNameOrPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Scene name or path</p>
+</dd>
+    <dt><code>loadSceneMode</code> <span class="xref">LoadSceneMode</span></dt>
+    <dd><p>Scene load mode (default is LoadSceneMode.Single)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation.html">TAsyncOperation</a></dt>
+    <dd><p>TAsyncOperation object containing the scene load progress.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_LoadSceneAsync_" data-uid="TAssetBundle.TAssetBundles.LoadSceneAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_LoadSceneAsync_TAssetBundle_LoadSceneInfo_" data-uid="TAssetBundle.TAssetBundles.LoadSceneAsync(TAssetBundle.LoadSceneInfo)">
+  LoadSceneAsync(LoadSceneInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads a scene using LoadSceneInfo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation LoadSceneAsync(LoadSceneInfo loadSceneInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loadSceneInfo</code> <a class="xref" href="TAssetBundle.LoadSceneInfo.html">LoadSceneInfo</a></dt>
+    <dd><p>Scene load information object</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation.html">TAsyncOperation</a></dt>
+    <dd><p>TAsyncOperation object containing the scene load progress.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_LoadSceneAsync_" data-uid="TAssetBundle.TAssetBundles.LoadSceneAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_LoadSceneAsync_TAssetBundle_SceneAssetRef_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="TAssetBundle.TAssetBundles.LoadSceneAsync(TAssetBundle.SceneAssetRef,UnityEngine.SceneManagement.LoadSceneMode)">
+  LoadSceneAsync(SceneAssetRef, LoadSceneMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Load the scene with the scene asset reference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation LoadSceneAsync(SceneAssetRef sceneAssetRef, LoadSceneMode loadSceneMode = LoadSceneMode.Single)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneAssetRef</code> <a class="xref" href="TAssetBundle.SceneAssetRef.html">SceneAssetRef</a></dt>
+    <dd><p>scene asset reference</p>
+</dd>
+    <dt><code>loadSceneMode</code> <span class="xref">LoadSceneMode</span></dt>
+    <dd><p>load scene mode</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation.html">TAsyncOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_SetAssetCatalogComparer_" data-uid="TAssetBundle.TAssetBundles.SetAssetCatalogComparer*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_SetAssetCatalogComparer_TAssetBundle_IAssetCatalogComparer_" data-uid="TAssetBundle.TAssetBundles.SetAssetCatalogComparer(TAssetBundle.IAssetCatalogComparer)">
+  SetAssetCatalogComparer(IAssetCatalogComparer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the asset catalog comparer to determine which catalog (local or remote) has the higher version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAssetCatalogComparer(IAssetCatalogComparer assetCatalogComparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetCatalogComparer</code> <a class="xref" href="TAssetBundle.IAssetCatalogComparer.html">IAssetCatalogComparer</a></dt>
+    <dd><p>The comparer interface that will be used to compare the local and remote asset catalogs.
+It implements the logic to check if the remote catalog has a higher version than the local catalog.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_SetRemoteUrl_" data-uid="TAssetBundle.TAssetBundles.SetRemoteUrl*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_SetRemoteUrl_System_String_" data-uid="TAssetBundle.TAssetBundles.SetRemoteUrl(System.String)">
+  SetRemoteUrl(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the remote URL.
+The [BuildTarget] in the URL will automatically change according to the current build target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRemoteUrl(string remoteUrl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remoteUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Remote URL to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_SetTagComparer_" data-uid="TAssetBundle.TAssetBundles.SetTagComparer*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_SetTagComparer_TAssetBundle_ITagComparer_" data-uid="TAssetBundle.TAssetBundles.SetTagComparer(TAssetBundle.ITagComparer)">
+  SetTagComparer(ITagComparer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the tag comparison method to be used on asset bundles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTagComparer(ITagComparer tagComparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tagComparer</code> <a class="xref" href="TAssetBundle.ITagComparer.html">ITagComparer</a></dt>
+    <dd><p>Tag comparison object implementing the ITagComparer interface.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_SetWebRequestBeforeSendCallback_" data-uid="TAssetBundle.TAssetBundles.SetWebRequestBeforeSendCallback*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_SetWebRequestBeforeSendCallback_TAssetBundle_WebRequestCallback_" data-uid="TAssetBundle.TAssetBundles.SetWebRequestBeforeSendCallback(TAssetBundle.WebRequestCallback)">
+  SetWebRequestBeforeSendCallback(WebRequestCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a pre-web request callback.
+Allows for custom processing before sending a web request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWebRequestBeforeSendCallback(WebRequestCallback callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="TAssetBundle.WebRequestCallback.html">WebRequestCallback</a></dt>
+    <dd><p>Web request pre-processing callback.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_SetWebRequestResultCallback_" data-uid="TAssetBundle.TAssetBundles.SetWebRequestResultCallback*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_SetWebRequestResultCallback_TAssetBundle_WebRequestCallback_" data-uid="TAssetBundle.TAssetBundles.SetWebRequestResultCallback(TAssetBundle.WebRequestCallback)">
+  SetWebRequestResultCallback(WebRequestCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a web request result callback.
+Allows for customizing the processing of the results after a web request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWebRequestResultCallback(WebRequestCallback callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="TAssetBundle.WebRequestCallback.html">WebRequestCallback</a></dt>
+    <dd><p>Web request result handling callback.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_UnloadAll_" data-uid="TAssetBundle.TAssetBundles.UnloadAll*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_UnloadAll" data-uid="TAssetBundle.TAssetBundles.UnloadAll">
+  UnloadAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads all assets and asset bundles to free memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnloadAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_UnloadAsset_" data-uid="TAssetBundle.TAssetBundles.UnloadAsset*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_UnloadAsset_System_String_" data-uid="TAssetBundle.TAssetBundles.UnloadAsset(System.String)">
+  UnloadAsset(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decreases the reference count of the asset at the specified path, unloading it automatically if no longer used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UnloadAsset(string assetPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Asset path</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset is successfully unloaded, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_UnloadAsset_" data-uid="TAssetBundle.TAssetBundles.UnloadAsset*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_UnloadAsset_TAssetBundle_AssetHandle_" data-uid="TAssetBundle.TAssetBundles.UnloadAsset(TAssetBundle.AssetHandle)">
+  UnloadAsset(AssetHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decreases the reference count of the specified asset handle, unloading it automatically if no longer used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UnloadAsset(AssetHandle assetHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetHandle</code> <a class="xref" href="TAssetBundle.AssetHandle.html">AssetHandle</a></dt>
+    <dd><p>Asset handle</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset is successfully unloaded, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_UnloadAsset_" data-uid="TAssetBundle.TAssetBundles.UnloadAsset*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_UnloadAsset_TAssetBundle_AssetRef_" data-uid="TAssetBundle.TAssetBundles.UnloadAsset(TAssetBundle.AssetRef)">
+  UnloadAsset(AssetRef)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles_AssetRef.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decreases the reference count of the asset reference.
+When an AssetBundle containing an Asset is no longer referenced, it is automatically released.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UnloadAsset(AssetRef assetRef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>asset reference</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the asset is released false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_UpdateCatalogAsync_" data-uid="TAssetBundle.TAssetBundles.UpdateCatalogAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_UpdateCatalogAsync" data-uid="TAssetBundle.TAssetBundles.UpdateCatalogAsync">
+  UpdateCatalogAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the default catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;bool&gt; UpdateCatalogAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>TAsyncOperation object that returns true if the update is successful, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_TAssetBundles_UpdateCatalogAsync_" data-uid="TAssetBundle.TAssetBundles.UpdateCatalogAsync*"></a>
+
+  <h3 id="TAssetBundle_TAssetBundles_UpdateCatalogAsync_System_String_" data-uid="TAssetBundle.TAssetBundles.UpdateCatalogAsync(System.String)">
+  UpdateCatalogAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/TAssetBundles.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the specified catalog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TAsyncOperation&lt;bool&gt; UpdateCatalogAsync(string catalogName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>catalogName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Catalog name</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.TAsyncOperation-1.html">TAsyncOperation</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>TAsyncOperation object that returns true if the update is successful, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
