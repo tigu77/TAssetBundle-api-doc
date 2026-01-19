@@ -1,12 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace TAssetBundle
- </title>
+      <title>Namespace TAssetBundle </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace TAssetBundle
- ">
+      <meta name="title" content="Namespace TAssetBundle ">
+      
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -18,19 +17,27 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module">
-    import options from './../public/main.js'
-    import { init } from './../public/docfx.min.js'
-    init(options)
-  </script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -66,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -75,8 +82,7 @@
 
         <article data-uid="TAssetBundle">
 
-  <h1 id="TAssetBundle" data-uid="TAssetBundle" class="text-break">Namespace TAssetBundle
-</h1>
+  <h1 id="TAssetBundle" data-uid="TAssetBundle" class="text-break">Namespace TAssetBundle</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
@@ -84,6 +90,19 @@
     <h3 id="classes">
 Classes
 </h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.AssetBundleCacheData.html">AssetBundleCacheData</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.AssetBundleCacheInfo.html">AssetBundleCacheInfo</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.AssetBundleCacheManager.html">AssetBundleCacheManager</a></dt>
+      <dd><p>따로 관리되는 캐시 된 에셋 번들 정보를 관리하는 매니저</p>
+</dd>
+    </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.AssetBundleDownloadInfo.html">AssetBundleDownloadInfo</a></dt>
       <dd><p>Class for storing AssetBundle download information.</p>
@@ -97,6 +116,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.AssetBundleInfo.html">AssetBundleInfo</a></dt>
       <dd><p>Class that stores information about an AssetBundle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.AssetBundleProviderBase.html">AssetBundleProviderBase</a></dt>
+      <dd><p>에셋 번들 제공자 기본 클래스</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -174,6 +198,12 @@ Compares asset catalogs based on their build numbers.</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.FilePathCollector.html">FilePathCollector</a></dt>
+      <dd><p>Collects asset paths under the same folder as this ScriptableObject.
+Editor-only utility for gathering asset paths at edit time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.FolderAssetRef.html">FolderAssetRef</a></dt>
       <dd><p>Folder Asset Reference</p>
 </dd>
@@ -189,12 +219,40 @@ Compares asset catalogs based on their build numbers.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.InnerOperations.html">InnerOperations</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.JsonCatalogSerializer.html">JsonCatalogSerializer</a></dt>
       <dd><p>Json Catalog Serializer</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.Logger.html">Logger</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.PluginBase.html">PluginBase</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.PluginModuleAttribute.html">PluginModuleAttribute</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.PluginModuleBase.html">PluginModuleBase</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.PluginModuleBase-1.html">PluginModuleBase&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.PluginModuleManager.html">PluginModuleManager</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.ReturnValue-1.html">ReturnValue&lt;T&gt;</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -255,10 +313,16 @@ catalog management, asset loading/unloading, scene transitions, downloads, etc.<
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.UnityWebRequestExtensions.html">UnityWebRequestExtensions</a></dt>
-      <dd></dd>
+      <dd><p>Extension methods for UnityWebRequest
+to provide version-independent error handling.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.Util.html">Util</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.WebRequest.html">WebRequest</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -281,6 +345,10 @@ catalog management, asset loading/unloading, scene transitions, downloads, etc.<
 Structs
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.AssetBundleCacheVersion.html">AssetBundleCacheVersion</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.AssetHandle.html">AssetHandle</a></dt>
       <dd><p>Structure for managing asset handles.</p>
 </dd>
@@ -297,6 +365,13 @@ Structs
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.UnityWebRequestError.html">UnityWebRequestError</a></dt>
+      <dd><p>Unified error information extracted from UnityWebRequest.
+This struct is used to normalize network and HTTP errors
+across different Unity versions.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.WebRequest.Option.html">WebRequest.Option</a></dt>
       <dd></dd>
     </dl>
     <h3 id="interfaces">
@@ -306,6 +381,20 @@ Interfaces
       <dt><a class="xref" href="TAssetBundle.IActiveAssetBundleInfo.html">IActiveAssetBundleInfo</a></dt>
       <dd><p>Interface that provides information about active AssetBundles.</p>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.IAssetBundleManager.html">IAssetBundleManager</a></dt>
+      <dd><p>에셋 번들 매니저 인터페이스</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.IAssetBundleProvider.html">IAssetBundleProvider</a></dt>
+      <dd><p>에셋 번들 제공자 인터페이스</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.IAssetBundleProviderPluginModule.html">IAssetBundleProviderPluginModule</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.IAssetCatalogComparer.html">IAssetCatalogComparer</a></dt>
@@ -332,6 +421,18 @@ The implementation should provide logic to determine if the remote catalog has a
       <dt><a class="xref" href="TAssetBundle.IAsyncOperationPool.html">IAsyncOperationPool</a></dt>
       <dd><p>Asynchronous Operation Pool Interface</p>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.IInnerOperation.html">IInnerOperation</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.IPlugin.html">IPlugin</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.IPluginModule.html">IPluginModule</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.IReferenceCount.html">IReferenceCount</a></dt>
@@ -361,6 +462,11 @@ Enums
       <dd><p>Playmode on editor</p>
 </dd>
     </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.EUnityWebRequestErrorResult.html">EUnityWebRequestErrorResult</a></dt>
+      <dd><p>Simplified result type for UnityWebRequest error classification.</p>
+</dd>
+    </dl>
     <h3 id="delegates">
 Delegates
 </h3>
@@ -378,7 +484,7 @@ Delegates
 </article>
 
 
-        
+
       </div>
 
       <div class="affix">
@@ -387,7 +493,7 @@ Delegates
     </main>
 
 
-    <footer class="border-top">
+    <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
           <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
