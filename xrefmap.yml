@@ -7,6 +7,253 @@ references:
   commentId: N:TAssetBundle
   fullName: TAssetBundle
   nameWithType: TAssetBundle
+- uid: TAssetBundle.AssetBundleCacheData
+  name: AssetBundleCacheData
+  href: api/TAssetBundle.AssetBundleCacheData.html
+  commentId: T:TAssetBundle.AssetBundleCacheData
+  fullName: TAssetBundle.AssetBundleCacheData
+  nameWithType: AssetBundleCacheData
+- uid: TAssetBundle.AssetBundleCacheData.name
+  name: name
+  href: api/TAssetBundle.AssetBundleCacheData.html#TAssetBundle_AssetBundleCacheData_name
+  commentId: F:TAssetBundle.AssetBundleCacheData.name
+  fullName: TAssetBundle.AssetBundleCacheData.name
+  nameWithType: AssetBundleCacheData.name
+- uid: TAssetBundle.AssetBundleCacheData.versions
+  name: versions
+  href: api/TAssetBundle.AssetBundleCacheData.html#TAssetBundle_AssetBundleCacheData_versions
+  commentId: F:TAssetBundle.AssetBundleCacheData.versions
+  fullName: TAssetBundle.AssetBundleCacheData.versions
+  nameWithType: AssetBundleCacheData.versions
+- uid: TAssetBundle.AssetBundleCacheInfo
+  name: AssetBundleCacheInfo
+  href: api/TAssetBundle.AssetBundleCacheInfo.html
+  commentId: T:TAssetBundle.AssetBundleCacheInfo
+  fullName: TAssetBundle.AssetBundleCacheInfo
+  nameWithType: AssetBundleCacheInfo
+- uid: TAssetBundle.AssetBundleCacheInfo.#ctor(System.Collections.Generic.IEnumerable{TAssetBundle.AssetBundleCacheVersion})
+  name: AssetBundleCacheInfo(IEnumerable<AssetBundleCacheVersion>)
+  href: api/TAssetBundle.AssetBundleCacheInfo.html#TAssetBundle_AssetBundleCacheInfo__ctor_System_Collections_Generic_IEnumerable_TAssetBundle_AssetBundleCacheVersion__
+  commentId: M:TAssetBundle.AssetBundleCacheInfo.#ctor(System.Collections.Generic.IEnumerable{TAssetBundle.AssetBundleCacheVersion})
+  name.vb: New(IEnumerable(Of AssetBundleCacheVersion))
+  fullName: TAssetBundle.AssetBundleCacheInfo.AssetBundleCacheInfo(System.Collections.Generic.IEnumerable<TAssetBundle.AssetBundleCacheVersion>)
+  fullName.vb: TAssetBundle.AssetBundleCacheInfo.New(System.Collections.Generic.IEnumerable(Of TAssetBundle.AssetBundleCacheVersion))
+  nameWithType: AssetBundleCacheInfo.AssetBundleCacheInfo(IEnumerable<AssetBundleCacheVersion>)
+  nameWithType.vb: AssetBundleCacheInfo.New(IEnumerable(Of AssetBundleCacheVersion))
+- uid: TAssetBundle.AssetBundleCacheInfo.#ctor*
+  name: AssetBundleCacheInfo
+  href: api/TAssetBundle.AssetBundleCacheInfo.html#TAssetBundle_AssetBundleCacheInfo__ctor_
+  commentId: Overload:TAssetBundle.AssetBundleCacheInfo.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TAssetBundle.AssetBundleCacheInfo.AssetBundleCacheInfo
+  fullName.vb: TAssetBundle.AssetBundleCacheInfo.New
+  nameWithType: AssetBundleCacheInfo.AssetBundleCacheInfo
+  nameWithType.vb: AssetBundleCacheInfo.New
+- uid: TAssetBundle.AssetBundleCacheInfo.UpdateVersion(TAssetBundle.AssetBundleCacheVersion)
+  name: UpdateVersion(AssetBundleCacheVersion)
+  href: api/TAssetBundle.AssetBundleCacheInfo.html#TAssetBundle_AssetBundleCacheInfo_UpdateVersion_TAssetBundle_AssetBundleCacheVersion_
+  commentId: M:TAssetBundle.AssetBundleCacheInfo.UpdateVersion(TAssetBundle.AssetBundleCacheVersion)
+  fullName: TAssetBundle.AssetBundleCacheInfo.UpdateVersion(TAssetBundle.AssetBundleCacheVersion)
+  nameWithType: AssetBundleCacheInfo.UpdateVersion(AssetBundleCacheVersion)
+- uid: TAssetBundle.AssetBundleCacheInfo.UpdateVersion*
+  name: UpdateVersion
+  href: api/TAssetBundle.AssetBundleCacheInfo.html#TAssetBundle_AssetBundleCacheInfo_UpdateVersion_
+  commentId: Overload:TAssetBundle.AssetBundleCacheInfo.UpdateVersion
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheInfo.UpdateVersion
+  nameWithType: AssetBundleCacheInfo.UpdateVersion
+- uid: TAssetBundle.AssetBundleCacheInfo.Versions
+  name: Versions
+  href: api/TAssetBundle.AssetBundleCacheInfo.html#TAssetBundle_AssetBundleCacheInfo_Versions
+  commentId: P:TAssetBundle.AssetBundleCacheInfo.Versions
+  fullName: TAssetBundle.AssetBundleCacheInfo.Versions
+  nameWithType: AssetBundleCacheInfo.Versions
+- uid: TAssetBundle.AssetBundleCacheInfo.Versions*
+  name: Versions
+  href: api/TAssetBundle.AssetBundleCacheInfo.html#TAssetBundle_AssetBundleCacheInfo_Versions_
+  commentId: Overload:TAssetBundle.AssetBundleCacheInfo.Versions
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheInfo.Versions
+  nameWithType: AssetBundleCacheInfo.Versions
+- uid: TAssetBundle.AssetBundleCacheManager
+  name: AssetBundleCacheManager
+  href: api/TAssetBundle.AssetBundleCacheManager.html
+  commentId: T:TAssetBundle.AssetBundleCacheManager
+  fullName: TAssetBundle.AssetBundleCacheManager
+  nameWithType: AssetBundleCacheManager
+- uid: TAssetBundle.AssetBundleCacheManager.#ctor(TAssetBundle.IAssetBundleManager)
+  name: AssetBundleCacheManager(IAssetBundleManager)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager__ctor_TAssetBundle_IAssetBundleManager_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.#ctor(TAssetBundle.IAssetBundleManager)
+  name.vb: New(IAssetBundleManager)
+  fullName: TAssetBundle.AssetBundleCacheManager.AssetBundleCacheManager(TAssetBundle.IAssetBundleManager)
+  fullName.vb: TAssetBundle.AssetBundleCacheManager.New(TAssetBundle.IAssetBundleManager)
+  nameWithType: AssetBundleCacheManager.AssetBundleCacheManager(IAssetBundleManager)
+  nameWithType.vb: AssetBundleCacheManager.New(IAssetBundleManager)
+- uid: TAssetBundle.AssetBundleCacheManager.#ctor*
+  name: AssetBundleCacheManager
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager__ctor_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TAssetBundle.AssetBundleCacheManager.AssetBundleCacheManager
+  fullName.vb: TAssetBundle.AssetBundleCacheManager.New
+  nameWithType: AssetBundleCacheManager.AssetBundleCacheManager
+  nameWithType.vb: AssetBundleCacheManager.New
+- uid: TAssetBundle.AssetBundleCacheManager.Exists(TAssetBundle.AssetBundleRuntimeInfo)
+  name: Exists(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_Exists_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.Exists(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.AssetBundleCacheManager.Exists(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: AssetBundleCacheManager.Exists(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.AssetBundleCacheManager.Exists*
+  name: Exists
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_Exists_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.Exists
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.Exists
+  nameWithType: AssetBundleCacheManager.Exists
+- uid: TAssetBundle.AssetBundleCacheManager.GetCacheInfo(System.String)
+  name: GetCacheInfo(string)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_GetCacheInfo_System_String_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.GetCacheInfo(System.String)
+  name.vb: GetCacheInfo(String)
+  fullName: TAssetBundle.AssetBundleCacheManager.GetCacheInfo(string)
+  fullName.vb: TAssetBundle.AssetBundleCacheManager.GetCacheInfo(String)
+  nameWithType: AssetBundleCacheManager.GetCacheInfo(string)
+  nameWithType.vb: AssetBundleCacheManager.GetCacheInfo(String)
+- uid: TAssetBundle.AssetBundleCacheManager.GetCacheInfo*
+  name: GetCacheInfo
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_GetCacheInfo_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.GetCacheInfo
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.GetCacheInfo
+  nameWithType: AssetBundleCacheManager.GetCacheInfo
+- uid: TAssetBundle.AssetBundleCacheManager.GetFilePath(TAssetBundle.AssetBundleRuntimeInfo)
+  name: GetFilePath(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_GetFilePath_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.GetFilePath(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.AssetBundleCacheManager.GetFilePath(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: AssetBundleCacheManager.GetFilePath(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.AssetBundleCacheManager.GetFilePath*
+  name: GetFilePath
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_GetFilePath_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.GetFilePath
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.GetFilePath
+  nameWithType: AssetBundleCacheManager.GetFilePath
+- uid: TAssetBundle.AssetBundleCacheManager.OnRemovedVersion
+  name: OnRemovedVersion
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_OnRemovedVersion
+  commentId: E:TAssetBundle.AssetBundleCacheManager.OnRemovedVersion
+  fullName: TAssetBundle.AssetBundleCacheManager.OnRemovedVersion
+  nameWithType: AssetBundleCacheManager.OnRemovedVersion
+- uid: TAssetBundle.AssetBundleCacheManager.RecompressAfterCachingAsync(System.Byte[],TAssetBundle.AssetBundleRuntimeInfo,UnityEngine.BuildCompression,System.Boolean)
+  name: RecompressAfterCachingAsync(byte[], AssetBundleRuntimeInfo, BuildCompression, bool)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_RecompressAfterCachingAsync_System_Byte___TAssetBundle_AssetBundleRuntimeInfo_UnityEngine_BuildCompression_System_Boolean_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.RecompressAfterCachingAsync(System.Byte[],TAssetBundle.AssetBundleRuntimeInfo,UnityEngine.BuildCompression,System.Boolean)
+  name.vb: RecompressAfterCachingAsync(Byte(), AssetBundleRuntimeInfo, BuildCompression, Boolean)
+  fullName: TAssetBundle.AssetBundleCacheManager.RecompressAfterCachingAsync(byte[], TAssetBundle.AssetBundleRuntimeInfo, UnityEngine.BuildCompression, bool)
+  fullName.vb: TAssetBundle.AssetBundleCacheManager.RecompressAfterCachingAsync(Byte(), TAssetBundle.AssetBundleRuntimeInfo, UnityEngine.BuildCompression, Boolean)
+  nameWithType: AssetBundleCacheManager.RecompressAfterCachingAsync(byte[], AssetBundleRuntimeInfo, BuildCompression, bool)
+  nameWithType.vb: AssetBundleCacheManager.RecompressAfterCachingAsync(Byte(), AssetBundleRuntimeInfo, BuildCompression, Boolean)
+- uid: TAssetBundle.AssetBundleCacheManager.RecompressAfterCachingAsync*
+  name: RecompressAfterCachingAsync
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_RecompressAfterCachingAsync_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.RecompressAfterCachingAsync
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.RecompressAfterCachingAsync
+  nameWithType: AssetBundleCacheManager.RecompressAfterCachingAsync
+- uid: TAssetBundle.AssetBundleCacheManager.RecompressAssetBundleAsync(System.String,TAssetBundle.AssetBundleRuntimeInfo)
+  name: RecompressAssetBundleAsync(string, AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_RecompressAssetBundleAsync_System_String_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.RecompressAssetBundleAsync(System.String,TAssetBundle.AssetBundleRuntimeInfo)
+  name.vb: RecompressAssetBundleAsync(String, AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.AssetBundleCacheManager.RecompressAssetBundleAsync(string, TAssetBundle.AssetBundleRuntimeInfo)
+  fullName.vb: TAssetBundle.AssetBundleCacheManager.RecompressAssetBundleAsync(String, TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: AssetBundleCacheManager.RecompressAssetBundleAsync(string, AssetBundleRuntimeInfo)
+  nameWithType.vb: AssetBundleCacheManager.RecompressAssetBundleAsync(String, AssetBundleRuntimeInfo)
+- uid: TAssetBundle.AssetBundleCacheManager.RecompressAssetBundleAsync*
+  name: RecompressAssetBundleAsync
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_RecompressAssetBundleAsync_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.RecompressAssetBundleAsync
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.RecompressAssetBundleAsync
+  nameWithType: AssetBundleCacheManager.RecompressAssetBundleAsync
+- uid: TAssetBundle.AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions
+  name: RemoveNotUsedAssetBundleVersions()
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_RemoveNotUsedAssetBundleVersions
+  commentId: M:TAssetBundle.AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions
+  fullName: TAssetBundle.AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions()
+  nameWithType: AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions()
+- uid: TAssetBundle.AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions*
+  name: RemoveNotUsedAssetBundleVersions
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_RemoveNotUsedAssetBundleVersions_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions
+  nameWithType: AssetBundleCacheManager.RemoveNotUsedAssetBundleVersions
+- uid: TAssetBundle.AssetBundleCacheManager.Save(System.String,TAssetBundle.AssetBundleCacheData)
+  name: Save(string, AssetBundleCacheData)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_Save_System_String_TAssetBundle_AssetBundleCacheData_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.Save(System.String,TAssetBundle.AssetBundleCacheData)
+  name.vb: Save(String, AssetBundleCacheData)
+  fullName: TAssetBundle.AssetBundleCacheManager.Save(string, TAssetBundle.AssetBundleCacheData)
+  fullName.vb: TAssetBundle.AssetBundleCacheManager.Save(String, TAssetBundle.AssetBundleCacheData)
+  nameWithType: AssetBundleCacheManager.Save(string, AssetBundleCacheData)
+  nameWithType.vb: AssetBundleCacheManager.Save(String, AssetBundleCacheData)
+- uid: TAssetBundle.AssetBundleCacheManager.Save*
+  name: Save
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_Save_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.Save
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.Save
+  nameWithType: AssetBundleCacheManager.Save
+- uid: TAssetBundle.AssetBundleCacheManager.UpdateVersion(TAssetBundle.AssetBundleRuntimeInfo)
+  name: UpdateVersion(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_UpdateVersion_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.AssetBundleCacheManager.UpdateVersion(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.AssetBundleCacheManager.UpdateVersion(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: AssetBundleCacheManager.UpdateVersion(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.AssetBundleCacheManager.UpdateVersion*
+  name: UpdateVersion
+  href: api/TAssetBundle.AssetBundleCacheManager.html#TAssetBundle_AssetBundleCacheManager_UpdateVersion_
+  commentId: Overload:TAssetBundle.AssetBundleCacheManager.UpdateVersion
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheManager.UpdateVersion
+  nameWithType: AssetBundleCacheManager.UpdateVersion
+- uid: TAssetBundle.AssetBundleCacheVersion
+  name: AssetBundleCacheVersion
+  href: api/TAssetBundle.AssetBundleCacheVersion.html
+  commentId: T:TAssetBundle.AssetBundleCacheVersion
+  fullName: TAssetBundle.AssetBundleCacheVersion
+  nameWithType: AssetBundleCacheVersion
+- uid: TAssetBundle.AssetBundleCacheVersion.ToString
+  name: ToString()
+  href: api/TAssetBundle.AssetBundleCacheVersion.html#TAssetBundle_AssetBundleCacheVersion_ToString
+  commentId: M:TAssetBundle.AssetBundleCacheVersion.ToString
+  fullName: TAssetBundle.AssetBundleCacheVersion.ToString()
+  nameWithType: AssetBundleCacheVersion.ToString()
+- uid: TAssetBundle.AssetBundleCacheVersion.ToString*
+  name: ToString
+  href: api/TAssetBundle.AssetBundleCacheVersion.html#TAssetBundle_AssetBundleCacheVersion_ToString_
+  commentId: Overload:TAssetBundle.AssetBundleCacheVersion.ToString
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleCacheVersion.ToString
+  nameWithType: AssetBundleCacheVersion.ToString
+- uid: TAssetBundle.AssetBundleCacheVersion.hash
+  name: hash
+  href: api/TAssetBundle.AssetBundleCacheVersion.html#TAssetBundle_AssetBundleCacheVersion_hash
+  commentId: F:TAssetBundle.AssetBundleCacheVersion.hash
+  fullName: TAssetBundle.AssetBundleCacheVersion.hash
+  nameWithType: AssetBundleCacheVersion.hash
+- uid: TAssetBundle.AssetBundleCacheVersion.path
+  name: path
+  href: api/TAssetBundle.AssetBundleCacheVersion.html#TAssetBundle_AssetBundleCacheVersion_path
+  commentId: F:TAssetBundle.AssetBundleCacheVersion.path
+  fullName: TAssetBundle.AssetBundleCacheVersion.path
+  nameWithType: AssetBundleCacheVersion.path
 - uid: TAssetBundle.AssetBundleDownloadInfo
   name: AssetBundleDownloadInfo
   href: api/TAssetBundle.AssetBundleDownloadInfo.html
@@ -19,19 +266,19 @@ references:
   commentId: T:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo
   fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo
   nameWithType: AssetBundleDownloadInfo.DownloadInfo
-- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Complete(TAssetBundle.AssetBundleDownloadInfo.EDownloadState)
-  name: Complete(EDownloadState)
-  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_Complete_TAssetBundle_AssetBundleDownloadInfo_EDownloadState_
-  commentId: M:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Complete(TAssetBundle.AssetBundleDownloadInfo.EDownloadState)
-  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Complete(TAssetBundle.AssetBundleDownloadInfo.EDownloadState)
-  nameWithType: AssetBundleDownloadInfo.DownloadInfo.Complete(AssetBundleDownloadInfo.EDownloadState)
-- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Complete*
-  name: Complete
-  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_Complete_
-  commentId: Overload:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Complete
+- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Error
+  name: Error
+  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_Error
+  commentId: P:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Error
+  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Error
+  nameWithType: AssetBundleDownloadInfo.DownloadInfo.Error
+- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Error*
+  name: Error
+  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_Error_
+  commentId: Overload:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Error
   isSpec: "True"
-  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Complete
-  nameWithType: AssetBundleDownloadInfo.DownloadInfo.Complete
+  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.Error
+  nameWithType: AssetBundleDownloadInfo.DownloadInfo.Error
 - uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.IsDownloadComplete
   name: IsDownloadComplete
   href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_IsDownloadComplete
@@ -48,25 +295,40 @@ references:
 - uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
   name: assetBundleInfo
   href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_assetBundleInfo
-  commentId: F:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
+  commentId: P:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
+  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
+  nameWithType: AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
+- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo*
+  name: assetBundleInfo
+  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_assetBundleInfo_
+  commentId: Overload:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
+  isSpec: "True"
   fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
   nameWithType: AssetBundleDownloadInfo.DownloadInfo.assetBundleInfo
 - uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.downloadedSize
   name: downloadedSize
   href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_downloadedSize
-  commentId: F:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.downloadedSize
+  commentId: P:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.downloadedSize
   fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.downloadedSize
   nameWithType: AssetBundleDownloadInfo.DownloadInfo.downloadedSize
-- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.requestAsync
-  name: requestAsync
-  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_requestAsync
-  commentId: F:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.requestAsync
-  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.requestAsync
-  nameWithType: AssetBundleDownloadInfo.DownloadInfo.requestAsync
+- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.downloadedSize*
+  name: downloadedSize
+  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_downloadedSize_
+  commentId: Overload:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.downloadedSize
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.downloadedSize
+  nameWithType: AssetBundleDownloadInfo.DownloadInfo.downloadedSize
 - uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.state
   name: state
   href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_state
-  commentId: F:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.state
+  commentId: P:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.state
+  fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.state
+  nameWithType: AssetBundleDownloadInfo.DownloadInfo.state
+- uid: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.state*
+  name: state
+  href: api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_DownloadInfo_state_
+  commentId: Overload:TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.state
+  isSpec: "True"
   fullName: TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.state
   nameWithType: AssetBundleDownloadInfo.DownloadInfo.state
 - uid: TAssetBundle.AssetBundleDownloadInfo.DownloadedSize
@@ -106,6 +368,19 @@ references:
   commentId: F:TAssetBundle.AssetBundleDownloadInfo.EDownloadState.Success
   fullName: TAssetBundle.AssetBundleDownloadInfo.EDownloadState.Success
   nameWithType: AssetBundleDownloadInfo.EDownloadState.Success
+- uid: TAssetBundle.AssetBundleDownloadInfo.Error
+  name: Error
+  href: api/TAssetBundle.AssetBundleDownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_Error
+  commentId: P:TAssetBundle.AssetBundleDownloadInfo.Error
+  fullName: TAssetBundle.AssetBundleDownloadInfo.Error
+  nameWithType: AssetBundleDownloadInfo.Error
+- uid: TAssetBundle.AssetBundleDownloadInfo.Error*
+  name: Error
+  href: api/TAssetBundle.AssetBundleDownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_Error_
+  commentId: Overload:TAssetBundle.AssetBundleDownloadInfo.Error
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleDownloadInfo.Error
+  nameWithType: AssetBundleDownloadInfo.Error
 - uid: TAssetBundle.AssetBundleDownloadInfo.IsDownloadComplete
   name: IsDownloadComplete()
   href: api/TAssetBundle.AssetBundleDownloadInfo.html#TAssetBundle_AssetBundleDownloadInfo_IsDownloadComplete
@@ -233,6 +508,83 @@ references:
   commentId: F:TAssetBundle.AssetBundleInfo.uncompressed
   fullName: TAssetBundle.AssetBundleInfo.uncompressed
   nameWithType: AssetBundleInfo.uncompressed
+- uid: TAssetBundle.AssetBundleProviderBase
+  name: AssetBundleProviderBase
+  href: api/TAssetBundle.AssetBundleProviderBase.html
+  commentId: T:TAssetBundle.AssetBundleProviderBase
+  fullName: TAssetBundle.AssetBundleProviderBase
+  nameWithType: AssetBundleProviderBase
+- uid: TAssetBundle.AssetBundleProviderBase.#ctor(TAssetBundle.IAssetBundleManager)
+  name: AssetBundleProviderBase(IAssetBundleManager)
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase__ctor_TAssetBundle_IAssetBundleManager_
+  commentId: M:TAssetBundle.AssetBundleProviderBase.#ctor(TAssetBundle.IAssetBundleManager)
+  name.vb: New(IAssetBundleManager)
+  fullName: TAssetBundle.AssetBundleProviderBase.AssetBundleProviderBase(TAssetBundle.IAssetBundleManager)
+  fullName.vb: TAssetBundle.AssetBundleProviderBase.New(TAssetBundle.IAssetBundleManager)
+  nameWithType: AssetBundleProviderBase.AssetBundleProviderBase(IAssetBundleManager)
+  nameWithType.vb: AssetBundleProviderBase.New(IAssetBundleManager)
+- uid: TAssetBundle.AssetBundleProviderBase.#ctor*
+  name: AssetBundleProviderBase
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase__ctor_
+  commentId: Overload:TAssetBundle.AssetBundleProviderBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TAssetBundle.AssetBundleProviderBase.AssetBundleProviderBase
+  fullName.vb: TAssetBundle.AssetBundleProviderBase.New
+  nameWithType: AssetBundleProviderBase.AssetBundleProviderBase
+  nameWithType.vb: AssetBundleProviderBase.New
+- uid: TAssetBundle.AssetBundleProviderBase.IsCached(TAssetBundle.AssetBundleRuntimeInfo)
+  name: IsCached(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_IsCached_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.AssetBundleProviderBase.IsCached(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.AssetBundleProviderBase.IsCached(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: AssetBundleProviderBase.IsCached(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.AssetBundleProviderBase.IsCached*
+  name: IsCached
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_IsCached_
+  commentId: Overload:TAssetBundle.AssetBundleProviderBase.IsCached
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleProviderBase.IsCached
+  nameWithType: AssetBundleProviderBase.IsCached
+- uid: TAssetBundle.AssetBundleProviderBase.IsSupported(TAssetBundle.AssetBundleRuntimeInfo)
+  name: IsSupported(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_IsSupported_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.AssetBundleProviderBase.IsSupported(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.AssetBundleProviderBase.IsSupported(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: AssetBundleProviderBase.IsSupported(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.AssetBundleProviderBase.IsSupported*
+  name: IsSupported
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_IsSupported_
+  commentId: Overload:TAssetBundle.AssetBundleProviderBase.IsSupported
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleProviderBase.IsSupported
+  nameWithType: AssetBundleProviderBase.IsSupported
+- uid: TAssetBundle.AssetBundleProviderBase.LoadAssetBundle(TAssetBundle.InnerOperations,TAssetBundle.AssetBundleRuntimeInfo)
+  name: LoadAssetBundle(InnerOperations, AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_LoadAssetBundle_TAssetBundle_InnerOperations_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.AssetBundleProviderBase.LoadAssetBundle(TAssetBundle.InnerOperations,TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.AssetBundleProviderBase.LoadAssetBundle(TAssetBundle.InnerOperations, TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: AssetBundleProviderBase.LoadAssetBundle(InnerOperations, AssetBundleRuntimeInfo)
+- uid: TAssetBundle.AssetBundleProviderBase.LoadAssetBundle*
+  name: LoadAssetBundle
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_LoadAssetBundle_
+  commentId: Overload:TAssetBundle.AssetBundleProviderBase.LoadAssetBundle
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleProviderBase.LoadAssetBundle
+  nameWithType: AssetBundleProviderBase.LoadAssetBundle
+- uid: TAssetBundle.AssetBundleProviderBase.Manager
+  name: Manager
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_Manager
+  commentId: P:TAssetBundle.AssetBundleProviderBase.Manager
+  fullName: TAssetBundle.AssetBundleProviderBase.Manager
+  nameWithType: AssetBundleProviderBase.Manager
+- uid: TAssetBundle.AssetBundleProviderBase.Manager*
+  name: Manager
+  href: api/TAssetBundle.AssetBundleProviderBase.html#TAssetBundle_AssetBundleProviderBase_Manager_
+  commentId: Overload:TAssetBundle.AssetBundleProviderBase.Manager
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleProviderBase.Manager
+  nameWithType: AssetBundleProviderBase.Manager
 - uid: TAssetBundle.AssetBundleRuntimeInfo
   name: AssetBundleRuntimeInfo
   href: api/TAssetBundle.AssetBundleRuntimeInfo.html
@@ -465,19 +817,6 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.AssetCatalog.FindAssetBundle
   nameWithType: AssetCatalog.FindAssetBundle
-- uid: TAssetBundle.AssetCatalog.IsRemote
-  name: IsRemote
-  href: api/TAssetBundle.AssetCatalog.html#TAssetBundle_AssetCatalog_IsRemote
-  commentId: P:TAssetBundle.AssetCatalog.IsRemote
-  fullName: TAssetBundle.AssetCatalog.IsRemote
-  nameWithType: AssetCatalog.IsRemote
-- uid: TAssetBundle.AssetCatalog.IsRemote*
-  name: IsRemote
-  href: api/TAssetBundle.AssetCatalog.html#TAssetBundle_AssetCatalog_IsRemote_
-  commentId: Overload:TAssetBundle.AssetCatalog.IsRemote
-  isSpec: "True"
-  fullName: TAssetBundle.AssetCatalog.IsRemote
-  nameWithType: AssetCatalog.IsRemote
 - uid: TAssetBundle.AssetCatalog.MD5Hash
   name: MD5Hash
   href: api/TAssetBundle.AssetCatalog.html#TAssetBundle_AssetCatalog_MD5Hash
@@ -659,538 +998,6 @@ references:
   fullName.vb: TAssetBundle.AssetHandle(Of T).CType
   nameWithType: AssetHandle<T>.implicit operator
   nameWithType.vb: AssetHandle(Of T).CType
-- uid: TAssetBundle.AssetManager
-  name: AssetManager
-  href: api/TAssetBundle.AssetManager.html
-  commentId: T:TAssetBundle.AssetManager
-  fullName: TAssetBundle.AssetManager
-  nameWithType: AssetManager
-- uid: TAssetBundle.AssetManager.CheckCatalogUpdateAsync
-  name: CheckCatalogUpdateAsync()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_CheckCatalogUpdateAsync
-  commentId: M:TAssetBundle.AssetManager.CheckCatalogUpdateAsync
-  fullName: TAssetBundle.AssetManager.CheckCatalogUpdateAsync()
-  nameWithType: AssetManager.CheckCatalogUpdateAsync()
-- uid: TAssetBundle.AssetManager.CheckCatalogUpdateAsync(System.String)
-  name: CheckCatalogUpdateAsync(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_CheckCatalogUpdateAsync_System_String_
-  commentId: M:TAssetBundle.AssetManager.CheckCatalogUpdateAsync(System.String)
-  name.vb: CheckCatalogUpdateAsync(String)
-  fullName: TAssetBundle.AssetManager.CheckCatalogUpdateAsync(string)
-  fullName.vb: TAssetBundle.AssetManager.CheckCatalogUpdateAsync(String)
-  nameWithType: AssetManager.CheckCatalogUpdateAsync(string)
-  nameWithType.vb: AssetManager.CheckCatalogUpdateAsync(String)
-- uid: TAssetBundle.AssetManager.CheckCatalogUpdateAsync*
-  name: CheckCatalogUpdateAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_CheckCatalogUpdateAsync_
-  commentId: Overload:TAssetBundle.AssetManager.CheckCatalogUpdateAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.CheckCatalogUpdateAsync
-  nameWithType: AssetManager.CheckCatalogUpdateAsync
-- uid: TAssetBundle.AssetManager.DownloadAsync
-  name: DownloadAsync()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadAsync
-  commentId: M:TAssetBundle.AssetManager.DownloadAsync
-  fullName: TAssetBundle.AssetManager.DownloadAsync()
-  nameWithType: AssetManager.DownloadAsync()
-- uid: TAssetBundle.AssetManager.DownloadAsync(System.String)
-  name: DownloadAsync(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadAsync_System_String_
-  commentId: M:TAssetBundle.AssetManager.DownloadAsync(System.String)
-  name.vb: DownloadAsync(String)
-  fullName: TAssetBundle.AssetManager.DownloadAsync(string)
-  fullName.vb: TAssetBundle.AssetManager.DownloadAsync(String)
-  nameWithType: AssetManager.DownloadAsync(string)
-  nameWithType.vb: AssetManager.DownloadAsync(String)
-- uid: TAssetBundle.AssetManager.DownloadAsync*
-  name: DownloadAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadAsync_
-  commentId: Overload:TAssetBundle.AssetManager.DownloadAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.DownloadAsync
-  nameWithType: AssetManager.DownloadAsync
-- uid: TAssetBundle.AssetManager.DownloadByAssetsAsync(System.String[])
-  name: DownloadByAssetsAsync(string[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByAssetsAsync_System_String___
-  commentId: M:TAssetBundle.AssetManager.DownloadByAssetsAsync(System.String[])
-  name.vb: DownloadByAssetsAsync(String())
-  fullName: TAssetBundle.AssetManager.DownloadByAssetsAsync(string[])
-  fullName.vb: TAssetBundle.AssetManager.DownloadByAssetsAsync(String())
-  nameWithType: AssetManager.DownloadByAssetsAsync(string[])
-  nameWithType.vb: AssetManager.DownloadByAssetsAsync(String())
-- uid: TAssetBundle.AssetManager.DownloadByAssetsAsync(TAssetBundle.AssetRef[])
-  name: DownloadByAssetsAsync(AssetRef[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByAssetsAsync_TAssetBundle_AssetRef___
-  commentId: M:TAssetBundle.AssetManager.DownloadByAssetsAsync(TAssetBundle.AssetRef[])
-  name.vb: DownloadByAssetsAsync(AssetRef())
-  fullName: TAssetBundle.AssetManager.DownloadByAssetsAsync(TAssetBundle.AssetRef[])
-  fullName.vb: TAssetBundle.AssetManager.DownloadByAssetsAsync(TAssetBundle.AssetRef())
-  nameWithType: AssetManager.DownloadByAssetsAsync(AssetRef[])
-  nameWithType.vb: AssetManager.DownloadByAssetsAsync(AssetRef())
-- uid: TAssetBundle.AssetManager.DownloadByAssetsAsync*
-  name: DownloadByAssetsAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByAssetsAsync_
-  commentId: Overload:TAssetBundle.AssetManager.DownloadByAssetsAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.DownloadByAssetsAsync
-  nameWithType: AssetManager.DownloadByAssetsAsync
-- uid: TAssetBundle.AssetManager.DownloadByScenesAsync(System.String[])
-  name: DownloadByScenesAsync(string[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByScenesAsync_System_String___
-  commentId: M:TAssetBundle.AssetManager.DownloadByScenesAsync(System.String[])
-  name.vb: DownloadByScenesAsync(String())
-  fullName: TAssetBundle.AssetManager.DownloadByScenesAsync(string[])
-  fullName.vb: TAssetBundle.AssetManager.DownloadByScenesAsync(String())
-  nameWithType: AssetManager.DownloadByScenesAsync(string[])
-  nameWithType.vb: AssetManager.DownloadByScenesAsync(String())
-- uid: TAssetBundle.AssetManager.DownloadByScenesAsync(TAssetBundle.SceneAssetRef[])
-  name: DownloadByScenesAsync(SceneAssetRef[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByScenesAsync_TAssetBundle_SceneAssetRef___
-  commentId: M:TAssetBundle.AssetManager.DownloadByScenesAsync(TAssetBundle.SceneAssetRef[])
-  name.vb: DownloadByScenesAsync(SceneAssetRef())
-  fullName: TAssetBundle.AssetManager.DownloadByScenesAsync(TAssetBundle.SceneAssetRef[])
-  fullName.vb: TAssetBundle.AssetManager.DownloadByScenesAsync(TAssetBundle.SceneAssetRef())
-  nameWithType: AssetManager.DownloadByScenesAsync(SceneAssetRef[])
-  nameWithType.vb: AssetManager.DownloadByScenesAsync(SceneAssetRef())
-- uid: TAssetBundle.AssetManager.DownloadByScenesAsync*
-  name: DownloadByScenesAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByScenesAsync_
-  commentId: Overload:TAssetBundle.AssetManager.DownloadByScenesAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.DownloadByScenesAsync
-  nameWithType: AssetManager.DownloadByScenesAsync
-- uid: TAssetBundle.AssetManager.DownloadByTagsAsync(System.String[])
-  name: DownloadByTagsAsync(string[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByTagsAsync_System_String___
-  commentId: M:TAssetBundle.AssetManager.DownloadByTagsAsync(System.String[])
-  name.vb: DownloadByTagsAsync(String())
-  fullName: TAssetBundle.AssetManager.DownloadByTagsAsync(string[])
-  fullName.vb: TAssetBundle.AssetManager.DownloadByTagsAsync(String())
-  nameWithType: AssetManager.DownloadByTagsAsync(string[])
-  nameWithType.vb: AssetManager.DownloadByTagsAsync(String())
-- uid: TAssetBundle.AssetManager.DownloadByTagsAsync*
-  name: DownloadByTagsAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_DownloadByTagsAsync_
-  commentId: Overload:TAssetBundle.AssetManager.DownloadByTagsAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.DownloadByTagsAsync
-  nameWithType: AssetManager.DownloadByTagsAsync
-- uid: TAssetBundle.AssetManager.ExistAsset(System.String)
-  name: ExistAsset(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_ExistAsset_System_String_
-  commentId: M:TAssetBundle.AssetManager.ExistAsset(System.String)
-  name.vb: ExistAsset(String)
-  fullName: TAssetBundle.AssetManager.ExistAsset(string)
-  fullName.vb: TAssetBundle.AssetManager.ExistAsset(String)
-  nameWithType: AssetManager.ExistAsset(string)
-  nameWithType.vb: AssetManager.ExistAsset(String)
-- uid: TAssetBundle.AssetManager.ExistAsset(TAssetBundle.AssetRef)
-  name: ExistAsset(AssetRef)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_ExistAsset_TAssetBundle_AssetRef_
-  commentId: M:TAssetBundle.AssetManager.ExistAsset(TAssetBundle.AssetRef)
-  fullName: TAssetBundle.AssetManager.ExistAsset(TAssetBundle.AssetRef)
-  nameWithType: AssetManager.ExistAsset(AssetRef)
-- uid: TAssetBundle.AssetManager.ExistAsset*
-  name: ExistAsset
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_ExistAsset_
-  commentId: Overload:TAssetBundle.AssetManager.ExistAsset
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.ExistAsset
-  nameWithType: AssetManager.ExistAsset
-- uid: TAssetBundle.AssetManager.ExistScene(System.String)
-  name: ExistScene(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_ExistScene_System_String_
-  commentId: M:TAssetBundle.AssetManager.ExistScene(System.String)
-  name.vb: ExistScene(String)
-  fullName: TAssetBundle.AssetManager.ExistScene(string)
-  fullName.vb: TAssetBundle.AssetManager.ExistScene(String)
-  nameWithType: AssetManager.ExistScene(string)
-  nameWithType.vb: AssetManager.ExistScene(String)
-- uid: TAssetBundle.AssetManager.ExistScene*
-  name: ExistScene
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_ExistScene_
-  commentId: Overload:TAssetBundle.AssetManager.ExistScene
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.ExistScene
-  nameWithType: AssetManager.ExistScene
-- uid: TAssetBundle.AssetManager.GetActiveAssetBundles
-  name: GetActiveAssetBundles()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetActiveAssetBundles
-  commentId: M:TAssetBundle.AssetManager.GetActiveAssetBundles
-  fullName: TAssetBundle.AssetManager.GetActiveAssetBundles()
-  nameWithType: AssetManager.GetActiveAssetBundles()
-- uid: TAssetBundle.AssetManager.GetActiveAssetBundles*
-  name: GetActiveAssetBundles
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetActiveAssetBundles_
-  commentId: Overload:TAssetBundle.AssetManager.GetActiveAssetBundles
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.GetActiveAssetBundles
-  nameWithType: AssetManager.GetActiveAssetBundles
-- uid: TAssetBundle.AssetManager.GetDownloadSizeAsync
-  name: GetDownloadSizeAsync()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeAsync
-  commentId: M:TAssetBundle.AssetManager.GetDownloadSizeAsync
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeAsync()
-  nameWithType: AssetManager.GetDownloadSizeAsync()
-- uid: TAssetBundle.AssetManager.GetDownloadSizeAsync(System.String)
-  name: GetDownloadSizeAsync(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeAsync_System_String_
-  commentId: M:TAssetBundle.AssetManager.GetDownloadSizeAsync(System.String)
-  name.vb: GetDownloadSizeAsync(String)
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeAsync(string)
-  fullName.vb: TAssetBundle.AssetManager.GetDownloadSizeAsync(String)
-  nameWithType: AssetManager.GetDownloadSizeAsync(string)
-  nameWithType.vb: AssetManager.GetDownloadSizeAsync(String)
-- uid: TAssetBundle.AssetManager.GetDownloadSizeAsync*
-  name: GetDownloadSizeAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeAsync_
-  commentId: Overload:TAssetBundle.AssetManager.GetDownloadSizeAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeAsync
-  nameWithType: AssetManager.GetDownloadSizeAsync
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(System.String[])
-  name: GetDownloadSizeByAssetsAsync(string[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByAssetsAsync_System_String___
-  commentId: M:TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(System.String[])
-  name.vb: GetDownloadSizeByAssetsAsync(String())
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(string[])
-  fullName.vb: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(String())
-  nameWithType: AssetManager.GetDownloadSizeByAssetsAsync(string[])
-  nameWithType.vb: AssetManager.GetDownloadSizeByAssetsAsync(String())
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(TAssetBundle.AssetRef[])
-  name: GetDownloadSizeByAssetsAsync(AssetRef[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByAssetsAsync_TAssetBundle_AssetRef___
-  commentId: M:TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(TAssetBundle.AssetRef[])
-  name.vb: GetDownloadSizeByAssetsAsync(AssetRef())
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(TAssetBundle.AssetRef[])
-  fullName.vb: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync(TAssetBundle.AssetRef())
-  nameWithType: AssetManager.GetDownloadSizeByAssetsAsync(AssetRef[])
-  nameWithType.vb: AssetManager.GetDownloadSizeByAssetsAsync(AssetRef())
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync*
-  name: GetDownloadSizeByAssetsAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByAssetsAsync_
-  commentId: Overload:TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByAssetsAsync
-  nameWithType: AssetManager.GetDownloadSizeByAssetsAsync
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(System.String[])
-  name: GetDownloadSizeByScenesAsync(string[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByScenesAsync_System_String___
-  commentId: M:TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(System.String[])
-  name.vb: GetDownloadSizeByScenesAsync(String())
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(string[])
-  fullName.vb: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(String())
-  nameWithType: AssetManager.GetDownloadSizeByScenesAsync(string[])
-  nameWithType.vb: AssetManager.GetDownloadSizeByScenesAsync(String())
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(TAssetBundle.SceneAssetRef[])
-  name: GetDownloadSizeByScenesAsync(SceneAssetRef[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByScenesAsync_TAssetBundle_SceneAssetRef___
-  commentId: M:TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(TAssetBundle.SceneAssetRef[])
-  name.vb: GetDownloadSizeByScenesAsync(SceneAssetRef())
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(TAssetBundle.SceneAssetRef[])
-  fullName.vb: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync(TAssetBundle.SceneAssetRef())
-  nameWithType: AssetManager.GetDownloadSizeByScenesAsync(SceneAssetRef[])
-  nameWithType.vb: AssetManager.GetDownloadSizeByScenesAsync(SceneAssetRef())
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync*
-  name: GetDownloadSizeByScenesAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByScenesAsync_
-  commentId: Overload:TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByScenesAsync
-  nameWithType: AssetManager.GetDownloadSizeByScenesAsync
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByTagsAsync(System.String[])
-  name: GetDownloadSizeByTagsAsync(string[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByTagsAsync_System_String___
-  commentId: M:TAssetBundle.AssetManager.GetDownloadSizeByTagsAsync(System.String[])
-  name.vb: GetDownloadSizeByTagsAsync(String())
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByTagsAsync(string[])
-  fullName.vb: TAssetBundle.AssetManager.GetDownloadSizeByTagsAsync(String())
-  nameWithType: AssetManager.GetDownloadSizeByTagsAsync(string[])
-  nameWithType.vb: AssetManager.GetDownloadSizeByTagsAsync(String())
-- uid: TAssetBundle.AssetManager.GetDownloadSizeByTagsAsync*
-  name: GetDownloadSizeByTagsAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetDownloadSizeByTagsAsync_
-  commentId: Overload:TAssetBundle.AssetManager.GetDownloadSizeByTagsAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.GetDownloadSizeByTagsAsync
-  nameWithType: AssetManager.GetDownloadSizeByTagsAsync
-- uid: TAssetBundle.AssetManager.GetLastWebRequestError
-  name: GetLastWebRequestError()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetLastWebRequestError
-  commentId: M:TAssetBundle.AssetManager.GetLastWebRequestError
-  fullName: TAssetBundle.AssetManager.GetLastWebRequestError()
-  nameWithType: AssetManager.GetLastWebRequestError()
-- uid: TAssetBundle.AssetManager.GetLastWebRequestError*
-  name: GetLastWebRequestError
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetLastWebRequestError_
-  commentId: Overload:TAssetBundle.AssetManager.GetLastWebRequestError
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.GetLastWebRequestError
-  nameWithType: AssetManager.GetLastWebRequestError
-- uid: TAssetBundle.AssetManager.GetLoadedAssetHandles
-  name: GetLoadedAssetHandles()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetLoadedAssetHandles
-  commentId: M:TAssetBundle.AssetManager.GetLoadedAssetHandles
-  fullName: TAssetBundle.AssetManager.GetLoadedAssetHandles()
-  nameWithType: AssetManager.GetLoadedAssetHandles()
-- uid: TAssetBundle.AssetManager.GetLoadedAssetHandles*
-  name: GetLoadedAssetHandles
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_GetLoadedAssetHandles_
-  commentId: Overload:TAssetBundle.AssetManager.GetLoadedAssetHandles
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.GetLoadedAssetHandles
-  nameWithType: AssetManager.GetLoadedAssetHandles
-- uid: TAssetBundle.AssetManager.InitializeAsync
-  name: InitializeAsync()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_InitializeAsync
-  commentId: M:TAssetBundle.AssetManager.InitializeAsync
-  fullName: TAssetBundle.AssetManager.InitializeAsync()
-  nameWithType: AssetManager.InitializeAsync()
-- uid: TAssetBundle.AssetManager.InitializeAsync*
-  name: InitializeAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_InitializeAsync_
-  commentId: Overload:TAssetBundle.AssetManager.InitializeAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.InitializeAsync
-  nameWithType: AssetManager.InitializeAsync
-- uid: TAssetBundle.AssetManager.IsLoadedAsset(System.String)
-  name: IsLoadedAsset(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_IsLoadedAsset_System_String_
-  commentId: M:TAssetBundle.AssetManager.IsLoadedAsset(System.String)
-  name.vb: IsLoadedAsset(String)
-  fullName: TAssetBundle.AssetManager.IsLoadedAsset(string)
-  fullName.vb: TAssetBundle.AssetManager.IsLoadedAsset(String)
-  nameWithType: AssetManager.IsLoadedAsset(string)
-  nameWithType.vb: AssetManager.IsLoadedAsset(String)
-- uid: TAssetBundle.AssetManager.IsLoadedAsset(TAssetBundle.AssetRef)
-  name: IsLoadedAsset(AssetRef)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_IsLoadedAsset_TAssetBundle_AssetRef_
-  commentId: M:TAssetBundle.AssetManager.IsLoadedAsset(TAssetBundle.AssetRef)
-  fullName: TAssetBundle.AssetManager.IsLoadedAsset(TAssetBundle.AssetRef)
-  nameWithType: AssetManager.IsLoadedAsset(AssetRef)
-- uid: TAssetBundle.AssetManager.IsLoadedAsset*
-  name: IsLoadedAsset
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_IsLoadedAsset_
-  commentId: Overload:TAssetBundle.AssetManager.IsLoadedAsset
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.IsLoadedAsset
-  nameWithType: AssetManager.IsLoadedAsset
-- uid: TAssetBundle.AssetManager.LoadAssetAsync*
-  name: LoadAssetAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadAssetAsync_
-  commentId: Overload:TAssetBundle.AssetManager.LoadAssetAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.LoadAssetAsync
-  nameWithType: AssetManager.LoadAssetAsync
-- uid: TAssetBundle.AssetManager.LoadAssetAsync``1(System.String)
-  name: LoadAssetAsync<T>(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadAssetAsync__1_System_String_
-  commentId: M:TAssetBundle.AssetManager.LoadAssetAsync``1(System.String)
-  name.vb: LoadAssetAsync(Of T)(String)
-  fullName: TAssetBundle.AssetManager.LoadAssetAsync<T>(string)
-  fullName.vb: TAssetBundle.AssetManager.LoadAssetAsync(Of T)(String)
-  nameWithType: AssetManager.LoadAssetAsync<T>(string)
-  nameWithType.vb: AssetManager.LoadAssetAsync(Of T)(String)
-- uid: TAssetBundle.AssetManager.LoadAssetAsync``1(TAssetBundle.AssetRef)
-  name: LoadAssetAsync<T>(AssetRef)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadAssetAsync__1_TAssetBundle_AssetRef_
-  commentId: M:TAssetBundle.AssetManager.LoadAssetAsync``1(TAssetBundle.AssetRef)
-  name.vb: LoadAssetAsync(Of T)(AssetRef)
-  fullName: TAssetBundle.AssetManager.LoadAssetAsync<T>(TAssetBundle.AssetRef)
-  fullName.vb: TAssetBundle.AssetManager.LoadAssetAsync(Of T)(TAssetBundle.AssetRef)
-  nameWithType: AssetManager.LoadAssetAsync<T>(AssetRef)
-  nameWithType.vb: AssetManager.LoadAssetAsync(Of T)(AssetRef)
-- uid: TAssetBundle.AssetManager.LoadCatalogInfoAsync(System.String)
-  name: LoadCatalogInfoAsync(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadCatalogInfoAsync_System_String_
-  commentId: M:TAssetBundle.AssetManager.LoadCatalogInfoAsync(System.String)
-  name.vb: LoadCatalogInfoAsync(String)
-  fullName: TAssetBundle.AssetManager.LoadCatalogInfoAsync(string)
-  fullName.vb: TAssetBundle.AssetManager.LoadCatalogInfoAsync(String)
-  nameWithType: AssetManager.LoadCatalogInfoAsync(string)
-  nameWithType.vb: AssetManager.LoadCatalogInfoAsync(String)
-- uid: TAssetBundle.AssetManager.LoadCatalogInfoAsync*
-  name: LoadCatalogInfoAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadCatalogInfoAsync_
-  commentId: Overload:TAssetBundle.AssetManager.LoadCatalogInfoAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.LoadCatalogInfoAsync
-  nameWithType: AssetManager.LoadCatalogInfoAsync
-- uid: TAssetBundle.AssetManager.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
-  name: LoadSceneAsync(string, LoadSceneMode)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadSceneAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_
-  commentId: M:TAssetBundle.AssetManager.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
-  name.vb: LoadSceneAsync(String, LoadSceneMode)
-  fullName: TAssetBundle.AssetManager.LoadSceneAsync(string, UnityEngine.SceneManagement.LoadSceneMode)
-  fullName.vb: TAssetBundle.AssetManager.LoadSceneAsync(String, UnityEngine.SceneManagement.LoadSceneMode)
-  nameWithType: AssetManager.LoadSceneAsync(string, LoadSceneMode)
-  nameWithType.vb: AssetManager.LoadSceneAsync(String, LoadSceneMode)
-- uid: TAssetBundle.AssetManager.LoadSceneAsync(TAssetBundle.LoadSceneInfo)
-  name: LoadSceneAsync(LoadSceneInfo)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadSceneAsync_TAssetBundle_LoadSceneInfo_
-  commentId: M:TAssetBundle.AssetManager.LoadSceneAsync(TAssetBundle.LoadSceneInfo)
-  fullName: TAssetBundle.AssetManager.LoadSceneAsync(TAssetBundle.LoadSceneInfo)
-  nameWithType: AssetManager.LoadSceneAsync(LoadSceneInfo)
-- uid: TAssetBundle.AssetManager.LoadSceneAsync(TAssetBundle.SceneAssetRef,UnityEngine.SceneManagement.LoadSceneMode)
-  name: LoadSceneAsync(SceneAssetRef, LoadSceneMode)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadSceneAsync_TAssetBundle_SceneAssetRef_UnityEngine_SceneManagement_LoadSceneMode_
-  commentId: M:TAssetBundle.AssetManager.LoadSceneAsync(TAssetBundle.SceneAssetRef,UnityEngine.SceneManagement.LoadSceneMode)
-  fullName: TAssetBundle.AssetManager.LoadSceneAsync(TAssetBundle.SceneAssetRef, UnityEngine.SceneManagement.LoadSceneMode)
-  nameWithType: AssetManager.LoadSceneAsync(SceneAssetRef, LoadSceneMode)
-- uid: TAssetBundle.AssetManager.LoadSceneAsync*
-  name: LoadSceneAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_LoadSceneAsync_
-  commentId: Overload:TAssetBundle.AssetManager.LoadSceneAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.LoadSceneAsync
-  nameWithType: AssetManager.LoadSceneAsync
-- uid: TAssetBundle.AssetManager.SetRemoteUrl(System.String)
-  name: SetRemoteUrl(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetRemoteUrl_System_String_
-  commentId: M:TAssetBundle.AssetManager.SetRemoteUrl(System.String)
-  name.vb: SetRemoteUrl(String)
-  fullName: TAssetBundle.AssetManager.SetRemoteUrl(string)
-  fullName.vb: TAssetBundle.AssetManager.SetRemoteUrl(String)
-  nameWithType: AssetManager.SetRemoteUrl(string)
-  nameWithType.vb: AssetManager.SetRemoteUrl(String)
-- uid: TAssetBundle.AssetManager.SetRemoteUrl*
-  name: SetRemoteUrl
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetRemoteUrl_
-  commentId: Overload:TAssetBundle.AssetManager.SetRemoteUrl
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.SetRemoteUrl
-  nameWithType: AssetManager.SetRemoteUrl
-- uid: TAssetBundle.AssetManager.SetRemoteUrls(System.String[])
-  name: SetRemoteUrls(string[])
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetRemoteUrls_System_String___
-  commentId: M:TAssetBundle.AssetManager.SetRemoteUrls(System.String[])
-  name.vb: SetRemoteUrls(String())
-  fullName: TAssetBundle.AssetManager.SetRemoteUrls(string[])
-  fullName.vb: TAssetBundle.AssetManager.SetRemoteUrls(String())
-  nameWithType: AssetManager.SetRemoteUrls(string[])
-  nameWithType.vb: AssetManager.SetRemoteUrls(String())
-- uid: TAssetBundle.AssetManager.SetRemoteUrls*
-  name: SetRemoteUrls
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetRemoteUrls_
-  commentId: Overload:TAssetBundle.AssetManager.SetRemoteUrls
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.SetRemoteUrls
-  nameWithType: AssetManager.SetRemoteUrls
-- uid: TAssetBundle.AssetManager.SetTagComparer(TAssetBundle.ITagComparer)
-  name: SetTagComparer(ITagComparer)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetTagComparer_TAssetBundle_ITagComparer_
-  commentId: M:TAssetBundle.AssetManager.SetTagComparer(TAssetBundle.ITagComparer)
-  fullName: TAssetBundle.AssetManager.SetTagComparer(TAssetBundle.ITagComparer)
-  nameWithType: AssetManager.SetTagComparer(ITagComparer)
-- uid: TAssetBundle.AssetManager.SetTagComparer*
-  name: SetTagComparer
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetTagComparer_
-  commentId: Overload:TAssetBundle.AssetManager.SetTagComparer
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.SetTagComparer
-  nameWithType: AssetManager.SetTagComparer
-- uid: TAssetBundle.AssetManager.SetWebRequestBeforeSendCallback(TAssetBundle.WebRequestCallback)
-  name: SetWebRequestBeforeSendCallback(WebRequestCallback)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetWebRequestBeforeSendCallback_TAssetBundle_WebRequestCallback_
-  commentId: M:TAssetBundle.AssetManager.SetWebRequestBeforeSendCallback(TAssetBundle.WebRequestCallback)
-  fullName: TAssetBundle.AssetManager.SetWebRequestBeforeSendCallback(TAssetBundle.WebRequestCallback)
-  nameWithType: AssetManager.SetWebRequestBeforeSendCallback(WebRequestCallback)
-- uid: TAssetBundle.AssetManager.SetWebRequestBeforeSendCallback*
-  name: SetWebRequestBeforeSendCallback
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetWebRequestBeforeSendCallback_
-  commentId: Overload:TAssetBundle.AssetManager.SetWebRequestBeforeSendCallback
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.SetWebRequestBeforeSendCallback
-  nameWithType: AssetManager.SetWebRequestBeforeSendCallback
-- uid: TAssetBundle.AssetManager.SetWebRequestResultCallback(TAssetBundle.WebRequestCallback)
-  name: SetWebRequestResultCallback(WebRequestCallback)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetWebRequestResultCallback_TAssetBundle_WebRequestCallback_
-  commentId: M:TAssetBundle.AssetManager.SetWebRequestResultCallback(TAssetBundle.WebRequestCallback)
-  fullName: TAssetBundle.AssetManager.SetWebRequestResultCallback(TAssetBundle.WebRequestCallback)
-  nameWithType: AssetManager.SetWebRequestResultCallback(WebRequestCallback)
-- uid: TAssetBundle.AssetManager.SetWebRequestResultCallback*
-  name: SetWebRequestResultCallback
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_SetWebRequestResultCallback_
-  commentId: Overload:TAssetBundle.AssetManager.SetWebRequestResultCallback
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.SetWebRequestResultCallback
-  nameWithType: AssetManager.SetWebRequestResultCallback
-- uid: TAssetBundle.AssetManager.Settings
-  name: Settings
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_Settings
-  commentId: P:TAssetBundle.AssetManager.Settings
-  fullName: TAssetBundle.AssetManager.Settings
-  nameWithType: AssetManager.Settings
-- uid: TAssetBundle.AssetManager.Settings*
-  name: Settings
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_Settings_
-  commentId: Overload:TAssetBundle.AssetManager.Settings
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.Settings
-  nameWithType: AssetManager.Settings
-- uid: TAssetBundle.AssetManager.UnloadAll
-  name: UnloadAll()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UnloadAll
-  commentId: M:TAssetBundle.AssetManager.UnloadAll
-  fullName: TAssetBundle.AssetManager.UnloadAll()
-  nameWithType: AssetManager.UnloadAll()
-- uid: TAssetBundle.AssetManager.UnloadAll*
-  name: UnloadAll
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UnloadAll_
-  commentId: Overload:TAssetBundle.AssetManager.UnloadAll
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.UnloadAll
-  nameWithType: AssetManager.UnloadAll
-- uid: TAssetBundle.AssetManager.UnloadAsset(System.String)
-  name: UnloadAsset(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UnloadAsset_System_String_
-  commentId: M:TAssetBundle.AssetManager.UnloadAsset(System.String)
-  name.vb: UnloadAsset(String)
-  fullName: TAssetBundle.AssetManager.UnloadAsset(string)
-  fullName.vb: TAssetBundle.AssetManager.UnloadAsset(String)
-  nameWithType: AssetManager.UnloadAsset(string)
-  nameWithType.vb: AssetManager.UnloadAsset(String)
-- uid: TAssetBundle.AssetManager.UnloadAsset(TAssetBundle.AssetRef)
-  name: UnloadAsset(AssetRef)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UnloadAsset_TAssetBundle_AssetRef_
-  commentId: M:TAssetBundle.AssetManager.UnloadAsset(TAssetBundle.AssetRef)
-  fullName: TAssetBundle.AssetManager.UnloadAsset(TAssetBundle.AssetRef)
-  nameWithType: AssetManager.UnloadAsset(AssetRef)
-- uid: TAssetBundle.AssetManager.UnloadAsset(TAssetBundle.IAssetHandle)
-  name: UnloadAsset(IAssetHandle)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UnloadAsset_TAssetBundle_IAssetHandle_
-  commentId: M:TAssetBundle.AssetManager.UnloadAsset(TAssetBundle.IAssetHandle)
-  fullName: TAssetBundle.AssetManager.UnloadAsset(TAssetBundle.IAssetHandle)
-  nameWithType: AssetManager.UnloadAsset(IAssetHandle)
-- uid: TAssetBundle.AssetManager.UnloadAsset*
-  name: UnloadAsset
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UnloadAsset_
-  commentId: Overload:TAssetBundle.AssetManager.UnloadAsset
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.UnloadAsset
-  nameWithType: AssetManager.UnloadAsset
-- uid: TAssetBundle.AssetManager.UpdateCatalogAsync
-  name: UpdateCatalogAsync()
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UpdateCatalogAsync
-  commentId: M:TAssetBundle.AssetManager.UpdateCatalogAsync
-  fullName: TAssetBundle.AssetManager.UpdateCatalogAsync()
-  nameWithType: AssetManager.UpdateCatalogAsync()
-- uid: TAssetBundle.AssetManager.UpdateCatalogAsync(System.String)
-  name: UpdateCatalogAsync(string)
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UpdateCatalogAsync_System_String_
-  commentId: M:TAssetBundle.AssetManager.UpdateCatalogAsync(System.String)
-  name.vb: UpdateCatalogAsync(String)
-  fullName: TAssetBundle.AssetManager.UpdateCatalogAsync(string)
-  fullName.vb: TAssetBundle.AssetManager.UpdateCatalogAsync(String)
-  nameWithType: AssetManager.UpdateCatalogAsync(string)
-  nameWithType.vb: AssetManager.UpdateCatalogAsync(String)
-- uid: TAssetBundle.AssetManager.UpdateCatalogAsync*
-  name: UpdateCatalogAsync
-  href: api/TAssetBundle.AssetManager.html#TAssetBundle_AssetManager_UpdateCatalogAsync_
-  commentId: Overload:TAssetBundle.AssetManager.UpdateCatalogAsync
-  isSpec: "True"
-  fullName: TAssetBundle.AssetManager.UpdateCatalogAsync
-  nameWithType: AssetManager.UpdateCatalogAsync
 - uid: TAssetBundle.AssetRef
   name: AssetRef
   href: api/TAssetBundle.AssetRef.html
@@ -1803,6 +1610,30 @@ references:
   commentId: F:TAssetBundle.EEditorPlayMode.EditorAsset
   fullName: TAssetBundle.EEditorPlayMode.EditorAsset
   nameWithType: EEditorPlayMode.EditorAsset
+- uid: TAssetBundle.EUnityWebRequestErrorResult
+  name: EUnityWebRequestErrorResult
+  href: api/TAssetBundle.EUnityWebRequestErrorResult.html
+  commentId: T:TAssetBundle.EUnityWebRequestErrorResult
+  fullName: TAssetBundle.EUnityWebRequestErrorResult
+  nameWithType: EUnityWebRequestErrorResult
+- uid: TAssetBundle.EUnityWebRequestErrorResult.Http
+  name: Http
+  href: api/TAssetBundle.EUnityWebRequestErrorResult.html#TAssetBundle_EUnityWebRequestErrorResult_Http
+  commentId: F:TAssetBundle.EUnityWebRequestErrorResult.Http
+  fullName: TAssetBundle.EUnityWebRequestErrorResult.Http
+  nameWithType: EUnityWebRequestErrorResult.Http
+- uid: TAssetBundle.EUnityWebRequestErrorResult.Network
+  name: Network
+  href: api/TAssetBundle.EUnityWebRequestErrorResult.html#TAssetBundle_EUnityWebRequestErrorResult_Network
+  commentId: F:TAssetBundle.EUnityWebRequestErrorResult.Network
+  fullName: TAssetBundle.EUnityWebRequestErrorResult.Network
+  nameWithType: EUnityWebRequestErrorResult.Network
+- uid: TAssetBundle.EUnityWebRequestErrorResult.Success
+  name: Success
+  href: api/TAssetBundle.EUnityWebRequestErrorResult.html#TAssetBundle_EUnityWebRequestErrorResult_Success
+  commentId: F:TAssetBundle.EUnityWebRequestErrorResult.Success
+  fullName: TAssetBundle.EUnityWebRequestErrorResult.Success
+  nameWithType: EUnityWebRequestErrorResult.Success
 - uid: TAssetBundle.Editor
   name: TAssetBundle.Editor
   href: api/TAssetBundle.Editor.html
@@ -1964,6 +1795,15 @@ references:
   commentId: M:TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget)
   fullName: TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget)
   nameWithType: AssetBundleBuilder.GetOutputPath(BuildTarget)
+- uid: TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget,System.Boolean)
+  name: GetOutputPath(BuildTarget, bool)
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_GetOutputPath_UnityEditor_BuildTarget_System_Boolean_
+  commentId: M:TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget,System.Boolean)
+  name.vb: GetOutputPath(BuildTarget, Boolean)
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget, bool)
+  fullName.vb: TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget, Boolean)
+  nameWithType: AssetBundleBuilder.GetOutputPath(BuildTarget, bool)
+  nameWithType.vb: AssetBundleBuilder.GetOutputPath(BuildTarget, Boolean)
 - uid: TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath*
   name: GetOutputPath
   href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_GetOutputPath_
@@ -1990,6 +1830,25 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.AssetBundleBuilder.PostprocessBuild
   nameWithType: AssetBundleBuilder.PostprocessBuild
+- uid: TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild
+  name: PrepareForBuild()
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_PrepareForBuild
+  commentId: M:TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild()
+  nameWithType: AssetBundleBuilder.PrepareForBuild()
+- uid: TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild(UnityEditor.BuildTarget)
+  name: PrepareForBuild(BuildTarget)
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_PrepareForBuild_UnityEditor_BuildTarget_
+  commentId: M:TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild(UnityEditor.BuildTarget)
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild(UnityEditor.BuildTarget)
+  nameWithType: AssetBundleBuilder.PrepareForBuild(BuildTarget)
+- uid: TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild*
+  name: PrepareForBuild
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_PrepareForBuild_
+  commentId: Overload:TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild
+  nameWithType: AssetBundleBuilder.PrepareForBuild
 - uid: TAssetBundle.Editor.AssetBundleBuilder.PreprocessBuild(UnityEditor.BuildTarget)
   name: PreprocessBuild(BuildTarget)
   href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_PreprocessBuild_UnityEditor_BuildTarget_
@@ -2003,6 +1862,22 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.AssetBundleBuilder.PreprocessBuild
   nameWithType: AssetBundleBuilder.PreprocessBuild
+- uid: TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle(System.String,System.String,System.Boolean,UnityEngine.ThreadPriority)
+  name: RecompressAssetBundle(string, string, bool, ThreadPriority)
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_RecompressAssetBundle_System_String_System_String_System_Boolean_UnityEngine_ThreadPriority_
+  commentId: M:TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle(System.String,System.String,System.Boolean,UnityEngine.ThreadPriority)
+  name.vb: RecompressAssetBundle(String, String, Boolean, ThreadPriority)
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle(string, string, bool, UnityEngine.ThreadPriority)
+  fullName.vb: TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle(String, String, Boolean, UnityEngine.ThreadPriority)
+  nameWithType: AssetBundleBuilder.RecompressAssetBundle(string, string, bool, ThreadPriority)
+  nameWithType.vb: AssetBundleBuilder.RecompressAssetBundle(String, String, Boolean, ThreadPriority)
+- uid: TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle*
+  name: RecompressAssetBundle
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_RecompressAssetBundle_
+  commentId: Overload:TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle
+  nameWithType: AssetBundleBuilder.RecompressAssetBundle
 - uid: TAssetBundle.Editor.AssetBundleBuilder.RunAllCompositionStrategy
   name: RunAllCompositionStrategy()
   href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_RunAllCompositionStrategy
@@ -2064,6 +1939,36 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.AssetListWindow.Show
   nameWithType: AssetListWindow.Show
+- uid: TAssetBundle.Editor.AssetSearchResult
+  name: AssetSearchResult
+  href: api/TAssetBundle.Editor.AssetSearchResult.html
+  commentId: T:TAssetBundle.Editor.AssetSearchResult
+  fullName: TAssetBundle.Editor.AssetSearchResult
+  nameWithType: AssetSearchResult
+- uid: TAssetBundle.Editor.AssetSearchResult.assetPath
+  name: assetPath
+  href: api/TAssetBundle.Editor.AssetSearchResult.html#TAssetBundle_Editor_AssetSearchResult_assetPath
+  commentId: F:TAssetBundle.Editor.AssetSearchResult.assetPath
+  fullName: TAssetBundle.Editor.AssetSearchResult.assetPath
+  nameWithType: AssetSearchResult.assetPath
+- uid: TAssetBundle.Editor.AssetSearchResult.buildInfo
+  name: buildInfo
+  href: api/TAssetBundle.Editor.AssetSearchResult.html#TAssetBundle_Editor_AssetSearchResult_buildInfo
+  commentId: F:TAssetBundle.Editor.AssetSearchResult.buildInfo
+  fullName: TAssetBundle.Editor.AssetSearchResult.buildInfo
+  nameWithType: AssetSearchResult.buildInfo
+- uid: TAssetBundle.Editor.AssetSearchResult.bundleName
+  name: bundleName
+  href: api/TAssetBundle.Editor.AssetSearchResult.html#TAssetBundle_Editor_AssetSearchResult_bundleName
+  commentId: F:TAssetBundle.Editor.AssetSearchResult.bundleName
+  fullName: TAssetBundle.Editor.AssetSearchResult.bundleName
+  nameWithType: AssetSearchResult.bundleName
+- uid: TAssetBundle.Editor.AssetSearchResult.manifest
+  name: manifest
+  href: api/TAssetBundle.Editor.AssetSearchResult.html#TAssetBundle_Editor_AssetSearchResult_manifest
+  commentId: F:TAssetBundle.Editor.AssetSearchResult.manifest
+  fullName: TAssetBundle.Editor.AssetSearchResult.manifest
+  nameWithType: AssetSearchResult.manifest
 - uid: TAssetBundle.Editor.ClearCompositionStrategy
   name: ClearCompositionStrategy
   href: api/TAssetBundle.Editor.ClearCompositionStrategy.html
@@ -2655,6 +2560,25 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.ExcludeObjectsStrategy.Run
   nameWithType: ExcludeObjectsStrategy.Run
+- uid: TAssetBundle.Editor.FilePathCollectorEditor
+  name: FilePathCollectorEditor
+  href: api/TAssetBundle.Editor.FilePathCollectorEditor.html
+  commentId: T:TAssetBundle.Editor.FilePathCollectorEditor
+  fullName: TAssetBundle.Editor.FilePathCollectorEditor
+  nameWithType: FilePathCollectorEditor
+- uid: TAssetBundle.Editor.FilePathCollectorEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/TAssetBundle.Editor.FilePathCollectorEditor.html#TAssetBundle_Editor_FilePathCollectorEditor_OnInspectorGUI
+  commentId: M:TAssetBundle.Editor.FilePathCollectorEditor.OnInspectorGUI
+  fullName: TAssetBundle.Editor.FilePathCollectorEditor.OnInspectorGUI()
+  nameWithType: FilePathCollectorEditor.OnInspectorGUI()
+- uid: TAssetBundle.Editor.FilePathCollectorEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/TAssetBundle.Editor.FilePathCollectorEditor.html#TAssetBundle_Editor_FilePathCollectorEditor_OnInspectorGUI_
+  commentId: Overload:TAssetBundle.Editor.FilePathCollectorEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.FilePathCollectorEditor.OnInspectorGUI
+  nameWithType: FilePathCollectorEditor.OnInspectorGUI
 - uid: TAssetBundle.Editor.FixedCompositionStrategy
   name: FixedCompositionStrategy
   href: api/TAssetBundle.Editor.FixedCompositionStrategy.html
@@ -2686,6 +2610,51 @@ references:
   commentId: F:TAssetBundle.Editor.FixedCompositionStrategyData.fixedObjects
   fullName: TAssetBundle.Editor.FixedCompositionStrategyData.fixedObjects
   nameWithType: FixedCompositionStrategyData.fixedObjects
+- uid: TAssetBundle.Editor.IAssetBundleBuilderPluginModule
+  name: IAssetBundleBuilderPluginModule
+  href: api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html
+  commentId: T:TAssetBundle.Editor.IAssetBundleBuilderPluginModule
+  fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule
+  nameWithType: IAssetBundleBuilderPluginModule
+- uid: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle(TAssetBundle.AssetBundleInfo)
+  name: CanPushToBuiltinAssetBundle(AssetBundleInfo)
+  href: api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html#TAssetBundle_Editor_IAssetBundleBuilderPluginModule_CanPushToBuiltinAssetBundle_TAssetBundle_AssetBundleInfo_
+  commentId: M:TAssetBundle.Editor.IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle(TAssetBundle.AssetBundleInfo)
+  fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle(TAssetBundle.AssetBundleInfo)
+  nameWithType: IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle(AssetBundleInfo)
+- uid: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle*
+  name: CanPushToBuiltinAssetBundle
+  href: api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html#TAssetBundle_Editor_IAssetBundleBuilderPluginModule_CanPushToBuiltinAssetBundle_
+  commentId: Overload:TAssetBundle.Editor.IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle
+  nameWithType: IAssetBundleBuilderPluginModule.CanPushToBuiltinAssetBundle
+- uid: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PrepareForBuild(UnityEditor.BuildTarget,TAssetBundle.AssetCatalog)
+  name: PrepareForBuild(BuildTarget, AssetCatalog)
+  href: api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html#TAssetBundle_Editor_IAssetBundleBuilderPluginModule_PrepareForBuild_UnityEditor_BuildTarget_TAssetBundle_AssetCatalog_
+  commentId: M:TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PrepareForBuild(UnityEditor.BuildTarget,TAssetBundle.AssetCatalog)
+  fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PrepareForBuild(UnityEditor.BuildTarget, TAssetBundle.AssetCatalog)
+  nameWithType: IAssetBundleBuilderPluginModule.PrepareForBuild(BuildTarget, AssetCatalog)
+- uid: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PrepareForBuild*
+  name: PrepareForBuild
+  href: api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html#TAssetBundle_Editor_IAssetBundleBuilderPluginModule_PrepareForBuild_
+  commentId: Overload:TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PrepareForBuild
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PrepareForBuild
+  nameWithType: IAssetBundleBuilderPluginModule.PrepareForBuild
+- uid: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PreprocessBuild(UnityEditor.BuildTarget,TAssetBundle.AssetCatalog)
+  name: PreprocessBuild(BuildTarget, AssetCatalog)
+  href: api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html#TAssetBundle_Editor_IAssetBundleBuilderPluginModule_PreprocessBuild_UnityEditor_BuildTarget_TAssetBundle_AssetCatalog_
+  commentId: M:TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PreprocessBuild(UnityEditor.BuildTarget,TAssetBundle.AssetCatalog)
+  fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PreprocessBuild(UnityEditor.BuildTarget, TAssetBundle.AssetCatalog)
+  nameWithType: IAssetBundleBuilderPluginModule.PreprocessBuild(BuildTarget, AssetCatalog)
+- uid: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PreprocessBuild*
+  name: PreprocessBuild
+  href: api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html#TAssetBundle_Editor_IAssetBundleBuilderPluginModule_PreprocessBuild_
+  commentId: Overload:TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PreprocessBuild
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PreprocessBuild
+  nameWithType: IAssetBundleBuilderPluginModule.PreprocessBuild
 - uid: TAssetBundle.Editor.RegexMatchCompositionStrategy
   name: RegexMatchCompositionStrategy
   href: api/TAssetBundle.Editor.RegexMatchCompositionStrategy.html
@@ -2947,6 +2916,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.TAssetBundleManifest.Depth
   nameWithType: TAssetBundleManifest.Depth
+- uid: TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths
+  name: GetAllIncludedAssetPaths()
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_GetAllIncludedAssetPaths
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths()
+  nameWithType: TAssetBundleManifest.GetAllIncludedAssetPaths()
+- uid: TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths*
+  name: GetAllIncludedAssetPaths
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_GetAllIncludedAssetPaths_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths
+  nameWithType: TAssetBundleManifest.GetAllIncludedAssetPaths
 - uid: TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssetPaths
   name: GetNotIncludedAssetPaths()
   href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssetPaths
@@ -2973,6 +2955,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssets
   nameWithType: TAssetBundleManifest.GetNotIncludedAssets
+- uid: TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount
+  name: IncludedAssetCount
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_IncludedAssetCount
+  commentId: P:TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount
+  nameWithType: TAssetBundleManifest.IncludedAssetCount
+- uid: TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount*
+  name: IncludedAssetCount
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_IncludedAssetCount_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount
+  nameWithType: TAssetBundleManifest.IncludedAssetCount
 - uid: TAssetBundle.Editor.TAssetBundleManifest.IsPersistent
   name: IsPersistent
   href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_IsPersistent
@@ -3076,6 +3071,38 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.TAssetBundleManifest.Save
   nameWithType: TAssetBundleManifest.Save
+- uid: TAssetBundle.Editor.TAssetBundleManifest.SearchAssets(System.String)
+  name: SearchAssets(string)
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_SearchAssets_System_String_
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.SearchAssets(System.String)
+  name.vb: SearchAssets(String)
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.SearchAssets(string)
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifest.SearchAssets(String)
+  nameWithType: TAssetBundleManifest.SearchAssets(string)
+  nameWithType.vb: TAssetBundleManifest.SearchAssets(String)
+- uid: TAssetBundle.Editor.TAssetBundleManifest.SearchAssets*
+  name: SearchAssets
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_SearchAssets_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.SearchAssets
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.SearchAssets
+  nameWithType: TAssetBundleManifest.SearchAssets
+- uid: TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo(System.String,TAssetBundle.Editor.AssetSearchResult@)
+  name: TryGetAssetInfo(string, out AssetSearchResult)
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_TryGetAssetInfo_System_String_TAssetBundle_Editor_AssetSearchResult__
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo(System.String,TAssetBundle.Editor.AssetSearchResult@)
+  name.vb: TryGetAssetInfo(String, AssetSearchResult)
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo(string, out TAssetBundle.Editor.AssetSearchResult)
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo(String, TAssetBundle.Editor.AssetSearchResult)
+  nameWithType: TAssetBundleManifest.TryGetAssetInfo(string, out AssetSearchResult)
+  nameWithType.vb: TAssetBundleManifest.TryGetAssetInfo(String, AssetSearchResult)
+- uid: TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo*
+  name: TryGetAssetInfo
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_TryGetAssetInfo_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo
+  nameWithType: TAssetBundleManifest.TryGetAssetInfo
 - uid: TAssetBundle.Editor.TAssetBundleManifest.assetBundleBuildInfos
   name: assetBundleBuildInfos
   href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_assetBundleBuildInfos
@@ -3790,6 +3817,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.AssetManager.ClearPrefabPools
   nameWithType: AssetManager.ClearPrefabPools
+- uid: TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded
+  name: ClearPrefabPoolsIfLoaded()
+  href: api/TAssetBundle.Extensions.AssetManager.html#TAssetBundle_Extensions_AssetManager_ClearPrefabPoolsIfLoaded
+  commentId: M:TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded
+  fullName: TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded()
+  nameWithType: AssetManager.ClearPrefabPoolsIfLoaded()
+- uid: TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded*
+  name: ClearPrefabPoolsIfLoaded
+  href: api/TAssetBundle.Extensions.AssetManager.html#TAssetBundle_Extensions_AssetManager_ClearPrefabPoolsIfLoaded_
+  commentId: Overload:TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded
+  nameWithType: AssetManager.ClearPrefabPoolsIfLoaded
 - uid: TAssetBundle.Extensions.AssetManager.GetPrefab(System.String,UnityEngine.Transform,System.Action{UnityEngine.GameObject},System.Boolean,System.Boolean,System.Object)
   name: GetPrefab(string, Transform, Action<GameObject>, bool, bool, object)
   href: api/TAssetBundle.Extensions.AssetManager.html#TAssetBundle_Extensions_AssetManager_GetPrefab_System_String_UnityEngine_Transform_System_Action_UnityEngine_GameObject__System_Boolean_System_Boolean_System_Object_
@@ -4341,6 +4381,28 @@ references:
   commentId: T:TAssetBundle.Extensions.AsyncOperationExtensions
   fullName: TAssetBundle.Extensions.AsyncOperationExtensions
   nameWithType: AsyncOperationExtensions
+- uid: TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter(TAssetBundle.Extensions.AsyncOperation,System.Threading.Tasks.Task)
+  name: CompleteAfter(AsyncOperation, Task)
+  href: api/TAssetBundle.Extensions.AsyncOperationExtensions.html#TAssetBundle_Extensions_AsyncOperationExtensions_CompleteAfter_TAssetBundle_Extensions_AsyncOperation_System_Threading_Tasks_Task_
+  commentId: M:TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter(TAssetBundle.Extensions.AsyncOperation,System.Threading.Tasks.Task)
+  fullName: TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter(TAssetBundle.Extensions.AsyncOperation, System.Threading.Tasks.Task)
+  nameWithType: AsyncOperationExtensions.CompleteAfter(AsyncOperation, Task)
+- uid: TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter*
+  name: CompleteAfter
+  href: api/TAssetBundle.Extensions.AsyncOperationExtensions.html#TAssetBundle_Extensions_AsyncOperationExtensions_CompleteAfter_
+  commentId: Overload:TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter
+  nameWithType: AsyncOperationExtensions.CompleteAfter
+- uid: TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter``1(TAssetBundle.Extensions.AsyncOperation{``0},System.Threading.Tasks.Task{``0})
+  name: CompleteAfter<T>(AsyncOperation<T>, Task<T>)
+  href: api/TAssetBundle.Extensions.AsyncOperationExtensions.html#TAssetBundle_Extensions_AsyncOperationExtensions_CompleteAfter__1_TAssetBundle_Extensions_AsyncOperation___0__System_Threading_Tasks_Task___0__
+  commentId: M:TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter``1(TAssetBundle.Extensions.AsyncOperation{``0},System.Threading.Tasks.Task{``0})
+  name.vb: CompleteAfter(Of T)(AsyncOperation(Of T), Task(Of T))
+  fullName: TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter<T>(TAssetBundle.Extensions.AsyncOperation<T>, System.Threading.Tasks.Task<T>)
+  fullName.vb: TAssetBundle.Extensions.AsyncOperationExtensions.CompleteAfter(Of T)(TAssetBundle.Extensions.AsyncOperation(Of T), System.Threading.Tasks.Task(Of T))
+  nameWithType: AsyncOperationExtensions.CompleteAfter<T>(AsyncOperation<T>, Task<T>)
+  nameWithType.vb: AsyncOperationExtensions.CompleteAfter(Of T)(AsyncOperation(Of T), Task(Of T))
 - uid: TAssetBundle.Extensions.AsyncOperationExtensions.ToTask(TAssetBundle.Extensions.AsyncOperation)
   name: ToTask(AsyncOperation)
   href: api/TAssetBundle.Extensions.AsyncOperationExtensions.html#TAssetBundle_Extensions_AsyncOperationExtensions_ToTask_TAssetBundle_Extensions_AsyncOperation_
@@ -4406,6 +4468,23 @@ references:
   fullName.vb: TAssetBundle.Extensions.AsyncOperation(Of T).Complete
   nameWithType: AsyncOperation<T>.Complete
   nameWithType.vb: AsyncOperation(Of T).Complete
+- uid: TAssetBundle.Extensions.AsyncOperation`1.New
+  name: New()
+  href: api/TAssetBundle.Extensions.AsyncOperation-1.html#TAssetBundle_Extensions_AsyncOperation_1_New
+  commentId: M:TAssetBundle.Extensions.AsyncOperation`1.New
+  fullName: TAssetBundle.Extensions.AsyncOperation<T>.New()
+  fullName.vb: TAssetBundle.Extensions.AsyncOperation(Of T).New()
+  nameWithType: AsyncOperation<T>.New()
+  nameWithType.vb: AsyncOperation(Of T).New()
+- uid: TAssetBundle.Extensions.AsyncOperation`1.New*
+  name: New
+  href: api/TAssetBundle.Extensions.AsyncOperation-1.html#TAssetBundle_Extensions_AsyncOperation_1_New_
+  commentId: Overload:TAssetBundle.Extensions.AsyncOperation`1.New
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.AsyncOperation<T>.New
+  fullName.vb: TAssetBundle.Extensions.AsyncOperation(Of T).New
+  nameWithType: AsyncOperation<T>.New
+  nameWithType.vb: AsyncOperation(Of T).New
 - uid: TAssetBundle.Extensions.AsyncOperation`1.OnCompleted
   name: OnCompleted
   href: api/TAssetBundle.Extensions.AsyncOperation-1.html#TAssetBundle_Extensions_AsyncOperation_1_OnCompleted
@@ -4431,6 +4510,69 @@ references:
   fullName.vb: TAssetBundle.Extensions.AsyncOperation(Of T).Result
   nameWithType: AsyncOperation<T>.Result
   nameWithType.vb: AsyncOperation(Of T).Result
+- uid: TAssetBundle.Extensions.Editor
+  name: TAssetBundle.Extensions.Editor
+  href: api/TAssetBundle.Extensions.Editor.html
+  commentId: N:TAssetBundle.Extensions.Editor
+  fullName: TAssetBundle.Extensions.Editor
+  nameWithType: TAssetBundle.Extensions.Editor
+- uid: TAssetBundle.Extensions.Editor.AssetLinkerInspector
+  name: AssetLinkerInspector
+  href: api/TAssetBundle.Extensions.Editor.AssetLinkerInspector.html
+  commentId: T:TAssetBundle.Extensions.Editor.AssetLinkerInspector
+  fullName: TAssetBundle.Extensions.Editor.AssetLinkerInspector
+  nameWithType: AssetLinkerInspector
+- uid: TAssetBundle.Extensions.Editor.AssetLinkerInspector.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/TAssetBundle.Extensions.Editor.AssetLinkerInspector.html#TAssetBundle_Extensions_Editor_AssetLinkerInspector_OnInspectorGUI
+  commentId: M:TAssetBundle.Extensions.Editor.AssetLinkerInspector.OnInspectorGUI
+  fullName: TAssetBundle.Extensions.Editor.AssetLinkerInspector.OnInspectorGUI()
+  nameWithType: AssetLinkerInspector.OnInspectorGUI()
+- uid: TAssetBundle.Extensions.Editor.AssetLinkerInspector.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/TAssetBundle.Extensions.Editor.AssetLinkerInspector.html#TAssetBundle_Extensions_Editor_AssetLinkerInspector_OnInspectorGUI_
+  commentId: Overload:TAssetBundle.Extensions.Editor.AssetLinkerInspector.OnInspectorGUI
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.Editor.AssetLinkerInspector.OnInspectorGUI
+  nameWithType: AssetLinkerInspector.OnInspectorGUI
+- uid: TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector
+  name: AssetPrefabPoolInspector
+  href: api/TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.html
+  commentId: T:TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector
+  fullName: TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector
+  nameWithType: AssetPrefabPoolInspector
+- uid: TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.html#TAssetBundle_Extensions_Editor_AssetPrefabPoolInspector_OnInspectorGUI
+  commentId: M:TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.OnInspectorGUI
+  fullName: TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.OnInspectorGUI()
+  nameWithType: AssetPrefabPoolInspector.OnInspectorGUI()
+- uid: TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.html#TAssetBundle_Extensions_Editor_AssetPrefabPoolInspector_OnInspectorGUI_
+  commentId: Overload:TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.OnInspectorGUI
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.OnInspectorGUI
+  nameWithType: AssetPrefabPoolInspector.OnInspectorGUI
+- uid: TAssetBundle.Extensions.Editor.PrefabPoolInspector
+  name: PrefabPoolInspector
+  href: api/TAssetBundle.Extensions.Editor.PrefabPoolInspector.html
+  commentId: T:TAssetBundle.Extensions.Editor.PrefabPoolInspector
+  fullName: TAssetBundle.Extensions.Editor.PrefabPoolInspector
+  nameWithType: PrefabPoolInspector
+- uid: TAssetBundle.Extensions.Editor.PrefabPoolInspector.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/TAssetBundle.Extensions.Editor.PrefabPoolInspector.html#TAssetBundle_Extensions_Editor_PrefabPoolInspector_OnInspectorGUI
+  commentId: M:TAssetBundle.Extensions.Editor.PrefabPoolInspector.OnInspectorGUI
+  fullName: TAssetBundle.Extensions.Editor.PrefabPoolInspector.OnInspectorGUI()
+  nameWithType: PrefabPoolInspector.OnInspectorGUI()
+- uid: TAssetBundle.Extensions.Editor.PrefabPoolInspector.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/TAssetBundle.Extensions.Editor.PrefabPoolInspector.html#TAssetBundle_Extensions_Editor_PrefabPoolInspector_OnInspectorGUI_
+  commentId: Overload:TAssetBundle.Extensions.Editor.PrefabPoolInspector.OnInspectorGUI
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.Editor.PrefabPoolInspector.OnInspectorGUI
+  nameWithType: PrefabPoolInspector.OnInspectorGUI
 - uid: TAssetBundle.Extensions.GetProgressDelegate
   name: GetProgressDelegate
   href: api/TAssetBundle.Extensions.GetProgressDelegate.html
@@ -4885,6 +5027,50 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.PrefabPooledObjectExtensions.FreePrefab
   nameWithType: PrefabPooledObjectExtensions.FreePrefab
+- uid: TAssetBundle.FilePathCollector
+  name: FilePathCollector
+  href: api/TAssetBundle.FilePathCollector.html
+  commentId: T:TAssetBundle.FilePathCollector
+  fullName: TAssetBundle.FilePathCollector
+  nameWithType: FilePathCollector
+- uid: TAssetBundle.FilePathCollector.Paths
+  name: Paths
+  href: api/TAssetBundle.FilePathCollector.html#TAssetBundle_FilePathCollector_Paths
+  commentId: P:TAssetBundle.FilePathCollector.Paths
+  fullName: TAssetBundle.FilePathCollector.Paths
+  nameWithType: FilePathCollector.Paths
+- uid: TAssetBundle.FilePathCollector.Paths*
+  name: Paths
+  href: api/TAssetBundle.FilePathCollector.html#TAssetBundle_FilePathCollector_Paths_
+  commentId: Overload:TAssetBundle.FilePathCollector.Paths
+  isSpec: "True"
+  fullName: TAssetBundle.FilePathCollector.Paths
+  nameWithType: FilePathCollector.Paths
+- uid: TAssetBundle.FilePathCollector.RootPath
+  name: RootPath
+  href: api/TAssetBundle.FilePathCollector.html#TAssetBundle_FilePathCollector_RootPath
+  commentId: P:TAssetBundle.FilePathCollector.RootPath
+  fullName: TAssetBundle.FilePathCollector.RootPath
+  nameWithType: FilePathCollector.RootPath
+- uid: TAssetBundle.FilePathCollector.RootPath*
+  name: RootPath
+  href: api/TAssetBundle.FilePathCollector.html#TAssetBundle_FilePathCollector_RootPath_
+  commentId: Overload:TAssetBundle.FilePathCollector.RootPath
+  isSpec: "True"
+  fullName: TAssetBundle.FilePathCollector.RootPath
+  nameWithType: FilePathCollector.RootPath
+- uid: TAssetBundle.FilePathCollector.recursive
+  name: recursive
+  href: api/TAssetBundle.FilePathCollector.html#TAssetBundle_FilePathCollector_recursive
+  commentId: F:TAssetBundle.FilePathCollector.recursive
+  fullName: TAssetBundle.FilePathCollector.recursive
+  nameWithType: FilePathCollector.recursive
+- uid: TAssetBundle.FilePathCollector.searchPattern
+  name: searchPattern
+  href: api/TAssetBundle.FilePathCollector.html#TAssetBundle_FilePathCollector_searchPattern
+  commentId: F:TAssetBundle.FilePathCollector.searchPattern
+  fullName: TAssetBundle.FilePathCollector.searchPattern
+  nameWithType: FilePathCollector.searchPattern
 - uid: TAssetBundle.FolderAssetRef
   name: FolderAssetRef
   href: api/TAssetBundle.FolderAssetRef.html
@@ -4970,6 +5156,257 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.IActiveAssetBundleInfo.Dependencies
   nameWithType: IActiveAssetBundleInfo.Dependencies
+- uid: TAssetBundle.IAssetBundleManager
+  name: IAssetBundleManager
+  href: api/TAssetBundle.IAssetBundleManager.html
+  commentId: T:TAssetBundle.IAssetBundleManager
+  fullName: TAssetBundle.IAssetBundleManager
+  nameWithType: IAssetBundleManager
+- uid: TAssetBundle.IAssetBundleManager.AssetBundleCacheManager
+  name: AssetBundleCacheManager
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_AssetBundleCacheManager
+  commentId: P:TAssetBundle.IAssetBundleManager.AssetBundleCacheManager
+  fullName: TAssetBundle.IAssetBundleManager.AssetBundleCacheManager
+  nameWithType: IAssetBundleManager.AssetBundleCacheManager
+- uid: TAssetBundle.IAssetBundleManager.AssetBundleCacheManager*
+  name: AssetBundleCacheManager
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_AssetBundleCacheManager_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.AssetBundleCacheManager
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.AssetBundleCacheManager
+  nameWithType: IAssetBundleManager.AssetBundleCacheManager
+- uid: TAssetBundle.IAssetBundleManager.CryptoSerializer
+  name: CryptoSerializer
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_CryptoSerializer
+  commentId: P:TAssetBundle.IAssetBundleManager.CryptoSerializer
+  fullName: TAssetBundle.IAssetBundleManager.CryptoSerializer
+  nameWithType: IAssetBundleManager.CryptoSerializer
+- uid: TAssetBundle.IAssetBundleManager.CryptoSerializer*
+  name: CryptoSerializer
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_CryptoSerializer_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.CryptoSerializer
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.CryptoSerializer
+  nameWithType: IAssetBundleManager.CryptoSerializer
+- uid: TAssetBundle.IAssetBundleManager.EnableDebuggingLog
+  name: EnableDebuggingLog
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_EnableDebuggingLog
+  commentId: P:TAssetBundle.IAssetBundleManager.EnableDebuggingLog
+  fullName: TAssetBundle.IAssetBundleManager.EnableDebuggingLog
+  nameWithType: IAssetBundleManager.EnableDebuggingLog
+- uid: TAssetBundle.IAssetBundleManager.EnableDebuggingLog*
+  name: EnableDebuggingLog
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_EnableDebuggingLog_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.EnableDebuggingLog
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.EnableDebuggingLog
+  nameWithType: IAssetBundleManager.EnableDebuggingLog
+- uid: TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync(System.String)
+  name: ExistsLocalFileAsync(string)
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_ExistsLocalFileAsync_System_String_
+  commentId: M:TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync(System.String)
+  name.vb: ExistsLocalFileAsync(String)
+  fullName: TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync(string)
+  fullName.vb: TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync(String)
+  nameWithType: IAssetBundleManager.ExistsLocalFileAsync(string)
+  nameWithType.vb: IAssetBundleManager.ExistsLocalFileAsync(String)
+- uid: TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync*
+  name: ExistsLocalFileAsync
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_ExistsLocalFileAsync_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync
+  nameWithType: IAssetBundleManager.ExistsLocalFileAsync
+- uid: TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle(TAssetBundle.AssetBundleRuntimeInfo)
+  name: IsBuiltinAssetBundle(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_IsBuiltinAssetBundle_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: IAssetBundleManager.IsBuiltinAssetBundle(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle*
+  name: IsBuiltinAssetBundle
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_IsBuiltinAssetBundle_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle
+  nameWithType: IAssetBundleManager.IsBuiltinAssetBundle
+- uid: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync(TAssetBundle.InnerOperations,System.String,TAssetBundle.AssetBundleRuntimeInfo)
+  name: LoadAssetBundleFromFileAsync(InnerOperations, string, AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_LoadAssetBundleFromFileAsync_TAssetBundle_InnerOperations_System_String_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync(TAssetBundle.InnerOperations,System.String,TAssetBundle.AssetBundleRuntimeInfo)
+  name.vb: LoadAssetBundleFromFileAsync(InnerOperations, String, AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync(TAssetBundle.InnerOperations, string, TAssetBundle.AssetBundleRuntimeInfo)
+  fullName.vb: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync(TAssetBundle.InnerOperations, String, TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: IAssetBundleManager.LoadAssetBundleFromFileAsync(InnerOperations, string, AssetBundleRuntimeInfo)
+  nameWithType.vb: IAssetBundleManager.LoadAssetBundleFromFileAsync(InnerOperations, String, AssetBundleRuntimeInfo)
+- uid: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync*
+  name: LoadAssetBundleFromFileAsync
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_LoadAssetBundleFromFileAsync_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync
+  nameWithType: IAssetBundleManager.LoadAssetBundleFromFileAsync
+- uid: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync(TAssetBundle.InnerOperations,System.Byte[],System.Boolean)
+  name: LoadAssetBundleFromMemoryAsync(InnerOperations, byte[], bool)
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_LoadAssetBundleFromMemoryAsync_TAssetBundle_InnerOperations_System_Byte___System_Boolean_
+  commentId: M:TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync(TAssetBundle.InnerOperations,System.Byte[],System.Boolean)
+  name.vb: LoadAssetBundleFromMemoryAsync(InnerOperations, Byte(), Boolean)
+  fullName: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync(TAssetBundle.InnerOperations, byte[], bool)
+  fullName.vb: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync(TAssetBundle.InnerOperations, Byte(), Boolean)
+  nameWithType: IAssetBundleManager.LoadAssetBundleFromMemoryAsync(InnerOperations, byte[], bool)
+  nameWithType.vb: IAssetBundleManager.LoadAssetBundleFromMemoryAsync(InnerOperations, Byte(), Boolean)
+- uid: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync*
+  name: LoadAssetBundleFromMemoryAsync
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_LoadAssetBundleFromMemoryAsync_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync
+  nameWithType: IAssetBundleManager.LoadAssetBundleFromMemoryAsync
+- uid: TAssetBundle.IAssetBundleManager.LocalPath
+  name: LocalPath
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_LocalPath
+  commentId: P:TAssetBundle.IAssetBundleManager.LocalPath
+  fullName: TAssetBundle.IAssetBundleManager.LocalPath
+  nameWithType: IAssetBundleManager.LocalPath
+- uid: TAssetBundle.IAssetBundleManager.LocalPath*
+  name: LocalPath
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_LocalPath_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.LocalPath
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.LocalPath
+  nameWithType: IAssetBundleManager.LocalPath
+- uid: TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync(System.String,System.Boolean)
+  name: ReadAllBytesLocalFileAsync(string, bool)
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_ReadAllBytesLocalFileAsync_System_String_System_Boolean_
+  commentId: M:TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync(System.String,System.Boolean)
+  name.vb: ReadAllBytesLocalFileAsync(String, Boolean)
+  fullName: TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync(string, bool)
+  fullName.vb: TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync(String, Boolean)
+  nameWithType: IAssetBundleManager.ReadAllBytesLocalFileAsync(string, bool)
+  nameWithType.vb: IAssetBundleManager.ReadAllBytesLocalFileAsync(String, Boolean)
+- uid: TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync*
+  name: ReadAllBytesLocalFileAsync
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_ReadAllBytesLocalFileAsync_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync
+  nameWithType: IAssetBundleManager.ReadAllBytesLocalFileAsync
+- uid: TAssetBundle.IAssetBundleManager.RemoteUrl
+  name: RemoteUrl
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_RemoteUrl
+  commentId: P:TAssetBundle.IAssetBundleManager.RemoteUrl
+  fullName: TAssetBundle.IAssetBundleManager.RemoteUrl
+  nameWithType: IAssetBundleManager.RemoteUrl
+- uid: TAssetBundle.IAssetBundleManager.RemoteUrl*
+  name: RemoteUrl
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_RemoteUrl_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.RemoteUrl
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.RemoteUrl
+  nameWithType: IAssetBundleManager.RemoteUrl
+- uid: TAssetBundle.IAssetBundleManager.Settings
+  name: Settings
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_Settings
+  commentId: P:TAssetBundle.IAssetBundleManager.Settings
+  fullName: TAssetBundle.IAssetBundleManager.Settings
+  nameWithType: IAssetBundleManager.Settings
+- uid: TAssetBundle.IAssetBundleManager.Settings*
+  name: Settings
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_Settings_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.Settings
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.Settings
+  nameWithType: IAssetBundleManager.Settings
+- uid: TAssetBundle.IAssetBundleManager.TagComparer
+  name: TagComparer
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_TagComparer
+  commentId: P:TAssetBundle.IAssetBundleManager.TagComparer
+  fullName: TAssetBundle.IAssetBundleManager.TagComparer
+  nameWithType: IAssetBundleManager.TagComparer
+- uid: TAssetBundle.IAssetBundleManager.TagComparer*
+  name: TagComparer
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_TagComparer_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.TagComparer
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.TagComparer
+  nameWithType: IAssetBundleManager.TagComparer
+- uid: TAssetBundle.IAssetBundleManager.WebRequest
+  name: WebRequest
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_WebRequest
+  commentId: P:TAssetBundle.IAssetBundleManager.WebRequest
+  fullName: TAssetBundle.IAssetBundleManager.WebRequest
+  nameWithType: IAssetBundleManager.WebRequest
+- uid: TAssetBundle.IAssetBundleManager.WebRequest*
+  name: WebRequest
+  href: api/TAssetBundle.IAssetBundleManager.html#TAssetBundle_IAssetBundleManager_WebRequest_
+  commentId: Overload:TAssetBundle.IAssetBundleManager.WebRequest
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleManager.WebRequest
+  nameWithType: IAssetBundleManager.WebRequest
+- uid: TAssetBundle.IAssetBundleProvider
+  name: IAssetBundleProvider
+  href: api/TAssetBundle.IAssetBundleProvider.html
+  commentId: T:TAssetBundle.IAssetBundleProvider
+  fullName: TAssetBundle.IAssetBundleProvider
+  nameWithType: IAssetBundleProvider
+- uid: TAssetBundle.IAssetBundleProvider.IsCached(TAssetBundle.AssetBundleRuntimeInfo)
+  name: IsCached(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.IAssetBundleProvider.html#TAssetBundle_IAssetBundleProvider_IsCached_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.IAssetBundleProvider.IsCached(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.IAssetBundleProvider.IsCached(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: IAssetBundleProvider.IsCached(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.IAssetBundleProvider.IsCached*
+  name: IsCached
+  href: api/TAssetBundle.IAssetBundleProvider.html#TAssetBundle_IAssetBundleProvider_IsCached_
+  commentId: Overload:TAssetBundle.IAssetBundleProvider.IsCached
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleProvider.IsCached
+  nameWithType: IAssetBundleProvider.IsCached
+- uid: TAssetBundle.IAssetBundleProvider.IsSupported(TAssetBundle.AssetBundleRuntimeInfo)
+  name: IsSupported(AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.IAssetBundleProvider.html#TAssetBundle_IAssetBundleProvider_IsSupported_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.IAssetBundleProvider.IsSupported(TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.IAssetBundleProvider.IsSupported(TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: IAssetBundleProvider.IsSupported(AssetBundleRuntimeInfo)
+- uid: TAssetBundle.IAssetBundleProvider.IsSupported*
+  name: IsSupported
+  href: api/TAssetBundle.IAssetBundleProvider.html#TAssetBundle_IAssetBundleProvider_IsSupported_
+  commentId: Overload:TAssetBundle.IAssetBundleProvider.IsSupported
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleProvider.IsSupported
+  nameWithType: IAssetBundleProvider.IsSupported
+- uid: TAssetBundle.IAssetBundleProvider.LoadAssetBundle(TAssetBundle.InnerOperations,TAssetBundle.AssetBundleRuntimeInfo)
+  name: LoadAssetBundle(InnerOperations, AssetBundleRuntimeInfo)
+  href: api/TAssetBundle.IAssetBundleProvider.html#TAssetBundle_IAssetBundleProvider_LoadAssetBundle_TAssetBundle_InnerOperations_TAssetBundle_AssetBundleRuntimeInfo_
+  commentId: M:TAssetBundle.IAssetBundleProvider.LoadAssetBundle(TAssetBundle.InnerOperations,TAssetBundle.AssetBundleRuntimeInfo)
+  fullName: TAssetBundle.IAssetBundleProvider.LoadAssetBundle(TAssetBundle.InnerOperations, TAssetBundle.AssetBundleRuntimeInfo)
+  nameWithType: IAssetBundleProvider.LoadAssetBundle(InnerOperations, AssetBundleRuntimeInfo)
+- uid: TAssetBundle.IAssetBundleProvider.LoadAssetBundle*
+  name: LoadAssetBundle
+  href: api/TAssetBundle.IAssetBundleProvider.html#TAssetBundle_IAssetBundleProvider_LoadAssetBundle_
+  commentId: Overload:TAssetBundle.IAssetBundleProvider.LoadAssetBundle
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleProvider.LoadAssetBundle
+  nameWithType: IAssetBundleProvider.LoadAssetBundle
+- uid: TAssetBundle.IAssetBundleProviderPluginModule
+  name: IAssetBundleProviderPluginModule
+  href: api/TAssetBundle.IAssetBundleProviderPluginModule.html
+  commentId: T:TAssetBundle.IAssetBundleProviderPluginModule
+  fullName: TAssetBundle.IAssetBundleProviderPluginModule
+  nameWithType: IAssetBundleProviderPluginModule
+- uid: TAssetBundle.IAssetBundleProviderPluginModule.CreateAssetBundleProvider(TAssetBundle.IAssetBundleManager)
+  name: CreateAssetBundleProvider(IAssetBundleManager)
+  href: api/TAssetBundle.IAssetBundleProviderPluginModule.html#TAssetBundle_IAssetBundleProviderPluginModule_CreateAssetBundleProvider_TAssetBundle_IAssetBundleManager_
+  commentId: M:TAssetBundle.IAssetBundleProviderPluginModule.CreateAssetBundleProvider(TAssetBundle.IAssetBundleManager)
+  fullName: TAssetBundle.IAssetBundleProviderPluginModule.CreateAssetBundleProvider(TAssetBundle.IAssetBundleManager)
+  nameWithType: IAssetBundleProviderPluginModule.CreateAssetBundleProvider(IAssetBundleManager)
+- uid: TAssetBundle.IAssetBundleProviderPluginModule.CreateAssetBundleProvider*
+  name: CreateAssetBundleProvider
+  href: api/TAssetBundle.IAssetBundleProviderPluginModule.html#TAssetBundle_IAssetBundleProviderPluginModule_CreateAssetBundleProvider_
+  commentId: Overload:TAssetBundle.IAssetBundleProviderPluginModule.CreateAssetBundleProvider
+  isSpec: "True"
+  fullName: TAssetBundle.IAssetBundleProviderPluginModule.CreateAssetBundleProvider
+  nameWithType: IAssetBundleProviderPluginModule.CreateAssetBundleProvider
 - uid: TAssetBundle.IAssetCatalogComparer
   name: IAssetCatalogComparer
   href: api/TAssetBundle.IAssetCatalogComparer.html
@@ -5021,64 +5458,6 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.IAssetCatalogInfo.Name
   nameWithType: IAssetCatalogInfo.Name
-- uid: TAssetBundle.IAssetHandle
-  name: IAssetHandle
-  href: api/TAssetBundle.IAssetHandle.html
-  commentId: T:TAssetBundle.IAssetHandle
-  fullName: TAssetBundle.IAssetHandle
-  nameWithType: IAssetHandle
-- uid: TAssetBundle.IAssetHandle.Info
-  name: Info
-  href: api/TAssetBundle.IAssetHandle.html#TAssetBundle_IAssetHandle_Info
-  commentId: P:TAssetBundle.IAssetHandle.Info
-  fullName: TAssetBundle.IAssetHandle.Info
-  nameWithType: IAssetHandle.Info
-- uid: TAssetBundle.IAssetHandle.Info*
-  name: Info
-  href: api/TAssetBundle.IAssetHandle.html#TAssetBundle_IAssetHandle_Info_
-  commentId: Overload:TAssetBundle.IAssetHandle.Info
-  isSpec: "True"
-  fullName: TAssetBundle.IAssetHandle.Info
-  nameWithType: IAssetHandle.Info
-- uid: TAssetBundle.IAssetHandle.IsLoaded
-  name: IsLoaded
-  href: api/TAssetBundle.IAssetHandle.html#TAssetBundle_IAssetHandle_IsLoaded
-  commentId: P:TAssetBundle.IAssetHandle.IsLoaded
-  fullName: TAssetBundle.IAssetHandle.IsLoaded
-  nameWithType: IAssetHandle.IsLoaded
-- uid: TAssetBundle.IAssetHandle.IsLoaded*
-  name: IsLoaded
-  href: api/TAssetBundle.IAssetHandle.html#TAssetBundle_IAssetHandle_IsLoaded_
-  commentId: Overload:TAssetBundle.IAssetHandle.IsLoaded
-  isSpec: "True"
-  fullName: TAssetBundle.IAssetHandle.IsLoaded
-  nameWithType: IAssetHandle.IsLoaded
-- uid: TAssetBundle.IAssetHandle`1
-  name: IAssetHandle<T>
-  href: api/TAssetBundle.IAssetHandle-1.html
-  commentId: T:TAssetBundle.IAssetHandle`1
-  name.vb: IAssetHandle(Of T)
-  fullName: TAssetBundle.IAssetHandle<T>
-  fullName.vb: TAssetBundle.IAssetHandle(Of T)
-  nameWithType: IAssetHandle<T>
-  nameWithType.vb: IAssetHandle(Of T)
-- uid: TAssetBundle.IAssetHandle`1.Get
-  name: Get()
-  href: api/TAssetBundle.IAssetHandle-1.html#TAssetBundle_IAssetHandle_1_Get
-  commentId: M:TAssetBundle.IAssetHandle`1.Get
-  fullName: TAssetBundle.IAssetHandle<T>.Get()
-  fullName.vb: TAssetBundle.IAssetHandle(Of T).Get()
-  nameWithType: IAssetHandle<T>.Get()
-  nameWithType.vb: IAssetHandle(Of T).Get()
-- uid: TAssetBundle.IAssetHandle`1.Get*
-  name: Get
-  href: api/TAssetBundle.IAssetHandle-1.html#TAssetBundle_IAssetHandle_1_Get_
-  commentId: Overload:TAssetBundle.IAssetHandle`1.Get
-  isSpec: "True"
-  fullName: TAssetBundle.IAssetHandle<T>.Get
-  fullName.vb: TAssetBundle.IAssetHandle(Of T).Get
-  nameWithType: IAssetHandle<T>.Get
-  nameWithType.vb: IAssetHandle(Of T).Get
 - uid: TAssetBundle.IAssetInfo
   name: IAssetInfo
   href: api/TAssetBundle.IAssetInfo.html
@@ -5204,6 +5583,37 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.IAsyncOperationPool.Push
   nameWithType: IAsyncOperationPool.Push
+- uid: TAssetBundle.IInnerOperation
+  name: IInnerOperation
+  href: api/TAssetBundle.IInnerOperation.html
+  commentId: T:TAssetBundle.IInnerOperation
+  fullName: TAssetBundle.IInnerOperation
+  nameWithType: IInnerOperation
+- uid: TAssetBundle.IInnerOperation.Progress
+  name: Progress
+  href: api/TAssetBundle.IInnerOperation.html#TAssetBundle_IInnerOperation_Progress
+  commentId: P:TAssetBundle.IInnerOperation.Progress
+  fullName: TAssetBundle.IInnerOperation.Progress
+  nameWithType: IInnerOperation.Progress
+- uid: TAssetBundle.IInnerOperation.Progress*
+  name: Progress
+  href: api/TAssetBundle.IInnerOperation.html#TAssetBundle_IInnerOperation_Progress_
+  commentId: Overload:TAssetBundle.IInnerOperation.Progress
+  isSpec: "True"
+  fullName: TAssetBundle.IInnerOperation.Progress
+  nameWithType: IInnerOperation.Progress
+- uid: TAssetBundle.IPlugin
+  name: IPlugin
+  href: api/TAssetBundle.IPlugin.html
+  commentId: T:TAssetBundle.IPlugin
+  fullName: TAssetBundle.IPlugin
+  nameWithType: IPlugin
+- uid: TAssetBundle.IPluginModule
+  name: IPluginModule
+  href: api/TAssetBundle.IPluginModule.html
+  commentId: T:TAssetBundle.IPluginModule
+  fullName: TAssetBundle.IPluginModule
+  nameWithType: IPluginModule
 - uid: TAssetBundle.IReferenceCount
   name: IReferenceCount
   href: api/TAssetBundle.IReferenceCount.html
@@ -5245,6 +5655,77 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.ITagComparer.IsInclude
   nameWithType: ITagComparer.IsInclude
+- uid: TAssetBundle.InnerOperations
+  name: InnerOperations
+  href: api/TAssetBundle.InnerOperations.html
+  commentId: T:TAssetBundle.InnerOperations
+  fullName: TAssetBundle.InnerOperations
+  nameWithType: InnerOperations
+- uid: TAssetBundle.InnerOperations.Add(TAssetBundle.IInnerOperation)
+  name: Add(IInnerOperation)
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_Add_TAssetBundle_IInnerOperation_
+  commentId: M:TAssetBundle.InnerOperations.Add(TAssetBundle.IInnerOperation)
+  fullName: TAssetBundle.InnerOperations.Add(TAssetBundle.IInnerOperation)
+  nameWithType: InnerOperations.Add(IInnerOperation)
+- uid: TAssetBundle.InnerOperations.Add*
+  name: Add
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_Add_
+  commentId: Overload:TAssetBundle.InnerOperations.Add
+  isSpec: "True"
+  fullName: TAssetBundle.InnerOperations.Add
+  nameWithType: InnerOperations.Add
+- uid: TAssetBundle.InnerOperations.Clear
+  name: Clear()
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_Clear
+  commentId: M:TAssetBundle.InnerOperations.Clear
+  fullName: TAssetBundle.InnerOperations.Clear()
+  nameWithType: InnerOperations.Clear()
+- uid: TAssetBundle.InnerOperations.Clear*
+  name: Clear
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_Clear_
+  commentId: Overload:TAssetBundle.InnerOperations.Clear
+  isSpec: "True"
+  fullName: TAssetBundle.InnerOperations.Clear
+  nameWithType: InnerOperations.Clear
+- uid: TAssetBundle.InnerOperations.PopCount
+  name: PopCount()
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_PopCount
+  commentId: M:TAssetBundle.InnerOperations.PopCount
+  fullName: TAssetBundle.InnerOperations.PopCount()
+  nameWithType: InnerOperations.PopCount()
+- uid: TAssetBundle.InnerOperations.PopCount*
+  name: PopCount
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_PopCount_
+  commentId: Overload:TAssetBundle.InnerOperations.PopCount
+  isSpec: "True"
+  fullName: TAssetBundle.InnerOperations.PopCount
+  nameWithType: InnerOperations.PopCount
+- uid: TAssetBundle.InnerOperations.Progress
+  name: Progress
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_Progress
+  commentId: P:TAssetBundle.InnerOperations.Progress
+  fullName: TAssetBundle.InnerOperations.Progress
+  nameWithType: InnerOperations.Progress
+- uid: TAssetBundle.InnerOperations.Progress*
+  name: Progress
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_Progress_
+  commentId: Overload:TAssetBundle.InnerOperations.Progress
+  isSpec: "True"
+  fullName: TAssetBundle.InnerOperations.Progress
+  nameWithType: InnerOperations.Progress
+- uid: TAssetBundle.InnerOperations.PushCount
+  name: PushCount()
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_PushCount
+  commentId: M:TAssetBundle.InnerOperations.PushCount
+  fullName: TAssetBundle.InnerOperations.PushCount()
+  nameWithType: InnerOperations.PushCount()
+- uid: TAssetBundle.InnerOperations.PushCount*
+  name: PushCount
+  href: api/TAssetBundle.InnerOperations.html#TAssetBundle_InnerOperations_PushCount_
+  commentId: Overload:TAssetBundle.InnerOperations.PushCount
+  isSpec: "True"
+  fullName: TAssetBundle.InnerOperations.PushCount
+  nameWithType: InnerOperations.PushCount
 - uid: TAssetBundle.JsonCatalogSerializer
   name: JsonCatalogSerializer
   href: api/TAssetBundle.JsonCatalogSerializer.html
@@ -5338,6 +5819,25 @@ references:
   commentId: F:TAssetBundle.Logger.ErrorHandler
   fullName: TAssetBundle.Logger.ErrorHandler
   nameWithType: Logger.ErrorHandler
+- uid: TAssetBundle.Logger.Exception(System.Exception)
+  name: Exception(Exception)
+  href: api/TAssetBundle.Logger.html#TAssetBundle_Logger_Exception_System_Exception_
+  commentId: M:TAssetBundle.Logger.Exception(System.Exception)
+  fullName: TAssetBundle.Logger.Exception(System.Exception)
+  nameWithType: Logger.Exception(Exception)
+- uid: TAssetBundle.Logger.Exception*
+  name: Exception
+  href: api/TAssetBundle.Logger.html#TAssetBundle_Logger_Exception_
+  commentId: Overload:TAssetBundle.Logger.Exception
+  isSpec: "True"
+  fullName: TAssetBundle.Logger.Exception
+  nameWithType: Logger.Exception
+- uid: TAssetBundle.Logger.ExceptionHandler
+  name: ExceptionHandler
+  href: api/TAssetBundle.Logger.html#TAssetBundle_Logger_ExceptionHandler
+  commentId: F:TAssetBundle.Logger.ExceptionHandler
+  fullName: TAssetBundle.Logger.ExceptionHandler
+  nameWithType: Logger.ExceptionHandler
 - uid: TAssetBundle.Logger.Log(System.String)
   name: Log(string)
   href: api/TAssetBundle.Logger.html#TAssetBundle_Logger_Log_System_String_
@@ -5388,6 +5888,240 @@ references:
   commentId: F:TAssetBundle.Logger.WarningHandler
   fullName: TAssetBundle.Logger.WarningHandler
   nameWithType: Logger.WarningHandler
+- uid: TAssetBundle.PluginBase
+  name: PluginBase
+  href: api/TAssetBundle.PluginBase.html
+  commentId: T:TAssetBundle.PluginBase
+  fullName: TAssetBundle.PluginBase
+  nameWithType: PluginBase
+- uid: TAssetBundle.PluginBase.GetModules*
+  name: GetModules
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_GetModules_
+  commentId: Overload:TAssetBundle.PluginBase.GetModules
+  isSpec: "True"
+  fullName: TAssetBundle.PluginBase.GetModules
+  nameWithType: PluginBase.GetModules
+- uid: TAssetBundle.PluginBase.GetModules``1
+  name: GetModules<T>()
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_GetModules__1
+  commentId: M:TAssetBundle.PluginBase.GetModules``1
+  name.vb: GetModules(Of T)()
+  fullName: TAssetBundle.PluginBase.GetModules<T>()
+  fullName.vb: TAssetBundle.PluginBase.GetModules(Of T)()
+  nameWithType: PluginBase.GetModules<T>()
+  nameWithType.vb: PluginBase.GetModules(Of T)()
+- uid: TAssetBundle.PluginBase.MarkAsDirty
+  name: MarkAsDirty()
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_MarkAsDirty
+  commentId: M:TAssetBundle.PluginBase.MarkAsDirty
+  fullName: TAssetBundle.PluginBase.MarkAsDirty()
+  nameWithType: PluginBase.MarkAsDirty()
+- uid: TAssetBundle.PluginBase.MarkAsDirty*
+  name: MarkAsDirty
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_MarkAsDirty_
+  commentId: Overload:TAssetBundle.PluginBase.MarkAsDirty
+  isSpec: "True"
+  fullName: TAssetBundle.PluginBase.MarkAsDirty
+  nameWithType: PluginBase.MarkAsDirty
+- uid: TAssetBundle.PluginBase.Modules
+  name: Modules
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_Modules
+  commentId: P:TAssetBundle.PluginBase.Modules
+  fullName: TAssetBundle.PluginBase.Modules
+  nameWithType: PluginBase.Modules
+- uid: TAssetBundle.PluginBase.Modules*
+  name: Modules
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_Modules_
+  commentId: Overload:TAssetBundle.PluginBase.Modules
+  isSpec: "True"
+  fullName: TAssetBundle.PluginBase.Modules
+  nameWithType: PluginBase.Modules
+- uid: TAssetBundle.PluginBase.OnInit
+  name: OnInit()
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_OnInit
+  commentId: M:TAssetBundle.PluginBase.OnInit
+  fullName: TAssetBundle.PluginBase.OnInit()
+  nameWithType: PluginBase.OnInit()
+- uid: TAssetBundle.PluginBase.OnInit*
+  name: OnInit
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_OnInit_
+  commentId: Overload:TAssetBundle.PluginBase.OnInit
+  isSpec: "True"
+  fullName: TAssetBundle.PluginBase.OnInit
+  nameWithType: PluginBase.OnInit
+- uid: TAssetBundle.PluginBase.enabled
+  name: enabled
+  href: api/TAssetBundle.PluginBase.html#TAssetBundle_PluginBase_enabled
+  commentId: F:TAssetBundle.PluginBase.enabled
+  fullName: TAssetBundle.PluginBase.enabled
+  nameWithType: PluginBase.enabled
+- uid: TAssetBundle.PluginModuleAttribute
+  name: PluginModuleAttribute
+  href: api/TAssetBundle.PluginModuleAttribute.html
+  commentId: T:TAssetBundle.PluginModuleAttribute
+  fullName: TAssetBundle.PluginModuleAttribute
+  nameWithType: PluginModuleAttribute
+- uid: TAssetBundle.PluginModuleAttribute.#ctor(System.Type,System.Int32)
+  name: PluginModuleAttribute(Type, int)
+  href: api/TAssetBundle.PluginModuleAttribute.html#TAssetBundle_PluginModuleAttribute__ctor_System_Type_System_Int32_
+  commentId: M:TAssetBundle.PluginModuleAttribute.#ctor(System.Type,System.Int32)
+  name.vb: New(Type, Integer)
+  fullName: TAssetBundle.PluginModuleAttribute.PluginModuleAttribute(System.Type, int)
+  fullName.vb: TAssetBundle.PluginModuleAttribute.New(System.Type, Integer)
+  nameWithType: PluginModuleAttribute.PluginModuleAttribute(Type, int)
+  nameWithType.vb: PluginModuleAttribute.New(Type, Integer)
+- uid: TAssetBundle.PluginModuleAttribute.#ctor*
+  name: PluginModuleAttribute
+  href: api/TAssetBundle.PluginModuleAttribute.html#TAssetBundle_PluginModuleAttribute__ctor_
+  commentId: Overload:TAssetBundle.PluginModuleAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TAssetBundle.PluginModuleAttribute.PluginModuleAttribute
+  fullName.vb: TAssetBundle.PluginModuleAttribute.New
+  nameWithType: PluginModuleAttribute.PluginModuleAttribute
+  nameWithType.vb: PluginModuleAttribute.New
+- uid: TAssetBundle.PluginModuleAttribute.Plugin
+  name: Plugin
+  href: api/TAssetBundle.PluginModuleAttribute.html#TAssetBundle_PluginModuleAttribute_Plugin
+  commentId: P:TAssetBundle.PluginModuleAttribute.Plugin
+  fullName: TAssetBundle.PluginModuleAttribute.Plugin
+  nameWithType: PluginModuleAttribute.Plugin
+- uid: TAssetBundle.PluginModuleAttribute.Plugin*
+  name: Plugin
+  href: api/TAssetBundle.PluginModuleAttribute.html#TAssetBundle_PluginModuleAttribute_Plugin_
+  commentId: Overload:TAssetBundle.PluginModuleAttribute.Plugin
+  isSpec: "True"
+  fullName: TAssetBundle.PluginModuleAttribute.Plugin
+  nameWithType: PluginModuleAttribute.Plugin
+- uid: TAssetBundle.PluginModuleAttribute.Priority
+  name: Priority
+  href: api/TAssetBundle.PluginModuleAttribute.html#TAssetBundle_PluginModuleAttribute_Priority
+  commentId: P:TAssetBundle.PluginModuleAttribute.Priority
+  fullName: TAssetBundle.PluginModuleAttribute.Priority
+  nameWithType: PluginModuleAttribute.Priority
+- uid: TAssetBundle.PluginModuleAttribute.Priority*
+  name: Priority
+  href: api/TAssetBundle.PluginModuleAttribute.html#TAssetBundle_PluginModuleAttribute_Priority_
+  commentId: Overload:TAssetBundle.PluginModuleAttribute.Priority
+  isSpec: "True"
+  fullName: TAssetBundle.PluginModuleAttribute.Priority
+  nameWithType: PluginModuleAttribute.Priority
+- uid: TAssetBundle.PluginModuleBase
+  name: PluginModuleBase
+  href: api/TAssetBundle.PluginModuleBase.html
+  commentId: T:TAssetBundle.PluginModuleBase
+  fullName: TAssetBundle.PluginModuleBase
+  nameWithType: PluginModuleBase
+- uid: TAssetBundle.PluginModuleBase.IsAvailable
+  name: IsAvailable
+  href: api/TAssetBundle.PluginModuleBase.html#TAssetBundle_PluginModuleBase_IsAvailable
+  commentId: P:TAssetBundle.PluginModuleBase.IsAvailable
+  fullName: TAssetBundle.PluginModuleBase.IsAvailable
+  nameWithType: PluginModuleBase.IsAvailable
+- uid: TAssetBundle.PluginModuleBase.IsAvailable*
+  name: IsAvailable
+  href: api/TAssetBundle.PluginModuleBase.html#TAssetBundle_PluginModuleBase_IsAvailable_
+  commentId: Overload:TAssetBundle.PluginModuleBase.IsAvailable
+  isSpec: "True"
+  fullName: TAssetBundle.PluginModuleBase.IsAvailable
+  nameWithType: PluginModuleBase.IsAvailable
+- uid: TAssetBundle.PluginModuleBase.Owner
+  name: Owner
+  href: api/TAssetBundle.PluginModuleBase.html#TAssetBundle_PluginModuleBase_Owner
+  commentId: P:TAssetBundle.PluginModuleBase.Owner
+  fullName: TAssetBundle.PluginModuleBase.Owner
+  nameWithType: PluginModuleBase.Owner
+- uid: TAssetBundle.PluginModuleBase.Owner*
+  name: Owner
+  href: api/TAssetBundle.PluginModuleBase.html#TAssetBundle_PluginModuleBase_Owner_
+  commentId: Overload:TAssetBundle.PluginModuleBase.Owner
+  isSpec: "True"
+  fullName: TAssetBundle.PluginModuleBase.Owner
+  nameWithType: PluginModuleBase.Owner
+- uid: TAssetBundle.PluginModuleBase`1
+  name: PluginModuleBase<T>
+  href: api/TAssetBundle.PluginModuleBase-1.html
+  commentId: T:TAssetBundle.PluginModuleBase`1
+  name.vb: PluginModuleBase(Of T)
+  fullName: TAssetBundle.PluginModuleBase<T>
+  fullName.vb: TAssetBundle.PluginModuleBase(Of T)
+  nameWithType: PluginModuleBase<T>
+  nameWithType.vb: PluginModuleBase(Of T)
+- uid: TAssetBundle.PluginModuleBase`1.Owner
+  name: Owner
+  href: api/TAssetBundle.PluginModuleBase-1.html#TAssetBundle_PluginModuleBase_1_Owner
+  commentId: P:TAssetBundle.PluginModuleBase`1.Owner
+  fullName: TAssetBundle.PluginModuleBase<T>.Owner
+  fullName.vb: TAssetBundle.PluginModuleBase(Of T).Owner
+  nameWithType: PluginModuleBase<T>.Owner
+  nameWithType.vb: PluginModuleBase(Of T).Owner
+- uid: TAssetBundle.PluginModuleBase`1.Owner*
+  name: Owner
+  href: api/TAssetBundle.PluginModuleBase-1.html#TAssetBundle_PluginModuleBase_1_Owner_
+  commentId: Overload:TAssetBundle.PluginModuleBase`1.Owner
+  isSpec: "True"
+  fullName: TAssetBundle.PluginModuleBase<T>.Owner
+  fullName.vb: TAssetBundle.PluginModuleBase(Of T).Owner
+  nameWithType: PluginModuleBase<T>.Owner
+  nameWithType.vb: PluginModuleBase(Of T).Owner
+- uid: TAssetBundle.PluginModuleManager
+  name: PluginModuleManager
+  href: api/TAssetBundle.PluginModuleManager.html
+  commentId: T:TAssetBundle.PluginModuleManager
+  fullName: TAssetBundle.PluginModuleManager
+  nameWithType: PluginModuleManager
+- uid: TAssetBundle.PluginModuleManager.GetModuleTypes(System.Type)
+  name: GetModuleTypes(Type)
+  href: api/TAssetBundle.PluginModuleManager.html#TAssetBundle_PluginModuleManager_GetModuleTypes_System_Type_
+  commentId: M:TAssetBundle.PluginModuleManager.GetModuleTypes(System.Type)
+  fullName: TAssetBundle.PluginModuleManager.GetModuleTypes(System.Type)
+  nameWithType: PluginModuleManager.GetModuleTypes(Type)
+- uid: TAssetBundle.PluginModuleManager.GetModuleTypes*
+  name: GetModuleTypes
+  href: api/TAssetBundle.PluginModuleManager.html#TAssetBundle_PluginModuleManager_GetModuleTypes_
+  commentId: Overload:TAssetBundle.PluginModuleManager.GetModuleTypes
+  isSpec: "True"
+  fullName: TAssetBundle.PluginModuleManager.GetModuleTypes
+  nameWithType: PluginModuleManager.GetModuleTypes
+- uid: TAssetBundle.PluginModuleManager.Init
+  name: Init()
+  href: api/TAssetBundle.PluginModuleManager.html#TAssetBundle_PluginModuleManager_Init
+  commentId: M:TAssetBundle.PluginModuleManager.Init
+  fullName: TAssetBundle.PluginModuleManager.Init()
+  nameWithType: PluginModuleManager.Init()
+- uid: TAssetBundle.PluginModuleManager.Init*
+  name: Init
+  href: api/TAssetBundle.PluginModuleManager.html#TAssetBundle_PluginModuleManager_Init_
+  commentId: Overload:TAssetBundle.PluginModuleManager.Init
+  isSpec: "True"
+  fullName: TAssetBundle.PluginModuleManager.Init
+  nameWithType: PluginModuleManager.Init
+- uid: TAssetBundle.ReturnValue`1
+  name: ReturnValue<T>
+  href: api/TAssetBundle.ReturnValue-1.html
+  commentId: T:TAssetBundle.ReturnValue`1
+  name.vb: ReturnValue(Of T)
+  fullName: TAssetBundle.ReturnValue<T>
+  fullName.vb: TAssetBundle.ReturnValue(Of T)
+  nameWithType: ReturnValue<T>
+  nameWithType.vb: ReturnValue(Of T)
+- uid: TAssetBundle.ReturnValue`1.Value
+  name: Value
+  href: api/TAssetBundle.ReturnValue-1.html#TAssetBundle_ReturnValue_1_Value
+  commentId: P:TAssetBundle.ReturnValue`1.Value
+  fullName: TAssetBundle.ReturnValue<T>.Value
+  fullName.vb: TAssetBundle.ReturnValue(Of T).Value
+  nameWithType: ReturnValue<T>.Value
+  nameWithType.vb: ReturnValue(Of T).Value
+- uid: TAssetBundle.ReturnValue`1.Value*
+  name: Value
+  href: api/TAssetBundle.ReturnValue-1.html#TAssetBundle_ReturnValue_1_Value_
+  commentId: Overload:TAssetBundle.ReturnValue`1.Value
+  isSpec: "True"
+  fullName: TAssetBundle.ReturnValue<T>.Value
+  fullName.vb: TAssetBundle.ReturnValue(Of T).Value
+  nameWithType: ReturnValue<T>.Value
+  nameWithType.vb: ReturnValue(Of T).Value
 - uid: TAssetBundle.RijndaelCryptoSerializer
   name: RijndaelCryptoSerializer
   href: api/TAssetBundle.RijndaelCryptoSerializer.html
@@ -5454,6 +6188,19 @@ references:
   commentId: T:TAssetBundle.Settings
   fullName: TAssetBundle.Settings
   nameWithType: Settings
+- uid: TAssetBundle.Settings.ActivePlugins
+  name: ActivePlugins
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_ActivePlugins
+  commentId: P:TAssetBundle.Settings.ActivePlugins
+  fullName: TAssetBundle.Settings.ActivePlugins
+  nameWithType: Settings.ActivePlugins
+- uid: TAssetBundle.Settings.ActivePlugins*
+  name: ActivePlugins
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_ActivePlugins_
+  commentId: Overload:TAssetBundle.Settings.ActivePlugins
+  isSpec: "True"
+  fullName: TAssetBundle.Settings.ActivePlugins
+  nameWithType: Settings.ActivePlugins
 - uid: TAssetBundle.Settings.BuildSetting
   name: Settings.BuildSetting
   href: api/TAssetBundle.Settings.BuildSetting.html
@@ -5489,12 +6236,6 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Settings.BuildSetting.GetHashCode
   nameWithType: Settings.BuildSetting.GetHashCode
-- uid: TAssetBundle.Settings.BuildSetting.appendHashFromFileName
-  name: appendHashFromFileName
-  href: api/TAssetBundle.Settings.BuildSetting.html#TAssetBundle_Settings_BuildSetting_appendHashFromFileName
-  commentId: F:TAssetBundle.Settings.BuildSetting.appendHashFromFileName
-  fullName: TAssetBundle.Settings.BuildSetting.appendHashFromFileName
-  nameWithType: Settings.BuildSetting.appendHashFromFileName
 - uid: TAssetBundle.Settings.BuildSetting.assetBundleFileExtensions
   name: assetBundleFileExtensions
   href: api/TAssetBundle.Settings.BuildSetting.html#TAssetBundle_Settings_BuildSetting_assetBundleFileExtensions
@@ -5628,6 +6369,22 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Settings.GetCryptoSerializer
   nameWithType: Settings.GetCryptoSerializer
+- uid: TAssetBundle.Settings.GetPluginModules*
+  name: GetPluginModules
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_GetPluginModules_
+  commentId: Overload:TAssetBundle.Settings.GetPluginModules
+  isSpec: "True"
+  fullName: TAssetBundle.Settings.GetPluginModules
+  nameWithType: Settings.GetPluginModules
+- uid: TAssetBundle.Settings.GetPluginModules``1
+  name: GetPluginModules<T>()
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_GetPluginModules__1
+  commentId: M:TAssetBundle.Settings.GetPluginModules``1
+  name.vb: GetPluginModules(Of T)()
+  fullName: TAssetBundle.Settings.GetPluginModules<T>()
+  fullName.vb: TAssetBundle.Settings.GetPluginModules(Of T)()
+  nameWithType: Settings.GetPluginModules<T>()
+  nameWithType.vb: Settings.GetPluginModules(Of T)()
 - uid: TAssetBundle.Settings.assetBundleOutputPath
   name: assetBundleOutputPath
   href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_assetBundleOutputPath
@@ -5736,6 +6493,12 @@ references:
   commentId: F:TAssetBundle.Settings.useBuiltinAssetBundleLZ4Recompress
   fullName: TAssetBundle.Settings.useBuiltinAssetBundleLZ4Recompress
   nameWithType: Settings.useBuiltinAssetBundleLZ4Recompress
+- uid: TAssetBundle.Settings.useRemoteCatalog
+  name: useRemoteCatalog
+  href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_useRemoteCatalog
+  commentId: F:TAssetBundle.Settings.useRemoteCatalog
+  fullName: TAssetBundle.Settings.useRemoteCatalog
+  nameWithType: Settings.useRemoteCatalog
 - uid: TAssetBundle.Settings.useUnityRemoteAssetBundleProvider
   name: useUnityRemoteAssetBundleProvider
   href: api/TAssetBundle.Settings.html#TAssetBundle_Settings_useUnityRemoteAssetBundleProvider
@@ -6603,6 +7366,25 @@ references:
   commentId: T:TAssetBundle.UnityWebRequestError
   fullName: TAssetBundle.UnityWebRequestError
   nameWithType: UnityWebRequestError
+- uid: TAssetBundle.UnityWebRequestError.IsSuccess
+  name: IsSuccess
+  href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_IsSuccess
+  commentId: P:TAssetBundle.UnityWebRequestError.IsSuccess
+  fullName: TAssetBundle.UnityWebRequestError.IsSuccess
+  nameWithType: UnityWebRequestError.IsSuccess
+- uid: TAssetBundle.UnityWebRequestError.IsSuccess*
+  name: IsSuccess
+  href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_IsSuccess_
+  commentId: Overload:TAssetBundle.UnityWebRequestError.IsSuccess
+  isSpec: "True"
+  fullName: TAssetBundle.UnityWebRequestError.IsSuccess
+  nameWithType: UnityWebRequestError.IsSuccess
+- uid: TAssetBundle.UnityWebRequestError.Success
+  name: Success
+  href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_Success
+  commentId: F:TAssetBundle.UnityWebRequestError.Success
+  fullName: TAssetBundle.UnityWebRequestError.Success
+  nameWithType: UnityWebRequestError.Success
 - uid: TAssetBundle.UnityWebRequestError.isHttpError
   name: isHttpError
   href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_isHttpError
@@ -6627,6 +7409,12 @@ references:
   commentId: F:TAssetBundle.UnityWebRequestError.responseCode
   fullName: TAssetBundle.UnityWebRequestError.responseCode
   nameWithType: UnityWebRequestError.responseCode
+- uid: TAssetBundle.UnityWebRequestError.url
+  name: url
+  href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_url
+  commentId: F:TAssetBundle.UnityWebRequestError.url
+  fullName: TAssetBundle.UnityWebRequestError.url
+  nameWithType: UnityWebRequestError.url
 - uid: TAssetBundle.UnityWebRequestExtensions
   name: UnityWebRequestExtensions
   href: api/TAssetBundle.UnityWebRequestExtensions.html
@@ -6918,6 +7706,178 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Util.GetSHA256HashFromString
   nameWithType: Util.GetSHA256HashFromString
+- uid: TAssetBundle.Util.NormalizePath(System.String)
+  name: NormalizePath(string)
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_NormalizePath_System_String_
+  commentId: M:TAssetBundle.Util.NormalizePath(System.String)
+  name.vb: NormalizePath(String)
+  fullName: TAssetBundle.Util.NormalizePath(string)
+  fullName.vb: TAssetBundle.Util.NormalizePath(String)
+  nameWithType: Util.NormalizePath(string)
+  nameWithType.vb: Util.NormalizePath(String)
+- uid: TAssetBundle.Util.NormalizePath*
+  name: NormalizePath
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_NormalizePath_
+  commentId: Overload:TAssetBundle.Util.NormalizePath
+  isSpec: "True"
+  fullName: TAssetBundle.Util.NormalizePath
+  nameWithType: Util.NormalizePath
+- uid: TAssetBundle.Util.XxHash32(System.Byte[],System.UInt32)
+  name: XxHash32(byte[], uint)
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_XxHash32_System_Byte___System_UInt32_
+  commentId: M:TAssetBundle.Util.XxHash32(System.Byte[],System.UInt32)
+  name.vb: XxHash32(Byte(), UInteger)
+  fullName: TAssetBundle.Util.XxHash32(byte[], uint)
+  fullName.vb: TAssetBundle.Util.XxHash32(Byte(), UInteger)
+  nameWithType: Util.XxHash32(byte[], uint)
+  nameWithType.vb: Util.XxHash32(Byte(), UInteger)
+- uid: TAssetBundle.Util.XxHash32*
+  name: XxHash32
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_XxHash32_
+  commentId: Overload:TAssetBundle.Util.XxHash32
+  isSpec: "True"
+  fullName: TAssetBundle.Util.XxHash32
+  nameWithType: Util.XxHash32
+- uid: TAssetBundle.Util.XxHash32_x8(System.String)
+  name: XxHash32_x8(string)
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_XxHash32_x8_System_String_
+  commentId: M:TAssetBundle.Util.XxHash32_x8(System.String)
+  name.vb: XxHash32_x8(String)
+  fullName: TAssetBundle.Util.XxHash32_x8(string)
+  fullName.vb: TAssetBundle.Util.XxHash32_x8(String)
+  nameWithType: Util.XxHash32_x8(string)
+  nameWithType.vb: Util.XxHash32_x8(String)
+- uid: TAssetBundle.Util.XxHash32_x8*
+  name: XxHash32_x8
+  href: api/TAssetBundle.Util.html#TAssetBundle_Util_XxHash32_x8_
+  commentId: Overload:TAssetBundle.Util.XxHash32_x8
+  isSpec: "True"
+  fullName: TAssetBundle.Util.XxHash32_x8
+  nameWithType: Util.XxHash32_x8
+- uid: TAssetBundle.WebRequest
+  name: WebRequest
+  href: api/TAssetBundle.WebRequest.html
+  commentId: T:TAssetBundle.WebRequest
+  fullName: TAssetBundle.WebRequest
+  nameWithType: WebRequest
+- uid: TAssetBundle.WebRequest.#ctor(TAssetBundle.WebRequest.Option)
+  name: WebRequest(Option)
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest__ctor_TAssetBundle_WebRequest_Option_
+  commentId: M:TAssetBundle.WebRequest.#ctor(TAssetBundle.WebRequest.Option)
+  name.vb: New(Option)
+  fullName: TAssetBundle.WebRequest.WebRequest(TAssetBundle.WebRequest.Option)
+  fullName.vb: TAssetBundle.WebRequest.New(TAssetBundle.WebRequest.Option)
+  nameWithType: WebRequest.WebRequest(WebRequest.Option)
+  nameWithType.vb: WebRequest.New(WebRequest.Option)
+- uid: TAssetBundle.WebRequest.#ctor*
+  name: WebRequest
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest__ctor_
+  commentId: Overload:TAssetBundle.WebRequest.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TAssetBundle.WebRequest.WebRequest
+  fullName.vb: TAssetBundle.WebRequest.New
+  nameWithType: WebRequest.WebRequest
+  nameWithType.vb: WebRequest.New
+- uid: TAssetBundle.WebRequest.EnableDebuggingLog
+  name: EnableDebuggingLog
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_EnableDebuggingLog
+  commentId: P:TAssetBundle.WebRequest.EnableDebuggingLog
+  fullName: TAssetBundle.WebRequest.EnableDebuggingLog
+  nameWithType: WebRequest.EnableDebuggingLog
+- uid: TAssetBundle.WebRequest.EnableDebuggingLog*
+  name: EnableDebuggingLog
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_EnableDebuggingLog_
+  commentId: Overload:TAssetBundle.WebRequest.EnableDebuggingLog
+  isSpec: "True"
+  fullName: TAssetBundle.WebRequest.EnableDebuggingLog
+  nameWithType: WebRequest.EnableDebuggingLog
+- uid: TAssetBundle.WebRequest.GetAssetBundleAsync(TAssetBundle.InnerOperations,System.String,UnityEngine.Hash128,System.Action{UnityEngine.Networking.UnityWebRequest})
+  name: GetAssetBundleAsync(InnerOperations, string, Hash128, Action<UnityWebRequest>)
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_GetAssetBundleAsync_TAssetBundle_InnerOperations_System_String_UnityEngine_Hash128_System_Action_UnityEngine_Networking_UnityWebRequest__
+  commentId: M:TAssetBundle.WebRequest.GetAssetBundleAsync(TAssetBundle.InnerOperations,System.String,UnityEngine.Hash128,System.Action{UnityEngine.Networking.UnityWebRequest})
+  name.vb: GetAssetBundleAsync(InnerOperations, String, Hash128, Action(Of UnityWebRequest))
+  fullName: TAssetBundle.WebRequest.GetAssetBundleAsync(TAssetBundle.InnerOperations, string, UnityEngine.Hash128, System.Action<UnityEngine.Networking.UnityWebRequest>)
+  fullName.vb: TAssetBundle.WebRequest.GetAssetBundleAsync(TAssetBundle.InnerOperations, String, UnityEngine.Hash128, System.Action(Of UnityEngine.Networking.UnityWebRequest))
+  nameWithType: WebRequest.GetAssetBundleAsync(InnerOperations, string, Hash128, Action<UnityWebRequest>)
+  nameWithType.vb: WebRequest.GetAssetBundleAsync(InnerOperations, String, Hash128, Action(Of UnityWebRequest))
+- uid: TAssetBundle.WebRequest.GetAssetBundleAsync*
+  name: GetAssetBundleAsync
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_GetAssetBundleAsync_
+  commentId: Overload:TAssetBundle.WebRequest.GetAssetBundleAsync
+  isSpec: "True"
+  fullName: TAssetBundle.WebRequest.GetAssetBundleAsync
+  nameWithType: WebRequest.GetAssetBundleAsync
+- uid: TAssetBundle.WebRequest.GetAsync(TAssetBundle.InnerOperations,System.String,System.Action{UnityEngine.Networking.UnityWebRequest},System.Boolean)
+  name: GetAsync(InnerOperations, string, Action<UnityWebRequest>, bool)
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_GetAsync_TAssetBundle_InnerOperations_System_String_System_Action_UnityEngine_Networking_UnityWebRequest__System_Boolean_
+  commentId: M:TAssetBundle.WebRequest.GetAsync(TAssetBundle.InnerOperations,System.String,System.Action{UnityEngine.Networking.UnityWebRequest},System.Boolean)
+  name.vb: GetAsync(InnerOperations, String, Action(Of UnityWebRequest), Boolean)
+  fullName: TAssetBundle.WebRequest.GetAsync(TAssetBundle.InnerOperations, string, System.Action<UnityEngine.Networking.UnityWebRequest>, bool)
+  fullName.vb: TAssetBundle.WebRequest.GetAsync(TAssetBundle.InnerOperations, String, System.Action(Of UnityEngine.Networking.UnityWebRequest), Boolean)
+  nameWithType: WebRequest.GetAsync(InnerOperations, string, Action<UnityWebRequest>, bool)
+  nameWithType.vb: WebRequest.GetAsync(InnerOperations, String, Action(Of UnityWebRequest), Boolean)
+- uid: TAssetBundle.WebRequest.GetAsync*
+  name: GetAsync
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_GetAsync_
+  commentId: Overload:TAssetBundle.WebRequest.GetAsync
+  isSpec: "True"
+  fullName: TAssetBundle.WebRequest.GetAsync
+  nameWithType: WebRequest.GetAsync
+- uid: TAssetBundle.WebRequest.OnBeforeSend
+  name: OnBeforeSend
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_OnBeforeSend
+  commentId: E:TAssetBundle.WebRequest.OnBeforeSend
+  fullName: TAssetBundle.WebRequest.OnBeforeSend
+  nameWithType: WebRequest.OnBeforeSend
+- uid: TAssetBundle.WebRequest.OnComplete
+  name: OnComplete
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_OnComplete
+  commentId: E:TAssetBundle.WebRequest.OnComplete
+  fullName: TAssetBundle.WebRequest.OnComplete
+  nameWithType: WebRequest.OnComplete
+- uid: TAssetBundle.WebRequest.OnError
+  name: OnError
+  href: api/TAssetBundle.WebRequest.html#TAssetBundle_WebRequest_OnError
+  commentId: E:TAssetBundle.WebRequest.OnError
+  fullName: TAssetBundle.WebRequest.OnError
+  nameWithType: WebRequest.OnError
+- uid: TAssetBundle.WebRequest.Option
+  name: WebRequest.Option
+  href: api/TAssetBundle.WebRequest.Option.html
+  commentId: T:TAssetBundle.WebRequest.Option
+  fullName: TAssetBundle.WebRequest.Option
+  nameWithType: WebRequest.Option
+- uid: TAssetBundle.WebRequest.Option.autoTimeoutSeconds
+  name: autoTimeoutSeconds
+  href: api/TAssetBundle.WebRequest.Option.html#TAssetBundle_WebRequest_Option_autoTimeoutSeconds
+  commentId: F:TAssetBundle.WebRequest.Option.autoTimeoutSeconds
+  fullName: TAssetBundle.WebRequest.Option.autoTimeoutSeconds
+  nameWithType: WebRequest.Option.autoTimeoutSeconds
+- uid: TAssetBundle.WebRequest.Option.enableDebuggingLog
+  name: enableDebuggingLog
+  href: api/TAssetBundle.WebRequest.Option.html#TAssetBundle_WebRequest_Option_enableDebuggingLog
+  commentId: F:TAssetBundle.WebRequest.Option.enableDebuggingLog
+  fullName: TAssetBundle.WebRequest.Option.enableDebuggingLog
+  nameWithType: WebRequest.Option.enableDebuggingLog
+- uid: TAssetBundle.WebRequest.Option.maxConcurrentRequestCount
+  name: maxConcurrentRequestCount
+  href: api/TAssetBundle.WebRequest.Option.html#TAssetBundle_WebRequest_Option_maxConcurrentRequestCount
+  commentId: F:TAssetBundle.WebRequest.Option.maxConcurrentRequestCount
+  fullName: TAssetBundle.WebRequest.Option.maxConcurrentRequestCount
+  nameWithType: WebRequest.Option.maxConcurrentRequestCount
+- uid: TAssetBundle.WebRequest.Option.maxRetryRequestCount
+  name: maxRetryRequestCount
+  href: api/TAssetBundle.WebRequest.Option.html#TAssetBundle_WebRequest_Option_maxRetryRequestCount
+  commentId: F:TAssetBundle.WebRequest.Option.maxRetryRequestCount
+  fullName: TAssetBundle.WebRequest.Option.maxRetryRequestCount
+  nameWithType: WebRequest.Option.maxRetryRequestCount
+- uid: TAssetBundle.WebRequest.Option.retryRequestWaitDuration
+  name: retryRequestWaitDuration
+  href: api/TAssetBundle.WebRequest.Option.html#TAssetBundle_WebRequest_Option_retryRequestWaitDuration
+  commentId: F:TAssetBundle.WebRequest.Option.retryRequestWaitDuration
+  fullName: TAssetBundle.WebRequest.Option.retryRequestWaitDuration
+  nameWithType: WebRequest.Option.retryRequestWaitDuration
 - uid: TAssetBundle.WebRequestAsync
   name: WebRequestAsync
   href: api/TAssetBundle.WebRequestAsync.html
@@ -7040,6 +8000,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.WebRequestAsync.Reset
   nameWithType: WebRequestAsync.Reset
+- uid: TAssetBundle.WebRequestAsync.ToTask
+  name: ToTask()
+  href: api/TAssetBundle.WebRequestAsync.html#TAssetBundle_WebRequestAsync_ToTask
+  commentId: M:TAssetBundle.WebRequestAsync.ToTask
+  fullName: TAssetBundle.WebRequestAsync.ToTask()
+  nameWithType: WebRequestAsync.ToTask()
+- uid: TAssetBundle.WebRequestAsync.ToTask*
+  name: ToTask
+  href: api/TAssetBundle.WebRequestAsync.html#TAssetBundle_WebRequestAsync_ToTask_
+  commentId: Overload:TAssetBundle.WebRequestAsync.ToTask
+  isSpec: "True"
+  fullName: TAssetBundle.WebRequestAsync.ToTask
+  nameWithType: WebRequestAsync.ToTask
 - uid: TAssetBundle.WebRequestCallback
   name: WebRequestCallback
   href: api/TAssetBundle.WebRequestCallback.html
@@ -7052,6 +8025,19 @@ references:
   commentId: T:TAssetBundle.WebRequestCommand
   fullName: TAssetBundle.WebRequestCommand
   nameWithType: WebRequestCommand
+- uid: TAssetBundle.WebRequestCommand.Error
+  name: Error
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_Error
+  commentId: P:TAssetBundle.WebRequestCommand.Error
+  fullName: TAssetBundle.WebRequestCommand.Error
+  nameWithType: WebRequestCommand.Error
+- uid: TAssetBundle.WebRequestCommand.Error*
+  name: Error
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_Error_
+  commentId: Overload:TAssetBundle.WebRequestCommand.Error
+  isSpec: "True"
+  fullName: TAssetBundle.WebRequestCommand.Error
+  nameWithType: WebRequestCommand.Error
 - uid: TAssetBundle.WebRequestCommand.LastDownloadTime
   name: LastDownloadTime
   href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_LastDownloadTime
@@ -7065,6 +8051,18 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.WebRequestCommand.LastDownloadTime
   nameWithType: WebRequestCommand.LastDownloadTime
+- uid: TAssetBundle.WebRequestCommand.OnComplete
+  name: OnComplete
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_OnComplete
+  commentId: F:TAssetBundle.WebRequestCommand.OnComplete
+  fullName: TAssetBundle.WebRequestCommand.OnComplete
+  nameWithType: WebRequestCommand.OnComplete
+- uid: TAssetBundle.WebRequestCommand.OnProgress
+  name: OnProgress
+  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_OnProgress
+  commentId: F:TAssetBundle.WebRequestCommand.OnProgress
+  fullName: TAssetBundle.WebRequestCommand.OnProgress
+  nameWithType: WebRequestCommand.OnProgress
 - uid: TAssetBundle.WebRequestCommand.OnRetry
   name: OnRetry
   href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_OnRetry
@@ -7096,18 +8094,6 @@ references:
   commentId: F:TAssetBundle.WebRequestCommand._url
   fullName: TAssetBundle.WebRequestCommand._url
   nameWithType: WebRequestCommand._url
-- uid: TAssetBundle.WebRequestCommand.onComplete
-  name: onComplete
-  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_onComplete
-  commentId: F:TAssetBundle.WebRequestCommand.onComplete
-  fullName: TAssetBundle.WebRequestCommand.onComplete
-  nameWithType: WebRequestCommand.onComplete
-- uid: TAssetBundle.WebRequestCommand.onProgress
-  name: onProgress
-  href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_onProgress
-  commentId: F:TAssetBundle.WebRequestCommand.onProgress
-  fullName: TAssetBundle.WebRequestCommand.onProgress
-  nameWithType: WebRequestCommand.onProgress
 - uid: TAssetBundle.WebRequestCommand.retryCount
   name: retryCount
   href: api/TAssetBundle.WebRequestCommand.html#TAssetBundle_WebRequestCommand_retryCount
@@ -7132,9 +8118,3 @@ references:
   commentId: T:TAssetBundle.WebRequestCommandGet
   fullName: TAssetBundle.WebRequestCommandGet
   nameWithType: WebRequestCommandGet
-- uid: TAssetBundle.WebRequestCommandHead
-  name: WebRequestCommandHead
-  href: api/TAssetBundle.WebRequestCommandHead.html
-  commentId: T:TAssetBundle.WebRequestCommandHead
-  fullName: TAssetBundle.WebRequestCommandHead
-  nameWithType: WebRequestCommandHead

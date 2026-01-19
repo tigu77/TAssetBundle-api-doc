@@ -1,8 +1,63 @@
 {
-  "homepages": [],
-  "source_base_path": "E:/work/TAssetBundle/docfx_project",
+  "source_base_path": "E:/work/TAssetBundle_2021/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetBundleCacheData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetBundleCacheData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleCacheData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetBundleCacheInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetBundleCacheInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleCacheInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetBundleCacheManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetBundleCacheManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleCacheManager",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetBundleCacheManager.yml\" sourcestartlinenumber=\"1\">따로 관리되는 캐시 된 에셋 번들 정보를 관리하는 매니저</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetBundleCacheVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetBundleCacheVersion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleCacheVersion",
+      "Summary": null
+    },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.yml",
@@ -11,7 +66,11 @@
           "relative_path": "api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleDownloadInfo.DownloadInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetBundleDownloadInfo.DownloadInfo.yml\" sourcestartlinenumber=\"1\">Class for storing individual AssetBundle download information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -21,7 +80,11 @@
           "relative_path": "api/TAssetBundle.AssetBundleDownloadInfo.EDownloadState.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleDownloadInfo.EDownloadState",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetBundleDownloadInfo.EDownloadState.yml\" sourcestartlinenumber=\"1\">Enum representing download states.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31,7 +94,11 @@
           "relative_path": "api/TAssetBundle.AssetBundleDownloadInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleDownloadInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetBundleDownloadInfo.yml\" sourcestartlinenumber=\"1\">Class for storing AssetBundle download information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -41,7 +108,25 @@
           "relative_path": "api/TAssetBundle.AssetBundleInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetBundleInfo.yml\" sourcestartlinenumber=\"1\">Class that stores information about an AssetBundle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetBundleProviderBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetBundleProviderBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleProviderBase",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetBundleProviderBase.yml\" sourcestartlinenumber=\"1\">에셋 번들 제공자 기본 클래스</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51,7 +136,11 @@
           "relative_path": "api/TAssetBundle.AssetBundleRuntimeInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetBundleRuntimeInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetBundleRuntimeInfo.yml\" sourcestartlinenumber=\"1\">AssetBundle runtime information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -61,7 +150,11 @@
           "relative_path": "api/TAssetBundle.AssetCatalog.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetCatalog",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetCatalog.yml\" sourcestartlinenumber=\"1\">Represents an asset catalog.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -71,7 +164,11 @@
           "relative_path": "api/TAssetBundle.AssetHandle-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetHandle<T>",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetHandle-1.yml\" sourcestartlinenumber=\"1\">Generic structure for managing specific types of assets.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -81,17 +178,11 @@
           "relative_path": "api/TAssetBundle.AssetHandle.html"
         }
       },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.AssetManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.AssetManager.html"
-        }
-      },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetHandle",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetHandle.yml\" sourcestartlinenumber=\"1\">Structure for managing asset handles.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -101,7 +192,11 @@
           "relative_path": "api/TAssetBundle.AssetRef.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetRef",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetRef.yml\" sourcestartlinenumber=\"1\">Asset Reference</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -111,7 +206,11 @@
           "relative_path": "api/TAssetBundle.AssetTypeAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetTypeAttribute",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetTypeAttribute.yml\" sourcestartlinenumber=\"1\">Asset Type Attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -121,7 +220,11 @@
           "relative_path": "api/TAssetBundle.AsyncOperationExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AsyncOperationExtensions",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AsyncOperationExtensions.yml\" sourcestartlinenumber=\"1\">AsyncOperation extension methods</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -131,7 +234,11 @@
           "relative_path": "api/TAssetBundle.AsyncOperationPool.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AsyncOperationPool",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AsyncOperationPool.yml\" sourcestartlinenumber=\"1\">Asynchronous Operation Pool Class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -141,7 +248,11 @@
           "relative_path": "api/TAssetBundle.AudioClipAssetRef.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AudioClipAssetRef",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AudioClipAssetRef.yml\" sourcestartlinenumber=\"1\">AudioClip Asset Reference</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -151,7 +262,11 @@
           "relative_path": "api/TAssetBundle.CatalogFileHandler.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.CatalogFileHandler",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.CatalogFileHandler.yml\" sourcestartlinenumber=\"1\">Catalog File Save And Load Handler</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -161,7 +276,11 @@
           "relative_path": "api/TAssetBundle.CatalogSerializer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.CatalogSerializer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.CatalogSerializer.yml\" sourcestartlinenumber=\"1\">Catalog Serializer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -171,7 +290,11 @@
           "relative_path": "api/TAssetBundle.CoreObject.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.CoreObject",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -181,7 +304,11 @@
           "relative_path": "api/TAssetBundle.CryptoSerializer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.CryptoSerializer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.CryptoSerializer.yml\" sourcestartlinenumber=\"1\">Crypto Serializer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -191,7 +318,11 @@
           "relative_path": "api/TAssetBundle.DataStructureExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.DataStructureExtensions",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.DataStructureExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for data structures.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -201,7 +332,11 @@
           "relative_path": "api/TAssetBundle.DefaultAssetCatalogComparer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.DefaultAssetCatalogComparer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.DefaultAssetCatalogComparer.yml\" sourcestartlinenumber=\"1\">Default implementation of <xref href=\"TAssetBundle.IAssetCatalogComparer\" data-throw-if-not-resolved=\"false\"></xref>.\nCompares asset catalogs based on their build numbers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -211,7 +346,11 @@
           "relative_path": "api/TAssetBundle.DefaultTagComparer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.DefaultTagComparer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.DefaultTagComparer.yml\" sourcestartlinenumber=\"1\">Default Tag Comparer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -221,7 +360,11 @@
           "relative_path": "api/TAssetBundle.Defines.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Defines",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -231,7 +374,11 @@
           "relative_path": "api/TAssetBundle.EBuildIncludeAssetBundle.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.EBuildIncludeAssetBundle",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.EBuildIncludeAssetBundle.yml\" sourcestartlinenumber=\"1\">How to include AssetBundle when building an app</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -241,7 +388,25 @@
           "relative_path": "api/TAssetBundle.EEditorPlayMode.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.EEditorPlayMode",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.EEditorPlayMode.yml\" sourcestartlinenumber=\"1\">Playmode on editor</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.EUnityWebRequestErrorResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.EUnityWebRequestErrorResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.EUnityWebRequestErrorResult",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.EUnityWebRequestErrorResult.yml\" sourcestartlinenumber=\"1\">Simplified result type for UnityWebRequest error classification.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -251,7 +416,11 @@
           "relative_path": "api/TAssetBundle.Editor.AssetBundleBuildInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.AssetBundleBuildInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.AssetBundleBuildInfo.yml\" sourcestartlinenumber=\"1\">Represents a single AssetBundle to be built.\nContains the bundle name and the list of assets to include.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -261,7 +430,11 @@
           "relative_path": "api/TAssetBundle.Editor.AssetBundleBuilder.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.AssetBundleBuilder",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -271,7 +444,25 @@
           "relative_path": "api/TAssetBundle.Editor.AssetListWindow.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.AssetListWindow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.AssetSearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.AssetSearchResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.AssetSearchResult",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.AssetSearchResult.yml\" sourcestartlinenumber=\"1\">Result of an asset search operation.\nContains the asset path and the bundle it belongs to.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -281,7 +472,11 @@
           "relative_path": "api/TAssetBundle.Editor.ClearCompositionStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.ClearCompositionStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.ClearCompositionStrategy.yml\" sourcestartlinenumber=\"1\">The ClearCompositionStrategy class removes all asset bundle build information from the manifest and marks it as dirty.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -291,7 +486,11 @@
           "relative_path": "api/TAssetBundle.Editor.CompositionStrategyBuildData.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.CompositionStrategyBuildData",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.CompositionStrategyBuildData.yml\" sourcestartlinenumber=\"1\">Data class used in asset bundle composition strategies.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -301,7 +500,11 @@
           "relative_path": "api/TAssetBundle.Editor.CompositionStrategyInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.CompositionStrategyInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.CompositionStrategyInfo.yml\" sourcestartlinenumber=\"1\">Holds a composition strategy and its configuration data.\nUsed to define how assets are grouped into AssetBundles.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -311,7 +514,11 @@
           "relative_path": "api/TAssetBundle.Editor.CompositionStrategyInfoPropertyDrawer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.CompositionStrategyInfoPropertyDrawer",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -321,7 +528,11 @@
           "relative_path": "api/TAssetBundle.Editor.DefaultCompositionStrategy.ECompositionType.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.DefaultCompositionStrategy.ECompositionType",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -331,7 +542,11 @@
           "relative_path": "api/TAssetBundle.Editor.DefaultCompositionStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.DefaultCompositionStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.DefaultCompositionStrategy.yml\" sourcestartlinenumber=\"1\">The DefaultCompositionStrategy class provides a strategy to add asset bundles either together or separately.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -341,7 +556,11 @@
           "relative_path": "api/TAssetBundle.Editor.EAssetBundleBuildName.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.EAssetBundleBuildName",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.EAssetBundleBuildName.yml\" sourcestartlinenumber=\"1\">Enumeration that defines naming conventions for asset bundle builds.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -351,7 +570,11 @@
           "relative_path": "api/TAssetBundle.Editor.EditorGUIUtil.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.EditorGUIUtil",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -361,7 +584,11 @@
           "relative_path": "api/TAssetBundle.Editor.EditorUtil.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.EditorUtil",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -371,7 +598,11 @@
           "relative_path": "api/TAssetBundle.Editor.ExcludeObjectsCompositionStrategyData.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.ExcludeObjectsCompositionStrategyData",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.ExcludeObjectsCompositionStrategyData.yml\" sourcestartlinenumber=\"1\">ExcludeObjectsCompositionStrategyData class for holding data about objects to exclude.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -381,7 +612,25 @@
           "relative_path": "api/TAssetBundle.Editor.ExcludeObjectsStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.ExcludeObjectsStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.ExcludeObjectsStrategy.yml\" sourcestartlinenumber=\"1\">The ExcludeObjectsStrategy class excludes specific objects from the manifest.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.FilePathCollectorEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.FilePathCollectorEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.FilePathCollectorEditor",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -391,7 +640,11 @@
           "relative_path": "api/TAssetBundle.Editor.FixedCompositionStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.FixedCompositionStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.FixedCompositionStrategy.yml\" sourcestartlinenumber=\"1\">The FixedCompositionStrategy class adds specific fixed objects to the manifest.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -401,7 +654,25 @@
           "relative_path": "api/TAssetBundle.Editor.FixedCompositionStrategyData.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.FixedCompositionStrategyData",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.FixedCompositionStrategyData.yml\" sourcestartlinenumber=\"1\">FixedCompositionStrategyData class for holding data about fixed objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.IAssetBundleBuilderPluginModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.IAssetBundleBuilderPluginModule",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -411,7 +682,11 @@
           "relative_path": "api/TAssetBundle.Editor.RegexMatchCompositionStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.RegexMatchCompositionStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.RegexMatchCompositionStrategy.yml\" sourcestartlinenumber=\"1\">The RegexMatchCompositionStrategy class adds assets to the manifest that match a regex pattern.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -421,7 +696,11 @@
           "relative_path": "api/TAssetBundle.Editor.RegexMatchCompositionStrategyData.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.RegexMatchCompositionStrategyData",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.RegexMatchCompositionStrategyData.yml\" sourcestartlinenumber=\"1\">RegexMatchCompositionStrategyData class for holding data about regex match patterns.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -431,7 +710,11 @@
           "relative_path": "api/TAssetBundle.Editor.RegexMatchDeleteCompositionStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.RegexMatchDeleteCompositionStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.RegexMatchDeleteCompositionStrategy.yml\" sourcestartlinenumber=\"1\">The RegexMatchDeleteCompositionStrategy class removes asset bundles from the manifest that match a regex pattern.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -441,7 +724,11 @@
           "relative_path": "api/TAssetBundle.Editor.ReorderableListHelper.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.ReorderableListHelper",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -451,7 +738,11 @@
           "relative_path": "api/TAssetBundle.Editor.SameNameCompositionStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.SameNameCompositionStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.SameNameCompositionStrategy.yml\" sourcestartlinenumber=\"1\">The SameNameCompositionStrategy class adds assets with the same name together.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -461,7 +752,11 @@
           "relative_path": "api/TAssetBundle.Editor.TAssetBundleCompositionStrategy-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TAssetBundleCompositionStrategy<T>",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.TAssetBundleCompositionStrategy-1.yml\" sourcestartlinenumber=\"1\">Generic class for asset bundle composition strategies that use specific data types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -471,7 +766,11 @@
           "relative_path": "api/TAssetBundle.Editor.TAssetBundleCompositionStrategy.Data.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TAssetBundleCompositionStrategy.Data",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.TAssetBundleCompositionStrategy.Data.yml\" sourcestartlinenumber=\"1\">Base class for storing data required for strategy execution.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -481,7 +780,11 @@
           "relative_path": "api/TAssetBundle.Editor.TAssetBundleCompositionStrategy.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TAssetBundleCompositionStrategy",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.TAssetBundleCompositionStrategy.yml\" sourcestartlinenumber=\"1\">Base class for asset bundle composition strategies.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -491,7 +794,11 @@
           "relative_path": "api/TAssetBundle.Editor.TAssetBundleManifest.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TAssetBundleManifest",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifest.yml\" sourcestartlinenumber=\"1\">The main manifest file that manages AssetBundle builds.</p>\n<p sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifest.yml\" sourcestartlinenumber=\"3\">This ScriptableObject defines:</p>\n<ul sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifest.yml\" sourcestartlinenumber=\"4\">\n<li sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifest.yml\" sourcestartlinenumber=\"4\">Which assets belong to which AssetBundle</li>\n<li sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifest.yml\" sourcestartlinenumber=\"5\">How assets are grouped (via composition strategies)</li>\n<li sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifest.yml\" sourcestartlinenumber=\"6\">Build options (builtin, encryption, tags)</li>\n</ul>\n<p sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifest.yml\" sourcestartlinenumber=\"8\">Create via: Right-click &gt; Create &gt; TAssetBundle &gt; TAssetBundleManifest</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -501,7 +808,11 @@
           "relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestCache.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TAssetBundleManifestCache",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.TAssetBundleManifestCache.yml\" sourcestartlinenumber=\"1\">TAssetBundleManifestCache class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -511,7 +822,11 @@
           "relative_path": "api/TAssetBundle.Editor.TAssetBundleManifestUtil.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TAssetBundleManifestUtil",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -521,7 +836,11 @@
           "relative_path": "api/TAssetBundle.Editor.TagInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TagInfo",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -531,7 +850,11 @@
           "relative_path": "api/TAssetBundle.Editor.TextFieldEditorWindow.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.TextFieldEditorWindow",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -541,7 +864,11 @@
           "relative_path": "api/TAssetBundle.Editor.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -551,7 +878,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetInfo-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetInfo<T>",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetInfo-1.yml\" sourcestartlinenumber=\"1\">A class that manages asset information for a specific type of asset. Provides a Get method for the asset type.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -561,7 +892,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetInfo.EFlag.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetInfo.EFlag",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetInfo.EFlag.yml\" sourcestartlinenumber=\"1\">An enumeration representing the flags for the asset's state.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -571,7 +906,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetInfo.yml\" sourcestartlinenumber=\"1\">A class that manages asset information. This class provides functionalities to track the asset's loading state, usage, and management.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -581,7 +920,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetLinker.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetLinker",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetLinker.yml\" sourcestartlinenumber=\"1\">A class that links and manages assets on GameObjects.\nThis class stores asset information and manages the usage and release of assets.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -591,7 +934,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetLinkerExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetLinkerExtensions",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetLinkerExtensions.yml\" sourcestartlinenumber=\"1\">A static class that provides extension methods for AssetLinker.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -601,7 +948,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetLinkerInspector.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetLinkerInspector",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetLinkerInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.AssetLinker\" data-throw-if-not-resolved=\"false\"></xref> component.\nDisplays linked asset information and usage count in the Inspector window.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -611,7 +962,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetManager.LoadPrefabDelegate.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetManager.LoadPrefabDelegate",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetManager.LoadPrefabDelegate.yml\" sourcestartlinenumber=\"1\">Delegate for loading a prefab.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -621,7 +976,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetManager",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetManager.yml\" sourcestartlinenumber=\"1\">AssetManager provides methods to load, unload, and manage assets and prefabs\nusing TAssetBundle for efficient asset management. It supports asynchronous loading,\nunloading of unused assets, and pooling of prefabs.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -631,7 +990,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetPrefabPool.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetPrefabPool",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetPrefabPool.yml\" sourcestartlinenumber=\"1\">A class that extends PrefabPool to manage prefabs based on assets.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -641,7 +1004,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AssetPrefabPoolInspector.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AssetPrefabPoolInspector",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetPrefabPoolInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.AssetPrefabPool\" data-throw-if-not-resolved=\"false\"></xref> component.\nExtends <xref href=\"TAssetBundle.Extensions.PrefabPoolInspector\" data-throw-if-not-resolved=\"false\"></xref> to display asset-based prefab pool information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -651,7 +1018,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AsyncOperation-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AsyncOperation<T>",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AsyncOperation-1.yml\" sourcestartlinenumber=\"1\">Represents a generic asynchronous operation. Can store and return a result.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -661,7 +1032,11 @@
           "relative_path": "api/TAssetBundle.Extensions.AsyncOperation.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AsyncOperation",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AsyncOperation.yml\" sourcestartlinenumber=\"1\">Represents an asynchronous operation. Tracks progress and completion status.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -671,7 +1046,67 @@
           "relative_path": "api/TAssetBundle.Extensions.AsyncOperationExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.AsyncOperationExtensions",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AsyncOperationExtensions.yml\" sourcestartlinenumber=\"1\">Static class providing extension methods for <xref href=\"TAssetBundle.Extensions.AsyncOperation\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.Editor.AssetLinkerInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.Editor.AssetLinkerInspector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.Editor.AssetLinkerInspector",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.Editor.AssetLinkerInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.AssetLinker\" data-throw-if-not-resolved=\"false\"></xref> component.\nDisplays linked asset information and usage count in the Inspector window.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.Editor.AssetPrefabPoolInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.AssetPrefabPool\" data-throw-if-not-resolved=\"false\"></xref> component.\nExtends <xref href=\"TAssetBundle.Extensions.Editor.PrefabPoolInspector\" data-throw-if-not-resolved=\"false\"></xref> to display asset-based prefab pool information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.Editor.PrefabPoolInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.Editor.PrefabPoolInspector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.Editor.PrefabPoolInspector",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.Editor.PrefabPoolInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.PrefabPool\" data-throw-if-not-resolved=\"false\"></xref> component.\nDisplays prefab reference and current pooled object count in the Inspector window.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.Editor",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -681,7 +1116,11 @@
           "relative_path": "api/TAssetBundle.Extensions.GetProgressDelegate.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.GetProgressDelegate",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.GetProgressDelegate.yml\" sourcestartlinenumber=\"1\">A delegate type for getting the progress of an asset's loading process.\nThis delegate returns a float value representing the loading progress, typically between 0f (not loaded) and 1f (fully loaded).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -691,7 +1130,11 @@
           "relative_path": "api/TAssetBundle.Extensions.IGetProgressable.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.IGetProgressable",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.IGetProgressable.yml\" sourcestartlinenumber=\"1\">Interface for objects that can provide progress information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -701,7 +1144,11 @@
           "relative_path": "api/TAssetBundle.Extensions.PrefabPool.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PrefabPool",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PrefabPool.yml\" sourcestartlinenumber=\"1\">This class manages a pool of objects, allowing for the creation and reuse of GameObjects based on a given prefab.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -711,7 +1158,11 @@
           "relative_path": "api/TAssetBundle.Extensions.PrefabPoolDelegate.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PrefabPoolDelegate",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PrefabPoolDelegate.yml\" sourcestartlinenumber=\"1\">Delegate for handling prefab pool events.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -721,7 +1172,11 @@
           "relative_path": "api/TAssetBundle.Extensions.PrefabPoolInspector.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PrefabPoolInspector",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PrefabPoolInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.PrefabPool\" data-throw-if-not-resolved=\"false\"></xref> component.\nDisplays prefab reference and current pooled object count in the Inspector window.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -731,7 +1186,11 @@
           "relative_path": "api/TAssetBundle.Extensions.PrefabPoolManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PrefabPoolManager",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PrefabPoolManager.yml\" sourcestartlinenumber=\"1\">A class responsible for managing <xref href=\"TAssetBundle.Extensions.PrefabPool\" data-throw-if-not-resolved=\"false\"></xref> instances.\nThis manager ensures that frequently used prefabs are pooled efficiently,\nreducing unnecessary instantiation and destruction overhead.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -741,7 +1200,11 @@
           "relative_path": "api/TAssetBundle.Extensions.PrefabPooledObject.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PrefabPooledObject",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PrefabPooledObject.yml\" sourcestartlinenumber=\"1\">This class represents an object that is pooled within a PrefabPool.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -751,7 +1214,11 @@
           "relative_path": "api/TAssetBundle.Extensions.PrefabPooledObjectExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PrefabPooledObjectExtensions",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -761,7 +1228,25 @@
           "relative_path": "api/TAssetBundle.Extensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.FilePathCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.FilePathCollector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.FilePathCollector",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.FilePathCollector.yml\" sourcestartlinenumber=\"1\">Collects asset paths under the same folder as this ScriptableObject.\nEditor-only utility for gathering asset paths at edit time.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -771,7 +1256,11 @@
           "relative_path": "api/TAssetBundle.FolderAssetRef.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.FolderAssetRef",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.FolderAssetRef.yml\" sourcestartlinenumber=\"1\">Folder Asset Reference</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -781,7 +1270,11 @@
           "relative_path": "api/TAssetBundle.FolderAssetTypeAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.FolderAssetTypeAttribute",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.FolderAssetTypeAttribute.yml\" sourcestartlinenumber=\"1\">Folder Asset Type Attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -791,7 +1284,11 @@
           "relative_path": "api/TAssetBundle.GameObjectAssetRef.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.GameObjectAssetRef",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.GameObjectAssetRef.yml\" sourcestartlinenumber=\"1\">GameObject Asset Reference</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -801,7 +1298,53 @@
           "relative_path": "api/TAssetBundle.IActiveAssetBundleInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IActiveAssetBundleInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IActiveAssetBundleInfo.yml\" sourcestartlinenumber=\"1\">Interface that provides information about active AssetBundles.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAssetBundleManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAssetBundleManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetBundleManager",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAssetBundleManager.yml\" sourcestartlinenumber=\"1\">에셋 번들 매니저 인터페이스</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAssetBundleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAssetBundleProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetBundleProvider",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAssetBundleProvider.yml\" sourcestartlinenumber=\"1\">에셋 번들 제공자 인터페이스</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAssetBundleProviderPluginModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAssetBundleProviderPluginModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetBundleProviderPluginModule",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -811,7 +1354,11 @@
           "relative_path": "api/TAssetBundle.IAssetCatalogComparer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetCatalogComparer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAssetCatalogComparer.yml\" sourcestartlinenumber=\"1\">Defines a comparer interface for comparing asset catalogs.\nThe implementation should provide logic to determine if the remote catalog has a higher version than the local catalog.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -821,27 +1368,11 @@
           "relative_path": "api/TAssetBundle.IAssetCatalogInfo.html"
         }
       },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.IAssetHandle-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.IAssetHandle-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.IAssetHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.IAssetHandle.html"
-        }
-      },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetCatalogInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAssetCatalogInfo.yml\" sourcestartlinenumber=\"1\">Asset Catalog Information Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -851,7 +1382,11 @@
           "relative_path": "api/TAssetBundle.IAssetInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAssetInfo.yml\" sourcestartlinenumber=\"1\">Interface that provides information about individual assets.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -861,7 +1396,11 @@
           "relative_path": "api/TAssetBundle.IAsyncOperation.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAsyncOperation",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAsyncOperation.yml\" sourcestartlinenumber=\"1\">Asynchronous Operation Interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -871,7 +1410,53 @@
           "relative_path": "api/TAssetBundle.IAsyncOperationPool.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAsyncOperationPool",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAsyncOperationPool.yml\" sourcestartlinenumber=\"1\">Asynchronous Operation Pool Interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IInnerOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IInnerOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IInnerOperation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IPlugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IPlugin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IPluginModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IPluginModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IPluginModule",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -881,7 +1466,11 @@
           "relative_path": "api/TAssetBundle.IReferenceCount.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IReferenceCount",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IReferenceCount.yml\" sourcestartlinenumber=\"1\">Interface for managing reference counts.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -891,7 +1480,25 @@
           "relative_path": "api/TAssetBundle.ITagComparer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.ITagComparer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.ITagComparer.yml\" sourcestartlinenumber=\"1\">Tag Comaparer</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.InnerOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.InnerOperations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.InnerOperations",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -901,7 +1508,11 @@
           "relative_path": "api/TAssetBundle.JsonCatalogSerializer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.JsonCatalogSerializer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.JsonCatalogSerializer.yml\" sourcestartlinenumber=\"1\">Json Catalog Serializer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -911,7 +1522,11 @@
           "relative_path": "api/TAssetBundle.LoadSceneInfo.AllowSceneActivationCallback.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.LoadSceneInfo.AllowSceneActivationCallback",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.LoadSceneInfo.AllowSceneActivationCallback.yml\" sourcestartlinenumber=\"1\">Delegate for determining scene activation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -921,7 +1536,11 @@
           "relative_path": "api/TAssetBundle.LoadSceneInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.LoadSceneInfo",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.LoadSceneInfo.yml\" sourcestartlinenumber=\"1\">Structure for storing scene load information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -931,7 +1550,95 @@
           "relative_path": "api/TAssetBundle.Logger.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Logger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.PluginBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.PluginBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.PluginBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.PluginModuleAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.PluginModuleAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.PluginModuleAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.PluginModuleBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.PluginModuleBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.PluginModuleBase<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.PluginModuleBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.PluginModuleBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.PluginModuleBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.PluginModuleManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.PluginModuleManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.PluginModuleManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.ReturnValue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.ReturnValue-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.ReturnValue<T>",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -941,7 +1648,11 @@
           "relative_path": "api/TAssetBundle.RijndaelCryptoSerializer.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.RijndaelCryptoSerializer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.RijndaelCryptoSerializer.yml\" sourcestartlinenumber=\"1\">Default Crypto Serializer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -951,7 +1662,11 @@
           "relative_path": "api/TAssetBundle.SceneAssetRef.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.SceneAssetRef",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.SceneAssetRef.yml\" sourcestartlinenumber=\"1\">Scene Asset Reference</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -961,7 +1676,11 @@
           "relative_path": "api/TAssetBundle.Settings.BuildSetting.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Settings.BuildSetting",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -971,7 +1690,11 @@
           "relative_path": "api/TAssetBundle.Settings.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Settings",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Settings.yml\" sourcestartlinenumber=\"1\">TAssetBundle Settings</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -981,7 +1704,11 @@
           "relative_path": "api/TAssetBundle.SpriteAssetRef.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.SpriteAssetRef",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.SpriteAssetRef.yml\" sourcestartlinenumber=\"1\">Sprite Asset Reference</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -991,7 +1718,11 @@
           "relative_path": "api/TAssetBundle.TAssetBundles.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.TAssetBundles",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.TAssetBundles.yml\" sourcestartlinenumber=\"1\">TAssetBundle integrated manager class\nProvides core functionalities of the TAssetBundle system, including asset initialization,\ncatalog management, asset loading/unloading, scene transitions, downloads, etc.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1001,7 +1732,11 @@
           "relative_path": "api/TAssetBundle.TAsyncOperation-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.TAsyncOperation<ResultType>",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.TAsyncOperation-1.yml\" sourcestartlinenumber=\"1\">Asynchronous operation (with result type)</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1011,7 +1746,11 @@
           "relative_path": "api/TAssetBundle.TAsyncOperation.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.TAsyncOperation",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.TAsyncOperation.yml\" sourcestartlinenumber=\"1\">Asynchronous operation (no parameters)</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1021,7 +1760,11 @@
           "relative_path": "api/TAssetBundle.TAsyncOperationBase.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.TAsyncOperationBase",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.TAsyncOperationBase.yml\" sourcestartlinenumber=\"1\">Base class for asynchronous operations</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1031,7 +1774,11 @@
           "relative_path": "api/TAssetBundle.TAsyncOperationExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.TAsyncOperationExtensions",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.TAsyncOperationExtensions.yml\" sourcestartlinenumber=\"1\">TAsyncOperation extension methods</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1041,7 +1788,11 @@
           "relative_path": "api/TAssetBundle.TAsyncOperationProgress-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.TAsyncOperationProgress<ResultType>",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.TAsyncOperationProgress-1.yml\" sourcestartlinenumber=\"1\">Asynchronous operation with progress (with result type)</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1051,7 +1802,11 @@
           "relative_path": "api/TAssetBundle.UnityWebRequestError.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.UnityWebRequestError",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.UnityWebRequestError.yml\" sourcestartlinenumber=\"1\">Unified error information extracted from UnityWebRequest.\nThis struct is used to normalize network and HTTP errors\nacross different Unity versions.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1061,7 +1816,11 @@
           "relative_path": "api/TAssetBundle.UnityWebRequestExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.UnityWebRequestExtensions",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.UnityWebRequestExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for UnityWebRequest\nto provide version-independent error handling.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1071,7 +1830,39 @@
           "relative_path": "api/TAssetBundle.Util.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Util",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.WebRequest.Option.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.WebRequest.Option.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequest.Option",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.WebRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.WebRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequest",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1081,7 +1872,11 @@
           "relative_path": "api/TAssetBundle.WebRequestAsync.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequestAsync",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1091,7 +1886,11 @@
           "relative_path": "api/TAssetBundle.WebRequestCallback.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequestCallback",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1101,7 +1900,11 @@
           "relative_path": "api/TAssetBundle.WebRequestCommand.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequestCommand",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1111,7 +1914,11 @@
           "relative_path": "api/TAssetBundle.WebRequestCommandAssetBundle.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequestCommandAssetBundle",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1121,17 +1928,11 @@
           "relative_path": "api/TAssetBundle.WebRequestCommandGet.html"
         }
       },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/TAssetBundle.WebRequestCommandHead.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/TAssetBundle.WebRequestCommandHead.html"
-        }
-      },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequestCommandGet",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1141,12 +1942,13 @@
           "relative_path": "api/TAssetBundle.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle",
+      "Summary": null
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -1171,23 +1973,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "changelog.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "articles/toc.html"
-        },
-        ".json": {
-          "relative_path": "articles/toc.json"
+          "relative_path": "changelog.html"
         }
       },
       "version": ""
@@ -1364,10 +2153,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "manual/images/tassetbundle_browser.jpg",
+      "source_relative_path": "manual/images/tassetbundle_browser_4_4_0.jpg",
       "output": {
         "resource": {
-          "relative_path": "manual/images/tassetbundle_browser.jpg"
+          "relative_path": "manual/images/tassetbundle_browser_4_4_0.jpg"
         }
       },
       "version": ""
@@ -1439,7 +2228,6 @@
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

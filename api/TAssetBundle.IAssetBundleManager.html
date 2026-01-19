@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IAssetBundleManager
- </title>
+      <title>Interface IAssetBundleManager </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IAssetBundleManager
- ">
+      <meta name="title" content="Interface IAssetBundleManager ">
       
+      <meta name="description" content="에셋 번들 매니저 인터페이스">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -18,19 +17,27 @@
       
       
       <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/new/main/apiSpec/new?filename=TAssetBundle_IAssetBundleManager.md&amp;value=---%0Auid%3A%20TAssetBundle.IAssetBundleManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module">
-    import options from './../public/main.js'
-    import { init } from './../public/docfx.min.js'
-    init(options)
-  </script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -66,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -78,8 +85,7 @@
 
 
   <h1 id="TAssetBundle_IAssetBundleManager" data-uid="TAssetBundle.IAssetBundleManager" class="text-break">
-    Interface IAssetBundleManager
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Interface IAssetBundleManager  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -109,6 +115,37 @@
 
   <h2 class="section" id="properties">Properties
 </h2>
+
+
+  <a id="TAssetBundle_IAssetBundleManager_AssetBundleCacheManager_" data-uid="TAssetBundle.IAssetBundleManager.AssetBundleCacheManager*"></a>
+
+  <h3 id="TAssetBundle_IAssetBundleManager_AssetBundleCacheManager" data-uid="TAssetBundle.IAssetBundleManager.AssetBundleCacheManager">
+  AssetBundleCacheManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AssetBundleCacheManager AssetBundleCacheManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.AssetBundleCacheManager.html">AssetBundleCacheManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
 
 
   <a id="TAssetBundle_IAssetBundleManager_CryptoSerializer_" data-uid="TAssetBundle.IAssetBundleManager.CryptoSerializer*"></a>
@@ -173,6 +210,68 @@
 
 
 
+  <a id="TAssetBundle_IAssetBundleManager_LocalPath_" data-uid="TAssetBundle.IAssetBundleManager.LocalPath*"></a>
+
+  <h3 id="TAssetBundle_IAssetBundleManager_LocalPath" data-uid="TAssetBundle.IAssetBundleManager.LocalPath">
+  LocalPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string LocalPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_IAssetBundleManager_RemoteUrl_" data-uid="TAssetBundle.IAssetBundleManager.RemoteUrl*"></a>
+
+  <h3 id="TAssetBundle_IAssetBundleManager_RemoteUrl" data-uid="TAssetBundle.IAssetBundleManager.RemoteUrl">
+  RemoteUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RemoteUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_IAssetBundleManager_Settings_" data-uid="TAssetBundle.IAssetBundleManager.Settings*"></a>
 
   <h3 id="TAssetBundle_IAssetBundleManager_Settings" data-uid="TAssetBundle.IAssetBundleManager.Settings">
@@ -208,7 +307,7 @@
 
   <h3 id="TAssetBundle_IAssetBundleManager_TagComparer" data-uid="TAssetBundle.IAssetBundleManager.TagComparer">
   TagComparer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -270,35 +369,183 @@
 </h2>
 
 
-  <a id="TAssetBundle_IAssetBundleManager_LoadAssetBundleFromFile_" data-uid="TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFile*"></a>
+  <a id="TAssetBundle_IAssetBundleManager_ExistsLocalFileAsync_" data-uid="TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync*"></a>
 
-  <h3 id="TAssetBundle_IAssetBundleManager_LoadAssetBundleFromFile_System_String_System_Boolean_UnityEngine_Hash128_TAssetBundle_ReturnValue_UnityEngine_AssetBundle__" data-uid="TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFile(System.String,System.Boolean,UnityEngine.Hash128,TAssetBundle.ReturnValue{UnityEngine.AssetBundle})">
-  LoadAssetBundleFromFile(string, bool, Hash128, ReturnValue&lt;AssetBundle&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TAssetBundle_IAssetBundleManager_ExistsLocalFileAsync_System_String_" data-uid="TAssetBundle.IAssetBundleManager.ExistsLocalFileAsync(System.String)">
+  ExistsLocalFileAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerator LoadAssetBundleFromFile(string filePath, bool encrypt, Hash128 hash, ReturnValue&lt;AssetBundle&gt; returnValue)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ExistsLocalFileAsync(string filePath)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>encrypt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd></dd>
-    <dt><code>hash</code> <span class="xref">Hash128</span></dt>
-    <dd></dd>
-    <dt><code>returnValue</code> <a class="xref" href="TAssetBundle.ReturnValue-1.html">ReturnValue</a>&lt;<span class="xref">AssetBundle</span>&gt;</dt>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_IAssetBundleManager_IsBuiltinAssetBundle_" data-uid="TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle*"></a>
+
+  <h3 id="TAssetBundle_IAssetBundleManager_IsBuiltinAssetBundle_TAssetBundle_AssetBundleRuntimeInfo_" data-uid="TAssetBundle.IAssetBundleManager.IsBuiltinAssetBundle(TAssetBundle.AssetBundleRuntimeInfo)">
+  IsBuiltinAssetBundle(AssetBundleRuntimeInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsBuiltinAssetBundle(AssetBundleRuntimeInfo info)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="TAssetBundle.AssetBundleRuntimeInfo.html">AssetBundleRuntimeInfo</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_IAssetBundleManager_LoadAssetBundleFromFileAsync_" data-uid="TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync*"></a>
+
+  <h3 id="TAssetBundle_IAssetBundleManager_LoadAssetBundleFromFileAsync_TAssetBundle_InnerOperations_System_String_TAssetBundle_AssetBundleRuntimeInfo_" data-uid="TAssetBundle.IAssetBundleManager.LoadAssetBundleFromFileAsync(TAssetBundle.InnerOperations,System.String,TAssetBundle.AssetBundleRuntimeInfo)">
+  LoadAssetBundleFromFileAsync(InnerOperations, string, AssetBundleRuntimeInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AssetBundle&gt; LoadAssetBundleFromFileAsync(InnerOperations innerOperations, string filePath, AssetBundleRuntimeInfo info)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>innerOperations</code> <a class="xref" href="TAssetBundle.InnerOperations.html">InnerOperations</a></dt>
+    <dd></dd>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>info</code> <a class="xref" href="TAssetBundle.AssetBundleRuntimeInfo.html">AssetBundleRuntimeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AssetBundle</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_IAssetBundleManager_LoadAssetBundleFromMemoryAsync_" data-uid="TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync*"></a>
+
+  <h3 id="TAssetBundle_IAssetBundleManager_LoadAssetBundleFromMemoryAsync_TAssetBundle_InnerOperations_System_Byte___System_Boolean_" data-uid="TAssetBundle.IAssetBundleManager.LoadAssetBundleFromMemoryAsync(TAssetBundle.InnerOperations,System.Byte[],System.Boolean)">
+  LoadAssetBundleFromMemoryAsync(InnerOperations, byte[], bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AssetBundle&gt; LoadAssetBundleFromMemoryAsync(InnerOperations innerOperations, byte[] bytes, bool encrypted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>innerOperations</code> <a class="xref" href="TAssetBundle.InnerOperations.html">InnerOperations</a></dt>
+    <dd></dd>
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>encrypted</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">AssetBundle</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_IAssetBundleManager_ReadAllBytesLocalFileAsync_" data-uid="TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync*"></a>
+
+  <h3 id="TAssetBundle_IAssetBundleManager_ReadAllBytesLocalFileAsync_System_String_System_Boolean_" data-uid="TAssetBundle.IAssetBundleManager.ReadAllBytesLocalFileAsync(System.String,System.Boolean)">
+  ReadAllBytesLocalFileAsync(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/IAssetBundleManager.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; ReadAllBytesLocalFileAsync(string filePath, bool withError)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>withError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -316,7 +563,7 @@
 </article>
 
 
-        
+
       </div>
 
       <div class="affix">
@@ -325,7 +572,7 @@
     </main>
 
 
-    <footer class="border-top">
+    <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
           <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
