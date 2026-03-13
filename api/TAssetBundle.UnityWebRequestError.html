@@ -85,7 +85,7 @@
 
 
   <h1 id="TAssetBundle_UnityWebRequestError" data-uid="TAssetBundle.UnityWebRequestError" class="text-break">
-Struct UnityWebRequestError  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L20"><i class="bi bi-code-slash"></i></a>
+Struct UnityWebRequestError  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -144,7 +144,7 @@ across different Unity versions.</p>
 
   <h3 id="TAssetBundle_UnityWebRequestError_Success" data-uid="TAssetBundle.UnityWebRequestError.Success">
   Success
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Predefined success result.</p>
@@ -173,18 +173,17 @@ across different Unity versions.</p>
 
 
 
-  <h3 id="TAssetBundle_UnityWebRequestError_isHttpError" data-uid="TAssetBundle.UnityWebRequestError.isHttpError">
-  isHttpError
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TAssetBundle_UnityWebRequestError_errorType" data-uid="TAssetBundle.UnityWebRequestError.errorType">
+  errorType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Indicates an HTTP protocol error
-(4xx, 5xx responses).</p>
+  <div class="markdown level1 summary"><p>Error type classification.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool isHttpError</code></pre>
+    <pre><code class="lang-csharp hljs">public EUnityWebRequestErrorResult errorType</code></pre>
   </div>
 
 
@@ -192,39 +191,7 @@ across different Unity versions.</p>
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="TAssetBundle_UnityWebRequestError_isNetworkError" data-uid="TAssetBundle.UnityWebRequestError.isNetworkError">
-  isNetworkError
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L37"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Indicates a low-level network error
-(connection failure, timeout, DNS error, etc).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool isNetworkError</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="TAssetBundle.EUnityWebRequestErrorResult.html">EUnityWebRequestErrorResult</a></dt>
     <dd></dd>
   </dl>
 
@@ -239,7 +206,7 @@ across different Unity versions.</p>
 
   <h3 id="TAssetBundle_UnityWebRequestError_message" data-uid="TAssetBundle.UnityWebRequestError.message">
   message
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Error message provided by UnityWebRequest.</p>
@@ -270,7 +237,7 @@ across different Unity versions.</p>
 
   <h3 id="TAssetBundle_UnityWebRequestError_responseCode" data-uid="TAssetBundle.UnityWebRequestError.responseCode">
   responseCode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>HTTP response code.
@@ -302,7 +269,7 @@ Can be 0 for cached or local file requests.</p>
 
   <h3 id="TAssetBundle_UnityWebRequestError_url" data-uid="TAssetBundle.UnityWebRequestError.url">
   url
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Requested URL.</p>
@@ -338,12 +305,12 @@ Can be 0 for cached or local file requests.</p>
 
   <h3 id="TAssetBundle_UnityWebRequestError_IsSuccess" data-uid="TAssetBundle.UnityWebRequestError.IsSuccess">
   IsSuccess
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns true if the request is considered successful.</p>
 <ul>
-<li>Network or HTTP errors are treated as failures.</li>
+<li>Network, HTTP, or Exception errors are treated as failures.</li>
 <li>responseCode == 0 is treated as success
 (cached files, local files, or platform-specific cases).</li>
 <li>Standard HTTP success range: 2xx.</li>
@@ -353,6 +320,74 @@ Can be 0 for cached or local file requests.</p>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsSuccess { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_UnityWebRequestError_isHttpError_" data-uid="TAssetBundle.UnityWebRequestError.isHttpError*"></a>
+
+  <h3 id="TAssetBundle_UnityWebRequestError_isHttpError" data-uid="TAssetBundle.UnityWebRequestError.isHttpError">
+  isHttpError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates an HTTP protocol error
+(4xx, 5xx responses).
+Maintained for backward compatibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isHttpError { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_UnityWebRequestError_isNetworkError_" data-uid="TAssetBundle.UnityWebRequestError.isNetworkError*"></a>
+
+  <h3 id="TAssetBundle_UnityWebRequestError_isNetworkError" data-uid="TAssetBundle.UnityWebRequestError.isNetworkError">
+  isNetworkError
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/UnityWebRequestExtensions.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates a low-level network error
+(connection failure, timeout, DNS error, etc).
+Maintained for backward compatibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isNetworkError { get; }</code></pre>
   </div>
 
 

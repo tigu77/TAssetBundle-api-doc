@@ -419,6 +419,22 @@ references:
   commentId: T:TAssetBundle.AssetBundleInfo
   fullName: TAssetBundle.AssetBundleInfo
   nameWithType: AssetBundleInfo
+- uid: TAssetBundle.AssetBundleInfo.GetCustomData(System.String)
+  name: GetCustomData(string)
+  href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_GetCustomData_System_String_
+  commentId: M:TAssetBundle.AssetBundleInfo.GetCustomData(System.String)
+  name.vb: GetCustomData(String)
+  fullName: TAssetBundle.AssetBundleInfo.GetCustomData(string)
+  fullName.vb: TAssetBundle.AssetBundleInfo.GetCustomData(String)
+  nameWithType: AssetBundleInfo.GetCustomData(string)
+  nameWithType.vb: AssetBundleInfo.GetCustomData(String)
+- uid: TAssetBundle.AssetBundleInfo.GetCustomData*
+  name: GetCustomData
+  href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_GetCustomData_
+  commentId: Overload:TAssetBundle.AssetBundleInfo.GetCustomData
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleInfo.GetCustomData
+  nameWithType: AssetBundleInfo.GetCustomData
 - uid: TAssetBundle.AssetBundleInfo.GetFileName(System.Boolean)
   name: GetFileName(bool)
   href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_GetFileName_System_Boolean_
@@ -435,6 +451,22 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.AssetBundleInfo.GetFileName
   nameWithType: AssetBundleInfo.GetFileName
+- uid: TAssetBundle.AssetBundleInfo.SetCustomData(System.String,System.String)
+  name: SetCustomData(string, string)
+  href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_SetCustomData_System_String_System_String_
+  commentId: M:TAssetBundle.AssetBundleInfo.SetCustomData(System.String,System.String)
+  name.vb: SetCustomData(String, String)
+  fullName: TAssetBundle.AssetBundleInfo.SetCustomData(string, string)
+  fullName.vb: TAssetBundle.AssetBundleInfo.SetCustomData(String, String)
+  nameWithType: AssetBundleInfo.SetCustomData(string, string)
+  nameWithType.vb: AssetBundleInfo.SetCustomData(String, String)
+- uid: TAssetBundle.AssetBundleInfo.SetCustomData*
+  name: SetCustomData
+  href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_SetCustomData_
+  commentId: Overload:TAssetBundle.AssetBundleInfo.SetCustomData
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleInfo.SetCustomData
+  nameWithType: AssetBundleInfo.SetCustomData
 - uid: TAssetBundle.AssetBundleInfo.ToString
   name: ToString()
   href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_ToString
@@ -466,6 +498,12 @@ references:
   commentId: F:TAssetBundle.AssetBundleInfo.builtin
   fullName: TAssetBundle.AssetBundleInfo.builtin
   nameWithType: AssetBundleInfo.builtin
+- uid: TAssetBundle.AssetBundleInfo.customData
+  name: customData
+  href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_customData
+  commentId: F:TAssetBundle.AssetBundleInfo.customData
+  fullName: TAssetBundle.AssetBundleInfo.customData
+  nameWithType: AssetBundleInfo.customData
 - uid: TAssetBundle.AssetBundleInfo.dependencies
   name: dependencies
   href: api/TAssetBundle.AssetBundleInfo.html#TAssetBundle_AssetBundleInfo_dependencies
@@ -688,6 +726,22 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.AssetBundleRuntimeInfo.Encrypt
   nameWithType: AssetBundleRuntimeInfo.Encrypt
+- uid: TAssetBundle.AssetBundleRuntimeInfo.GetCustomData(System.String)
+  name: GetCustomData(string)
+  href: api/TAssetBundle.AssetBundleRuntimeInfo.html#TAssetBundle_AssetBundleRuntimeInfo_GetCustomData_System_String_
+  commentId: M:TAssetBundle.AssetBundleRuntimeInfo.GetCustomData(System.String)
+  name.vb: GetCustomData(String)
+  fullName: TAssetBundle.AssetBundleRuntimeInfo.GetCustomData(string)
+  fullName.vb: TAssetBundle.AssetBundleRuntimeInfo.GetCustomData(String)
+  nameWithType: AssetBundleRuntimeInfo.GetCustomData(string)
+  nameWithType.vb: AssetBundleRuntimeInfo.GetCustomData(String)
+- uid: TAssetBundle.AssetBundleRuntimeInfo.GetCustomData*
+  name: GetCustomData
+  href: api/TAssetBundle.AssetBundleRuntimeInfo.html#TAssetBundle_AssetBundleRuntimeInfo_GetCustomData_
+  commentId: Overload:TAssetBundle.AssetBundleRuntimeInfo.GetCustomData
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleRuntimeInfo.GetCustomData
+  nameWithType: AssetBundleRuntimeInfo.GetCustomData
 - uid: TAssetBundle.AssetBundleRuntimeInfo.GetName(System.Boolean)
   name: GetName(bool)
   href: api/TAssetBundle.AssetBundleRuntimeInfo.html#TAssetBundle_AssetBundleRuntimeInfo_GetName_System_Boolean_
@@ -782,6 +836,22 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.AssetBundleRuntimeInfo.Tags
   nameWithType: AssetBundleRuntimeInfo.Tags
+- uid: TAssetBundle.AssetBundleRuntimeInfo.TryGetCustomData(System.String,System.String@)
+  name: TryGetCustomData(string, out string)
+  href: api/TAssetBundle.AssetBundleRuntimeInfo.html#TAssetBundle_AssetBundleRuntimeInfo_TryGetCustomData_System_String_System_String__
+  commentId: M:TAssetBundle.AssetBundleRuntimeInfo.TryGetCustomData(System.String,System.String@)
+  name.vb: TryGetCustomData(String, String)
+  fullName: TAssetBundle.AssetBundleRuntimeInfo.TryGetCustomData(string, out string)
+  fullName.vb: TAssetBundle.AssetBundleRuntimeInfo.TryGetCustomData(String, String)
+  nameWithType: AssetBundleRuntimeInfo.TryGetCustomData(string, out string)
+  nameWithType.vb: AssetBundleRuntimeInfo.TryGetCustomData(String, String)
+- uid: TAssetBundle.AssetBundleRuntimeInfo.TryGetCustomData*
+  name: TryGetCustomData
+  href: api/TAssetBundle.AssetBundleRuntimeInfo.html#TAssetBundle_AssetBundleRuntimeInfo_TryGetCustomData_
+  commentId: Overload:TAssetBundle.AssetBundleRuntimeInfo.TryGetCustomData
+  isSpec: "True"
+  fullName: TAssetBundle.AssetBundleRuntimeInfo.TryGetCustomData
+  nameWithType: AssetBundleRuntimeInfo.TryGetCustomData
 - uid: TAssetBundle.AssetBundleRuntimeInfo.Uncompressed
   name: Uncompressed
   href: api/TAssetBundle.AssetBundleRuntimeInfo.html#TAssetBundle_AssetBundleRuntimeInfo_Uncompressed
@@ -1448,6 +1518,24 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.CryptoSerializer.Init
   nameWithType: CryptoSerializer.Init
+- uid: TAssetBundle.CustomData
+  name: CustomData
+  href: api/TAssetBundle.CustomData.html
+  commentId: T:TAssetBundle.CustomData
+  fullName: TAssetBundle.CustomData
+  nameWithType: CustomData
+- uid: TAssetBundle.CustomData.key
+  name: key
+  href: api/TAssetBundle.CustomData.html#TAssetBundle_CustomData_key
+  commentId: F:TAssetBundle.CustomData.key
+  fullName: TAssetBundle.CustomData.key
+  nameWithType: CustomData.key
+- uid: TAssetBundle.CustomData.value
+  name: value
+  href: api/TAssetBundle.CustomData.html#TAssetBundle_CustomData_value
+  commentId: F:TAssetBundle.CustomData.value
+  fullName: TAssetBundle.CustomData.value
+  nameWithType: CustomData.value
 - uid: TAssetBundle.DataStructureExtensions
   name: DataStructureExtensions
   href: api/TAssetBundle.DataStructureExtensions.html
@@ -1616,12 +1704,24 @@ references:
   commentId: T:TAssetBundle.EUnityWebRequestErrorResult
   fullName: TAssetBundle.EUnityWebRequestErrorResult
   nameWithType: EUnityWebRequestErrorResult
+- uid: TAssetBundle.EUnityWebRequestErrorResult.Exception
+  name: Exception
+  href: api/TAssetBundle.EUnityWebRequestErrorResult.html#TAssetBundle_EUnityWebRequestErrorResult_Exception
+  commentId: F:TAssetBundle.EUnityWebRequestErrorResult.Exception
+  fullName: TAssetBundle.EUnityWebRequestErrorResult.Exception
+  nameWithType: EUnityWebRequestErrorResult.Exception
 - uid: TAssetBundle.EUnityWebRequestErrorResult.Http
   name: Http
   href: api/TAssetBundle.EUnityWebRequestErrorResult.html#TAssetBundle_EUnityWebRequestErrorResult_Http
   commentId: F:TAssetBundle.EUnityWebRequestErrorResult.Http
   fullName: TAssetBundle.EUnityWebRequestErrorResult.Http
   nameWithType: EUnityWebRequestErrorResult.Http
+- uid: TAssetBundle.EUnityWebRequestErrorResult.IOError
+  name: IOError
+  href: api/TAssetBundle.EUnityWebRequestErrorResult.html#TAssetBundle_EUnityWebRequestErrorResult_IOError
+  commentId: F:TAssetBundle.EUnityWebRequestErrorResult.IOError
+  fullName: TAssetBundle.EUnityWebRequestErrorResult.IOError
+  nameWithType: EUnityWebRequestErrorResult.IOError
 - uid: TAssetBundle.EUnityWebRequestErrorResult.Network
   name: Network
   href: api/TAssetBundle.EUnityWebRequestErrorResult.html#TAssetBundle_EUnityWebRequestErrorResult_Network
@@ -1811,6 +1911,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath
   nameWithType: AssetBundleBuilder.GetOutputPath
+- uid: TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults
+  name: LastCrossReferenceResults
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_LastCrossReferenceResults
+  commentId: P:TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults
+  nameWithType: AssetBundleBuilder.LastCrossReferenceResults
+- uid: TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults*
+  name: LastCrossReferenceResults
+  href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_LastCrossReferenceResults_
+  commentId: Overload:TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults
+  nameWithType: AssetBundleBuilder.LastCrossReferenceResults
 - uid: TAssetBundle.Editor.AssetBundleBuilder.OnBuildCompleted
   name: OnBuildCompleted
   href: api/TAssetBundle.Editor.AssetBundleBuilder.html#TAssetBundle_Editor_AssetBundleBuilder_OnBuildCompleted
@@ -1917,6 +2030,36 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.AssetBundleBuilder.Settings
   nameWithType: AssetBundleBuilder.Settings
+- uid: TAssetBundle.Editor.AssetCrossReference
+  name: AssetCrossReference
+  href: api/TAssetBundle.Editor.AssetCrossReference.html
+  commentId: T:TAssetBundle.Editor.AssetCrossReference
+  fullName: TAssetBundle.Editor.AssetCrossReference
+  nameWithType: AssetCrossReference
+- uid: TAssetBundle.Editor.AssetCrossReference.sourceAssetPath
+  name: sourceAssetPath
+  href: api/TAssetBundle.Editor.AssetCrossReference.html#TAssetBundle_Editor_AssetCrossReference_sourceAssetPath
+  commentId: F:TAssetBundle.Editor.AssetCrossReference.sourceAssetPath
+  fullName: TAssetBundle.Editor.AssetCrossReference.sourceAssetPath
+  nameWithType: AssetCrossReference.sourceAssetPath
+- uid: TAssetBundle.Editor.AssetCrossReference.sourceBundleName
+  name: sourceBundleName
+  href: api/TAssetBundle.Editor.AssetCrossReference.html#TAssetBundle_Editor_AssetCrossReference_sourceBundleName
+  commentId: F:TAssetBundle.Editor.AssetCrossReference.sourceBundleName
+  fullName: TAssetBundle.Editor.AssetCrossReference.sourceBundleName
+  nameWithType: AssetCrossReference.sourceBundleName
+- uid: TAssetBundle.Editor.AssetCrossReference.targetAssetPath
+  name: targetAssetPath
+  href: api/TAssetBundle.Editor.AssetCrossReference.html#TAssetBundle_Editor_AssetCrossReference_targetAssetPath
+  commentId: F:TAssetBundle.Editor.AssetCrossReference.targetAssetPath
+  fullName: TAssetBundle.Editor.AssetCrossReference.targetAssetPath
+  nameWithType: AssetCrossReference.targetAssetPath
+- uid: TAssetBundle.Editor.AssetCrossReference.targetBundleName
+  name: targetBundleName
+  href: api/TAssetBundle.Editor.AssetCrossReference.html#TAssetBundle_Editor_AssetCrossReference_targetBundleName
+  commentId: F:TAssetBundle.Editor.AssetCrossReference.targetBundleName
+  fullName: TAssetBundle.Editor.AssetCrossReference.targetBundleName
+  nameWithType: AssetCrossReference.targetBundleName
 - uid: TAssetBundle.Editor.AssetListWindow
   name: AssetListWindow
   href: api/TAssetBundle.Editor.AssetListWindow.html
@@ -2050,6 +2193,87 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.CompositionStrategyInfoPropertyDrawer.OnGUI
   nameWithType: CompositionStrategyInfoPropertyDrawer.OnGUI
+- uid: TAssetBundle.Editor.CrossReferenceAnalyzer
+  name: CrossReferenceAnalyzer
+  href: api/TAssetBundle.Editor.CrossReferenceAnalyzer.html
+  commentId: T:TAssetBundle.Editor.CrossReferenceAnalyzer
+  fullName: TAssetBundle.Editor.CrossReferenceAnalyzer
+  nameWithType: CrossReferenceAnalyzer
+- uid: TAssetBundle.Editor.CrossReferenceAnalyzer.Analyze(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String[]})
+  name: Analyze(string, string, Dictionary<string, string[]>)
+  href: api/TAssetBundle.Editor.CrossReferenceAnalyzer.html#TAssetBundle_Editor_CrossReferenceAnalyzer_Analyze_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String____
+  commentId: M:TAssetBundle.Editor.CrossReferenceAnalyzer.Analyze(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String[]})
+  name.vb: Analyze(String, String, Dictionary(Of String, String()))
+  fullName: TAssetBundle.Editor.CrossReferenceAnalyzer.Analyze(string, string, System.Collections.Generic.Dictionary<string, string[]>)
+  fullName.vb: TAssetBundle.Editor.CrossReferenceAnalyzer.Analyze(String, String, System.Collections.Generic.Dictionary(Of String, String()))
+  nameWithType: CrossReferenceAnalyzer.Analyze(string, string, Dictionary<string, string[]>)
+  nameWithType.vb: CrossReferenceAnalyzer.Analyze(String, String, Dictionary(Of String, String()))
+- uid: TAssetBundle.Editor.CrossReferenceAnalyzer.Analyze*
+  name: Analyze
+  href: api/TAssetBundle.Editor.CrossReferenceAnalyzer.html#TAssetBundle_Editor_CrossReferenceAnalyzer_Analyze_
+  commentId: Overload:TAssetBundle.Editor.CrossReferenceAnalyzer.Analyze
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.CrossReferenceAnalyzer.Analyze
+  nameWithType: CrossReferenceAnalyzer.Analyze
+- uid: TAssetBundle.Editor.CrossReferenceAnalyzer.BuildAssetBundleAssetsMap(UnityEditor.AssetBundleBuild[])
+  name: BuildAssetBundleAssetsMap(AssetBundleBuild[])
+  href: api/TAssetBundle.Editor.CrossReferenceAnalyzer.html#TAssetBundle_Editor_CrossReferenceAnalyzer_BuildAssetBundleAssetsMap_UnityEditor_AssetBundleBuild___
+  commentId: M:TAssetBundle.Editor.CrossReferenceAnalyzer.BuildAssetBundleAssetsMap(UnityEditor.AssetBundleBuild[])
+  name.vb: BuildAssetBundleAssetsMap(AssetBundleBuild())
+  fullName: TAssetBundle.Editor.CrossReferenceAnalyzer.BuildAssetBundleAssetsMap(UnityEditor.AssetBundleBuild[])
+  fullName.vb: TAssetBundle.Editor.CrossReferenceAnalyzer.BuildAssetBundleAssetsMap(UnityEditor.AssetBundleBuild())
+  nameWithType: CrossReferenceAnalyzer.BuildAssetBundleAssetsMap(AssetBundleBuild[])
+  nameWithType.vb: CrossReferenceAnalyzer.BuildAssetBundleAssetsMap(AssetBundleBuild())
+- uid: TAssetBundle.Editor.CrossReferenceAnalyzer.BuildAssetBundleAssetsMap*
+  name: BuildAssetBundleAssetsMap
+  href: api/TAssetBundle.Editor.CrossReferenceAnalyzer.html#TAssetBundle_Editor_CrossReferenceAnalyzer_BuildAssetBundleAssetsMap_
+  commentId: Overload:TAssetBundle.Editor.CrossReferenceAnalyzer.BuildAssetBundleAssetsMap
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.CrossReferenceAnalyzer.BuildAssetBundleAssetsMap
+  nameWithType: CrossReferenceAnalyzer.BuildAssetBundleAssetsMap
+- uid: TAssetBundle.Editor.CrossReferenceAnalyzer.FormatErrorMessage(TAssetBundle.Editor.CrossReferenceResult)
+  name: FormatErrorMessage(CrossReferenceResult)
+  href: api/TAssetBundle.Editor.CrossReferenceAnalyzer.html#TAssetBundle_Editor_CrossReferenceAnalyzer_FormatErrorMessage_TAssetBundle_Editor_CrossReferenceResult_
+  commentId: M:TAssetBundle.Editor.CrossReferenceAnalyzer.FormatErrorMessage(TAssetBundle.Editor.CrossReferenceResult)
+  fullName: TAssetBundle.Editor.CrossReferenceAnalyzer.FormatErrorMessage(TAssetBundle.Editor.CrossReferenceResult)
+  nameWithType: CrossReferenceAnalyzer.FormatErrorMessage(CrossReferenceResult)
+- uid: TAssetBundle.Editor.CrossReferenceAnalyzer.FormatErrorMessage*
+  name: FormatErrorMessage
+  href: api/TAssetBundle.Editor.CrossReferenceAnalyzer.html#TAssetBundle_Editor_CrossReferenceAnalyzer_FormatErrorMessage_
+  commentId: Overload:TAssetBundle.Editor.CrossReferenceAnalyzer.FormatErrorMessage
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.CrossReferenceAnalyzer.FormatErrorMessage
+  nameWithType: CrossReferenceAnalyzer.FormatErrorMessage
+- uid: TAssetBundle.Editor.CrossReferenceResult
+  name: CrossReferenceResult
+  href: api/TAssetBundle.Editor.CrossReferenceResult.html
+  commentId: T:TAssetBundle.Editor.CrossReferenceResult
+  fullName: TAssetBundle.Editor.CrossReferenceResult
+  nameWithType: CrossReferenceResult
+- uid: TAssetBundle.Editor.CrossReferenceResult.aToBReferences
+  name: aToBReferences
+  href: api/TAssetBundle.Editor.CrossReferenceResult.html#TAssetBundle_Editor_CrossReferenceResult_aToBReferences
+  commentId: F:TAssetBundle.Editor.CrossReferenceResult.aToBReferences
+  fullName: TAssetBundle.Editor.CrossReferenceResult.aToBReferences
+  nameWithType: CrossReferenceResult.aToBReferences
+- uid: TAssetBundle.Editor.CrossReferenceResult.bToAReferences
+  name: bToAReferences
+  href: api/TAssetBundle.Editor.CrossReferenceResult.html#TAssetBundle_Editor_CrossReferenceResult_bToAReferences
+  commentId: F:TAssetBundle.Editor.CrossReferenceResult.bToAReferences
+  fullName: TAssetBundle.Editor.CrossReferenceResult.bToAReferences
+  nameWithType: CrossReferenceResult.bToAReferences
+- uid: TAssetBundle.Editor.CrossReferenceResult.bundleA
+  name: bundleA
+  href: api/TAssetBundle.Editor.CrossReferenceResult.html#TAssetBundle_Editor_CrossReferenceResult_bundleA
+  commentId: F:TAssetBundle.Editor.CrossReferenceResult.bundleA
+  fullName: TAssetBundle.Editor.CrossReferenceResult.bundleA
+  nameWithType: CrossReferenceResult.bundleA
+- uid: TAssetBundle.Editor.CrossReferenceResult.bundleB
+  name: bundleB
+  href: api/TAssetBundle.Editor.CrossReferenceResult.html#TAssetBundle_Editor_CrossReferenceResult_bundleB
+  commentId: F:TAssetBundle.Editor.CrossReferenceResult.bundleB
+  fullName: TAssetBundle.Editor.CrossReferenceResult.bundleB
+  nameWithType: CrossReferenceResult.bundleB
 - uid: TAssetBundle.Editor.DefaultCompositionStrategy
   name: DefaultCompositionStrategy
   href: api/TAssetBundle.Editor.DefaultCompositionStrategy.html
@@ -2655,6 +2879,44 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.IAssetBundleBuilderPluginModule.PreprocessBuild
   nameWithType: IAssetBundleBuilderPluginModule.PreprocessBuild
+- uid: TAssetBundle.Editor.IManifestEditorPluginModule
+  name: IManifestEditorPluginModule
+  href: api/TAssetBundle.Editor.IManifestEditorPluginModule.html
+  commentId: T:TAssetBundle.Editor.IManifestEditorPluginModule
+  fullName: TAssetBundle.Editor.IManifestEditorPluginModule
+  nameWithType: IManifestEditorPluginModule
+- uid: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest)
+  name: OnManifestInspectorGUI(TAssetBundleManifest)
+  href: api/TAssetBundle.Editor.IManifestEditorPluginModule.html#TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_TAssetBundle_Editor_TAssetBundleManifest_
+  commentId: M:TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest)
+  fullName: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest)
+  nameWithType: IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundleManifest)
+- uid: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI*
+  name: OnManifestInspectorGUI
+  href: api/TAssetBundle.Editor.IManifestEditorPluginModule.html#TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_
+  commentId: Overload:TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI
+  nameWithType: IManifestEditorPluginModule.OnManifestInspectorGUI
+- uid: TAssetBundle.Editor.ManifestPluginData
+  name: ManifestPluginData
+  href: api/TAssetBundle.Editor.ManifestPluginData.html
+  commentId: T:TAssetBundle.Editor.ManifestPluginData
+  fullName: TAssetBundle.Editor.ManifestPluginData
+  nameWithType: ManifestPluginData
+- uid: TAssetBundle.Editor.ManifestPluginData.OnBuildAssetBundleInfo(TAssetBundle.AssetBundleInfo)
+  name: OnBuildAssetBundleInfo(AssetBundleInfo)
+  href: api/TAssetBundle.Editor.ManifestPluginData.html#TAssetBundle_Editor_ManifestPluginData_OnBuildAssetBundleInfo_TAssetBundle_AssetBundleInfo_
+  commentId: M:TAssetBundle.Editor.ManifestPluginData.OnBuildAssetBundleInfo(TAssetBundle.AssetBundleInfo)
+  fullName: TAssetBundle.Editor.ManifestPluginData.OnBuildAssetBundleInfo(TAssetBundle.AssetBundleInfo)
+  nameWithType: ManifestPluginData.OnBuildAssetBundleInfo(AssetBundleInfo)
+- uid: TAssetBundle.Editor.ManifestPluginData.OnBuildAssetBundleInfo*
+  name: OnBuildAssetBundleInfo
+  href: api/TAssetBundle.Editor.ManifestPluginData.html#TAssetBundle_Editor_ManifestPluginData_OnBuildAssetBundleInfo_
+  commentId: Overload:TAssetBundle.Editor.ManifestPluginData.OnBuildAssetBundleInfo
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.ManifestPluginData.OnBuildAssetBundleInfo
+  nameWithType: ManifestPluginData.OnBuildAssetBundleInfo
 - uid: TAssetBundle.Editor.RegexMatchCompositionStrategy
   name: RegexMatchCompositionStrategy
   href: api/TAssetBundle.Editor.RegexMatchCompositionStrategy.html
@@ -2955,6 +3217,38 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssets
   nameWithType: TAssetBundleManifest.GetNotIncludedAssets
+- uid: TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData*
+  name: GetOrCreatePluginData
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_GetOrCreatePluginData_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData
+  nameWithType: TAssetBundleManifest.GetOrCreatePluginData
+- uid: TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData``1
+  name: GetOrCreatePluginData<T>()
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_GetOrCreatePluginData__1
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData``1
+  name.vb: GetOrCreatePluginData(Of T)()
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData<T>()
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData(Of T)()
+  nameWithType: TAssetBundleManifest.GetOrCreatePluginData<T>()
+  nameWithType.vb: TAssetBundleManifest.GetOrCreatePluginData(Of T)()
+- uid: TAssetBundle.Editor.TAssetBundleManifest.GetPluginData*
+  name: GetPluginData
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_GetPluginData_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.GetPluginData
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.GetPluginData
+  nameWithType: TAssetBundleManifest.GetPluginData
+- uid: TAssetBundle.Editor.TAssetBundleManifest.GetPluginData``1
+  name: GetPluginData<T>()
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_GetPluginData__1
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.GetPluginData``1
+  name.vb: GetPluginData(Of T)()
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.GetPluginData<T>()
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifest.GetPluginData(Of T)()
+  nameWithType: TAssetBundleManifest.GetPluginData<T>()
+  nameWithType.vb: TAssetBundleManifest.GetPluginData(Of T)()
 - uid: TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount
   name: IncludedAssetCount
   href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_IncludedAssetCount
@@ -3013,6 +3307,22 @@ references:
   commentId: E:TAssetBundle.Editor.TAssetBundleManifest.OnChanged
   fullName: TAssetBundle.Editor.TAssetBundleManifest.OnChanged
   nameWithType: TAssetBundleManifest.OnChanged
+- uid: TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData*
+  name: RemovePluginData
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RemovePluginData_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData
+  nameWithType: TAssetBundleManifest.RemovePluginData
+- uid: TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData``1
+  name: RemovePluginData<T>()
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RemovePluginData__1
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData``1
+  name.vb: RemovePluginData(Of T)()
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData<T>()
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData(Of T)()
+  nameWithType: TAssetBundleManifest.RemovePluginData<T>()
+  nameWithType.vb: TAssetBundleManifest.RemovePluginData(Of T)()
 - uid: TAssetBundle.Editor.TAssetBundleManifest.RemoveTag(System.String)
   name: RemoveTag(string)
   href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_RemoveTag_System_String_
@@ -3139,6 +3449,12 @@ references:
   commentId: F:TAssetBundle.Editor.TAssetBundleManifest.ignoreAssets
   fullName: TAssetBundle.Editor.TAssetBundleManifest.ignoreAssets
   nameWithType: TAssetBundleManifest.ignoreAssets
+- uid: TAssetBundle.Editor.TAssetBundleManifest.pluginData
+  name: pluginData
+  href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_pluginData
+  commentId: F:TAssetBundle.Editor.TAssetBundleManifest.pluginData
+  fullName: TAssetBundle.Editor.TAssetBundleManifest.pluginData
+  nameWithType: TAssetBundleManifest.pluginData
 - uid: TAssetBundle.Editor.TAssetBundleManifest.tag
   name: tag
   href: api/TAssetBundle.Editor.TAssetBundleManifest.html#TAssetBundle_Editor_TAssetBundleManifest_tag
@@ -7385,16 +7701,36 @@ references:
   commentId: F:TAssetBundle.UnityWebRequestError.Success
   fullName: TAssetBundle.UnityWebRequestError.Success
   nameWithType: UnityWebRequestError.Success
+- uid: TAssetBundle.UnityWebRequestError.errorType
+  name: errorType
+  href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_errorType
+  commentId: F:TAssetBundle.UnityWebRequestError.errorType
+  fullName: TAssetBundle.UnityWebRequestError.errorType
+  nameWithType: UnityWebRequestError.errorType
 - uid: TAssetBundle.UnityWebRequestError.isHttpError
   name: isHttpError
   href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_isHttpError
-  commentId: F:TAssetBundle.UnityWebRequestError.isHttpError
+  commentId: P:TAssetBundle.UnityWebRequestError.isHttpError
+  fullName: TAssetBundle.UnityWebRequestError.isHttpError
+  nameWithType: UnityWebRequestError.isHttpError
+- uid: TAssetBundle.UnityWebRequestError.isHttpError*
+  name: isHttpError
+  href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_isHttpError_
+  commentId: Overload:TAssetBundle.UnityWebRequestError.isHttpError
+  isSpec: "True"
   fullName: TAssetBundle.UnityWebRequestError.isHttpError
   nameWithType: UnityWebRequestError.isHttpError
 - uid: TAssetBundle.UnityWebRequestError.isNetworkError
   name: isNetworkError
   href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_isNetworkError
-  commentId: F:TAssetBundle.UnityWebRequestError.isNetworkError
+  commentId: P:TAssetBundle.UnityWebRequestError.isNetworkError
+  fullName: TAssetBundle.UnityWebRequestError.isNetworkError
+  nameWithType: UnityWebRequestError.isNetworkError
+- uid: TAssetBundle.UnityWebRequestError.isNetworkError*
+  name: isNetworkError
+  href: api/TAssetBundle.UnityWebRequestError.html#TAssetBundle_UnityWebRequestError_isNetworkError_
+  commentId: Overload:TAssetBundle.UnityWebRequestError.isNetworkError
+  isSpec: "True"
   fullName: TAssetBundle.UnityWebRequestError.isNetworkError
   nameWithType: UnityWebRequestError.isNetworkError
 - uid: TAssetBundle.UnityWebRequestError.message

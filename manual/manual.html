@@ -107,16 +107,21 @@
 <h3 id="step-3-load-assets">Step 3: Load Assets</h3>
 <pre><code class="lang-csharp">using UnityEngine;
 using TAssetBundle;
+using TAssetBundle.Extensions;
 
 public class QuickStartExample : MonoBehaviour
 {
-    void Start()
+    public string spritePath;
+
+    async void Start()
     {
-        // Load asset by path
-        TAssetBundles.LoadAssetAsync&lt;GameObject&gt;(&quot;Assets/Prefabs/MyPrefab.prefab&quot;)
-            .OnComplete += handle =&gt;
+        await TAssetBundles.InitializeAsync();
+
+        // Load and link to this GameObject — auto-released on destroy
+        AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, spritePath)
+            .OnCompleted += asset =&gt;
             {
-                Instantiate(handle.Get());
+                GetComponent&lt;SpriteRenderer&gt;().sprite = asset.Get();
             };
     }
 }
@@ -125,22 +130,35 @@ public class QuickStartExample : MonoBehaviour
 <hr>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#setup--configuration">Setup &amp; Configuration</a>
+<li><a href="#core-concept-manifest">Core Concept: Manifest</a>
 <ul>
-<li><a href="#tassetbundlemanifest">TAssetBundleManifest</a></li>
+<li><a href="#how-manifests-work">How Manifests Work</a></li>
+<li><a href="#multiple-manifests-per-folder">Multiple Manifests per Folder</a></li>
+<li><a href="#per-manifest-options">Per-Manifest Options</a></li>
+<li><a href="#creating-a-manifest">Creating a Manifest</a></li>
 <li><a href="#composition-strategies">Composition Strategies</a></li>
-<li><a href="#tassetbundle-settings">TAssetBundle Settings</a></li>
 </ul>
 </li>
-<li><a href="#building-asset-bundles">Building Asset Bundles</a></li>
-<li><a href="#loading-assets">Loading Assets</a>
+<li><a href="#assetmanager-recommended">AssetManager (Recommended)</a>
+<ul>
+<li><a href="#context-based-loading">Context-Based Loading</a></li>
+<li><a href="#manual-linking">Manual Linking</a></li>
+<li><a href="#prefab-pooling">Prefab Pooling</a></li>
+<li><a href="#unloading-strategies">Unloading Strategies</a></li>
+<li><a href="#usage-tracking">Usage Tracking</a></li>
+</ul>
+</li>
+<li><a href="#tassetbundles-low-level-api">TAssetBundles (Low-Level API)</a>
 <ul>
 <li><a href="#using-asset-path">Using Asset Path</a></li>
 <li><a href="#using-asset-reference">Using Asset Reference</a></li>
-<li><a href="#using-assetmanager">Using AssetManager</a></li>
 </ul>
 </li>
+<li><a href="#prefabpoolmanager">PrefabPoolManager</a></li>
 <li><a href="#remote-download">Remote Download</a></li>
+<li><a href="#tassetbundle-settings">TAssetBundle Settings</a></li>
+<li><a href="#building-asset-bundles">Building Asset Bundles</a></li>
+<li><a href="#plugin-system">Plugin System</a></li>
 <li><a href="#editor-tools">Editor Tools</a>
 <ul>
 <li><a href="#tassetbundle-browser">TAssetBundle Browser</a></li>
@@ -151,13 +169,32 @@ public class QuickStartExample : MonoBehaviour
 <li><a href="#editor-play-modes">Editor Play Modes</a></li>
 </ul>
 <hr>
-<h2 id="setup--configuration">Setup &amp; Configuration</h2>
-<h3 id="tassetbundlemanifest">TAssetBundleManifest</h3>
-<p>TAssetBundleManifest defines how assets in a folder are organized into AssetBundles.</p>
-<p><strong>Creating a Manifest:</strong></p>
+<h2 id="core-concept-manifest">Core Concept: Manifest</h2>
+<h3 id="how-manifests-work">How Manifests Work</h3>
+<p><strong>TAssetBundleManifest is the central unit of TAssetBundle.</strong></p>
+<p>When you create a <code>TAssetBundleManifest</code> in a folder, <strong>every file and subfolder under that folder becomes a managed target</strong> of that manifest. The manifest defines <em>how</em> those assets are grouped into AssetBundles.</p>
+<p><strong>Runtime code never needs to know about bundle structure.</strong> You always load assets by path — which bundle they belong to, how bundles are split, and what the dependencies are is all handled automatically. This means you can freely restructure your bundles at any time without changing a single line of runtime code.</p>
+<p>There are two ways to configure bundles:</p>
+<p><strong>Auto Configuration</strong> — Use built-in <code>CompositionStrategy</code> assets to automatically configure bundles. Several strategies are included by default (<code>all_together</code>, <code>all_separately</code>, <code>regex_match</code>, <code>clear</code>, etc.). Add strategies to the manifest and run them to auto-generate the bundle configuration. Strategies are executed in order, so you can combine them: for example, bundle everything together first, then exclude specific assets.</p>
+<p><strong>Manual Configuration</strong> — Drag assets directly into the manifest's <code>AssetBundleBuildInfo</code> list to manually define exactly which assets go into which bundle.</p>
+<h3 id="multiple-manifests-per-folder">Multiple Manifests per Folder</h3>
+<p>You can create <strong>multiple manifests in the same folder</strong>, each with its own bundling strategy. This lets you apply different rules to different subsets of assets within the same directory tree.</p>
+<p>For example, in an <code>Assets/Characters/</code> folder:</p>
+<ul>
+<li><strong>Manifest A</strong> — Bundles all textures together (using regex to match <code>.png</code> files)</li>
+<li><strong>Manifest B</strong> — Bundles each prefab separately (using file filter on <code>.prefab</code>)</li>
+</ul>
+<h3 id="per-manifest-options">Per-Manifest Options</h3>
+<p>Each manifest also controls:</p>
+<ul>
+<li><strong>Builtin</strong> — Include bundles in StreamingAssets (shipped with the app, no download needed)</li>
+<li><strong>Encrypt</strong> — Encrypt bundle contents for security</li>
+<li><strong>Tags</strong> — Categorize bundles for selective downloads (e.g., <code>&quot;hd&quot;</code>, <code>&quot;lang-en&quot;</code>, <code>&quot;level1&quot;</code>)</li>
+</ul>
+<h3 id="creating-a-manifest">Creating a Manifest</h3>
 <p>Right-click on a folder &gt; <strong>Create &gt; TAssetBundle &gt; TAssetBundleManifest</strong></p>
 <p><img src="images/create_manifest.jpg" alt="create_manifest"></p>
-<p><strong>Manifest Options:</strong></p>
+<p><strong>Manifest Inspector:</strong></p>
 <p><img src="images/tassetbundle_manifest.jpg" alt="tassetbundle_manifest"></p>
 <table>
 <thead>
@@ -275,8 +312,301 @@ public class QuickStartExample : MonoBehaviour
 </tr>
 </tbody>
 </table>
+<p>You can also create custom strategies by extending <code>TAssetBundleCompositionStrategy&lt;Data&gt;</code>.</p>
 <hr>
-<h3 id="tassetbundle-settings">TAssetBundle Settings</h3>
+<h2 id="assetmanager-recommended">AssetManager (Recommended)</h2>
+<p><code>AssetManager</code> (in <code>TAssetBundle.Extensions</code>) is the recommended way to load and manage assets. It provides automatic lifecycle management, usage tracking, and prefab pooling in one unified interface.</p>
+<h3 id="context-based-loading">Context-Based Loading</h3>
+<p>The key feature of AssetManager is <strong>context-based loading</strong>. When you pass a GameObject as context, the asset is automatically linked to it. When the GameObject is destroyed, the asset reference is released — no manual cleanup needed.</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+using TAssetBundle.Extensions;
+
+public class ContextLoadingExample : MonoBehaviour
+{
+    public string spritePath;
+
+    void Start()
+    {
+        // Load and link to this GameObject
+        // Asset is automatically released when this GameObject is destroyed
+        AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, spritePath)
+            .OnCompleted += asset =&gt;
+            {
+                GetComponent&lt;Image&gt;().sprite = asset.Get();
+            };
+    }
+    // No OnDestroy cleanup needed!
+}
+</code></pre>
+<p>You can also load with <code>AssetRef</code> for Inspector drag &amp; drop:</p>
+<pre><code class="lang-csharp">[AssetType(typeof(Sprite))]
+public AssetRef spriteRef;
+
+void Start()
+{
+    AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, spriteRef)
+        .OnCompleted += asset =&gt;
+        {
+            GetComponent&lt;Image&gt;().sprite = asset.Get();
+        };
+}
+</code></pre>
+<h3 id="manual-linking">Manual Linking</h3>
+<p>If you need to load without a context first, you can manually link the asset later:</p>
+<pre><code class="lang-csharp">AssetManager.LoadAssetAsync&lt;Sprite&gt;(spritePath).OnCompleted += asset =&gt;
+{
+    image.sprite = asset.Get();
+    image.LinkAsset(asset);  // Manual link — auto-released when image is destroyed
+};
+</code></pre>
+<h3 id="prefab-pooling">Prefab Pooling</h3>
+<p>AssetManager integrates prefab loading from AssetBundles with automatic pooling:</p>
+<pre><code class="lang-csharp">// Preload a prefab without instantiation
+await AssetManager.PreloadPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;);
+
+// Load and instantiate from pool
+var bullet = await AssetManager.GetPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;, parent);
+
+// Also works with AssetRef
+AssetManager.GetPrefabAsync(bulletAssetRef, transform).OnCompleted += go =&gt;
+{
+    // use the instantiated prefab
+};
+
+// Return to pool when done (not Destroy!)
+bullet.FreePrefab();
+
+// Clear a specific prefab pool
+AssetManager.ClearPrefabPool(&quot;Assets/Prefabs/Bullet.prefab&quot;);
+
+// Clear all prefab pools
+AssetManager.ClearPrefabPools();
+</code></pre>
+<h3 id="unloading-strategies">Unloading Strategies</h3>
+<p>AssetManager provides multiple unloading strategies:</p>
+<pre><code class="lang-csharp">// Unload all loaded assets
+AssetManager.UnloadAssetsAll();
+
+// Unload only unused assets (reference count = 0)
+AssetManager.UnloadUnusedAssets();
+
+// Unload assets unused for more than N seconds
+AssetManager.UnloadUnusedAssetsAfterLastUse(30f);
+
+// Unload a specific asset
+AssetManager.UnloadAsset(&quot;Assets/Sprites/icon.png&quot;);
+AssetManager.UnloadAsset(myAssetRef);
+</code></pre>
+<h3 id="usage-tracking">Usage Tracking</h3>
+<p>Query loaded assets and their usage:</p>
+<pre><code class="lang-csharp">// Iterate all assets currently in use
+foreach (var asset in AssetManager.GetUsingAssets())
+{
+    Debug.Log($&quot;{asset.AssetPath} — UsageCount: {asset.UsageCount}&quot;);
+}
+
+// Query a specific asset
+if (AssetManager.TryGetAssetInfo(&quot;Assets/Sprites/icon.png&quot;, out var info))
+{
+    Debug.Log($&quot;Loaded: {info.IsLoaded}, Using: {info.IsUsing}&quot;);
+}
+
+// Check if any assets are still loading
+bool loading = AssetManager.IsLoading();
+
+// Protect an asset from auto-unloading
+info.SetDontDestroy(true);
+</code></pre>
+<p>Use the <a href="#asset-usage-tracker">Asset Usage Tracker</a> editor window to visualize these relationships at runtime.</p>
+<hr>
+<h2 id="tassetbundles-low-level-api">TAssetBundles (Low-Level API)</h2>
+<p>For cases where you need direct control over asset handles, use the <code>TAssetBundles</code> API. You are responsible for manually unloading assets.</p>
+<h3 id="using-asset-path">Using Asset Path</h3>
+<p>Load assets using their project path:</p>
+<p><img src="images/01_load_asset_get_asset_path.jpg" alt="get_asset_path"></p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle;
+
+public class TestLoadAsset : MonoBehaviour
+{
+    public string prefabPath; // Asset Path
+
+    void Awake()
+    {
+        var loadAsset = TAssetBundles.LoadAssetAsync&lt;GameObject&gt;(prefabPath);
+        loadAsset.OnComplete += (AssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        {
+            var asset = assetHandle.Get();
+            Instantiate(asset);
+        };
+    }
+
+    void OnDestroy()
+    {
+        TAssetBundles.UnloadAsset(prefabPath);
+    }
+}
+</code></pre>
+<hr>
+<h3 id="using-asset-reference">Using Asset Reference</h3>
+<p>Asset references allow drag-and-drop in the inspector and remain valid even if the asset is moved.</p>
+<p><img src="images/01_load_asset_assetref_inspector.jpg" alt="drag_and_drop_asset"></p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle;
+
+public class TestLoadAssetReference : MonoBehaviour
+{
+    [AssetType(typeof(GameObject))]
+    public AssetRef prefab;
+
+    private AssetHandle prefabHandle;
+
+    void Awake()
+    {
+        var loadAsset = TAssetBundles.LoadAssetAsync&lt;GameObject&gt;(prefab);
+        loadAsset.OnComplete += (AssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        {
+            prefabHandle = assetHandle;
+            var asset = assetHandle.Get();
+            Instantiate(asset);
+        };
+    }
+
+    void OnDestroy()
+    {
+        TAssetBundles.UnloadAsset(prefabHandle);
+    }
+}
+</code></pre>
+<hr>
+<h2 id="prefabpoolmanager">PrefabPoolManager</h2>
+<p><code>PrefabPoolManager</code> provides standalone prefab pooling — independent of AssetBundles. Use this when you already have a prefab reference and want efficient reuse.</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle.Extensions;
+
+public class PoolExample : MonoBehaviour
+{
+    public GameObject bulletPrefab;
+
+    void Start()
+    {
+        // Pre-allocate 20 instances
+        PrefabPoolManager.Reserve(bulletPrefab, 20);
+    }
+
+    void Fire()
+    {
+        // Get from pool (creates new if pool is empty)
+        var bullet = PrefabPoolManager.Get(bulletPrefab, transform);
+    }
+
+    void OnBulletHit(GameObject bullet)
+    {
+        // Return to pool instead of destroying
+        bullet.FreePrefab();
+    }
+
+    void OnDestroy()
+    {
+        // Clear the pool
+        PrefabPoolManager.Clear(bulletPrefab);
+    }
+}
+</code></pre>
+<p><code>PrefabPoolManager</code> also supports typed components:</p>
+<pre><code class="lang-csharp">public Rigidbody projectilePrefab;
+
+void Fire()
+{
+    var rb = PrefabPoolManager.Get(projectilePrefab, transform);
+    rb.AddForce(transform.forward * 1000f);
+}
+</code></pre>
+<hr>
+<h2 id="remote-download">Remote Download</h2>
+<p>Download AssetBundles from a remote server.</p>
+<p><strong>Download Flow:</strong></p>
+<ol>
+<li>Check for Catalog Update</li>
+<li>Update the Catalog</li>
+<li>Get the Download Size</li>
+<li>Download the Assets</li>
+</ol>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+using TAssetBundle;
+
+public class RemoteDownloadExample : MonoBehaviour
+{
+    public string remoteDownloadUrl;
+    public Text statusText;
+
+    private void Awake()
+    {
+        // [BuildTarget] is replaced with actual platform
+        TAssetBundles.SetRemoteUrl(remoteDownloadUrl);
+    }
+
+    private void OnGUI()
+    {
+        if (GUILayout.Button(&quot;Check Catalog Update&quot;))
+        {
+            TAssetBundles.CheckCatalogUpdateAsync().OnComplete += result =&gt;
+            {
+                statusText.text = &quot;Need update: &quot; + result;
+            };
+        }
+
+        if (GUILayout.Button(&quot;Update Catalog&quot;))
+        {
+            TAssetBundles.UpdateCatalogAsync().OnComplete += result =&gt;
+            {
+                statusText.text = &quot;Update result: &quot; + result;
+            };
+        }
+
+        if (GUILayout.Button(&quot;Get Download Size&quot;))
+        {
+            TAssetBundles.GetDownloadSizeAsync().OnComplete += size =&gt;
+            {
+                statusText.text = &quot;Size: &quot; + FileSizeFormatter.FormatSize(size);
+            };
+        }
+
+        if (GUILayout.Button(&quot;Download All&quot;))
+        {
+            var download = TAssetBundles.DownloadAsync();
+            download.OnProgress += info =&gt;
+            {
+                double percent = info.DownloadedSize / (double)info.TotalDownloadSize * 100;
+                statusText.text = $&quot;Downloading: {percent:0.0}%&quot;;
+            };
+            download.OnComplete += info =&gt;
+            {
+                statusText.text = info.IsDownloadComplete() ? &quot;Complete!&quot; : &quot;Failed&quot;;
+            };
+        }
+    }
+}
+</code></pre>
+<p><strong>Download by Tags:</strong></p>
+<pre><code class="lang-csharp">// Get size for specific tags
+TAssetBundles.GetDownloadSizeByTagsAsync(new[] { &quot;character&quot;, &quot;level1&quot; });
+
+// Download specific tags
+TAssetBundles.DownloadByTagsAsync(new[] { &quot;character&quot; });
+</code></pre>
+<p><strong>Download by Assets:</strong></p>
+<pre><code class="lang-csharp">// Download specific assets
+TAssetBundles.DownloadByAssetsAsync(new AssetRef[] { myAssetRef });
+</code></pre>
+<p><strong>Download by Scenes:</strong></p>
+<pre><code class="lang-csharp">// Download scenes
+TAssetBundles.DownloadByScenesAsync(new[] { &quot;MyScene&quot; });
+</code></pre>
+<hr>
+<h2 id="tassetbundle-settings">TAssetBundle Settings</h2>
 <p>Access via <strong>TAssetBundle &gt; Settings</strong> menu.</p>
 <p><img src="images/tassetbundle_settings.jpg" alt="tassetbundle_settings"></p>
 <table>
@@ -406,206 +736,21 @@ public class QuickStartExample : MonoBehaviour
 <p><img src="images/build_asset_bundle.jpg" alt="build_asset_bundle"></p>
 <p><strong>Build Features:</strong></p>
 <ul>
-<li><strong>Incremental Build</strong>: Only changed assets are rebuilt (when Build Cache is enabled)</li>
+<li><strong>Incremental Build</strong>: Only changed bundles are rebuilt (when Build Cache is enabled). The cache tracks file hashes (MD5) and propagates changes through the full dependency graph — both forward and reverse.</li>
 <li><strong>Automatic Dependency Management</strong>: Dependencies between bundles are handled automatically</li>
 <li><strong>Cross-Platform</strong>: Build for any supported platform</li>
 </ul>
 <hr>
-<h2 id="loading-assets">Loading Assets</h2>
-<p>TAssetBundle provides multiple ways to load assets.</p>
-<h3 id="using-asset-path">Using Asset Path</h3>
-<p>Load assets using their project path. The path must be updated if the asset is moved.</p>
-<p><strong>Getting the asset path:</strong></p>
-<p><img src="images/01_load_asset_get_asset_path.jpg" alt="get_asset_path"></p>
-<pre><code class="lang-csharp">using UnityEngine;
-using TAssetBundle;
-
-public class TestLoadAsset : MonoBehaviour
-{
-    public string prefabPath; // Asset Path
-
-    void Awake()
-    {
-        var loadAsset = TAssetBundles.LoadAssetAsync&lt;GameObject&gt;(prefabPath);
-        loadAsset.OnComplete += (AssetHandle&lt;GameObject&gt; assetHandle) =&gt;
-        {
-            var asset = assetHandle.Get();
-            Instantiate(asset);
-        };
-    }
-
-    void OnDestroy()
-    {
-        TAssetBundles.UnloadAsset(prefabPath);
-    }
-}
-</code></pre>
-<hr>
-<h3 id="using-asset-reference">Using Asset Reference</h3>
-<p>Asset references allow drag-and-drop in the inspector and remain valid even if the asset is moved.</p>
-<p><img src="images/01_load_asset_assetref_inspector.jpg" alt="drag_and_drop_asset"></p>
-<pre><code class="lang-csharp">using UnityEngine;
-using TAssetBundle;
-
-public class TestLoadAssetReference : MonoBehaviour
-{
-    [AssetType(typeof(GameObject))]
-    public AssetRef prefab;
-
-    private AssetHandle prefabHandle;
-
-    void Awake()
-    {
-        var loadAsset = TAssetBundles.LoadAssetAsync&lt;GameObject&gt;(prefab);
-        loadAsset.OnComplete += (AssetHandle&lt;GameObject&gt; assetHandle) =&gt;
-        {
-            prefabHandle = assetHandle;
-            var asset = assetHandle.Get();
-            Instantiate(asset);
-        };
-    }
-
-    void OnDestroy()
-    {
-        TAssetBundles.UnloadAsset(prefabHandle);
-    }
-}
-</code></pre>
-<hr>
-<h3 id="using-assetmanager">Using AssetManager</h3>
-<p><code>AssetManager</code> (in <code>TAssetBundle.Extensions</code>) provides advanced asset management with automatic tracking and pooling.</p>
-<p><strong>Loading Assets with Auto-Unload:</strong></p>
-<pre><code class="lang-csharp">using UnityEngine;
-using TAssetBundle;
-using TAssetBundle.Extensions;
-
-public class TestAssetManagerLoadAsset : MonoBehaviour
-{
-    public Image imageManualLink;
-    public Image imageAutoLink;
-    public string spritePath;
-
-    private void Start()
-    {
-        // Manual linking
-        AssetManager.LoadAssetAsync&lt;Sprite&gt;(spritePath).OnCompleted += asset =&gt;
-        {
-            imageManualLink.sprite = asset.Get();
-            imageManualLink.LinkAsset(asset); // Link for auto-tracking
-        };
-
-        // Auto linking (recommended)
-        AssetManager.LoadAssetAsync&lt;Sprite&gt;(imageAutoLink.gameObject, spritePath).OnCompleted += asset =&gt;
-        {
-            imageAutoLink.sprite = asset.Get();
-        };
-    }
-
-    private void OnGUI()
-    {
-        if (GUILayout.Button(&quot;Unload Unused Assets&quot;))
-        {
-            AssetManager.UnloadUnusedAssets();
-        }
-    }
-}
-</code></pre>
-<p><strong>Prefab Instantiation with Pooling:</strong></p>
-<pre><code class="lang-csharp">using UnityEngine;
-using TAssetBundle;
-using TAssetBundle.Extensions;
-
-public class TestAssetManagerGetPrefab : MonoBehaviour
-{
-    public GameObjectAssetRef prefab;
-
-    private void Start()
-    {
-        AssetManager.GetPrefabAsync(prefab, transform).OnCompleted += go =&gt;
-        {
-            go.name = prefab.Path;
-        };
-    }
-}
-</code></pre>
-<hr>
-<h2 id="remote-download">Remote Download</h2>
-<p>Download AssetBundles from a remote server.</p>
-<p><strong>Download Flow:</strong></p>
-<ol>
-<li>Check for Catalog Update</li>
-<li>Update the Catalog</li>
-<li>Get the Download Size</li>
-<li>Download the Assets</li>
-</ol>
-<pre><code class="lang-csharp">using UnityEngine;
-using UnityEngine.UI;
-using TAssetBundle;
-
-public class RemoteDownloadExample : MonoBehaviour
-{
-    public string remoteDownloadUrl;
-    public Text statusText;
-
-    private void Awake()
-    {
-        // [BuildTarget] is replaced with actual platform
-        TAssetBundles.SetRemoteUrl(remoteDownloadUrl);
-    }
-
-    private void OnGUI()
-    {
-        if (GUILayout.Button(&quot;Check Catalog Update&quot;))
-        {
-            TAssetBundles.CheckCatalogUpdateAsync().OnComplete += result =&gt;
-            {
-                statusText.text = &quot;Need update: &quot; + result;
-            };
-        }
-
-        if (GUILayout.Button(&quot;Update Catalog&quot;))
-        {
-            TAssetBundles.UpdateCatalogAsync().OnComplete += result =&gt;
-            {
-                statusText.text = &quot;Update result: &quot; + result;
-            };
-        }
-
-        if (GUILayout.Button(&quot;Get Download Size&quot;))
-        {
-            TAssetBundles.GetDownloadSizeAsync().OnComplete += size =&gt;
-            {
-                statusText.text = &quot;Size: &quot; + FileSizeFormatter.FormatSize(size);
-            };
-        }
-
-        if (GUILayout.Button(&quot;Download All&quot;))
-        {
-            var download = TAssetBundles.DownloadAsync();
-            download.OnProgress += info =&gt;
-            {
-                double percent = info.DownloadedSize / (double)info.TotalDownloadSize * 100;
-                statusText.text = $&quot;Downloading: {percent:0.0}%&quot;;
-            };
-            download.OnComplete += info =&gt;
-            {
-                statusText.text = info.IsDownloadComplete() ? &quot;Complete!&quot; : &quot;Failed&quot;;
-            };
-        }
-    }
-}
-</code></pre>
-<p><strong>Download by Tags:</strong></p>
-<pre><code class="lang-csharp">// Get size for specific tags
-TAssetBundles.GetDownloadSizeByTagsAsync(new[] { &quot;character&quot;, &quot;level1&quot; });
-
-// Download specific tags
-TAssetBundles.DownloadByTagsAsync(new[] { &quot;character&quot; });
-</code></pre>
-<p><strong>Download by Assets:</strong></p>
-<pre><code class="lang-csharp">// Download specific assets
-TAssetBundles.DownloadByAssetsAsync(new AssetRef[] { myAssetRef });
-</code></pre>
+<h2 id="plugin-system">Plugin System</h2>
+<p>TAssetBundle supports a plugin architecture for extending its functionality. Plugins can hook into:</p>
+<ul>
+<li><strong>Build Pipeline</strong> — Add custom build steps (e.g., copying bundles to asset packs)</li>
+<li><strong>Runtime Loading</strong> — Provide custom asset bundle loading providers</li>
+<li><strong>Inspector UI</strong> — Add per-manifest configuration UI</li>
+</ul>
+<p>Plugins are implemented as ScriptableObject assets (<code>PluginBase</code>) with associated plugin modules (<code>PluginModuleBase&lt;T&gt;</code>) discovered via the <code>[PluginModule]</code> attribute.</p>
+<p><strong>Included Plugin: Play Asset Delivery</strong></p>
+<p>The Play Asset Delivery plugin demonstrates the plugin system. It integrates Google Play's asset pack system for Android AAB builds, allowing bundles to be delivered via install-time, fast-follow, or on-demand delivery. See the <code>TAssetBundlePlugins/PlayAssetDelivery/</code> folder for details.</p>
 <hr>
 <h2 id="editor-tools">Editor Tools</h2>
 <h3 id="tassetbundle-browser">TAssetBundle Browser</h3>
@@ -725,14 +870,15 @@ TAssetBundles.DownloadByAssetsAsync(new AssetRef[] { myAssetRef });
 </table>
 <hr>
 <h3 id="asset-usage-tracker">Asset Usage Tracker</h3>
-<p>Track which GameObjects are using which assets during play mode.</p>
+<p>Track which GameObjects are using which assets during play mode. This works with <code>AssetManager</code>'s context-based loading and <code>LinkAsset</code>.</p>
 <p>Access via <strong>TAssetBundle &gt; Extensions &gt; Asset Usage Tracker</strong>.</p>
 <p><img src="images/asset_usage_tracker.jpg" alt="asset_usage_tracker"></p>
 <p><strong>Features:</strong></p>
 <ul>
 <li>View objects currently using assets</li>
 <li>Sort and filter with regex</li>
-<li>Debug memory usage</li>
+<li>Debug memory usage and find leaks</li>
+<li>See loaded vs. in-use asset counts</li>
 </ul>
 <hr>
 <h2 id="editor-play-modes">Editor Play Modes</h2>

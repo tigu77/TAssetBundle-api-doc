@@ -149,6 +149,38 @@ public static class AssetBundleBuilder</code></pre>
 </h2>
 
 
+  <a id="TAssetBundle_Editor_AssetBundleBuilder_LastCrossReferenceResults_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults*"></a>
+
+  <h3 id="TAssetBundle_Editor_AssetBundleBuilder_LastCrossReferenceResults" data-uid="TAssetBundle.Editor.AssetBundleBuilder.LastCrossReferenceResults">
+  LastCrossReferenceResults
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Last cross reference analysis results from the most recent build validation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;CrossReferenceResult&gt; LastCrossReferenceResults { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TAssetBundle.Editor.CrossReferenceResult.html">CrossReferenceResult</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Editor_AssetBundleBuilder_Settings_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.Settings*"></a>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_Settings" data-uid="TAssetBundle.Editor.AssetBundleBuilder.Settings">
@@ -189,7 +221,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_BuildAssetBundle" data-uid="TAssetBundle.Editor.AssetBundleBuilder.BuildAssetBundle">
   BuildAssetBundle()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Build assets for the current platform</p>
@@ -216,7 +248,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_BuildAssetBundle_UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.BuildAssetBundle(UnityEditor.BuildTarget)">
   BuildAssetBundle(BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Build assets for that platform</p>
@@ -249,7 +281,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_BuildAssetBundle_UnityEditor_BuildTarget_System_String_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.BuildAssetBundle(UnityEditor.BuildTarget,System.String)">
   BuildAssetBundle(BuildTarget, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Build the assets with the target platform and catalog name</p>
@@ -257,7 +289,7 @@ public static class AssetBundleBuilder</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void BuildAssetBundle(BuildTarget buildTarget, string catalogName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task BuildAssetBundle(BuildTarget buildTarget, string catalogName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -270,6 +302,11 @@ public static class AssetBundleBuilder</code></pre>
 </dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -285,7 +322,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_ClearAllAssetBundleBuildInfos" data-uid="TAssetBundle.Editor.AssetBundleBuilder.ClearAllAssetBundleBuildInfos">
   ClearAllAssetBundleBuildInfos()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Only manifests using composition strategies clear asset bundle build infos.</p>
@@ -312,7 +349,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_ClearBuildCache_UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.ClearBuildCache(UnityEditor.BuildTarget)">
   ClearBuildCache(BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clear the build cache of the target platform</p>
@@ -345,7 +382,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_DryRunBuild_System_String_UnityEditor_AssetBundleBuild___UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.DryRunBuild(System.String,UnityEditor.AssetBundleBuild[],UnityEditor.BuildTarget)">
   DryRunBuild(string, AssetBundleBuild[], BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Run a dry build on the target platform and check validation</p>
@@ -390,7 +427,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_GetAllManifests" data-uid="TAssetBundle.Editor.AssetBundleBuilder.GetAllManifests">
   GetAllManifests()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get all manifests sorted by depth</p>
@@ -423,7 +460,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_GetAssetBundleBuilds_TAssetBundle_Editor_TAssetBundleManifest___" data-uid="TAssetBundle.Editor.AssetBundleBuilder.GetAssetBundleBuilds(TAssetBundle.Editor.TAssetBundleManifest[])">
   GetAssetBundleBuilds(TAssetBundleManifest[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get asset bundle build information of target manifests</p>
@@ -462,7 +499,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_GetBuiltinOutputPath_UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.GetBuiltinOutputPath(UnityEditor.BuildTarget)">
   GetBuiltinOutputPath(BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the built-in build output path for the target platform</p>
@@ -499,7 +536,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_GetOutputPath_UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget)">
   GetOutputPath(BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the build output path of the target platform</p>
@@ -538,7 +575,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_GetOutputPath_UnityEditor_BuildTarget_System_Boolean_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.GetOutputPath(UnityEditor.BuildTarget,System.Boolean)">
   GetOutputPath(BuildTarget, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L824"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L876"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -576,7 +613,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_PostprocessBuild_UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.PostprocessBuild(UnityEditor.BuildTarget)">
   PostprocessBuild(BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L771"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L823"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -607,7 +644,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_PrepareForBuild" data-uid="TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild">
   PrepareForBuild()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L708"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -638,7 +675,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_PrepareForBuild_UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.PrepareForBuild(UnityEditor.BuildTarget)">
   PrepareForBuild(BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L713"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -674,7 +711,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_PreprocessBuild_UnityEditor_BuildTarget_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.PreprocessBuild(UnityEditor.BuildTarget)">
   PreprocessBuild(BuildTarget)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L732"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -705,7 +742,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_RecompressAssetBundle_System_String_System_String_System_Boolean_UnityEngine_ThreadPriority_" data-uid="TAssetBundle.Editor.AssetBundleBuilder.RecompressAssetBundle(System.String,System.String,System.Boolean,UnityEngine.ThreadPriority)">
   RecompressAssetBundle(string, string, bool, ThreadPriority)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L836"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L888"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -747,7 +784,7 @@ public static class AssetBundleBuilder</code></pre>
 
   <h3 id="TAssetBundle_Editor_AssetBundleBuilder_RunAllCompositionStrategy" data-uid="TAssetBundle.Editor.AssetBundleBuilder.RunAllCompositionStrategy">
   RunAllCompositionStrategy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/AssetBundleBuilder.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>run all composition strategy</p>
