@@ -160,7 +160,7 @@ Class AsyncOperationExtensions  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CompleteAfter(this AsyncOperation asyncOperation, Task task)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task CompleteAfter(this AsyncOperation asyncOperation, Task task)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -171,6 +171,11 @@ Class AsyncOperationExtensions  <a class="header-action link-secondary" title="V
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -193,7 +198,7 @@ Class AsyncOperationExtensions  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CompleteAfter&lt;T&gt;(this AsyncOperation&lt;T&gt; asyncOperation, Task&lt;T&gt; task)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task CompleteAfter&lt;T&gt;(this AsyncOperation&lt;T&gt; asyncOperation, Task&lt;T&gt; task)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -204,6 +209,11 @@ Class AsyncOperationExtensions  <a class="header-action link-secondary" title="V
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">

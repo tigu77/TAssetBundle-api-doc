@@ -312,6 +312,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.CustomData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.CustomData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.CustomData",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.CustomData.yml\" sourcestartlinenumber=\"1\">Key-value pair for plugin-specific custom data on an AssetBundle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.DataStructureExtensions.yml",
       "output": {
         ".html": {
@@ -438,6 +452,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.AssetCrossReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.AssetCrossReference.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.AssetCrossReference",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.AssetCrossReference.yml\" sourcestartlinenumber=\"1\">Represents a single asset-level cross reference between two bundles</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.Editor.AssetListWindow.yml",
       "output": {
         ".html": {
@@ -519,6 +547,34 @@
       "IsMRef": true,
       "Title": "TAssetBundle.Editor.CompositionStrategyInfoPropertyDrawer",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.CrossReferenceAnalyzer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.CrossReferenceAnalyzer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.CrossReferenceAnalyzer",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.CrossReferenceAnalyzer.yml\" sourcestartlinenumber=\"1\">Analyzes cross references (circular dependencies) between asset bundles\nto identify which specific assets are causing the problem</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.CrossReferenceResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.CrossReferenceResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.CrossReferenceResult",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.CrossReferenceResult.yml\" sourcestartlinenumber=\"1\">Result of analyzing cross references between two bundles</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -673,6 +729,34 @@
       "IsMRef": true,
       "Title": "TAssetBundle.Editor.IAssetBundleBuilderPluginModule",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.IManifestEditorPluginModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.IManifestEditorPluginModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.IManifestEditorPluginModule",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Editor.ManifestPluginData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Editor.ManifestPluginData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Editor.ManifestPluginData",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.ManifestPluginData.yml\" sourcestartlinenumber=\"1\">Base class for plugin data stored in TAssetBundleManifest.\nSubclass this to attach custom plugin data to manifests.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2197,6 +2281,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/manual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/showcase.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/showcase.html"
         }
       },
       "version": ""
