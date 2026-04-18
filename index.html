@@ -90,7 +90,7 @@
 <hr>
 <h2 id="quick-start">Quick Start</h2>
 <pre><code class="lang-csharp">// Initialize
-await TAssetBundles.InitializeAsync();
+await TAssetBundles.InitializeAsync().ToTask();
 
 // Load and link to a GameObject — auto-released on destroy
 AssetManager.LoadAssetAsync&lt;Sprite&gt;(image.gameObject, &quot;Assets/Sprites/icon.png&quot;)

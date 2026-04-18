@@ -71,6 +71,13 @@
 
 <p>All notable changes to <strong>TAssetBundle</strong> are documented in this file.</p>
 <hr>
+<h3 id="460">4.6.0</h3>
+<ul>
+<li><strong>[Android] Added Google Play Asset Delivery plugin</strong> — install-time / fast-follow / on-demand delivery with automatic AAB integration, <code>OnDownloadProgress</code> event, concurrent download dedup, and Split Application Binary compatibility</li>
+<li>Added <code>UpdateTempCatalogAsync</code> — check for catalog updates and calculate download sizes without replacing the active catalog</li>
+<li>Fixed <code>TagUtil.SetDirty</code> to check <code>IsPersistent</code> before marking dirty</li>
+<li>Added <code>[Serializable]</code> to <code>CompositionStrategy</code> Data class and removed unnecessary <code>SetDirty</code> calls</li>
+</ul>
 <h3 id="450">4.5.0</h3>
 <ul>
 <li>Added Cross-Reference Analyzer — detect and visualize cross-bundle asset references at build time</li>

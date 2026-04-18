@@ -1,5 +1,5 @@
 {
-  "source_base_path": "E:/work/TAssetBundle_2021/docfx_project",
+  "source_base_path": "E:/work/TAssetBundle/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -183,6 +183,20 @@
       "IsMRef": true,
       "Title": "TAssetBundle.AssetHandle",
       "Summary": "<p sourcefile=\"api/TAssetBundle.AssetHandle.yml\" sourcestartlinenumber=\"1\">Structure for managing asset handles.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.AssetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.AssetManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.AssetManager",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.AssetManager.yml\" sourcestartlinenumber=\"1\">TAssetBundle Integrated Asset Manager</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1036,7 +1050,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TAssetBundle.Extensions.AssetLinkerInspector",
-      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetLinkerInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.AssetLinker\" data-throw-if-not-resolved=\"false\"></xref> component.\nDisplays linked asset information and usage count in the Inspector window.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1092,7 +1106,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TAssetBundle.Extensions.AssetPrefabPoolInspector",
-      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.AssetPrefabPoolInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.AssetPrefabPool\" data-throw-if-not-resolved=\"false\"></xref> component.\nExtends <xref href=\"TAssetBundle.Extensions.PrefabPoolInspector\" data-throw-if-not-resolved=\"false\"></xref> to display asset-based prefab pool information.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1260,7 +1274,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TAssetBundle.Extensions.PrefabPoolInspector",
-      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PrefabPoolInspector.yml\" sourcestartlinenumber=\"1\">Custom inspector for <xref href=\"TAssetBundle.Extensions.PrefabPool\" data-throw-if-not-resolved=\"false\"></xref> component.\nDisplays prefab reference and current pooled object count in the Inspector window.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1460,6 +1474,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAssetHandle-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAssetHandle-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetHandle<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.IAssetHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.IAssetHandle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.IAssetHandle",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.IAssetHandle.yml\" sourcestartlinenumber=\"1\">Asset Handle</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.IAssetInfo.yml",
       "output": {
         ".html": {
@@ -1638,6 +1680,146 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TAssetBundle.Logger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.DeliveryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.DeliveryType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.DeliveryType",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Plugin.PlayAssetDelivery.DeliveryType.yml\" sourcestartlinenumber=\"1\">Delivery type for Play Asset Delivery.\nDetermines how asset packs are delivered to the device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.Editor.PlayAssetDeliveryData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.Editor.PlayAssetDeliveryData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.Editor.PlayAssetDeliveryData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.Editor.PlayAssetDeliveryInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.Editor.PlayAssetDeliveryInspector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.Editor.PlayAssetDeliveryInspector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.Editor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PADAssetBundleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PADAssetBundleProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.PADAssetBundleProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PADUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PADUtil.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.PADUtil",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadProgress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadProgress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadProgress",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadProgress.yml\" sourcestartlinenumber=\"1\">Snapshot of a PAD asset pack download. Raised via\n<xref href=\"TAssetBundle.Plugin.PlayAssetDelivery.PlayAssetDelivery.OnDownloadProgress\" data-throw-if-not-resolved=\"false\"></xref> for every status/progress update.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadStatus",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Plugin.PlayAssetDelivery.PackDownloadStatus.yml\" sourcestartlinenumber=\"1\">PAD asset pack download status. Mirrors UnityEngine.Android.AndroidAssetPackStatus\nbut is kept platform-agnostic so subscribers compile on every target (iOS, WebGL, etc.).\nConversion from the Unity-provided status happens inside the Android-only provider.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PlayAssetDelivery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.PlayAssetDelivery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery.PlayAssetDelivery",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Plugin.PlayAssetDelivery.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Plugin.PlayAssetDelivery",
       "Summary": null
     },
     {
@@ -2020,6 +2202,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.WebRequestCommandHead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.WebRequestCommandHead.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.WebRequestCommandHead",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.yml",
       "output": {
         ".html": {
@@ -2281,6 +2477,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/manual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/plugin-development.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/plugin-development.html"
         }
       },
       "version": ""
