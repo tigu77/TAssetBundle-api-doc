@@ -71,6 +71,11 @@
 
 <p>All notable changes to <strong>TAssetBundle</strong> are documented in this file.</p>
 <hr>
+<h3 id="461">4.6.1</h3>
+<ul>
+<li><strong>[Play Asset Delivery]</strong> Pack bundles (install-time, fast-follow, on-demand) are now recompressed from LZMA to LZ4 before packing — every pack type lands on the device before loading, so LZ4's faster decompression wins over LZMA's smaller size for runtime performance.</li>
+<li>Manifest Inspector plugins now support multi-edit — selecting multiple manifests in the Project window applies plugin settings (e.g., PAD delivery type) to all of them in one action. <strong>Breaking for plugin authors:</strong> <code>IManifestEditorPluginModule.OnManifestInspectorGUI</code> now receives a <code>TAssetBundleManifest[]</code> instead of a single manifest.</li>
+</ul>
 <h3 id="460">4.6.0</h3>
 <ul>
 <li><strong>[Android] Added Google Play Asset Delivery plugin</strong> — install-time / fast-follow / on-demand delivery with automatic AAB integration, <code>OnDownloadProgress</code> event, concurrent download dedup, and Split Application Binary compatibility</li>

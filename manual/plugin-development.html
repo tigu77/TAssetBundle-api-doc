@@ -154,13 +154,21 @@
 </code></pre>
 <p>Returned provider is placed in the provider chain. <code>IsSupported(info)</code> decides per-bundle whether this provider handles the load.</p>
 <h3 id="imanifesteditorpluginmodule-editor"><code>IManifestEditorPluginModule</code> (Editor)</h3>
-<p>Adds a section to every <code>TAssetBundleManifest</code>'s Inspector.</p>
+<p>Adds a section to every <code>TAssetBundleManifest</code>'s Inspector. Receives every manifest
+currently selected so changes can be applied to all of them at once (Unity
+multi-object edit).</p>
 <pre><code class="lang-csharp">public interface IManifestEditorPluginModule : IPluginModule
 {
-    void OnManifestInspectorGUI(TAssetBundleManifest manifest);
+    void OnManifestInspectorGUI(TAssetBundleManifest[] manifests);
 }
 </code></pre>
 <p>Pair with <code>ManifestPluginData</code> (below) when you need per-manifest persistent data.</p>
+<p>The display reads from <code>manifests[0]</code> (no mixed-value indicator by default); use
+<code>TAssetBundleManifestUtil.ApplyToAll</code> to propagate edits to every selected manifest
+with a single Undo step:</p>
+<pre><code class="lang-csharp">if (EditorGUI.EndChangeCheck())
+    manifests.ApplyToAll(&quot;Change MyField&quot;, m =&gt; m.GetOrCreatePluginData&lt;MyPluginData&gt;().value = newValue);
+</code></pre>
 <hr>
 <h2 id="per-manifest-data-manifestplugindata">Per-Manifest Data (<code>ManifestPluginData</code>)</h2>
 <p>To attach serialized data to individual manifests, derive from <code>ManifestPluginData</code>:</p>
@@ -278,10 +286,11 @@ namespace MyCompany.MyPlugin.Editor
     {
         public override bool IsAvailable =&gt; true;
 
-        public void OnManifestInspectorGUI(TAssetBundleManifest manifest)
+        public void OnManifestInspectorGUI(TAssetBundleManifest[] manifests)
         {
             EditorGUILayout.LabelField(&quot;My Plugin Settings&quot;, EditorStyles.boldLabel);
-            // Render and persist MyPluginData here.
+            // Read current state from manifests[0], then use manifests.ApplyToAll(...)
+            // to propagate changes to every selected manifest with Undo.
         }
     }
 }

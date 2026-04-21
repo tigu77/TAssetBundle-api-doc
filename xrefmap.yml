@@ -3417,12 +3417,15 @@ references:
   commentId: T:TAssetBundle.Editor.IManifestEditorPluginModule
   fullName: TAssetBundle.Editor.IManifestEditorPluginModule
   nameWithType: IManifestEditorPluginModule
-- uid: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest)
-  name: OnManifestInspectorGUI(TAssetBundleManifest)
-  href: api/TAssetBundle.Editor.IManifestEditorPluginModule.html#TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_TAssetBundle_Editor_TAssetBundleManifest_
-  commentId: M:TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest)
-  fullName: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest)
-  nameWithType: IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundleManifest)
+- uid: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest[])
+  name: OnManifestInspectorGUI(TAssetBundleManifest[])
+  href: api/TAssetBundle.Editor.IManifestEditorPluginModule.html#TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_TAssetBundle_Editor_TAssetBundleManifest___
+  commentId: M:TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest[])
+  name.vb: OnManifestInspectorGUI(TAssetBundleManifest())
+  fullName: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest[])
+  fullName.vb: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest())
+  nameWithType: IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundleManifest[])
+  nameWithType.vb: IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundleManifest())
 - uid: TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI*
   name: OnManifestInspectorGUI
   href: api/TAssetBundle.Editor.IManifestEditorPluginModule.html#TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_
@@ -4050,6 +4053,22 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Editor.TAssetBundleManifestUtil.AddAssetBundleBuild
   nameWithType: TAssetBundleManifestUtil.AddAssetBundleBuild
+- uid: TAssetBundle.Editor.TAssetBundleManifestUtil.ApplyToAll(TAssetBundle.Editor.TAssetBundleManifest[],System.String,System.Action{TAssetBundle.Editor.TAssetBundleManifest})
+  name: ApplyToAll(TAssetBundleManifest[], string, Action<TAssetBundleManifest>)
+  href: api/TAssetBundle.Editor.TAssetBundleManifestUtil.html#TAssetBundle_Editor_TAssetBundleManifestUtil_ApplyToAll_TAssetBundle_Editor_TAssetBundleManifest___System_String_System_Action_TAssetBundle_Editor_TAssetBundleManifest__
+  commentId: M:TAssetBundle.Editor.TAssetBundleManifestUtil.ApplyToAll(TAssetBundle.Editor.TAssetBundleManifest[],System.String,System.Action{TAssetBundle.Editor.TAssetBundleManifest})
+  name.vb: ApplyToAll(TAssetBundleManifest(), String, Action(Of TAssetBundleManifest))
+  fullName: TAssetBundle.Editor.TAssetBundleManifestUtil.ApplyToAll(TAssetBundle.Editor.TAssetBundleManifest[], string, System.Action<TAssetBundle.Editor.TAssetBundleManifest>)
+  fullName.vb: TAssetBundle.Editor.TAssetBundleManifestUtil.ApplyToAll(TAssetBundle.Editor.TAssetBundleManifest(), String, System.Action(Of TAssetBundle.Editor.TAssetBundleManifest))
+  nameWithType: TAssetBundleManifestUtil.ApplyToAll(TAssetBundleManifest[], string, Action<TAssetBundleManifest>)
+  nameWithType.vb: TAssetBundleManifestUtil.ApplyToAll(TAssetBundleManifest(), String, Action(Of TAssetBundleManifest))
+- uid: TAssetBundle.Editor.TAssetBundleManifestUtil.ApplyToAll*
+  name: ApplyToAll
+  href: api/TAssetBundle.Editor.TAssetBundleManifestUtil.html#TAssetBundle_Editor_TAssetBundleManifestUtil_ApplyToAll_
+  commentId: Overload:TAssetBundle.Editor.TAssetBundleManifestUtil.ApplyToAll
+  isSpec: "True"
+  fullName: TAssetBundle.Editor.TAssetBundleManifestUtil.ApplyToAll
+  nameWithType: TAssetBundleManifestUtil.ApplyToAll
 - uid: TAssetBundle.Editor.TAssetBundleManifestUtil.GetAssetBundleBuildName(TAssetBundle.Editor.TAssetBundleManifest,System.Collections.Generic.List{UnityEngine.Object},TAssetBundle.Editor.EAssetBundleBuildName)
   name: GetAssetBundleBuildName(TAssetBundleManifest, List<Object>, EAssetBundleBuildName)
   href: api/TAssetBundle.Editor.TAssetBundleManifestUtil.html#TAssetBundle_Editor_TAssetBundleManifestUtil_GetAssetBundleBuildName_TAssetBundle_Editor_TAssetBundleManifest_System_Collections_Generic_List_UnityEngine_Object__TAssetBundle_Editor_EAssetBundleBuildName_

@@ -756,7 +756,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TAssetBundle.Editor.IManifestEditorPluginModule",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Editor.IManifestEditorPluginModule.yml\" sourcestartlinenumber=\"1\">Adds a section to every <xref href=\"TAssetBundle.Editor.TAssetBundleManifest\" data-throw-if-not-resolved=\"false\"></xref>'s Inspector.\nReceives every manifest currently selected so changes can be applied to all of\nthem at once (Unity multi-object edit).</p>\n"
     },
     {
       "type": "ManagedReference",

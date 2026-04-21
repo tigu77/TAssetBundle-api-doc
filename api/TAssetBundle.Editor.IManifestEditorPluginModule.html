@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IManifestEditorPluginModule ">
       
-      
+      <meta name="description" content="Adds a section to every &#39;s Inspector. Receives every manifest currently selected so changes can be applied to all of them at once (Unity multi-object edit).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="TAssetBundle_Editor_IManifestEditorPluginModule" data-uid="TAssetBundle.Editor.IManifestEditorPluginModule" class="text-break">
-Interface IManifestEditorPluginModule  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorPluginModules.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Interface IManifestEditorPluginModule  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorPluginModules.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,7 +93,10 @@ Interface IManifestEditorPluginModule  <a class="header-action link-secondary" t
   <dl><dt>Assembly</dt><dd>TAssetBundle.Editor.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Adds a section to every <a class="xref" href="TAssetBundle.Editor.TAssetBundleManifest.html">TAssetBundleManifest</a>'s Inspector.
+Receives every manifest currently selected so changes can be applied to all of
+them at once (Unity multi-object edit).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -118,21 +121,21 @@ Interface IManifestEditorPluginModule  <a class="header-action link-secondary" t
 
   <a id="TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_" data-uid="TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI*"></a>
 
-  <h3 id="TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_TAssetBundle_Editor_TAssetBundleManifest_" data-uid="TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest)">
-  OnManifestInspectorGUI(TAssetBundleManifest)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorPluginModules.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TAssetBundle_Editor_IManifestEditorPluginModule_OnManifestInspectorGUI_TAssetBundle_Editor_TAssetBundleManifest___" data-uid="TAssetBundle.Editor.IManifestEditorPluginModule.OnManifestInspectorGUI(TAssetBundle.Editor.TAssetBundleManifest[])">
+  OnManifestInspectorGUI(TAssetBundleManifest[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Editor/EditorPluginModules.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnManifestInspectorGUI(TAssetBundleManifest manifest)</code></pre>
+    <pre><code class="lang-csharp hljs">void OnManifestInspectorGUI(TAssetBundleManifest[] manifests)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>manifest</code> <a class="xref" href="TAssetBundle.Editor.TAssetBundleManifest.html">TAssetBundleManifest</a></dt>
+    <dt><code>manifests</code> <a class="xref" href="TAssetBundle.Editor.TAssetBundleManifest.html">TAssetBundleManifest</a>[]</dt>
     <dd></dd>
   </dl>
 
