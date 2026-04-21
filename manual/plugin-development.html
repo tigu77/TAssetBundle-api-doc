@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Plugin Development Guide </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Plugin Development Guide ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/blob/main/docfx_project/manual/plugin-development.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="plugin-development-guide">Plugin Development Guide</h1>
+
+<p>TAssetBundle can be extended through plugins that hook into build, runtime, and Inspector flows. This guide walks through how to build a plugin from scratch, with the bundled <a href="#reference-play-asset-delivery">Play Asset Delivery plugin</a> as a working reference.</p>
+<blockquote>
+<p>For advanced scenarios that need deep Unity build pipeline integration (e.g. injecting files into the generated Gradle project), implement Unity's own hooks (<code>IPostGenerateGradleAndroidProject</code>, <code>IPreprocessBuildWithReport</code>, ...) alongside the TAssetBundle plugin interfaces — they compose naturally.</p>
+</blockquote>
+<hr>
+<h2 id="anatomy-of-a-plugin">Anatomy of a Plugin</h2>
+<p>A plugin consists of <strong>two parts</strong>:</p>
+<ol>
+<li><strong>Plugin asset</strong> — a <code>ScriptableObject</code> subclass of <code>PluginBase</code>. Holds user-facing configuration.</li>
+<li><strong>Plugin modules</strong> — classes derived from <code>PluginModuleBase&lt;TPlugin&gt;</code> tagged with <code>[PluginModule(typeof(TPlugin))]</code>. Implement one or more module interfaces to hook into TAssetBundle's lifecycle.</li>
+</ol>
+<pre><code>MyPlugin.asset (PluginBase)
+ ├── MyPluginSettings (fields)
+ └── Modules (discovered at runtime by PluginModuleManager)
+      ├── MyBuilderModule : PluginModuleBase&lt;MyPlugin&gt;, IAssetBundleBuilderPluginModule
+      ├── MyProviderModule : PluginModuleBase&lt;MyPlugin&gt;, IAssetBundleProviderPluginModule
+      └── MyManifestEditorModule : PluginModuleBase&lt;MyPlugin&gt;, IManifestEditorPluginModule
+</code></pre>
+<p>At runtime, TAssetBundle:</p>
+<ol>
+<li>Loads each plugin asset from <code>Settings.plugins</code></li>
+<li>Instantiates every module class tagged with <code>[PluginModule(typeof(ThatPlugin))]</code></li>
+<li>Calls each module's <code>IsAvailable</code> getter to gate on platform/conditions</li>
+<li>Invokes the appropriate interface method at the matching lifecycle point</li>
+</ol>
+<hr>
+<h2 id="module-interfaces">Module Interfaces</h2>
+<h3 id="iassetbundlebuilderpluginmodule-editor"><code>IAssetBundleBuilderPluginModule</code> (Editor)</h3>
+<p>Hooks into the AssetBundle build pipeline.</p>
+<pre><code class="lang-csharp">public interface IAssetBundleBuilderPluginModule : IPluginModule
+{
+    bool CanPushToBuiltinAssetBundle(AssetBundleInfo info);
+    Task PrepareForBuild(BuildTarget buildTarget, AssetCatalog catalog);
+    void PreprocessBuild(BuildTarget buildTarget, AssetCatalog catalog);
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>When it runs</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CanPushToBuiltinAssetBundle</code></td>
+<td>Per-bundle, at catalog write</td>
+<td>Exclude bundles you're shipping via an alternate channel (e.g. asset packs) from the StreamingAssets copy</td>
+</tr>
+<tr>
+<td><code>PrepareForBuild</code></td>
+<td>From <strong>TAssetBundle &gt; Plugins &gt; Run Pre-Build Actions</strong> menu</td>
+<td>Stage files, generate intermediate artifacts</td>
+</tr>
+<tr>
+<td><code>PreprocessBuild</code></td>
+<td>At AssetBundle build start AND Unity player build start</td>
+<td>Snapshot editor state into the plugin asset for runtime reference</td>
+</tr>
+</tbody>
+</table>
+<h3 id="iassetbundleproviderpluginmodule-runtime"><code>IAssetBundleProviderPluginModule</code> (Runtime)</h3>
+<p>Registers a custom bundle loading provider.</p>
+<pre><code class="lang-csharp">public interface IAssetBundleProviderPluginModule : IPluginModule
+{
+    IAssetBundleProvider CreateAssetBundleProvider(IAssetBundleManager manager);
+}
+</code></pre>
+<p>Returned provider is placed in the provider chain. <code>IsSupported(info)</code> decides per-bundle whether this provider handles the load.</p>
+<h3 id="imanifesteditorpluginmodule-editor"><code>IManifestEditorPluginModule</code> (Editor)</h3>
+<p>Adds a section to every <code>TAssetBundleManifest</code>'s Inspector. Receives every manifest
+currently selected so changes can be applied to all of them at once (Unity
+multi-object edit).</p>
+<pre><code class="lang-csharp">public interface IManifestEditorPluginModule : IPluginModule
+{
+    void OnManifestInspectorGUI(TAssetBundleManifest[] manifests);
+}
+</code></pre>
+<p>Pair with <code>ManifestPluginData</code> (below) when you need per-manifest persistent data.</p>
+<p>The display reads from <code>manifests[0]</code> (no mixed-value indicator by default); use
+<code>TAssetBundleManifestUtil.ApplyToAll</code> to propagate edits to every selected manifest
+with a single Undo step:</p>
+<pre><code class="lang-csharp">if (EditorGUI.EndChangeCheck())
+    manifests.ApplyToAll(&quot;Change MyField&quot;, m =&gt; m.GetOrCreatePluginData&lt;MyPluginData&gt;().value = newValue);
+</code></pre>
+<hr>
+<h2 id="per-manifest-data-manifestplugindata">Per-Manifest Data (<code>ManifestPluginData</code>)</h2>
+<p>To attach serialized data to individual manifests, derive from <code>ManifestPluginData</code>:</p>
+<pre><code class="lang-csharp">[Serializable]
+public class MyPluginData : ManifestPluginData
+{
+    public string region = &quot;global&quot;;
+    public int priority;
+
+    // Called during AssetBundle build — use SetCustomData to forward values
+    // to the runtime catalog.
+    public override void OnBuildAssetBundleInfo(AssetBundleInfo info)
+    {
+        info.SetCustomData(&quot;region&quot;, region);
+        info.SetCustomData(&quot;priority&quot;, priority.ToString());
+    }
+}
+</code></pre>
+<p>Read from/write to it inside your <code>IManifestEditorPluginModule.OnManifestInspectorGUI</code>:</p>
+<pre><code class="lang-csharp">var data = manifest.GetPluginData&lt;MyPluginData&gt;();                 // null if not yet configured
+var created = manifest.GetOrCreatePluginData&lt;MyPluginData&gt;();      // creates if missing
+manifest.RemovePluginData&lt;MyPluginData&gt;();                         // opt-out cleanup
+</code></pre>
+<p>At runtime, pull the value back via <code>AssetBundleRuntimeInfo.TryGetCustomData(...)</code>:</p>
+<pre><code class="lang-csharp">if (info.TryGetCustomData(&quot;region&quot;, out var region)) { /* ... */ }
+</code></pre>
+<hr>
+<h2 id="execution-order">Execution Order</h2>
+<h3 id="between-plugins">Between plugins</h3>
+<p>The list in <strong>TAssetBundle Settings → Plugins</strong> is the execution order. Reorder entries to change relative priority across plugins. No dedicated priority attribute is needed — drag-and-drop the list.</p>
+<h3 id="within-one-plugin">Within one plugin</h3>
+<p>Modules of the same plugin are ordered by the optional <code>priority</code> parameter on <code>[PluginModule]</code>:</p>
+<pre><code class="lang-csharp">[PluginModule(typeof(MyPlugin), priority: 500)]
+class MyEarlyModule : PluginModuleBase&lt;MyPlugin&gt;, IAssetBundleBuilderPluginModule { ... }
+
+[PluginModule(typeof(MyPlugin), priority: 2000)]
+class MyLateModule : PluginModuleBase&lt;MyPlugin&gt;, IAssetBundleBuilderPluginModule { ... }
+</code></pre>
+<p>Lower priority runs first. Default is <code>1000</code>.</p>
+<hr>
+<h2 id="platform-gating-with-isavailable">Platform Gating with <code>IsAvailable</code></h2>
+<p>Each module overrides <code>IsAvailable</code> — return <code>false</code> to skip the module under the current conditions.</p>
+<pre><code class="lang-csharp">public override bool IsAvailable
+{
+    get
+    {
+#if UNITY_ANDROID &amp;&amp; !UNITY_EDITOR
+        return Owner.BuildAppBundle;
+#else
+        return false;
+#endif
+    }
+}
+</code></pre>
+<p>The provider module above only activates on Android AAB device builds, so the provider is not registered on other platforms or in the Editor.</p>
+<hr>
+<h2 id="minimal-template">Minimal Template</h2>
+<h3 id="1-plugin-asset">1. Plugin asset</h3>
+<pre><code class="lang-csharp">using UnityEngine;
+
+namespace MyCompany.MyPlugin
+{
+    [CreateAssetMenu(menuName = &quot;TAssetBundle/Plugin/My Plugin&quot;)]
+    public class MyPlugin : PluginBase
+    {
+        public string someField = &quot;hello&quot;;
+    }
+}
+</code></pre>
+<p>Create <code>MyPlugin.asset</code> via the Project window menu and drag it into <strong>TAssetBundle Settings → Plugins</strong>.</p>
+<h3 id="2-runtime-provider-module">2. Runtime provider module</h3>
+<pre><code class="lang-csharp">using TAssetBundle;
+
+namespace MyCompany.MyPlugin
+{
+    [PluginModule(typeof(MyPlugin))]
+    class MyProviderModule : PluginModuleBase&lt;MyPlugin&gt;, IAssetBundleProviderPluginModule
+    {
+        public override bool IsAvailable =&gt; true;
+
+        public IAssetBundleProvider CreateAssetBundleProvider(IAssetBundleManager manager)
+        {
+            return new MyCustomProvider(Owner, manager);
+        }
+    }
+}
+</code></pre>
+<h3 id="3-editor-build-hook-module">3. Editor build hook module</h3>
+<pre><code class="lang-csharp">using System.Threading.Tasks;
+using TAssetBundle;
+using TAssetBundle.Editor;
+using UnityEditor;
+
+namespace MyCompany.MyPlugin.Editor
+{
+    [PluginModule(typeof(MyPlugin))]
+    class MyBuilderModule : PluginModuleBase&lt;MyPlugin&gt;, IAssetBundleBuilderPluginModule
+    {
+        public override bool IsAvailable =&gt; true;
+
+        public bool CanPushToBuiltinAssetBundle(AssetBundleInfo info) =&gt; true;
+        public Task PrepareForBuild(BuildTarget target, AssetCatalog catalog) =&gt; Task.CompletedTask;
+        public void PreprocessBuild(BuildTarget target, AssetCatalog catalog) { }
+    }
+}
+</code></pre>
+<h3 id="4-manifest-inspector-module-optional">4. Manifest Inspector module (optional)</h3>
+<pre><code class="lang-csharp">using TAssetBundle.Editor;
+using UnityEditor;
+
+namespace MyCompany.MyPlugin.Editor
+{
+    [PluginModule(typeof(MyPlugin))]
+    class MyManifestEditorModule : PluginModuleBase&lt;MyPlugin&gt;, IManifestEditorPluginModule
+    {
+        public override bool IsAvailable =&gt; true;
+
+        public void OnManifestInspectorGUI(TAssetBundleManifest[] manifests)
+        {
+            EditorGUILayout.LabelField(&quot;My Plugin Settings&quot;, EditorStyles.boldLabel);
+            // Read current state from manifests[0], then use manifests.ApplyToAll(...)
+            // to propagate changes to every selected manifest with Undo.
+        }
+    }
+}
+</code></pre>
+<h3 id="suggested-folder-layout">Suggested folder layout</h3>
+<pre><code>Assets/TAssetBundlePlugins/MyPlugin/
+├── README.md
+├── my_plugin.asset
+└── Scripts/
+    ├── MyPlugin.cs                 // Plugin asset
+    ├── MyProviderModule.cs         // Runtime provider
+    ├── MyCustomProvider.cs         // Actual provider logic
+    ├── MyPlugin.asmdef             // Optional, scopes runtime code
+    └── Editor/
+        ├── MyBuilderModule.cs      // Build hook
+        ├── MyManifestEditorModule.cs
+        ├── MyPluginData.cs         // ManifestPluginData
+        └── MyPlugin.Editor.asmdef  // Optional, scopes editor code
+</code></pre>
+<p>Use separate <code>.asmdef</code> files so editor-only code never leaks into player builds.</p>
+<hr>
+<h2 id="reference-play-asset-delivery">Reference: Play Asset Delivery</h2>
+<p>The bundled <strong>Play Asset Delivery (PAD)</strong> plugin at <code>Assets/TAssetBundlePlugins/PlayAssetDelivery/</code> exercises every part of the plugin system:</p>
+<ul>
+<li><code>PlayAssetDelivery.cs</code> — plugin asset with runtime event (<code>OnDownloadProgress</code>)</li>
+<li><code>PADAssetBundleProvider.cs</code> + <code>AssetBundleProviderPluginModule.cs</code> — custom runtime provider</li>
+<li><code>Editor/AssetBundleBuilderPluginModule.cs</code> — AssetBundle build hook</li>
+<li><code>Editor/ManifestEditorPluginModule.cs</code> — per-manifest Inspector UI</li>
+<li><code>Editor/PlayAssetDeliveryData.cs</code> — <code>ManifestPluginData</code> with <code>OnBuildAssetBundleInfo</code></li>
+<li><code>Editor/PlayAssetDeliveryGradleModifier.cs</code> — Unity's <code>IPostGenerateGradleAndroidProject</code> hook used alongside the plugin system to inject asset-pack modules into the generated Gradle project</li>
+</ul>
+<p>Open the PAD plugin's <code>README.md</code> (bundled at <code>Assets/TAssetBundlePlugins/PlayAssetDelivery/</code>) for a fuller walk-through of a real production plugin.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

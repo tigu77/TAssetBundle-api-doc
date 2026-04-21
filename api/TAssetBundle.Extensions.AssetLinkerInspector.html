@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AssetLinkerInspector ">
       
-      <meta name="description" content="Custom inspector for  component. Displays linked asset information and usage count in the Inspector window.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -85,7 +85,7 @@
 
 
   <h1 id="TAssetBundle_Extensions_AssetLinkerInspector" data-uid="TAssetBundle.Extensions.AssetLinkerInspector" class="text-break">
-Class AssetLinkerInspector  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/Editor/AssetLinkerInspector.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class AssetLinkerInspector  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/Editor/AssetLinkerInspector.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,9 +93,7 @@ Class AssetLinkerInspector  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>TAssetBundle.Extensions.Editor.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Custom inspector for <a class="xref" href="TAssetBundle.Extensions.AssetLinker.html">AssetLinker</a> component.
-Displays linked asset information and usage count in the Inspector window.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -210,6 +208,9 @@ public class AssetLinkerInspector : Editor</code></pre>
       <span class="xref">Editor.UseDefaultMargins()</span>
     </div>
     <div>
+      <span class="xref">Editor.Initialize(Object[])</span>
+    </div>
+    <div>
       <span class="xref">Editor.MoveNextTarget()</span>
     </div>
     <div>
@@ -294,15 +295,6 @@ public class AssetLinkerInspector : Editor</code></pre>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
-    </div>
-    <div>
       <span class="xref">Object.DontDestroyOnLoad(Object)</span>
     </div>
     <div>
@@ -321,52 +313,13 @@ public class AssetLinkerInspector : Editor</code></pre>
       <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
-    </div>
-    <div>
-      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
-    </div>
-    <div>
       <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
-    </div>
-    <div>
-      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
-    </div>
-    <div>
-      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
     </div>
     <div>
       <span class="xref">Object.ToString()</span>
@@ -404,11 +357,10 @@ public class AssetLinkerInspector : Editor</code></pre>
 
   <h3 id="TAssetBundle_Extensions_AssetLinkerInspector_OnInspectorGUI" data-uid="TAssetBundle.Extensions.AssetLinkerInspector.OnInspectorGUI">
   OnInspectorGUI()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/Editor/AssetLinkerInspector.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/Editor/AssetLinkerInspector.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Draws the custom inspector GUI for AssetLinker.
-Shows the linked asset and its current usage count when valid.</p>
+  <div class="markdown level1 summary"><p>Implement this function to make a custom inspector.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

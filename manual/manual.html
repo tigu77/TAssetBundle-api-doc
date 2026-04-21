@@ -115,7 +115,7 @@ public class QuickStartExample : MonoBehaviour
 
     async void Start()
     {
-        await TAssetBundles.InitializeAsync();
+        await TAssetBundles.InitializeAsync().ToTask();
 
         // Load and link to this GameObject — auto-released on destroy
         AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, spritePath)
@@ -363,10 +363,10 @@ void Start()
 <h3 id="prefab-pooling">Prefab Pooling</h3>
 <p>AssetManager integrates prefab loading from AssetBundles with automatic pooling:</p>
 <pre><code class="lang-csharp">// Preload a prefab without instantiation
-await AssetManager.PreloadPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;);
+await AssetManager.PreloadPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;).ToTask();
 
 // Load and instantiate from pool
-var bullet = await AssetManager.GetPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;, parent);
+var bullet = await AssetManager.GetPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;, parent).ToTask();
 
 // Also works with AssetRef
 AssetManager.GetPrefabAsync(bulletAssetRef, transform).OnCompleted += go =&gt;
@@ -749,6 +749,7 @@ TAssetBundles.DownloadByScenesAsync(new[] { &quot;MyScene&quot; });
 <li><strong>Inspector UI</strong> — Add per-manifest configuration UI</li>
 </ul>
 <p>Plugins are implemented as ScriptableObject assets (<code>PluginBase</code>) with associated plugin modules (<code>PluginModuleBase&lt;T&gt;</code>) discovered via the <code>[PluginModule]</code> attribute.</p>
+<p>👉 <strong><a href="plugin-development.html">Plugin Development Guide</a></strong> — step-by-step guide to building your own plugin, with module interfaces, per-manifest data, and execution order.</p>
 <p><strong>Included Plugin: Play Asset Delivery</strong></p>
 <p>The Play Asset Delivery plugin demonstrates the plugin system. It integrates Google Play's asset pack system for Android AAB builds, allowing bundles to be delivered via install-time, fast-follow, or on-demand delivery. See the <code>TAssetBundlePlugins/PlayAssetDelivery/</code> folder for details.</p>
 <hr>
