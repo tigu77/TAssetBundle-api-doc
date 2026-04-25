@@ -1222,6 +1222,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.IAssetPathResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.IAssetPathResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.IAssetPathResolver",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.IAssetPathResolver.yml\" sourcestartlinenumber=\"1\">Resolves an input asset path to its canonical full path.\nUsed by <xref href=\"TAssetBundle.Extensions.AssetManager\" data-throw-if-not-resolved=\"false\"></xref> to translate user-provided alias paths\ninto catalog paths before any internal lookup or tracking.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TAssetBundle.Extensions.IGetProgressable.yml",
       "output": {
         ".html": {
@@ -1233,6 +1247,34 @@
       "IsMRef": true,
       "Title": "TAssetBundle.Extensions.IGetProgressable",
       "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.IGetProgressable.yml\" sourcestartlinenumber=\"1\">Interface for objects that can provide progress information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PathAliasTable.Entry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PathAliasTable.Entry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PathAliasTable.Entry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PathAliasTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PathAliasTable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PathAliasTable",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PathAliasTable.yml\" sourcestartlinenumber=\"1\">ScriptableObject that declaratively configures alias prefixes and their target\nfolders, and builds a <xref href=\"TAssetBundle.Extensions.PrefixAliasResolver\" data-throw-if-not-resolved=\"false\"></xref> wired to the active\nTAssetBundle catalog.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1317,6 +1359,20 @@
       "IsMRef": true,
       "Title": "TAssetBundle.Extensions.PrefabPooledObjectExtensions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TAssetBundle.Extensions.PrefixAliasResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TAssetBundle.Extensions.PrefixAliasResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TAssetBundle.Extensions.PrefixAliasResolver",
+      "Summary": "<p sourcefile=\"api/TAssetBundle.Extensions.PrefixAliasResolver.yml\" sourcestartlinenumber=\"1\">Prefix-based alias resolver that maps user-facing path prefixes to one or\nmore canonical folders, with an optional search-path fallback.</p>\n"
     },
     {
       "type": "ManagedReference",

@@ -155,7 +155,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_AssetInfos" data-uid="TAssetBundle.Extensions.AssetManager.AssetInfos">
   AssetInfos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the dictionary of asset information, where the key is the asset path.</p>
@@ -187,7 +187,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadPrefabFunc" data-uid="TAssetBundle.Extensions.AssetManager.LoadPrefabFunc">
   LoadPrefabFunc
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the delegate for loading prefabs.</p>
@@ -215,11 +215,48 @@ unloading of unused assets, and pooling of prefabs.</p>
 
 
 
+  <a id="TAssetBundle_Extensions_AssetManager_PathResolver_" data-uid="TAssetBundle.Extensions.AssetManager.PathResolver*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_PathResolver" data-uid="TAssetBundle.Extensions.AssetManager.PathResolver">
+  PathResolver
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional asset path resolver applied at every public API entry point that
+accepts a path string. When set, user-provided paths (aliases) are translated
+to canonical catalog paths before any internal lookup or tracking occurs.</p>
+<p>Aliases live only in input: return values, event callbacks, and
+<a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_AssetPath">AssetPath</a> are always canonical.</p>
+<p>Default is <code>null</code>; when null, paths pass through unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAssetPathResolver PathResolver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.IAssetPathResolver.html">IAssetPathResolver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Extensions_AssetManager_PrefabPoolRoot_" data-uid="TAssetBundle.Extensions.AssetManager.PrefabPoolRoot*"></a>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_PrefabPoolRoot" data-uid="TAssetBundle.Extensions.AssetManager.PrefabPoolRoot">
   PrefabPoolRoot
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the root transform for prefab pools.</p>
@@ -251,7 +288,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_PrefabPools" data-uid="TAssetBundle.Extensions.AssetManager.PrefabPools">
   PrefabPools
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the dictionary of prefab pools, where the key is the prefab path.</p>
@@ -287,7 +324,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_ClearPrefabPool_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPool(System.String)">
   ClearPrefabPool(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears a specific prefab pool.</p>
@@ -326,7 +363,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_ClearPrefabPools" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPools">
   ClearPrefabPools()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L481"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears all prefab pools.</p>
@@ -353,7 +390,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_ClearPrefabPoolsIfLoaded" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded">
   ClearPrefabPoolsIfLoaded()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L503"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -379,7 +416,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefab_System_String_UnityEngine_Transform_System_Action_UnityEngine_GameObject__System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefab(System.String,UnityEngine.Transform,System.Action{UnityEngine.GameObject},System.Boolean,System.Boolean,System.Object)">
   GetPrefab(string, Transform, Action&lt;GameObject&gt;, bool, bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset path and instantiates it as a game object.</p>
@@ -427,7 +464,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefab_TAssetBundle_AssetRef_UnityEngine_Transform_System_Action_UnityEngine_GameObject__System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefab(TAssetBundle.AssetRef,UnityEngine.Transform,System.Action{UnityEngine.GameObject},System.Boolean,System.Boolean,System.Object)">
   GetPrefab(AssetRef, Transform, Action&lt;GameObject&gt;, bool, bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset reference and instantiates it as a game object.</p>
@@ -475,7 +512,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefabAsync_System_String_UnityEngine_Transform_System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefabAsync(System.String,UnityEngine.Transform,System.Boolean,System.Boolean,System.Object)">
   GetPrefabAsync(string, Transform, bool, bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L435"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset reference and instantiates it as a game object.</p>
@@ -526,7 +563,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefabAsync_TAssetBundle_AssetRef_UnityEngine_Transform_System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefabAsync(TAssetBundle.AssetRef,UnityEngine.Transform,System.Boolean,System.Boolean,System.Object)">
   GetPrefabAsync(AssetRef, Transform, bool, bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L467"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset reference and instantiates it as a game object.</p>
@@ -577,7 +614,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_GetUsingAssets" data-uid="TAssetBundle.Extensions.AssetManager.GetUsingAssets">
   GetUsingAssets()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L588"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves all assets that are currently in use.</p>
@@ -610,7 +647,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_IsLoadedAsset_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.IsLoadedAsset(System.String)">
   IsLoadedAsset(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L564"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a specific asset is loaded.</p>
@@ -649,7 +686,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_IsLoading" data-uid="TAssetBundle.Extensions.AssetManager.IsLoading">
   IsLoading()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if any assets are currently loading.</p>
@@ -682,7 +719,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(System.String)">
   LoadAssetAsync&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads an asset using its path.</p>
@@ -727,7 +764,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_TAssetBundle_AssetRef_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(TAssetBundle.AssetRef)">
   LoadAssetAsync&lt;T&gt;(AssetRef)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads an asset using an asset reference.</p>
@@ -772,7 +809,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_UnityEngine_GameObject_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(UnityEngine.GameObject,System.String)">
   LoadAssetAsync&lt;T&gt;(GameObject, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads an asset of the specified type.</p>
@@ -820,7 +857,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_UnityEngine_GameObject_TAssetBundle_AssetRef_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(UnityEngine.GameObject,TAssetBundle.AssetRef)">
   LoadAssetAsync&lt;T&gt;(GameObject, AssetRef)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously loads an asset using a context and an asset reference.</p>
@@ -868,7 +905,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_TAssetBundle_Extensions_IGetProgressable_UnityEngine_GameObject_System_String_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(TAssetBundle.Extensions.IGetProgressable,UnityEngine.GameObject,System.String,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
   LoadAsset&lt;T&gt;(IGetProgressable, GameObject, string, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads an asset asynchronously.</p>
@@ -925,7 +962,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_TAssetBundle_Extensions_IGetProgressable_UnityEngine_GameObject_TAssetBundle_AssetRef_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(TAssetBundle.Extensions.IGetProgressable,UnityEngine.GameObject,TAssetBundle.AssetRef,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
   LoadAsset&lt;T&gt;(IGetProgressable, GameObject, AssetRef, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads an asset using an asset reference.</p>
@@ -982,7 +1019,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_UnityEngine_GameObject_System_String_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(UnityEngine.GameObject,System.String,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
   LoadAsset&lt;T&gt;(GameObject, string, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads an asset asynchronously.</p>
@@ -1036,7 +1073,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_UnityEngine_GameObject_TAssetBundle_AssetRef_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(UnityEngine.GameObject,TAssetBundle.AssetRef,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
   LoadAsset&lt;T&gt;(GameObject, AssetRef, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads an asset using an asset reference.</p>
@@ -1090,7 +1127,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_PreloadPrefabAsync_System_String_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.PreloadPrefabAsync(System.String,System.Boolean,System.Object)">
   PreloadPrefabAsync(string, bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L341"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously preloads a prefab.</p>
@@ -1135,7 +1172,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_PreloadPrefabAsync_TAssetBundle_GameObjectAssetRef_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.PreloadPrefabAsync(TAssetBundle.GameObjectAssetRef,System.Boolean,System.Object)">
   PreloadPrefabAsync(GameObjectAssetRef, bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously preloads a prefab using an asset reference.</p>
@@ -1180,7 +1217,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_TryGetAssetInfo_System_String_TAssetBundle_Extensions_AssetInfo__" data-uid="TAssetBundle.Extensions.AssetManager.TryGetAssetInfo(System.String,TAssetBundle.Extensions.AssetInfo@)">
   TryGetAssetInfo(string, out AssetInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L577"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Tries to get information about a specific asset.</p>
@@ -1222,7 +1259,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_UnloadAsset_System_String_System_Boolean_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAsset(System.String,System.Boolean)">
   UnloadAsset(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unloads the specified asset if it is loaded and removes it from the asset information.</p>
@@ -1264,7 +1301,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_UnloadAsset_TAssetBundle_AssetRef_System_Boolean_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAsset(TAssetBundle.AssetRef,System.Boolean)">
   UnloadAsset(AssetRef, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unloads a specific asset using an asset reference.</p>
@@ -1306,7 +1343,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_UnloadAssetsAll" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAssetsAll">
   UnloadAssetsAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unloads all loaded assets.</p>
@@ -1333,7 +1370,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_UnloadUnusedAssets" data-uid="TAssetBundle.Extensions.AssetManager.UnloadUnusedAssets">
   UnloadUnusedAssets()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unloads all unused assets.</p>
@@ -1360,7 +1397,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_UnloadUnusedAssetsAfterLastUse_System_Single_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadUnusedAssetsAfterLastUse(System.Single)">
   UnloadUnusedAssetsAfterLastUse(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unloads assets that have not been used for a specified duration.</p>
@@ -1396,7 +1433,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_OnCreated" data-uid="TAssetBundle.Extensions.AssetManager.OnCreated">
   OnCreated
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when a new prefab instance is created in the pool.</p>
@@ -1427,7 +1464,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_OnFree" data-uid="TAssetBundle.Extensions.AssetManager.OnFree">
   OnFree
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when a prefab instance is returned to the pool for reuse.</p>
@@ -1458,7 +1495,7 @@ unloading of unused assets, and pooling of prefabs.</p>
 
   <h3 id="TAssetBundle_Extensions_AssetManager_OnUsed" data-uid="TAssetBundle.Extensions.AssetManager.OnUsed">
   OnUsed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetManager.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when a prefab instance is retrieved from the pool for use.</p>

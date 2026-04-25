@@ -71,6 +71,13 @@
 
 <p>All notable changes to <strong>TAssetBundle</strong> are documented in this file.</p>
 <hr>
+<h3 id="470">4.7.0</h3>
+<ul>
+<li><strong>[AssetManager] Added Path Aliases</strong> — prefix-to-folder mapping with multi-folder priority search for DLC overrides and environment swaps. Configure via <code>PathAliasTable</code> or <code>PrefixAliasResolver</code>.</li>
+<li>Failed asset loads auto-clean from cache; retries no longer need <code>UnloadUnusedAssets</code></li>
+<li>Loading the same path as different types now errors cleanly instead of throwing <code>InvalidCastException</code></li>
+<li>Hardened prefab pool against races during multi-coroutine init and pool replacement</li>
+</ul>
 <h3 id="461">4.6.1</h3>
 <ul>
 <li><strong>[Play Asset Delivery]</strong> Pack bundles (install-time, fast-follow, on-demand) are now recompressed from LZMA to LZ4 before packing — every pack type lands on the device before loading, so LZ4's faster decompression wins over LZMA's smaller size for runtime performance.</li>

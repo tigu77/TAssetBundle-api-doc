@@ -146,6 +146,7 @@ public class QuickStartExample : MonoBehaviour
 <li><a href="#prefab-pooling">Prefab Pooling</a></li>
 <li><a href="#unloading-strategies">Unloading Strategies</a></li>
 <li><a href="#usage-tracking">Usage Tracking</a></li>
+<li><a href="#path-aliases">Path Aliases</a></li>
 </ul>
 </li>
 <li><a href="#tassetbundles-low-level-api">TAssetBundles (Low-Level API)</a>
@@ -419,6 +420,59 @@ bool loading = AssetManager.IsLoading();
 info.SetDontDestroy(true);
 </code></pre>
 <p>Use the <a href="#asset-usage-tracker">Asset Usage Tracker</a> editor window to visualize these relationships at runtime.</p>
+<h3 id="path-aliases">Path Aliases</h3>
+<p>Path Aliases let you refer to assets by a short, user-facing prefix instead of the full canonical catalog path. Assign a resolver to <code>AssetManager.PathResolver</code> once — every AssetManager API that takes a path string then translates aliases transparently before any catalog lookup or tracking occurs.</p>
+<p><strong>Two ways to configure</strong></p>
+<p><strong>1. Code — <code>PrefixAliasResolver</code></strong></p>
+<pre><code class="lang-csharp">using TAssetBundle;
+using TAssetBundle.Extensions;
+
+var resolver = new PrefixAliasResolver
+{
+    // Required only when any prefix has more than one folder.
+    AssetExists = TAssetBundles.ExistAsset,
+};
+
+// Single folder — pure string substitution.
+resolver.Add(&quot;@char/&quot;, &quot;Assets/Characters&quot;);
+
+// Multiple folders — priority-ordered search path.
+// First folder that contains the asset wins (falls back to the first folder
+// when AssetExists is not set or no match is found).
+resolver.Add(&quot;@ui/&quot;, new[]
+{
+    &quot;Assets/DLC/UI&quot;,        // checked first — DLC override
+    &quot;Assets/Shared/UI&quot;,     // base fallback
+});
+
+AssetManager.PathResolver = resolver;
+</code></pre>
+<p><strong>2. Inspector — <code>PathAliasTable</code> ScriptableObject</strong></p>
+<p>Right-click in the Project window and choose <code>Create &gt; TAssetBundle &gt; Path Alias Table</code>. Add entries in the Inspector: each entry has a prefix and one or more folders (drag folders directly from the Project window — <code>FolderAssetRef</code> uses GUID-based serialization).</p>
+<pre><code class="lang-csharp">public PathAliasTable aliasTable; // assign in Inspector
+
+void Start()
+{
+    // BuildResolver() wires AssetExists to TAssetBundles.ExistAsset automatically.
+    AssetManager.PathResolver = aliasTable.BuildResolver();
+}
+</code></pre>
+<p><strong>Loading with aliases</strong></p>
+<pre><code class="lang-csharp">// &quot;@char/hero.prefab&quot; resolves to &quot;Assets/Characters/hero.prefab&quot;
+AssetManager.GetPrefabAsync(&quot;@char/hero.prefab&quot;, parent);
+
+// Works with every AssetManager loading API
+AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, &quot;@ui/icons/close.png&quot;);
+AssetManager.PreloadPrefabAsync(&quot;@char/enemy.prefab&quot;);
+</code></pre>
+<p><strong>Behavior notes</strong></p>
+<ul>
+<li><strong>Aliases are input-only.</strong> Return values, <code>AssetInfo.AssetPath</code>, event callbacks, and tracking keys all use canonical paths. This keeps logs, usage tracker, and manifest tooling consistent regardless of which alias was used to load the asset.</li>
+<li><strong>Longer prefixes match first.</strong> <code>@char/boss/</code> takes precedence over <code>@char/</code> when both are registered — useful for nested namespaces.</li>
+<li><strong>Resolved results are cached.</strong> The cache auto-invalidates on <code>TAssetBundles.OnCatalogLoaded</code>; no manual reset is needed after a catalog update.</li>
+<li><strong>Common use cases</strong> — DLC overrides, environment-specific asset swaps (dev/staging/prod), A/B testing, and keeping call sites short when asset folder layouts are deep.</li>
+</ul>
+<p>See <code>Sample07_PathAliasTable</code> for a runnable example wiring a <code>PathAliasTable</code> to <code>AssetManager.PathResolver</code>.</p>
 <hr>
 <h2 id="tassetbundles-low-level-api">TAssetBundles (Low-Level API)</h2>
 <p>For cases where you need direct control over asset handles, use the <code>TAssetBundles</code> API. You are responsible for manually unloading assets.</p>

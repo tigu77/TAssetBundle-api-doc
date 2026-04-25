@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PrefixAliasResolver </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PrefixAliasResolver ">
+      
+      <meta name="description" content="Prefix-based alias resolver that maps user-facing path prefixes to one or more canonical folders, with an optional search-path fallback.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/new/main/apiSpec/new?filename=TAssetBundle_Extensions_PrefixAliasResolver.md&amp;value=---%0Auid%3A%20TAssetBundle.Extensions.PrefixAliasResolver%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TAssetBundle.Extensions.PrefixAliasResolver">
+
+
+
+  <h1 id="TAssetBundle_Extensions_PrefixAliasResolver" data-uid="TAssetBundle.Extensions.PrefixAliasResolver" class="text-break">
+Class PrefixAliasResolver  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TAssetBundle.html">TAssetBundle</a>.<a class="xref" href="TAssetBundle.Extensions.html">Extensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TAssetBundle.Extensions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Prefix-based alias resolver that maps user-facing path prefixes to one or
+more canonical folders, with an optional search-path fallback.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PrefixAliasResolver : IAssetPathResolver</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PrefixAliasResolver</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="TAssetBundle.Extensions.IAssetPathResolver.html">IAssetPathResolver</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="TAssetBundle_Extensions_PrefixAliasResolver_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Two operating modes per prefix:</p>
+<ul><li><b>Single folder</b>: pure string substitution. Works without a catalog.</li><li><b>Multiple folders</b>: search path. Uses <a class="xref" href="TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_AssetExists">AssetExists</a>
+to find the first folder that contains the asset. Falls back to the first folder
+when no match is found or when <a class="xref" href="TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_AssetExists">AssetExists</a> is not set.</li></ul>
+<p>Resolved results are cached. Call <a class="xref" href="TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_InvalidateCache">InvalidateCache()</a> after a catalog
+change if the caller does not rely on automatic invalidation.</p>
+<p>Longer prefixes match first, allowing nested namespaces to coexist.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_AssetExists_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.AssetExists*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_AssetExists" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.AssetExists">
+  AssetExists
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Catalog existence predicate injected by the caller. Required only when any
+prefix has more than one folder. Typically wired to
+<a class="xref" href="TAssetBundle.TAssetBundles.html#TAssetBundle_TAssetBundles_ExistAsset_TAssetBundle_AssetRef_">ExistAsset(AssetRef)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;string, bool&gt; AssetExists { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_Count_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Count*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_Count" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of registered prefixes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_Add_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Add*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_Add_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Add(System.String,System.Collections.Generic.IEnumerable{System.String})">
+  Add(string, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a prefix that maps to an ordered list of folders.
+The first folder that contains the asset wins.
+Re-adding an existing prefix overwrites the previous mapping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(string prefix, IEnumerable&lt;string&gt; folders)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>folders</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_Add_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Add*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_Add_System_String_System_String_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Add(System.String,System.String)">
+  Add(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a prefix that substitutes to a single folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(string prefix, string folder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>folder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_Clear_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Clear*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_Clear" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all registered prefixes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_InvalidateCache_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_InvalidateCache" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache">
+  InvalidateCache()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the resolution cache. Call this when the catalog changes
+(for example after <a class="xref" href="TAssetBundle.TAssetBundles.html#TAssetBundle_TAssetBundles_UpdateCatalogAsync">UpdateCatalogAsync()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidateCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_Remove_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Remove*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_Remove_System_String_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Remove(System.String)">
+  Remove(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the given prefix if present. Returns true if removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(string prefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefixAliasResolver_Resolve_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Resolve*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefixAliasResolver_Resolve_System_String_" data-uid="TAssetBundle.Extensions.PrefixAliasResolver.Resolve(System.String)">
+  Resolve(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefixAliasResolver.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves the input path to a canonical full asset path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Resolve(string inputPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>User-provided path, possibly containing an alias prefix.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Canonical full asset path. Returns the input unchanged if no alias matches.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

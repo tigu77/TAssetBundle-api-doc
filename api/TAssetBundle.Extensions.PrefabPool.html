@@ -493,7 +493,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Count" data-uid="TAssetBundle.Extensions.PrefabPool.Count">
   Count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the current number of objects in the pool.</p>
@@ -521,11 +521,108 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
 
 
+  <a id="TAssetBundle_Extensions_PrefabPool_InFlightLoads_" data-uid="TAssetBundle.Extensions.PrefabPool.InFlightLoads*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefabPool_InFlightLoads" data-uid="TAssetBundle.Extensions.PrefabPool.InFlightLoads">
+  InFlightLoads
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of load coroutines currently using this pool.
+When greater than zero, destruction is deferred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InFlightLoads { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefabPool_IsPendingDestroy_" data-uid="TAssetBundle.Extensions.PrefabPool.IsPendingDestroy*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefabPool_IsPendingDestroy" data-uid="TAssetBundle.Extensions.PrefabPool.IsPendingDestroy">
+  IsPendingDestroy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>True when destruction was requested but deferred due to in-flight loads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPendingDestroy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefabPool_IsPinned_" data-uid="TAssetBundle.Extensions.PrefabPool.IsPinned*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefabPool_IsPinned" data-uid="TAssetBundle.Extensions.PrefabPool.IsPinned">
+  IsPinned
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>True while at least one load coroutine is in-flight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPinned { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Extensions_PrefabPool_Pool_" data-uid="TAssetBundle.Extensions.PrefabPool.Pool*"></a>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Pool" data-uid="TAssetBundle.Extensions.PrefabPool.Pool">
   Pool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the stack that manages the pool of objects.</p>
@@ -557,7 +654,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Prefab" data-uid="TAssetBundle.Extensions.PrefabPool.Prefab">
   Prefab
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the prefab used to create objects in the pool.</p>
@@ -589,11 +686,38 @@ public class PrefabPool : MonoBehaviour</code></pre>
 </h2>
 
 
+  <a id="TAssetBundle_Extensions_PrefabPool_BeginLoad_" data-uid="TAssetBundle.Extensions.PrefabPool.BeginLoad*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefabPool_BeginLoad" data-uid="TAssetBundle.Extensions.PrefabPool.BeginLoad">
+  BeginLoad()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks that a load coroutine is using this pool. Prevents destruction until EndLoad is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void BeginLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Extensions_PrefabPool_Clear_" data-uid="TAssetBundle.Extensions.PrefabPool.Clear*"></a>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Clear" data-uid="TAssetBundle.Extensions.PrefabPool.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears the pool by destroying all objects and clearing the stack.</p>
@@ -620,7 +744,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Create_UnityEngine_Transform_System_Boolean_" data-uid="TAssetBundle.Extensions.PrefabPool.Create(UnityEngine.Transform,System.Boolean)">
   Create(Transform, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new object from the prefab and returns it. The new object is parented to the specified parent transform.</p>
@@ -644,9 +768,36 @@ public class PrefabPool : MonoBehaviour</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">GameObject</span></dt>
-    <dd><p>The newly created GameObject.</p>
+    <dd><p>The newly created GameObject, or null if the prefab is no longer valid.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefabPool_EndLoad_" data-uid="TAssetBundle.Extensions.PrefabPool.EndLoad*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefabPool_EndLoad" data-uid="TAssetBundle.Extensions.PrefabPool.EndLoad">
+  EndLoad()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks that a load coroutine finished using this pool. Destroys the pool if destruction was requested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EndLoad()</code></pre>
+  </div>
+
+
 
 
 
@@ -662,7 +813,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Free_UnityEngine_GameObject_" data-uid="TAssetBundle.Extensions.PrefabPool.Free(UnityEngine.GameObject)">
   Free(GameObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Frees the given object, deactivating it and returning it to the pool.</p>
@@ -695,7 +846,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_GetOrCreate_UnityEngine_Transform_System_Boolean_" data-uid="TAssetBundle.Extensions.PrefabPool.GetOrCreate(UnityEngine.Transform,System.Boolean)">
   GetOrCreate(Transform, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an object from the pool or creates a new one if the pool is empty.</p>
@@ -737,7 +888,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_GetOrCreate__1_UnityEngine_Transform_System_Boolean_" data-uid="TAssetBundle.Extensions.PrefabPool.GetOrCreate``1(UnityEngine.Transform,System.Boolean)">
   GetOrCreate&lt;T&gt;(Transform, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or creates an object of a specified component type from the pool.</p>
@@ -785,7 +936,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Init_UnityEngine_GameObject_" data-uid="TAssetBundle.Extensions.PrefabPool.Init(UnityEngine.GameObject)">
   Init(GameObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes the pool with the given prefab.</p>
@@ -818,7 +969,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_IsEmpty" data-uid="TAssetBundle.Extensions.PrefabPool.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the pool is empty.</p>
@@ -847,11 +998,64 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
 
 
+  <a id="TAssetBundle_Extensions_PrefabPool_OnDestroy_" data-uid="TAssetBundle.Extensions.PrefabPool.OnDestroy*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefabPool_OnDestroy" data-uid="TAssetBundle.Extensions.PrefabPool.OnDestroy">
+  OnDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_PrefabPool_RequestDestroy_" data-uid="TAssetBundle.Extensions.PrefabPool.RequestDestroy*"></a>
+
+  <h3 id="TAssetBundle_Extensions_PrefabPool_RequestDestroy" data-uid="TAssetBundle.Extensions.PrefabPool.RequestDestroy">
+  RequestDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Requests destruction of this pool. If in-flight loads exist, defers until all loads finish.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Extensions_PrefabPool_Reserve_" data-uid="TAssetBundle.Extensions.PrefabPool.Reserve*"></a>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Reserve_System_Int32_" data-uid="TAssetBundle.Extensions.PrefabPool.Reserve(System.Int32)">
   Reserve(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reserves a specified number of objects by creating them if needed.</p>
@@ -884,10 +1088,11 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_Use_UnityEngine_Transform_System_Boolean_" data-uid="TAssetBundle.Extensions.PrefabPool.Use(UnityEngine.Transform,System.Boolean)">
   Use(Transform, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Uses an object from the pool by popping it and setting it as a child of the specified parent transform.</p>
+  <div class="markdown level1 summary"><p>Uses an object from the pool by popping it and setting it as a child of the specified parent transform.
+Skips destroyed references and falls back to Create if all pooled items are invalid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -908,7 +1113,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">GameObject</span></dt>
-    <dd><p>The object used from the pool.</p>
+    <dd><p>The object used from the pool, or a newly created one.</p>
 </dd>
   </dl>
 
@@ -929,7 +1134,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_OnCreated" data-uid="TAssetBundle.Extensions.PrefabPool.OnCreated">
   OnCreated
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when a new prefab instance is created in the pool.</p>
@@ -960,7 +1165,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_OnFree" data-uid="TAssetBundle.Extensions.PrefabPool.OnFree">
   OnFree
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when a prefab instance is returned to the pool for reuse.</p>
@@ -991,7 +1196,7 @@ public class PrefabPool : MonoBehaviour</code></pre>
 
   <h3 id="TAssetBundle_Extensions_PrefabPool_OnUsed" data-uid="TAssetBundle.Extensions.PrefabPool.OnUsed">
   OnUsed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/PrefabPool.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Event triggered when a prefab instance is retrieved from the pool for use.</p>

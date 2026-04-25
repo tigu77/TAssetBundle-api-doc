@@ -128,6 +128,15 @@ public class AssetPrefabPool : PrefabPool</code></pre>
       <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_Prefab">PrefabPool.Prefab</a>
     </div>
     <div>
+      <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_InFlightLoads">PrefabPool.InFlightLoads</a>
+    </div>
+    <div>
+      <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_IsPinned">PrefabPool.IsPinned</a>
+    </div>
+    <div>
+      <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_IsPendingDestroy">PrefabPool.IsPendingDestroy</a>
+    </div>
+    <div>
       <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_Pool">PrefabPool.Pool</a>
     </div>
     <div>
@@ -165,6 +174,9 @@ public class AssetPrefabPool : PrefabPool</code></pre>
     </div>
     <div>
       <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_GetOrCreate_UnityEngine_Transform_System_Boolean_">PrefabPool.GetOrCreate(Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_RequestDestroy">PrefabPool.RequestDestroy()</a>
     </div>
     <div>
       <a class="xref" href="TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_GetOrCreate__1_UnityEngine_Transform_System_Boolean_">PrefabPool.GetOrCreate&lt;T&gt;(Transform, bool)</a>
@@ -533,7 +545,7 @@ public class AssetPrefabPool : PrefabPool</code></pre>
 
   <h3 id="TAssetBundle_Extensions_AssetPrefabPool_Asset" data-uid="TAssetBundle.Extensions.AssetPrefabPool.Asset">
   Asset
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Property that provides the asset information of the managed GameObject.</p>
@@ -565,7 +577,7 @@ public class AssetPrefabPool : PrefabPool</code></pre>
 
   <h3 id="TAssetBundle_Extensions_AssetPrefabPool_IsLoaded" data-uid="TAssetBundle.Extensions.AssetPrefabPool.IsLoaded">
   IsLoaded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>A property that checks whether the asset has been loaded.</p>
@@ -597,14 +609,69 @@ public class AssetPrefabPool : PrefabPool</code></pre>
 </h2>
 
 
+  <a id="TAssetBundle_Extensions_AssetPrefabPool_BeginLoad_" data-uid="TAssetBundle.Extensions.AssetPrefabPool.BeginLoad*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetPrefabPool_BeginLoad" data-uid="TAssetBundle.Extensions.AssetPrefabPool.BeginLoad">
+  BeginLoad()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks that a load coroutine is using this pool. Prevents destruction until EndLoad is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeginLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetPrefabPool_EndLoad_" data-uid="TAssetBundle.Extensions.AssetPrefabPool.EndLoad*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetPrefabPool_EndLoad" data-uid="TAssetBundle.Extensions.AssetPrefabPool.EndLoad">
+  EndLoad()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks that a load coroutine finished using this pool. Destroys the pool if destruction was requested.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EndLoad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="TAssetBundle_Extensions_AssetPrefabPool_Init_" data-uid="TAssetBundle.Extensions.AssetPrefabPool.Init*"></a>
 
   <h3 id="TAssetBundle_Extensions_AssetPrefabPool_Init_TAssetBundle_Extensions_AssetInfo_UnityEngine_GameObject__" data-uid="TAssetBundle.Extensions.AssetPrefabPool.Init(TAssetBundle.Extensions.AssetInfo{UnityEngine.GameObject})">
   Init(AssetInfo&lt;GameObject&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes the pool using the provided asset information.</p>
+  <div class="markdown level1 summary"><p>Initializes the pool using the provided asset information.
+If load coroutines are already waiting on this pool, pins the asset so it cannot be auto-unloaded.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -618,6 +685,32 @@ public class AssetPrefabPool : PrefabPool</code></pre>
     <dd><p>The asset information to initialize the pool with.</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetPrefabPool_OnDestroy_" data-uid="TAssetBundle.Extensions.AssetPrefabPool.OnDestroy*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetPrefabPool_OnDestroy" data-uid="TAssetBundle.Extensions.AssetPrefabPool.OnDestroy">
+  OnDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundle/Scripts/Extensions/AssetPrefabPool.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
 
 
 
