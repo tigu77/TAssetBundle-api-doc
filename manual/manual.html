@@ -85,9 +85,17 @@
 
 <p><em>TAssetBundle is a powerful, integrated asset bundle management system.</em></p>
 <hr>
+<h2 id="editions-v50">Editions (v5.0+)</h2>
+<p>TAssetBundle ships in two editions:</p>
+<ul>
+<li><strong>Lite (free)</strong> — Core runtime + Manifest/Strategy + incremental build + all editor tools (Browser, Cross-Reference Analyzer, Dependency Checker, Asset Reference Tracker) + Play Asset Delivery plugin + full source. The runtime API is <code>TAssetBundles</code> (low-level handles).</li>
+<li><strong>Pro</strong> — Lite + the <code>TAssetBundle.Extensions</code> module: <code>AssetManager</code> (context-based loading with GameObject auto-release), <code>LinkAsset</code>, <code>PrefabPoolManager</code>, <code>PathAliasTable</code>, and the runtime Asset Usage Tracker.</li>
+</ul>
+<p>This manual covers both editions. <strong>Sections that describe Pro-only features are clearly marked at their headings.</strong> If you are using Lite, follow the <code>TAssetBundles</code> examples and skip the AssetManager / PrefabPoolManager / Path Aliases / Asset Usage Tracker sections.</p>
+<hr>
 <h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>Unity Version</strong>: 2019.4 or later</li>
+<li><strong>Unity Version</strong>: 2021.3 LTS or later</li>
 <li><strong>Supported Platforms</strong>: Windows, macOS, iOS, Android, WebGL</li>
 </ul>
 <hr>
@@ -105,11 +113,33 @@
 </ol>
 <p><img src="images/build_asset_bundle.jpg" alt="build_asset_bundle"></p>
 <h3 id="step-3-load-assets">Step 3: Load Assets</h3>
+<p><strong>Lite — low-level <code>TAssetBundles</code> API</strong> (also works in Pro):</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle;
+
+public class QuickStartLite : MonoBehaviour
+{
+    public string spritePath;
+
+    async void Start()
+    {
+        await TAssetBundles.InitializeAsync().ToTask();
+
+        // Load by path — returns a handle
+        var handle = await TAssetBundles.LoadAssetAsync&lt;Sprite&gt;(spritePath).ToTask();
+        GetComponent&lt;SpriteRenderer&gt;().sprite = handle.Get();
+
+        // Unload when no longer needed
+        // TAssetBundles.UnloadAsset(handle);
+    }
+}
+</code></pre>
+<p><strong>Pro — high-level <code>AssetManager</code></strong> (auto-released when this GameObject is destroyed):</p>
 <pre><code class="lang-csharp">using UnityEngine;
 using TAssetBundle;
 using TAssetBundle.Extensions;
 
-public class QuickStartExample : MonoBehaviour
+public class QuickStartPro : MonoBehaviour
 {
     public string spritePath;
 
@@ -168,6 +198,7 @@ public class QuickStartExample : MonoBehaviour
 </ul>
 </li>
 <li><a href="#editor-play-modes">Editor Play Modes</a></li>
+<li><a href="#sample-materials-on-urp">Sample Materials on URP</a></li>
 </ul>
 <hr>
 <h2 id="core-concept-manifest">Core Concept: Manifest</h2>
@@ -316,6 +347,9 @@ public class QuickStartExample : MonoBehaviour
 <p>You can also create custom strategies by extending <code>TAssetBundleCompositionStrategy&lt;Data&gt;</code>.</p>
 <hr>
 <h2 id="assetmanager-recommended">AssetManager (Recommended)</h2>
+<blockquote>
+<p><strong>Pro edition only.</strong> <code>AssetManager</code> ships in the <code>TAssetBundle.Extensions</code> module, which is included with TAssetBundle Pro. The Lite (free) edition exposes the low-level <code>TAssetBundles</code> API directly — see the earlier sections of this manual.</p>
+</blockquote>
 <p><code>AssetManager</code> (in <code>TAssetBundle.Extensions</code>) is the recommended way to load and manage assets. It provides automatic lifecycle management, usage tracking, and prefab pooling in one unified interface.</p>
 <h3 id="context-based-loading">Context-Based Loading</h3>
 <p>The key feature of AssetManager is <strong>context-based loading</strong>. When you pass a GameObject as context, the asset is automatically linked to it. When the GameObject is destroyed, the asset reference is released — no manual cleanup needed.</p>
@@ -470,9 +504,9 @@ AssetManager.PreloadPrefabAsync(&quot;@char/enemy.prefab&quot;);
 <li><strong>Aliases are input-only.</strong> Return values, <code>AssetInfo.AssetPath</code>, event callbacks, and tracking keys all use canonical paths. This keeps logs, usage tracker, and manifest tooling consistent regardless of which alias was used to load the asset.</li>
 <li><strong>Longer prefixes match first.</strong> <code>@char/boss/</code> takes precedence over <code>@char/</code> when both are registered — useful for nested namespaces.</li>
 <li><strong>Resolved results are cached.</strong> The cache auto-invalidates on <code>TAssetBundles.OnCatalogLoaded</code>; no manual reset is needed after a catalog update.</li>
-<li><strong>Common use cases</strong> — DLC overrides, environment-specific asset swaps (dev/staging/prod), A/B testing, and keeping call sites short when asset folder layouts are deep.</li>
+<li><strong>Common use cases</strong> — DLC overrides (multi-folder priority search) and keeping call sites short when asset folder layouts are deep.</li>
 </ul>
-<p>See <code>Sample07_PathAliasTable</code> for a runnable example wiring a <code>PathAliasTable</code> to <code>AssetManager.PathResolver</code>.</p>
+<p>See <code>Sample03_PathAliasTable</code> for a runnable example wiring a <code>PathAliasTable</code> to <code>AssetManager.PathResolver</code>.</p>
 <hr>
 <h2 id="tassetbundles-low-level-api">TAssetBundles (Low-Level API)</h2>
 <p>For cases where you need direct control over asset handles, use the <code>TAssetBundles</code> API. You are responsible for manually unloading assets.</p>
@@ -535,6 +569,9 @@ public class TestLoadAssetReference : MonoBehaviour
 </code></pre>
 <hr>
 <h2 id="prefabpoolmanager">PrefabPoolManager</h2>
+<blockquote>
+<p><strong>Pro edition only.</strong> <code>PrefabPoolManager</code> ships in the <code>TAssetBundle.Extensions</code> module, which is included with TAssetBundle Pro.</p>
+</blockquote>
 <p><code>PrefabPoolManager</code> provides standalone prefab pooling — independent of AssetBundles. Use this when you already have a prefab reference and want efficient reuse.</p>
 <pre><code class="lang-csharp">using UnityEngine;
 using TAssetBundle.Extensions;
@@ -925,6 +962,9 @@ TAssetBundles.DownloadByScenesAsync(new[] { &quot;MyScene&quot; });
 </table>
 <hr>
 <h3 id="asset-usage-tracker">Asset Usage Tracker</h3>
+<blockquote>
+<p><strong>Pro edition only.</strong> This editor window depends on <code>AssetManager</code> bookkeeping and ships with the <code>TAssetBundle.Extensions</code> module. The Lite edition includes the runtime <strong>Asset Reference Tracker</strong> (under <code>TAssetBundle &gt; Asset Reference Tracker</code>) which shows currently loaded assets; Usage Tracker adds GameObject-level visibility on top.</p>
+</blockquote>
 <p>Track which GameObjects are using which assets during play mode. This works with <code>AssetManager</code>'s context-based loading and <code>LinkAsset</code>.</p>
 <p>Access via <strong>TAssetBundle &gt; Extensions &gt; Asset Usage Tracker</strong>.</p>
 <p><img src="images/asset_usage_tracker.jpg" alt="asset_usage_tracker"></p>
@@ -953,6 +993,17 @@ TAssetBundles.DownloadByScenesAsync(new[] { &quot;MyScene&quot; });
 <li>Set <strong>Editor Play Mode</strong> to <strong>Asset Bundle</strong></li>
 </ol>
 <p><img src="images/setting_playmode_assetbundle.jpg" alt="setting_playmode_assetbundle"></p>
+<hr>
+<h2 id="sample-materials-on-urp">Sample Materials on URP</h2>
+<p>The bundled samples include materials that use Built-in render pipeline shaders. New Unity 6 projects default to URP, where those shaders are not compatible — sample meshes render as pink. This is a one-time project-wide fix:</p>
+<ol>
+<li>Open <strong>Window &gt; Rendering &gt; Render Pipeline Converter</strong>.</li>
+<li>Select <strong>Built-in to URP</strong> (or <strong>Built-in to HDRP</strong> for HDRP projects) in the dropdown.</li>
+<li>Check <strong>Material Shader Converter</strong>.</li>
+<li>Click <strong>Initialize Converters</strong> to scan, then <strong>Convert Assets</strong> to apply.</li>
+</ol>
+<p><img src="images/image_render_pipeline_converter.png" alt="image_render_pipeline_converter"></p>
+<p>The converter rewrites the materials in place; the samples then render correctly under your project's render pipeline.</p>
 
 </article>
 

@@ -2319,6 +2319,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "changelog_ko.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog_ko.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
@@ -2423,6 +2433,16 @@
       "output": {
         "resource": {
           "relative_path": "manual/images/editor_asset_hilight.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/images/image_render_pipeline_converter.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/images/image_render_pipeline_converter.png"
         }
       },
       "version": ""

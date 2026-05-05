@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/blob/main/docfx_project/changelog_ko.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p><strong>TAssetBundle</strong>의 모든 주요 변경 사항을 이 파일에 기록합니다.</p>
+<hr>
+<h3 id="500">5.0.0</h3>
+<ul>
+<li>⚠️ <strong>Breaking (최소 Unity 버전):</strong> <strong>Unity 2021.3 LTS</strong>로 상향 (기존 2019.4).</li>
+<li>⚠️ <strong>Breaking (폴더 구조):</strong> Extensions가 <code>Assets/TAssetBundleExtensions/</code>로 이동했습니다. 업그레이드 후 기존 <code>Assets/TAssetBundle/Scripts/Extensions/</code> 폴더를 삭제하세요. <code>using TAssetBundle.Extensions;</code> 네임스페이스는 그대로 유지됩니다. 에디터 감지기가 기존 폴더가 남아 있으면 경고를 표시합니다.</li>
+<li>🆕 <strong>Lite 에디션 추가</strong> — Lite(무료)는 코어 엔진과 플러그인을 제공하고, Pro는 productivity 레이어(<code>AssetManager</code>, <code>LinkAsset</code>, <code>PrefabPoolManager</code>, <code>PathAliasTable</code>, <code>Asset Usage Tracker</code>)를 추가합니다. 패키지 내 <code>lite_vs_pro_ko.md</code> 참조.</li>
+</ul>
+<h3 id="470">4.7.0</h3>
+<ul>
+<li><strong>[AssetManager] Path Aliases 추가</strong> — 접두어를 폴더에 매핑하며, 다중 폴더 우선순위 검색으로 DLC 오버라이드를 지원합니다. <code>PathAliasTable</code> 또는 <code>PrefixAliasResolver</code>로 설정합니다.</li>
+<li>실패한 에셋 로드는 캐시에서 자동 정리되어, 재시도 시 더 이상 <code>UnloadUnusedAssets</code>를 호출할 필요가 없습니다</li>
+<li>동일 경로를 다른 타입으로 로드하면 <code>InvalidCastException</code> 대신 명확한 에러를 반환합니다</li>
+<li>다중 코루틴 초기화와 풀 교체 중 발생하던 prefab pool race를 강화했습니다</li>
+</ul>
+<h3 id="461">4.6.1</h3>
+<ul>
+<li><strong>[Play Asset Delivery]</strong> Pack 번들(install-time, fast-follow, on-demand)은 패킹 전 LZMA에서 LZ4로 재압축됩니다 — 모든 pack 타입은 로딩 전에 디바이스에 안착하므로, LZMA의 작은 크기보다 LZ4의 빠른 압축 해제 속도가 런타임 성능에 유리합니다.</li>
+<li>Manifest Inspector 플러그인이 다중 편집을 지원합니다 — Project 창에서 여러 manifest를 선택하면 플러그인 설정(예: PAD 전송 타입)을 한 번에 모두 적용합니다. <strong>플러그인 작성자에게 breaking:</strong> <code>IManifestEditorPluginModule.OnManifestInspectorGUI</code>가 단일 manifest 대신 <code>TAssetBundleManifest[]</code>를 받습니다.</li>
+</ul>
+<h3 id="460">4.6.0</h3>
+<ul>
+<li><strong>[Android] Google Play Asset Delivery 플러그인 추가</strong> — install-time / fast-follow / on-demand 전송 방식, 자동 AAB 통합, <code>OnDownloadProgress</code> 이벤트, 동시 다운로드 중복 제거, Split Application Binary 호환성 지원</li>
+<li><code>UpdateTempCatalogAsync</code> 추가 — 활성 카탈로그를 교체하지 않고 카탈로그 업데이트 여부와 다운로드 크기를 확인합니다</li>
+<li><code>TagUtil.SetDirty</code>가 dirty 표시 전 <code>IsPersistent</code>를 확인하도록 수정</li>
+<li><code>CompositionStrategy</code> Data 클래스에 <code>[Serializable]</code> 추가, 불필요한 <code>SetDirty</code> 호출 제거</li>
+</ul>
+<h3 id="450">4.5.0</h3>
+<ul>
+<li>Cross-Reference Analyzer 추가 — 빌드 시점에 번들 간 에셋 참조를 감지하고 시각화</li>
+<li>Dependency Checker를 TreeView + SearchField 기반으로 재설계</li>
+<li>Browser의 manifest 헤더에서 Builtin/Encrypt/Tags를 한눈에 표시</li>
+<li>ManifestPluginData 시스템 추가 — manifest별 플러그인 데이터 + 빌드 훅</li>
+<li>플러그인 Inspector UI 개선</li>
+<li>안전한 예외 처리를 위해 async void를 async Task로 전환</li>
+<li><code>UnityWebRequestError</code>에 enum 기반 <code>errorType</code> 추가</li>
+<li>카탈로그/AssetBundle 데이터 손상 복원력 및 IO 에러 보호 강화</li>
+<li><code>AssetBundleRuntimeInfo.TryGetCustomData()</code> 추가</li>
+<li>&quot;Shrink All&quot;을 &quot;Collapse All&quot;로 명칭 변경</li>
+</ul>
+<h3 id="440">4.4.0</h3>
+<ul>
+<li><code>TAssetBundleManifest</code>에 에셋 검색 API 추가 (<code>SearchAssets</code>, <code>TryGetAssetInfo</code>)</li>
+<li>TAssetBundle Browser에 에셋 검색 기능 추가</li>
+</ul>
+<h3 id="431">4.3.1</h3>
+<ul>
+<li>GetNotIncludedAssets()이 자식 manifest를 포함한 manifest 트리 전체에 걸쳐 에셋 포함 여부를 정확히 평가하도록 수정</li>
+<li>부모 폴더나 이미 포함된 에셋이 미포함으로 잘못 보고되던 케이스를 해결</li>
+<li>내부 에셋 포함 검사 및 관련 로직 개선</li>
+</ul>
+<h3 id="430">4.3.0</h3>
+<ul>
+<li>런타임 경로 기반 에셋 로딩을 위한 <strong>FilePathCollector</strong> 사용 예제 샘플 추가</li>
+<li>더 명확한 이해를 돕기 위해 샘플 코드에 추가 주석 보강</li>
+<li>다운로드 결과 처리에 상세 에러 정보 포함하도록 개선</li>
+<li>빌드 프로세스 최적화 및 안정성 향상을 위한 사소한 내부 리팩터링</li>
+</ul>
+<h3 id="420">4.2.0</h3>
+<ul>
+<li>런타임에 에셋 경로 정보를 수집하는 FilePathCollector 추가</li>
+<li>확장 가능한 플러그인 시스템 추가</li>
+<li>카탈로그의 RemoteUrl이 캐싱되어, 새 RemoteUrl 적용 전까지 이전에 다운로드된 에셋에 접근할 수 없던 문제 수정</li>
+<li>그 외 최적화 및 사소한 버그 수정</li>
+</ul>
+<h3 id="411">4.1.1</h3>
+<ul>
+<li><code>DefaultAssetCatalogComparer</code> 비교 연산 버그 수정</li>
+</ul>
+<h3 id="410">4.1.0</h3>
+<ul>
+<li>빌드 시간을 크게 단축하는 빌드 프로세스 최적화</li>
+</ul>
+<h3 id="400">4.0.0</h3>
+<ul>
+<li>API를 명확히 하기 위해 <code>TAssetBundle.AssetManager</code>를 <code>TAssetBundle.TAssetBundles</code>로 변경</li>
+<li><code>TAssetBundle</code> 기반으로 손쉬운 에셋 로드/언로드, prefab pooling, 객체 사용 추적을 제공하는 확장 <code>AssetManager</code> 추가</li>
+<li>에디터에 <code>Asset Usage Tracker</code> 추가 — 플레이 모드에서 특정 에셋을 사용 중인 객체를 정규식으로 보고/정렬/검색 가능</li>
+<li>자주 사용하는 prefab의 효율적인 풀링을 위한 새로운 <code>PrefabPoolManager</code> 추가</li>
+<li>비디오 에셋이 포함된 에셋 번들을 비압축으로 처리</li>
+<li><code>Asset Reference Tracker</code>에 정렬 및 정규식 검색 기능 추가</li>
+<li>다양한 버그 수정, 리팩터링 및 최적화</li>
+</ul>
+<h3 id="3111">3.11.1</h3>
+<ul>
+<li>Unity 2022 이후 버전에서 TAssetBundleManifest 생성 시 list 필드의 null reference 에러 수정</li>
+</ul>
+<h3 id="3110">3.11.0</h3>
+<ul>
+<li>에셋 번들 빌드 시 builtin 에셋 번들을 별도 폴더로 출력하는 옵션 추가. 옵션 이름은 &quot;Builtin Asset Bundles Use Separate Folder&quot;</li>
+<li>LZMA로 압축된(작은 크기) builtin 에셋 번들이 처음 사용 시 LZ4로 재압축되도록 변경</li>
+<li>WebGL 플랫폼에서는 native 캐싱이 동작하지 않으므로 Unity의 기본 AssetBundle provider를 사용하지 않도록 수정. 대신 전용 managed AssetBundle provider를 사용. Unity의 기본 AssetBundle provider 사용 시 다운로드 크기를 알 수 없던 이전 버전의 버그를 수정합니다.</li>
+</ul>
+<h3 id="3100">3.10.0</h3>
+<ul>
+<li>다운로드 지연 시간이 지정된 시간을 초과하면 web request를 자동 중단하는 옵션 추가. (Wi-Fi 전환 시 최대 2분 동안 응답이 없는 상황을 해결하기 위한 기능입니다.)</li>
+<li>TAssetBundle을 사용하지 않는 경우 카탈로그가 없다는 예외가 발생하던 문제 수정</li>
+</ul>
+<h3 id="392">3.9.2</h3>
+<ul>
+<li>에디터에서 AssetBundle 모드로 플레이할 때, 이미 AssetBundle화된 에셋 내부에서 AssetRef 사용 시 참조가 사라지던 버그 수정</li>
+</ul>
+<h3 id="391">3.9.1</h3>
+<ul>
+<li><p>AssetBundle 빌드 중 예외가 발생하면 부모에게도 예외가 전달되도록 수정. (스크립트로 빌드할 때 예외가 발생해도 다음 명령이 실행되던 문제 해결)</p>
+</li>
+<li><p>TAssetBundleManifest에서 중복 에셋을 잡아내는 방식 개선</p>
+</li>
+</ul>
+<h3 id="390">3.9.0</h3>
+<ul>
+<li>Asset Dependency Finder 추가 (Project 창에서 에셋을 우클릭 → [TAssetBundle] Run Dependency Finder)</li>
+</ul>
+<h3 id="381">3.8.1</h3>
+<ul>
+<li>에셋의 속성만 변경된 경우 빌드 캐시에서 제외되지 않던 버그 수정</li>
+</ul>
+<h3 id="380">3.8.0</h3>
+<ul>
+<li>설정에 빌드 번호 추가. 카탈로그 로드 시 로컬 카탈로그와 원격 카탈로그 중 빌드 번호가 더 높은 쪽을 사용하도록 변경</li>
+</ul>
+<h3 id="373">3.7.3</h3>
+<ul>
+<li>Android에서 로컬 AssetBundle을 찾지 못하던 버그 수정</li>
+</ul>
+<h3 id="372">3.7.2</h3>
+<ul>
+<li>Unity EnterPlayMode를 지원하도록 AssetManager의 초기화 수정</li>
+</ul>
+<h3 id="371">3.7.1</h3>
+<ul>
+<li>SpecificAssetBundleProvider의 disk space 검사가 잘못 동작하던 버그 수정</li>
+</ul>
+<h3 id="370">3.7.0</h3>
+<ul>
+<li>카탈로그에 저장될 씬 경로를 소문자로 변환하지 않고 원본 그대로 저장하도록 수정</li>
+<li>더 효율적이고 단순한 networking을 위해 remote url 형식 변경</li>
+<li>소스 코드 정리 및 도움말 메뉴 추가</li>
+</ul>
+<h3 id="361">3.6.1</h3>
+<ul>
+<li>Settings의 빌드 옵션에서 'Append Hash From File Name' 사용 시 embedded asset bundle이 존재하면 빌드 중 에러가 발생하던 버그 수정</li>
+<li>원격에서 업데이트된 AssetBundle을 빌드에 포함된 AssetBundle처럼 읽을 때 로그에 에러가 출력되던 버그 수정</li>
+</ul>
+<h3 id="360">3.6.0</h3>
+<ul>
+<li>WebGL 플랫폼이 모든 Unity 버전을 지원하도록 변경 및 버그 수정</li>
+<li>WebGL 플랫폼 관련 제한 사항: 2022 이후 버전에서 UnityRemoteAssetBundleProvider 사용 시 원격으로 받은 asset bundle의 cache 정보를 얻을 수 없습니다. Use UnityRemoteAssetBundleProvider 옵션을 비활성화할 것을 권장합니다.</li>
+</ul>
+<h3 id="350">3.5.0</h3>
+<ul>
+<li>태그 에디터에 태그 이름 변경 기능 추가</li>
+<li>태그 에디터에 컨텍스트 메뉴 추가</li>
+<li>태그 에디터에서 태그를 사용하는 manifest를 확인하는 기능 추가</li>
+</ul>
+<h3 id="340">3.4.0</h3>
+<ul>
+<li>특정 에셋을 manifest에서 무시할 수 있도록 ignore assets 추가</li>
+<li>embeddable 에셋을 찾는 방식의 효율적 개선</li>
+</ul>
+<h3 id="330">3.3.0</h3>
+<ul>
+<li>Additive로 로드한 AssetBundle 씬을 언로드해도 AssetBundle이 해제되지 않던 버그 수정</li>
+<li>캐시되지 않은 의존 AssetBundle이 재빌드되지 않던 버그 수정</li>
+<li>씬 경로를 통한 씬 로딩 지원</li>
+<li>에셋 및 씬의 로딩 진행률 지원</li>
+<li>씬 로딩 후 씬 활성화 콜백 추가</li>
+</ul>
+<h3 id="321">3.2.1</h3>
+<ul>
+<li>에디터에서 AssetRef가 갱신되지 않던 버그 수정</li>
+</ul>
+<h3 id="320">3.2.0</h3>
+<ul>
+<li>매뉴얼 추가</li>
+<li>API 문서 추가</li>
+<li>API 주석 추가</li>
+<li>TAssetBundle, TAssetBundle.Editor asmdef 추가</li>
+<li>클래스 스코프 리팩터링</li>
+</ul>
+<h3 id="310">3.1.0</h3>
+<ul>
+<li>Runtime Asset Reference Tracker 추가</li>
+<li>AssetBundle Dependency Checker 추가</li>
+</ul>
+<h3 id="300">3.0.0</h3>
+<ul>
+<li>TAssetBundle Browser 추가</li>
+<li>AssetReference 추가</li>
+<li>Web Server Test 추가</li>
+<li>새로운 단순 태그 시스템 도입</li>
+<li>Assets 및 AssetReference 단위 다운로드 추가</li>
+<li>에셋 번들 로딩 최적화</li>
+<li>빌드 캐시 버그 수정</li>
+<li>TAssetBundleManifest 버그 수정</li>
+<li>WebGL 지원</li>
+</ul>
+<h3 id="200">2.0.0</h3>
+<ul>
+<li>카탈로그 압축 및 암호화 추가</li>
+<li>에셋 번들 암호화 추가</li>
+<li>상속 기반 태그 시스템 추가</li>
+<li>태그 단위 다운로드 크기 확인, 태그 단위 다운로드</li>
+<li>최적화 및 리팩터링</li>
+<li>사소한 버그 수정</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
