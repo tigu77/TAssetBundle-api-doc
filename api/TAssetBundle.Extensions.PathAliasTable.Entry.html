@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AssetInfo&lt;T&gt; </title>
+      <title>Class PathAliasTable.Entry </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AssetInfo&lt;T&gt; ">
+      <meta name="title" content="Class PathAliasTable.Entry ">
       
-      <meta name="description" content="A class that manages asset information for a specific type of asset. Provides a Get method for the asset type.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/new/main/apiSpec/new?filename=TAssetBundle_Extensions_AssetInfo_1.md&amp;value=---%0Auid%3A%20TAssetBundle.Extensions.AssetInfo%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/tigu77/TAssetBundle/new/main/apiSpec/new?filename=TAssetBundle_Extensions_PathAliasTable_Entry.md&amp;value=---%0Auid%3A%20TAssetBundle.Extensions.PathAliasTable.Entry%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="TAssetBundle.Extensions.AssetInfo`1">
+        <article data-uid="TAssetBundle.Extensions.PathAliasTable.Entry">
 
 
 
-  <h1 id="TAssetBundle_Extensions_AssetInfo_1" data-uid="TAssetBundle.Extensions.AssetInfo`1" class="text-break">
-Class AssetInfo&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundleExtensions/Scripts/AssetInfo.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <h1 id="TAssetBundle_Extensions_PathAliasTable_Entry" data-uid="TAssetBundle.Extensions.PathAliasTable.Entry" class="text-break">
+Class PathAliasTable.Entry  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundleExtensions/Scripts/PathAliasTable.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,29 +93,22 @@ Class AssetInfo&lt;T&gt;  <a class="header-action link-secondary" title="View so
   <dl><dt>Assembly</dt><dd>TAssetBundle.Extensions.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A class that manages asset information for a specific type of asset. Provides a Get method for the asset type.</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AssetInfo&lt;T&gt; : AssetInfo where T : Object</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class PathAliasTable.Entry</code></pre>
   </div>
 
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd><p>The type of the asset</p>
-</dd>
-  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="TAssetBundle.Extensions.AssetInfo.html">AssetInfo</a></div>
-      <div><span class="xref">AssetInfo&lt;T&gt;</span></div>
+      <div><span class="xref">PathAliasTable.Entry</span></div>
     </dd>
   </dl>
 
@@ -124,57 +117,6 @@ Class AssetInfo&lt;T&gt;  <a class="header-action link-secondary" title="View so
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_AssetPath">AssetInfo.AssetPath</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_UsageCount">AssetInfo.UsageCount</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_StartTime">AssetInfo.StartTime</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_LastUsedTime">AssetInfo.LastUsedTime</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_IsLoaded">AssetInfo.IsLoaded</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_IsLoading">AssetInfo.IsLoading</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_IsDontDestroy">AssetInfo.IsDontDestroy</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_IsUsing">AssetInfo.IsUsing</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_IsValid">AssetInfo.IsValid</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_AssetHandle">AssetInfo.AssetHandle</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_LoadingProgress">AssetInfo.LoadingProgress</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_OnUnloaded">AssetInfo.OnUnloaded</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_SetDontDestroy_System_Boolean_">AssetInfo.SetDontDestroy(bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_Use">AssetInfo.Use()</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_Free">AssetInfo.Free()</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_Unload">AssetInfo.Unload()</a>
-    </div>
-    <div>
-      <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_Get__1">AssetInfo.Get&lt;T&gt;()</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -203,34 +145,63 @@ Class AssetInfo&lt;T&gt;  <a class="header-action link-secondary" title="View so
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="fields">Fields
 </h2>
 
 
-  <a id="TAssetBundle_Extensions_AssetInfo_1_Get_" data-uid="TAssetBundle.Extensions.AssetInfo`1.Get*"></a>
 
-  <h3 id="TAssetBundle_Extensions_AssetInfo_1_Get" data-uid="TAssetBundle.Extensions.AssetInfo`1.Get">
-  Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundleExtensions/Scripts/AssetInfo.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <h3 id="TAssetBundle_Extensions_PathAliasTable_Entry_folders" data-uid="TAssetBundle.Extensions.PathAliasTable.Entry.folders">
+  folders
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundleExtensions/Scripts/PathAliasTable.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns the asset cast to the specified type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get()</code></pre>
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Target folders in priority order. First folder that contains the asset wins. A single folder means pure substitution; multiple folders form a search path.&quot;)]
+public List&lt;FolderAssetRef&gt; folders</code></pre>
   </div>
 
 
-  <h4 class="section">Returns</h4>
+
+
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
-    <dd><p>The asset if it matches the type, otherwise null.</p>
-</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TAssetBundle.FolderAssetRef.html">FolderAssetRef</a>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Extensions_PathAliasTable_Entry_prefix" data-uid="TAssetBundle.Extensions.PathAliasTable.Entry.prefix">
+  prefix
+  <a class="header-action link-secondary" title="View source" href="https://github.com/tigu77/TAssetBundle/blob/main/Assets/TAssetBundleExtensions/Scripts/PathAliasTable.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Alias prefix (e.g. \&quot;@char/\&quot;). Format is entirely user-defined.&quot;)]
+public string prefix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

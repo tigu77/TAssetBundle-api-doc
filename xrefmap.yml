@@ -4912,6 +4912,19 @@ references:
   commentId: E:TAssetBundle.Extensions.AssetManager.OnUsed
   fullName: TAssetBundle.Extensions.AssetManager.OnUsed
   nameWithType: AssetManager.OnUsed
+- uid: TAssetBundle.Extensions.AssetManager.PathResolver
+  name: PathResolver
+  href: api/TAssetBundle.Extensions.AssetManager.html#TAssetBundle_Extensions_AssetManager_PathResolver
+  commentId: P:TAssetBundle.Extensions.AssetManager.PathResolver
+  fullName: TAssetBundle.Extensions.AssetManager.PathResolver
+  nameWithType: AssetManager.PathResolver
+- uid: TAssetBundle.Extensions.AssetManager.PathResolver*
+  name: PathResolver
+  href: api/TAssetBundle.Extensions.AssetManager.html#TAssetBundle_Extensions_AssetManager_PathResolver_
+  commentId: Overload:TAssetBundle.Extensions.AssetManager.PathResolver
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.AssetManager.PathResolver
+  nameWithType: AssetManager.PathResolver
 - uid: TAssetBundle.Extensions.AssetManager.PrefabPoolRoot
   name: PrefabPoolRoot
   href: api/TAssetBundle.Extensions.AssetManager.html#TAssetBundle_Extensions_AssetManager_PrefabPoolRoot
@@ -5065,6 +5078,32 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.AssetPrefabPool.Asset
   nameWithType: AssetPrefabPool.Asset
+- uid: TAssetBundle.Extensions.AssetPrefabPool.BeginLoad
+  name: BeginLoad()
+  href: api/TAssetBundle.Extensions.AssetPrefabPool.html#TAssetBundle_Extensions_AssetPrefabPool_BeginLoad
+  commentId: M:TAssetBundle.Extensions.AssetPrefabPool.BeginLoad
+  fullName: TAssetBundle.Extensions.AssetPrefabPool.BeginLoad()
+  nameWithType: AssetPrefabPool.BeginLoad()
+- uid: TAssetBundle.Extensions.AssetPrefabPool.BeginLoad*
+  name: BeginLoad
+  href: api/TAssetBundle.Extensions.AssetPrefabPool.html#TAssetBundle_Extensions_AssetPrefabPool_BeginLoad_
+  commentId: Overload:TAssetBundle.Extensions.AssetPrefabPool.BeginLoad
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.AssetPrefabPool.BeginLoad
+  nameWithType: AssetPrefabPool.BeginLoad
+- uid: TAssetBundle.Extensions.AssetPrefabPool.EndLoad
+  name: EndLoad()
+  href: api/TAssetBundle.Extensions.AssetPrefabPool.html#TAssetBundle_Extensions_AssetPrefabPool_EndLoad
+  commentId: M:TAssetBundle.Extensions.AssetPrefabPool.EndLoad
+  fullName: TAssetBundle.Extensions.AssetPrefabPool.EndLoad()
+  nameWithType: AssetPrefabPool.EndLoad()
+- uid: TAssetBundle.Extensions.AssetPrefabPool.EndLoad*
+  name: EndLoad
+  href: api/TAssetBundle.Extensions.AssetPrefabPool.html#TAssetBundle_Extensions_AssetPrefabPool_EndLoad_
+  commentId: Overload:TAssetBundle.Extensions.AssetPrefabPool.EndLoad
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.AssetPrefabPool.EndLoad
+  nameWithType: AssetPrefabPool.EndLoad
 - uid: TAssetBundle.Extensions.AssetPrefabPool.Init(TAssetBundle.Extensions.AssetInfo{UnityEngine.GameObject})
   name: Init(AssetInfo<GameObject>)
   href: api/TAssetBundle.Extensions.AssetPrefabPool.html#TAssetBundle_Extensions_AssetPrefabPool_Init_TAssetBundle_Extensions_AssetInfo_UnityEngine_GameObject__
@@ -5094,6 +5133,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.AssetPrefabPool.IsLoaded
   nameWithType: AssetPrefabPool.IsLoaded
+- uid: TAssetBundle.Extensions.AssetPrefabPool.OnDestroy
+  name: OnDestroy()
+  href: api/TAssetBundle.Extensions.AssetPrefabPool.html#TAssetBundle_Extensions_AssetPrefabPool_OnDestroy
+  commentId: M:TAssetBundle.Extensions.AssetPrefabPool.OnDestroy
+  fullName: TAssetBundle.Extensions.AssetPrefabPool.OnDestroy()
+  nameWithType: AssetPrefabPool.OnDestroy()
+- uid: TAssetBundle.Extensions.AssetPrefabPool.OnDestroy*
+  name: OnDestroy
+  href: api/TAssetBundle.Extensions.AssetPrefabPool.html#TAssetBundle_Extensions_AssetPrefabPool_OnDestroy_
+  commentId: Overload:TAssetBundle.Extensions.AssetPrefabPool.OnDestroy
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.AssetPrefabPool.OnDestroy
+  nameWithType: AssetPrefabPool.OnDestroy
 - uid: TAssetBundle.Extensions.AssetPrefabPoolInspector
   name: AssetPrefabPoolInspector
   href: api/TAssetBundle.Extensions.AssetPrefabPoolInspector.html
@@ -5446,6 +5498,41 @@ references:
   commentId: T:TAssetBundle.Extensions.GetProgressDelegate
   fullName: TAssetBundle.Extensions.GetProgressDelegate
   nameWithType: GetProgressDelegate
+- uid: TAssetBundle.Extensions.IAssetPathResolver
+  name: IAssetPathResolver
+  href: api/TAssetBundle.Extensions.IAssetPathResolver.html
+  commentId: T:TAssetBundle.Extensions.IAssetPathResolver
+  fullName: TAssetBundle.Extensions.IAssetPathResolver
+  nameWithType: IAssetPathResolver
+- uid: TAssetBundle.Extensions.IAssetPathResolver.InvalidateCache
+  name: InvalidateCache()
+  href: api/TAssetBundle.Extensions.IAssetPathResolver.html#TAssetBundle_Extensions_IAssetPathResolver_InvalidateCache
+  commentId: M:TAssetBundle.Extensions.IAssetPathResolver.InvalidateCache
+  fullName: TAssetBundle.Extensions.IAssetPathResolver.InvalidateCache()
+  nameWithType: IAssetPathResolver.InvalidateCache()
+- uid: TAssetBundle.Extensions.IAssetPathResolver.InvalidateCache*
+  name: InvalidateCache
+  href: api/TAssetBundle.Extensions.IAssetPathResolver.html#TAssetBundle_Extensions_IAssetPathResolver_InvalidateCache_
+  commentId: Overload:TAssetBundle.Extensions.IAssetPathResolver.InvalidateCache
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.IAssetPathResolver.InvalidateCache
+  nameWithType: IAssetPathResolver.InvalidateCache
+- uid: TAssetBundle.Extensions.IAssetPathResolver.Resolve(System.String)
+  name: Resolve(string)
+  href: api/TAssetBundle.Extensions.IAssetPathResolver.html#TAssetBundle_Extensions_IAssetPathResolver_Resolve_System_String_
+  commentId: M:TAssetBundle.Extensions.IAssetPathResolver.Resolve(System.String)
+  name.vb: Resolve(String)
+  fullName: TAssetBundle.Extensions.IAssetPathResolver.Resolve(string)
+  fullName.vb: TAssetBundle.Extensions.IAssetPathResolver.Resolve(String)
+  nameWithType: IAssetPathResolver.Resolve(string)
+  nameWithType.vb: IAssetPathResolver.Resolve(String)
+- uid: TAssetBundle.Extensions.IAssetPathResolver.Resolve*
+  name: Resolve
+  href: api/TAssetBundle.Extensions.IAssetPathResolver.html#TAssetBundle_Extensions_IAssetPathResolver_Resolve_
+  commentId: Overload:TAssetBundle.Extensions.IAssetPathResolver.Resolve
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.IAssetPathResolver.Resolve
+  nameWithType: IAssetPathResolver.Resolve
 - uid: TAssetBundle.Extensions.IGetProgressable
   name: IGetProgressable
   href: api/TAssetBundle.Extensions.IGetProgressable.html
@@ -5465,12 +5552,75 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.IGetProgressable.GetProgressFunc
   nameWithType: IGetProgressable.GetProgressFunc
+- uid: TAssetBundle.Extensions.PathAliasTable
+  name: PathAliasTable
+  href: api/TAssetBundle.Extensions.PathAliasTable.html
+  commentId: T:TAssetBundle.Extensions.PathAliasTable
+  fullName: TAssetBundle.Extensions.PathAliasTable
+  nameWithType: PathAliasTable
+- uid: TAssetBundle.Extensions.PathAliasTable.BuildResolver
+  name: BuildResolver()
+  href: api/TAssetBundle.Extensions.PathAliasTable.html#TAssetBundle_Extensions_PathAliasTable_BuildResolver
+  commentId: M:TAssetBundle.Extensions.PathAliasTable.BuildResolver
+  fullName: TAssetBundle.Extensions.PathAliasTable.BuildResolver()
+  nameWithType: PathAliasTable.BuildResolver()
+- uid: TAssetBundle.Extensions.PathAliasTable.BuildResolver*
+  name: BuildResolver
+  href: api/TAssetBundle.Extensions.PathAliasTable.html#TAssetBundle_Extensions_PathAliasTable_BuildResolver_
+  commentId: Overload:TAssetBundle.Extensions.PathAliasTable.BuildResolver
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PathAliasTable.BuildResolver
+  nameWithType: PathAliasTable.BuildResolver
+- uid: TAssetBundle.Extensions.PathAliasTable.Entries
+  name: Entries
+  href: api/TAssetBundle.Extensions.PathAliasTable.html#TAssetBundle_Extensions_PathAliasTable_Entries
+  commentId: P:TAssetBundle.Extensions.PathAliasTable.Entries
+  fullName: TAssetBundle.Extensions.PathAliasTable.Entries
+  nameWithType: PathAliasTable.Entries
+- uid: TAssetBundle.Extensions.PathAliasTable.Entries*
+  name: Entries
+  href: api/TAssetBundle.Extensions.PathAliasTable.html#TAssetBundle_Extensions_PathAliasTable_Entries_
+  commentId: Overload:TAssetBundle.Extensions.PathAliasTable.Entries
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PathAliasTable.Entries
+  nameWithType: PathAliasTable.Entries
+- uid: TAssetBundle.Extensions.PathAliasTable.Entry
+  name: PathAliasTable.Entry
+  href: api/TAssetBundle.Extensions.PathAliasTable.Entry.html
+  commentId: T:TAssetBundle.Extensions.PathAliasTable.Entry
+  fullName: TAssetBundle.Extensions.PathAliasTable.Entry
+  nameWithType: PathAliasTable.Entry
+- uid: TAssetBundle.Extensions.PathAliasTable.Entry.folders
+  name: folders
+  href: api/TAssetBundle.Extensions.PathAliasTable.Entry.html#TAssetBundle_Extensions_PathAliasTable_Entry_folders
+  commentId: F:TAssetBundle.Extensions.PathAliasTable.Entry.folders
+  fullName: TAssetBundle.Extensions.PathAliasTable.Entry.folders
+  nameWithType: PathAliasTable.Entry.folders
+- uid: TAssetBundle.Extensions.PathAliasTable.Entry.prefix
+  name: prefix
+  href: api/TAssetBundle.Extensions.PathAliasTable.Entry.html#TAssetBundle_Extensions_PathAliasTable_Entry_prefix
+  commentId: F:TAssetBundle.Extensions.PathAliasTable.Entry.prefix
+  fullName: TAssetBundle.Extensions.PathAliasTable.Entry.prefix
+  nameWithType: PathAliasTable.Entry.prefix
 - uid: TAssetBundle.Extensions.PrefabPool
   name: PrefabPool
   href: api/TAssetBundle.Extensions.PrefabPool.html
   commentId: T:TAssetBundle.Extensions.PrefabPool
   fullName: TAssetBundle.Extensions.PrefabPool
   nameWithType: PrefabPool
+- uid: TAssetBundle.Extensions.PrefabPool.BeginLoad
+  name: BeginLoad()
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_BeginLoad
+  commentId: M:TAssetBundle.Extensions.PrefabPool.BeginLoad
+  fullName: TAssetBundle.Extensions.PrefabPool.BeginLoad()
+  nameWithType: PrefabPool.BeginLoad()
+- uid: TAssetBundle.Extensions.PrefabPool.BeginLoad*
+  name: BeginLoad
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_BeginLoad_
+  commentId: Overload:TAssetBundle.Extensions.PrefabPool.BeginLoad
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefabPool.BeginLoad
+  nameWithType: PrefabPool.BeginLoad
 - uid: TAssetBundle.Extensions.PrefabPool.Clear
   name: Clear()
   href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_Clear
@@ -5513,6 +5663,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.PrefabPool.Create
   nameWithType: PrefabPool.Create
+- uid: TAssetBundle.Extensions.PrefabPool.EndLoad
+  name: EndLoad()
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_EndLoad
+  commentId: M:TAssetBundle.Extensions.PrefabPool.EndLoad
+  fullName: TAssetBundle.Extensions.PrefabPool.EndLoad()
+  nameWithType: PrefabPool.EndLoad()
+- uid: TAssetBundle.Extensions.PrefabPool.EndLoad*
+  name: EndLoad
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_EndLoad_
+  commentId: Overload:TAssetBundle.Extensions.PrefabPool.EndLoad
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefabPool.EndLoad
+  nameWithType: PrefabPool.EndLoad
 - uid: TAssetBundle.Extensions.PrefabPool.Free(UnityEngine.GameObject)
   name: Free(GameObject)
   href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_Free_UnityEngine_GameObject_
@@ -5551,6 +5714,19 @@ references:
   fullName.vb: TAssetBundle.Extensions.PrefabPool.GetOrCreate(Of T)(UnityEngine.Transform, Boolean)
   nameWithType: PrefabPool.GetOrCreate<T>(Transform, bool)
   nameWithType.vb: PrefabPool.GetOrCreate(Of T)(Transform, Boolean)
+- uid: TAssetBundle.Extensions.PrefabPool.InFlightLoads
+  name: InFlightLoads
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_InFlightLoads
+  commentId: P:TAssetBundle.Extensions.PrefabPool.InFlightLoads
+  fullName: TAssetBundle.Extensions.PrefabPool.InFlightLoads
+  nameWithType: PrefabPool.InFlightLoads
+- uid: TAssetBundle.Extensions.PrefabPool.InFlightLoads*
+  name: InFlightLoads
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_InFlightLoads_
+  commentId: Overload:TAssetBundle.Extensions.PrefabPool.InFlightLoads
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefabPool.InFlightLoads
+  nameWithType: PrefabPool.InFlightLoads
 - uid: TAssetBundle.Extensions.PrefabPool.Init(UnityEngine.GameObject)
   name: Init(GameObject)
   href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_Init_UnityEngine_GameObject_
@@ -5577,12 +5753,51 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.PrefabPool.IsEmpty
   nameWithType: PrefabPool.IsEmpty
+- uid: TAssetBundle.Extensions.PrefabPool.IsPendingDestroy
+  name: IsPendingDestroy
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_IsPendingDestroy
+  commentId: P:TAssetBundle.Extensions.PrefabPool.IsPendingDestroy
+  fullName: TAssetBundle.Extensions.PrefabPool.IsPendingDestroy
+  nameWithType: PrefabPool.IsPendingDestroy
+- uid: TAssetBundle.Extensions.PrefabPool.IsPendingDestroy*
+  name: IsPendingDestroy
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_IsPendingDestroy_
+  commentId: Overload:TAssetBundle.Extensions.PrefabPool.IsPendingDestroy
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefabPool.IsPendingDestroy
+  nameWithType: PrefabPool.IsPendingDestroy
+- uid: TAssetBundle.Extensions.PrefabPool.IsPinned
+  name: IsPinned
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_IsPinned
+  commentId: P:TAssetBundle.Extensions.PrefabPool.IsPinned
+  fullName: TAssetBundle.Extensions.PrefabPool.IsPinned
+  nameWithType: PrefabPool.IsPinned
+- uid: TAssetBundle.Extensions.PrefabPool.IsPinned*
+  name: IsPinned
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_IsPinned_
+  commentId: Overload:TAssetBundle.Extensions.PrefabPool.IsPinned
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefabPool.IsPinned
+  nameWithType: PrefabPool.IsPinned
 - uid: TAssetBundle.Extensions.PrefabPool.OnCreated
   name: OnCreated
   href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_OnCreated
   commentId: E:TAssetBundle.Extensions.PrefabPool.OnCreated
   fullName: TAssetBundle.Extensions.PrefabPool.OnCreated
   nameWithType: PrefabPool.OnCreated
+- uid: TAssetBundle.Extensions.PrefabPool.OnDestroy
+  name: OnDestroy()
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_OnDestroy
+  commentId: M:TAssetBundle.Extensions.PrefabPool.OnDestroy
+  fullName: TAssetBundle.Extensions.PrefabPool.OnDestroy()
+  nameWithType: PrefabPool.OnDestroy()
+- uid: TAssetBundle.Extensions.PrefabPool.OnDestroy*
+  name: OnDestroy
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_OnDestroy_
+  commentId: Overload:TAssetBundle.Extensions.PrefabPool.OnDestroy
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefabPool.OnDestroy
+  nameWithType: PrefabPool.OnDestroy
 - uid: TAssetBundle.Extensions.PrefabPool.OnFree
   name: OnFree
   href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_OnFree
@@ -5621,6 +5836,19 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.PrefabPool.Prefab
   nameWithType: PrefabPool.Prefab
+- uid: TAssetBundle.Extensions.PrefabPool.RequestDestroy
+  name: RequestDestroy()
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_RequestDestroy
+  commentId: M:TAssetBundle.Extensions.PrefabPool.RequestDestroy
+  fullName: TAssetBundle.Extensions.PrefabPool.RequestDestroy()
+  nameWithType: PrefabPool.RequestDestroy()
+- uid: TAssetBundle.Extensions.PrefabPool.RequestDestroy*
+  name: RequestDestroy
+  href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_RequestDestroy_
+  commentId: Overload:TAssetBundle.Extensions.PrefabPool.RequestDestroy
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefabPool.RequestDestroy
+  nameWithType: PrefabPool.RequestDestroy
 - uid: TAssetBundle.Extensions.PrefabPool.Reserve(System.Int32)
   name: Reserve(int)
   href: api/TAssetBundle.Extensions.PrefabPool.html#TAssetBundle_Extensions_PrefabPool_Reserve_System_Int32_
@@ -5894,6 +6122,121 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.Extensions.PrefabPooledObjectExtensions.FreePrefab
   nameWithType: PrefabPooledObjectExtensions.FreePrefab
+- uid: TAssetBundle.Extensions.PrefixAliasResolver
+  name: PrefixAliasResolver
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html
+  commentId: T:TAssetBundle.Extensions.PrefixAliasResolver
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver
+  nameWithType: PrefixAliasResolver
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name: Add(string, IEnumerable<string>)
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Add_System_String_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:TAssetBundle.Extensions.PrefixAliasResolver.Add(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Add(String, IEnumerable(Of String))
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Add(string, System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: TAssetBundle.Extensions.PrefixAliasResolver.Add(String, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PrefixAliasResolver.Add(string, IEnumerable<string>)
+  nameWithType.vb: PrefixAliasResolver.Add(String, IEnumerable(Of String))
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Add(System.String,System.String)
+  name: Add(string, string)
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Add_System_String_System_String_
+  commentId: M:TAssetBundle.Extensions.PrefixAliasResolver.Add(System.String,System.String)
+  name.vb: Add(String, String)
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Add(string, string)
+  fullName.vb: TAssetBundle.Extensions.PrefixAliasResolver.Add(String, String)
+  nameWithType: PrefixAliasResolver.Add(string, string)
+  nameWithType.vb: PrefixAliasResolver.Add(String, String)
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Add*
+  name: Add
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Add_
+  commentId: Overload:TAssetBundle.Extensions.PrefixAliasResolver.Add
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Add
+  nameWithType: PrefixAliasResolver.Add
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.AssetExists
+  name: AssetExists
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_AssetExists
+  commentId: P:TAssetBundle.Extensions.PrefixAliasResolver.AssetExists
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.AssetExists
+  nameWithType: PrefixAliasResolver.AssetExists
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.AssetExists*
+  name: AssetExists
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_AssetExists_
+  commentId: Overload:TAssetBundle.Extensions.PrefixAliasResolver.AssetExists
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.AssetExists
+  nameWithType: PrefixAliasResolver.AssetExists
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Clear
+  name: Clear()
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Clear
+  commentId: M:TAssetBundle.Extensions.PrefixAliasResolver.Clear
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Clear()
+  nameWithType: PrefixAliasResolver.Clear()
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Clear*
+  name: Clear
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Clear_
+  commentId: Overload:TAssetBundle.Extensions.PrefixAliasResolver.Clear
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Clear
+  nameWithType: PrefixAliasResolver.Clear
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Count
+  name: Count
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Count
+  commentId: P:TAssetBundle.Extensions.PrefixAliasResolver.Count
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Count
+  nameWithType: PrefixAliasResolver.Count
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Count*
+  name: Count
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Count_
+  commentId: Overload:TAssetBundle.Extensions.PrefixAliasResolver.Count
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Count
+  nameWithType: PrefixAliasResolver.Count
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache
+  name: InvalidateCache()
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_InvalidateCache
+  commentId: M:TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache()
+  nameWithType: PrefixAliasResolver.InvalidateCache()
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache*
+  name: InvalidateCache
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_InvalidateCache_
+  commentId: Overload:TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.InvalidateCache
+  nameWithType: PrefixAliasResolver.InvalidateCache
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Remove(System.String)
+  name: Remove(string)
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Remove_System_String_
+  commentId: M:TAssetBundle.Extensions.PrefixAliasResolver.Remove(System.String)
+  name.vb: Remove(String)
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Remove(string)
+  fullName.vb: TAssetBundle.Extensions.PrefixAliasResolver.Remove(String)
+  nameWithType: PrefixAliasResolver.Remove(string)
+  nameWithType.vb: PrefixAliasResolver.Remove(String)
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Remove*
+  name: Remove
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Remove_
+  commentId: Overload:TAssetBundle.Extensions.PrefixAliasResolver.Remove
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Remove
+  nameWithType: PrefixAliasResolver.Remove
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Resolve(System.String)
+  name: Resolve(string)
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Resolve_System_String_
+  commentId: M:TAssetBundle.Extensions.PrefixAliasResolver.Resolve(System.String)
+  name.vb: Resolve(String)
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Resolve(string)
+  fullName.vb: TAssetBundle.Extensions.PrefixAliasResolver.Resolve(String)
+  nameWithType: PrefixAliasResolver.Resolve(string)
+  nameWithType.vb: PrefixAliasResolver.Resolve(String)
+- uid: TAssetBundle.Extensions.PrefixAliasResolver.Resolve*
+  name: Resolve
+  href: api/TAssetBundle.Extensions.PrefixAliasResolver.html#TAssetBundle_Extensions_PrefixAliasResolver_Resolve_
+  commentId: Overload:TAssetBundle.Extensions.PrefixAliasResolver.Resolve
+  isSpec: "True"
+  fullName: TAssetBundle.Extensions.PrefixAliasResolver.Resolve
+  nameWithType: PrefixAliasResolver.Resolve
 - uid: TAssetBundle.FilePathCollector
   name: FilePathCollector
   href: api/TAssetBundle.FilePathCollector.html
@@ -8241,6 +8584,12 @@ references:
   isSpec: "True"
   fullName: TAssetBundle.TAssetBundles.LoadSceneAsync
   nameWithType: TAssetBundles.LoadSceneAsync
+- uid: TAssetBundle.TAssetBundles.OnCatalogLoaded
+  name: OnCatalogLoaded
+  href: api/TAssetBundle.TAssetBundles.html#TAssetBundle_TAssetBundles_OnCatalogLoaded
+  commentId: E:TAssetBundle.TAssetBundles.OnCatalogLoaded
+  fullName: TAssetBundle.TAssetBundles.OnCatalogLoaded
+  nameWithType: TAssetBundles.OnCatalogLoaded
 - uid: TAssetBundle.TAssetBundles.SetAssetCatalogComparer(TAssetBundle.IAssetCatalogComparer)
   name: SetAssetCatalogComparer(IAssetCatalogComparer)
   href: api/TAssetBundle.TAssetBundles.html#TAssetBundle_TAssetBundles_SetAssetCatalogComparer_TAssetBundle_IAssetCatalogComparer_

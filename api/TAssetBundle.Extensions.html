@@ -139,6 +139,17 @@ unloading of unused assets, and pooling of prefabs.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.Extensions.PathAliasTable.html">PathAliasTable</a></dt>
+      <dd><p>ScriptableObject that declaratively configures alias prefixes and their target
+folders, and builds a <a class="xref" href="TAssetBundle.Extensions.PrefixAliasResolver.html">PrefixAliasResolver</a> wired to the active
+TAssetBundle catalog.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.Extensions.PathAliasTable.Entry.html">PathAliasTable.Entry</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.Extensions.PrefabPool.html">PrefabPool</a></dt>
       <dd><p>This class manages a pool of objects, allowing for the creation and reuse of GameObjects based on a given prefab.</p>
 </dd>
@@ -159,9 +170,22 @@ reducing unnecessary instantiation and destruction overhead.</p>
       <dt><a class="xref" href="TAssetBundle.Extensions.PrefabPooledObjectExtensions.html">PrefabPooledObjectExtensions</a></dt>
       <dd></dd>
     </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.Extensions.PrefixAliasResolver.html">PrefixAliasResolver</a></dt>
+      <dd><p>Prefix-based alias resolver that maps user-facing path prefixes to one or
+more canonical folders, with an optional search-path fallback.</p>
+</dd>
+    </dl>
     <h3 id="interfaces">
 Interfaces
 </h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="TAssetBundle.Extensions.IAssetPathResolver.html">IAssetPathResolver</a></dt>
+      <dd><p>Resolves an input asset path to its canonical full path.
+Used by <a class="xref" href="TAssetBundle.Extensions.AssetManager.html">AssetManager</a> to translate user-provided alias paths
+into catalog paths before any internal lookup or tracking.</p>
+</dd>
+    </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="TAssetBundle.Extensions.IGetProgressable.html">IGetProgressable</a></dt>
       <dd><p>Interface for objects that can provide progress information.</p>
