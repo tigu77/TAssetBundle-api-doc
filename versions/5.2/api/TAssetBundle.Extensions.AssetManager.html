@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AssetManager | TAssetBundle 5.2 (stable) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AssetManager | TAssetBundle 5.2 (stable) ">
+      
+      <meta name="description" content="AssetManager provides methods to load, unload, and manage assets and prefabs using TAssetBundle for efficient asset management. It supports asynchronous loading, unloading of unused assets, and pooling of prefabs.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference"><nav aria-label="Documentation version" data-docs-version="5.2" data-page="api/TAssetBundle.Extensions.AssetManager.html" data-site-root="../../../" style="padding:.75rem;background:#eee;color:#111"><strong>Documentation: 5.2 (stable; product 5.2.0)</strong> <label>Switch version: <select disabled><option value="legacy">Legacy (version unverified)</option><option value="5.2" selected>5.2 (stable; product 5.2.0)</option></select></label><span> Version homepages: <a href="../../../index.html">Legacy (version unverified)</a> <a href="../../../versions/5.2/index.html">5.2 (stable; product 5.2.0)</a></span></nav><script defer src="../docs-version-selector.js"></script>
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TAssetBundle.Extensions.AssetManager">
+
+
+
+  <h1 id="TAssetBundle_Extensions_AssetManager" data-uid="TAssetBundle.Extensions.AssetManager" class="text-break">
+Class AssetManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TAssetBundle.html">TAssetBundle</a>.<a class="xref" href="TAssetBundle.Extensions.html">Extensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TAssetBundle.Extensions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>AssetManager provides methods to load, unload, and manage assets and prefabs
+using TAssetBundle for efficient asset management. It supports asynchronous loading,
+unloading of unused assets, and pooling of prefabs.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AssetManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AssetManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_AssetInfos_" data-uid="TAssetBundle.Extensions.AssetManager.AssetInfos*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_AssetInfos" data-uid="TAssetBundle.Extensions.AssetManager.AssetInfos">
+  AssetInfos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the dictionary of asset information, where the key is the asset path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, AssetInfo&gt; AssetInfos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html">AssetInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadPrefabFunc_" data-uid="TAssetBundle.Extensions.AssetManager.LoadPrefabFunc*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadPrefabFunc" data-uid="TAssetBundle.Extensions.AssetManager.LoadPrefabFunc">
+  LoadPrefabFunc
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the delegate for loading prefabs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetManager.LoadPrefabDelegate LoadPrefabFunc { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AssetManager.html">AssetManager</a>.<a class="xref" href="TAssetBundle.Extensions.AssetManager.LoadPrefabDelegate.html">LoadPrefabDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_PathResolver_" data-uid="TAssetBundle.Extensions.AssetManager.PathResolver*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_PathResolver" data-uid="TAssetBundle.Extensions.AssetManager.PathResolver">
+  PathResolver
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional asset path resolver applied at every public API entry point that
+accepts a path string. When set, user-provided paths (aliases) are translated
+to canonical catalog paths before any internal lookup or tracking occurs.</p>
+<p>Aliases live only in input: return values, event callbacks, and
+<a class="xref" href="TAssetBundle.Extensions.AssetInfo.html#TAssetBundle_Extensions_AssetInfo_AssetPath">AssetPath</a> are always canonical.</p>
+<p>Default is <code>null</code>; when null, paths pass through unchanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAssetPathResolver PathResolver { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.IAssetPathResolver.html">IAssetPathResolver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_PrefabPoolRoot_" data-uid="TAssetBundle.Extensions.AssetManager.PrefabPoolRoot*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_PrefabPoolRoot" data-uid="TAssetBundle.Extensions.AssetManager.PrefabPoolRoot">
+  PrefabPoolRoot
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the root transform for prefab pools.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform PrefabPoolRoot { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_PrefabPools_" data-uid="TAssetBundle.Extensions.AssetManager.PrefabPools*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_PrefabPools" data-uid="TAssetBundle.Extensions.AssetManager.PrefabPools">
+  PrefabPools
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the dictionary of prefab pools, where the key is the prefab path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, AssetPrefabPool&gt; PrefabPools { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="TAssetBundle.Extensions.AssetPrefabPool.html">AssetPrefabPool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_ClearPrefabPool_" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPool*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_ClearPrefabPool_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPool(System.String)">
+  ClearPrefabPool(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears a specific prefab pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ClearPrefabPool(string prefabPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to the prefab.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the pool was cleared, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_ClearPrefabPools_" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPools*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_ClearPrefabPools" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPools">
+  ClearPrefabPools()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears all prefab pools.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearPrefabPools()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_ClearPrefabPoolsIfLoaded_" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_ClearPrefabPoolsIfLoaded" data-uid="TAssetBundle.Extensions.AssetManager.ClearPrefabPoolsIfLoaded">
+  ClearPrefabPoolsIfLoaded()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearPrefabPoolsIfLoaded()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_GetPrefab_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefab*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefab_System_String_UnityEngine_Transform_System_Action_UnityEngine_GameObject__System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefab(System.String,UnityEngine.Transform,System.Action{UnityEngine.GameObject},System.Boolean,System.Boolean,System.Object)">
+  GetPrefab(string, Transform, Action&lt;GameObject&gt;, bool, bool, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset path and instantiates it as a game object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetPrefab(string prefabPath, Transform parent, Action&lt;GameObject&gt; onComplete, bool active = true, bool pooling = true, object userData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the prefab.</p>
+</dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd><p>The parent transform to attach the prefab to after instancing.</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd><p>Callback to invoke when the prefab has been successfully loaded and instantiated.</p>
+</dd>
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether the prefab should be active upon instancing. Default is true.</p>
+</dd>
+    <dt><code>pooling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether pooling should be used for the prefab. Default is true.</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Optional user data to associate with the prefab load and instancing operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_GetPrefab_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefab*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefab_TAssetBundle_AssetRef_UnityEngine_Transform_System_Action_UnityEngine_GameObject__System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefab(TAssetBundle.AssetRef,UnityEngine.Transform,System.Action{UnityEngine.GameObject},System.Boolean,System.Boolean,System.Object)">
+  GetPrefab(AssetRef, Transform, Action&lt;GameObject&gt;, bool, bool, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset reference and instantiates it as a game object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetPrefab(AssetRef assetRef, Transform parent, Action&lt;GameObject&gt; onComplete, bool active = true, bool pooling = true, object userData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>The asset reference containing the path to the prefab.</p>
+</dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd><p>Parent transform to attach the prefab.</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd><p>Callback to be executed when the prefab is loaded.</p>
+</dd>
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether the prefab should be active upon loading.</p>
+</dd>
+    <dt><code>pooling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to use pooling for the prefab.</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Additional user data that can be passed along.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_GetPrefabAsync_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefabAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefabAsync_System_String_UnityEngine_Transform_System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefabAsync(System.String,UnityEngine.Transform,System.Boolean,System.Boolean,System.Object)">
+  GetPrefabAsync(string, Transform, bool, bool, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset reference and instantiates it as a game object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;GameObject&gt; GetPrefabAsync(string prefabPath, Transform parent, bool active = true, bool pooling = true, object userData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the prefab.</p>
+</dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd><p>Parent transform for the instantiated prefab.</p>
+</dd>
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether the prefab should be active after instancing.</p>
+</dd>
+    <dt><code>pooling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to use pooling for the prefab.</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>User data that can be passed during the instancing process.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd><p>Async operation for loading and instancing the prefab.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_GetPrefabAsync_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefabAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_GetPrefabAsync_TAssetBundle_AssetRef_UnityEngine_Transform_System_Boolean_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.GetPrefabAsync(TAssetBundle.AssetRef,UnityEngine.Transform,System.Boolean,System.Boolean,System.Object)">
+  GetPrefabAsync(AssetRef, Transform, bool, bool, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads a prefab using an asset reference and instantiates it as a game object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;GameObject&gt; GetPrefabAsync(AssetRef assetRef, Transform parent, bool active = true, bool pooling = true, object userData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>The asset reference containing the path to the prefab.</p>
+</dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd><p>The parent transform to attach the loaded prefab to.</p>
+</dd>
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether the prefab should be active upon loading. Default is true.</p>
+</dd>
+    <dt><code>pooling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether pooling should be used for the prefab. Default is true.</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Optional user data to associate with the load operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd><p>Async operation for the prefab load process.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_GetUsingAssets_" data-uid="TAssetBundle.Extensions.AssetManager.GetUsingAssets*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_GetUsingAssets" data-uid="TAssetBundle.Extensions.AssetManager.GetUsingAssets">
+  GetUsingAssets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves all assets that are currently in use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;AssetInfo&gt; GetUsingAssets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo.html">AssetInfo</a>&gt;</dt>
+    <dd><p>An enumerable collection of assets that are being used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_IsLoadedAsset_" data-uid="TAssetBundle.Extensions.AssetManager.IsLoadedAsset*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_IsLoadedAsset_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.IsLoadedAsset(System.String)">
+  IsLoadedAsset(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a specific asset is loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLoadedAsset(string assetPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to the asset.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset is loaded, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_IsLoading_" data-uid="TAssetBundle.Extensions.AssetManager.IsLoading*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_IsLoading" data-uid="TAssetBundle.Extensions.AssetManager.IsLoading">
+  IsLoading()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if any assets are currently loading.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLoading()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if any assets are loading, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(System.String)">
+  LoadAssetAsync&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads an asset using its path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;AssetInfo&lt;T&gt;&gt; LoadAssetAsync&lt;T&gt;(string assetPath) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the asset.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>An asynchronous operation that completes with the loaded asset information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the asset to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_TAssetBundle_AssetRef_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(TAssetBundle.AssetRef)">
+  LoadAssetAsync&lt;T&gt;(AssetRef)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads an asset using an asset reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;AssetInfo&lt;T&gt;&gt; LoadAssetAsync&lt;T&gt;(AssetRef assetRef) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>The asset reference containing the asset path.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>An asynchronous operation that completes with the loaded asset information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the asset to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_UnityEngine_GameObject_System_String_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(UnityEngine.GameObject,System.String)">
+  LoadAssetAsync&lt;T&gt;(GameObject, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads an asset of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;AssetInfo&lt;T&gt;&gt; LoadAssetAsync&lt;T&gt;(GameObject context, string assetPath) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject context for tracking the asset's lifecycle.</p>
+</dd>
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the asset.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>An asynchronous operation that completes with the loaded asset information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the asset to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAssetAsync__1_UnityEngine_GameObject_TAssetBundle_AssetRef_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAssetAsync``1(UnityEngine.GameObject,TAssetBundle.AssetRef)">
+  LoadAssetAsync&lt;T&gt;(GameObject, AssetRef)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously loads an asset using a context and an asset reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;AssetInfo&lt;T&gt;&gt; LoadAssetAsync&lt;T&gt;(GameObject context, AssetRef assetRef) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject context for tracking the asset's lifecycle.</p>
+</dd>
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>The asset reference containing the asset path.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>An asynchronous operation that completes with the loaded asset information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the asset to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAsset_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_TAssetBundle_Extensions_IGetProgressable_UnityEngine_GameObject_System_String_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(TAssetBundle.Extensions.IGetProgressable,UnityEngine.GameObject,System.String,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
+  LoadAsset&lt;T&gt;(IGetProgressable, GameObject, string, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads an asset asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coroutine LoadAsset&lt;T&gt;(IGetProgressable getProgressable, GameObject context, string assetPath, bool waitForEndOfFrame, Action&lt;AssetInfo&lt;T&gt;&gt; onComplete) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>getProgressable</code> <a class="xref" href="TAssetBundle.Extensions.IGetProgressable.html">IGetProgressable</a></dt>
+    <dd><p>An object that provides progress information during loading.</p>
+</dd>
+    <dt><code>context</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject context for tracking the asset's lifecycle.</p>
+</dd>
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the asset.</p>
+</dd>
+    <dt><code>waitForEndOfFrame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to wait until the end of the frame to complete the load operation.</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>Callback invoked when the asset loading is complete.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Coroutine</span></dt>
+    <dd><p>Coroutine that loads the asset asynchronously.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of the asset.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAsset_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_TAssetBundle_Extensions_IGetProgressable_UnityEngine_GameObject_TAssetBundle_AssetRef_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(TAssetBundle.Extensions.IGetProgressable,UnityEngine.GameObject,TAssetBundle.AssetRef,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
+  LoadAsset&lt;T&gt;(IGetProgressable, GameObject, AssetRef, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads an asset using an asset reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coroutine LoadAsset&lt;T&gt;(IGetProgressable getProgressable, GameObject context, AssetRef assetRef, bool waitForEndOfFrame, Action&lt;AssetInfo&lt;T&gt;&gt; onComplete) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>getProgressable</code> <a class="xref" href="TAssetBundle.Extensions.IGetProgressable.html">IGetProgressable</a></dt>
+    <dd><p>An object that provides progress information during loading.</p>
+</dd>
+    <dt><code>context</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject context for tracking the asset's lifecycle.</p>
+</dd>
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>The asset reference containing the asset path.</p>
+</dd>
+    <dt><code>waitForEndOfFrame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to wait until the end of the frame to complete the load operation.</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>Callback invoked when the asset loading is complete.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Coroutine</span></dt>
+    <dd><p>Coroutine that loads the asset asynchronously.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of the asset.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAsset_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_UnityEngine_GameObject_System_String_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(UnityEngine.GameObject,System.String,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
+  LoadAsset&lt;T&gt;(GameObject, string, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads an asset asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coroutine LoadAsset&lt;T&gt;(GameObject context, string assetPath, bool waitForEndOfFrame, Action&lt;AssetInfo&lt;T&gt;&gt; onComplete) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject context for tracking the asset's lifecycle.</p>
+</dd>
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the asset.</p>
+</dd>
+    <dt><code>waitForEndOfFrame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to wait until the end of the frame to complete the load operation.</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>Callback invoked when the asset loading is complete.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Coroutine</span></dt>
+    <dd><p>Coroutine that loads the asset asynchronously.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of the asset.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_LoadAsset_" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_LoadAsset__1_UnityEngine_GameObject_TAssetBundle_AssetRef_System_Boolean_System_Action_TAssetBundle_Extensions_AssetInfo___0___" data-uid="TAssetBundle.Extensions.AssetManager.LoadAsset``1(UnityEngine.GameObject,TAssetBundle.AssetRef,System.Boolean,System.Action{TAssetBundle.Extensions.AssetInfo{``0}})">
+  LoadAsset&lt;T&gt;(GameObject, AssetRef, bool, Action&lt;AssetInfo&lt;T&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads an asset using an asset reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Coroutine LoadAsset&lt;T&gt;(GameObject context, AssetRef assetRef, bool waitForEndOfFrame, Action&lt;AssetInfo&lt;T&gt;&gt; onComplete) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject context for tracking the asset's lifecycle.</p>
+</dd>
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>The asset reference containing the asset path.</p>
+</dd>
+    <dt><code>waitForEndOfFrame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to wait until the end of the frame to complete the load operation.</p>
+</dd>
+    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TAssetBundle.Extensions.AssetInfo-1.html">AssetInfo</a>&lt;T&gt;&gt;</dt>
+    <dd><p>Callback invoked when the asset loading is complete.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Coroutine</span></dt>
+    <dd><p>Coroutine that loads the asset asynchronously.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of the asset.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_PreloadPrefabAsync_" data-uid="TAssetBundle.Extensions.AssetManager.PreloadPrefabAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_PreloadPrefabAsync_System_String_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.PreloadPrefabAsync(System.String,System.Boolean,System.Object)">
+  PreloadPrefabAsync(string, bool, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously preloads a prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;GameObject&gt; PreloadPrefabAsync(string prefabPath, bool pooling = true, object userData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the prefab.</p>
+</dd>
+    <dt><code>pooling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether to use pooling for the prefab.</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Additional user data to associate with the preload operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd><p>An async operation representing the preload operation for the prefab.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_PreloadPrefabAsync_" data-uid="TAssetBundle.Extensions.AssetManager.PreloadPrefabAsync*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_PreloadPrefabAsync_TAssetBundle_GameObjectAssetRef_System_Boolean_System_Object_" data-uid="TAssetBundle.Extensions.AssetManager.PreloadPrefabAsync(TAssetBundle.GameObjectAssetRef,System.Boolean,System.Object)">
+  PreloadPrefabAsync(GameObjectAssetRef, bool, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously preloads a prefab using an asset reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncOperation&lt;GameObject&gt; PreloadPrefabAsync(GameObjectAssetRef assetRef, bool pooling = true, object userData = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.GameObjectAssetRef.html">GameObjectAssetRef</a></dt>
+    <dd><p>The asset reference containing the path to the prefab.</p>
+</dd>
+    <dt><code>pooling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether to use pooling for the prefab.</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Additional user data to associate with the preload operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.AsyncOperation-1.html">AsyncOperation</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd><p>An async operation representing the preload operation for the prefab.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_TryGetAssetInfo_" data-uid="TAssetBundle.Extensions.AssetManager.TryGetAssetInfo*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_TryGetAssetInfo_System_String_TAssetBundle_Extensions_AssetInfo__" data-uid="TAssetBundle.Extensions.AssetManager.TryGetAssetInfo(System.String,TAssetBundle.Extensions.AssetInfo@)">
+  TryGetAssetInfo(string, out AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get information about a specific asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetAssetInfo(string assetPath, out AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to the asset.</p>
+</dd>
+    <dt><code>assetInfo</code> <a class="xref" href="TAssetBundle.Extensions.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>Output parameter for the asset information.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset information was found, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_UnloadAsset_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAsset*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_UnloadAsset_System_String_System_Boolean_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAsset(System.String,System.Boolean)">
+  UnloadAsset(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads the specified asset if it is loaded and removes it from the asset information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UnloadAsset(string assetPath, bool force = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the asset.</p>
+</dd>
+    <dt><code>force</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, forces the asset to be unloaded even if it is marked as &quot;Don't Destroy&quot;.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the asset was successfully unloaded, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_UnloadAsset_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAsset*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_UnloadAsset_TAssetBundle_AssetRef_System_Boolean_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAsset(TAssetBundle.AssetRef,System.Boolean)">
+  UnloadAsset(AssetRef, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads a specific asset using an asset reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UnloadAsset(AssetRef assetRef, bool force = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetRef</code> <a class="xref" href="TAssetBundle.AssetRef.html">AssetRef</a></dt>
+    <dd><p>The asset reference containing the asset path.</p>
+</dd>
+    <dt><code>force</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, forces the asset to be unloaded even if marked as &quot;Don't Destroy&quot;.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset was successfully unloaded, otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_UnloadAssetsAll_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAssetsAll*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_UnloadAssetsAll" data-uid="TAssetBundle.Extensions.AssetManager.UnloadAssetsAll">
+  UnloadAssetsAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads all loaded assets, including those marked &quot;Don't Destroy&quot;.
+Loads still in progress are detached and complete as failures.
+Called automatically when <a class="xref" href="TAssetBundle.TAssetBundles.html#TAssetBundle_TAssetBundles_UnloadAll">UnloadAll()</a> runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnloadAssetsAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_UnloadUnusedAssets_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadUnusedAssets*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_UnloadUnusedAssets" data-uid="TAssetBundle.Extensions.AssetManager.UnloadUnusedAssets">
+  UnloadUnusedAssets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads all unused assets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnloadUnusedAssets()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Extensions_AssetManager_UnloadUnusedAssetsAfterLastUse_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadUnusedAssetsAfterLastUse*"></a>
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_UnloadUnusedAssetsAfterLastUse_System_Single_" data-uid="TAssetBundle.Extensions.AssetManager.UnloadUnusedAssetsAfterLastUse(System.Single)">
+  UnloadUnusedAssetsAfterLastUse(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads assets that have not been used for a specified duration.
+Links held by objects that were destroyed without ever being active (Unity does not call
+OnDestroy on them) are released first; their last use time is the time of this call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnloadUnusedAssetsAfterLastUse(float seconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The time in seconds since the last use before an asset is unloaded.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_OnCreated" data-uid="TAssetBundle.Extensions.AssetManager.OnCreated">
+  OnCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when a new prefab instance is created in the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PrefabPoolDelegate OnCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.PrefabPoolDelegate.html">PrefabPoolDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_OnFree" data-uid="TAssetBundle.Extensions.AssetManager.OnFree">
+  OnFree
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when a prefab instance is returned to the pool for reuse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PrefabPoolDelegate OnFree</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.PrefabPoolDelegate.html">PrefabPoolDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Extensions_AssetManager_OnUsed" data-uid="TAssetBundle.Extensions.AssetManager.OnUsed">
+  OnUsed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event triggered when a prefab instance is retrieved from the pool for use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event PrefabPoolDelegate OnUsed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Extensions.PrefabPoolDelegate.html">PrefabPoolDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

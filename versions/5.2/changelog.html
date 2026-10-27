@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Changelog | TAssetBundle 5.2 (stable) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Changelog | TAssetBundle 5.2 (stable) ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime=""><nav aria-label="Documentation version" data-docs-version="5.2" data-page="changelog.html" data-site-root="../../" style="padding:.75rem;background:#eee;color:#111"><strong>Documentation: 5.2 (stable; product 5.2.0)</strong> <label>Switch version: <select disabled><option value="legacy">Legacy (version unverified)</option><option value="5.2" selected>5.2 (stable; product 5.2.0)</option></select></label><span> Version homepages: <a href="../../index.html">Legacy (version unverified)</a> <a href="../../versions/5.2/index.html">5.2 (stable; product 5.2.0)</a></span></nav><script defer src="docs-version-selector.js"></script>
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to <strong>TAssetBundle</strong> are documented in this file.</p>
+<hr>
+<h3 id="520">5.2.0</h3>
+<ul>
+<li><strong>Asset collection:</strong> added editable extension exclusions and reversible file/folder Ignore. <code>.lighting</code> defaults apply once to legacy settings; custom and empty lists remain unchanged.</li>
+<li><strong>Remote delivery and cache:</strong> added optional hash filenames and selective cache-clearing APIs; improved concurrent downloads, cached loading and WebGL cache deletion.</li>
+<li><strong>Loading and unloading:</strong> added <code>TAssetBundles.OnUnloadedAll</code> and fixed failed-request cleanup. <strong>[Pro]</strong> improved prefab ownership and AssetManager/pool cleanup.</li>
+<li><strong>Builds and samples:</strong> fixed build paths, cached catalogs and sample sprite references; player builds now wait for built-in preparation and stop on failure.</li>
+<li><strong>Compatibility:</strong> fixed Unity 6000.0/6000.1 compilation. <strong>[Pro]</strong> fixed path aliases/DLC overrides; async prefab APIs require Unity 2022.3.20+ or Unity 6+.</li>
+</ul>
+<h3 id="510">5.1.0</h3>
+<ul>
+<li>🆕 <strong>Added Catalog Diff Viewer</strong> (<code>TAssetBundle &gt; Catalog Diff</code>) — compare two catalogs before shipping an update. Search and filter Added / Removed / Modified / Unchanged bundles, inspect exact hash and size changes, identify missing assets or manifests with basic copy/reveal context actions, and expand visible results with <code>Expand Details</code>. Available in both Lite and Pro.</li>
+</ul>
+<h3 id="502">5.0.2</h3>
+<ul>
+<li>Fixed <code>UpdateTempCatalogAsync</code> accepting a remote catalog whose build number is older than the active local — <code>GetDownloadSize*</code> was computing against an outdated remote.</li>
+</ul>
+<h3 id="501">5.0.1</h3>
+<ul>
+<li><strong>[Play Asset Delivery]</strong> Fixed install-time asset packs failing to load on live installs and hash-changed install-time bundles being skipped from the predownload step.</li>
+<li><strong>[Play Asset Delivery]</strong> Plugin inspector's Manifest Summary now shows the resolved asset pack name (auto/custom) per manifest. Custom names are validated inline against Google Play rules in the manifest Inspector, and the PAD settings area is now a collapsible header.</li>
+<li><strong>[Editor]</strong> Skip pre-build cache preparation when <code>useBuildCache</code> is disabled — faster build entry on large projects.</li>
+</ul>
+<h3 id="500">5.0.0</h3>
+<ul>
+<li>⚠️ <strong>Breaking (minimum Unity):</strong> Raised to <strong>Unity 2021.3 LTS</strong> (from 2019.4).</li>
+<li>⚠️ <strong>Breaking (folder structure):</strong> Extensions moved to <code>Assets/TAssetBundleExtensions/</code>. Delete the legacy <code>Assets/TAssetBundle/Scripts/Extensions/</code> after upgrade; the <code>using TAssetBundle.Extensions;</code> namespace is unchanged. Editor-time detector warns if the legacy folder remains.</li>
+<li>🆕 <strong>Lite edition introduced</strong> — Lite (free) ships the core engine + plugins; Pro adds the productivity layer (<code>AssetManager</code>, <code>LinkAsset</code>, <code>PrefabPoolManager</code>, <code>PathAliasTable</code>, <code>Asset Usage Tracker</code>). See in-package <code>lite_vs_pro.md</code>.</li>
+</ul>
+<h3 id="470">4.7.0</h3>
+<ul>
+<li><strong>[AssetManager] Added Path Aliases</strong> — prefix-to-folder mapping with multi-folder priority search for DLC overrides. Configure via <code>PathAliasTable</code> or <code>PrefixAliasResolver</code>.</li>
+<li>Failed asset loads auto-clean from cache; retries no longer need <code>UnloadUnusedAssets</code></li>
+<li>Loading the same path as different types now errors cleanly instead of throwing <code>InvalidCastException</code></li>
+<li>Hardened prefab pool against races during multi-coroutine init and pool replacement</li>
+</ul>
+<h3 id="461">4.6.1</h3>
+<ul>
+<li><strong>[Play Asset Delivery]</strong> Pack bundles (install-time, fast-follow, on-demand) are now recompressed from LZMA to LZ4 before packing — every pack type lands on the device before loading, so LZ4's faster decompression wins over LZMA's smaller size for runtime performance.</li>
+<li>Manifest Inspector plugins now support multi-edit — selecting multiple manifests in the Project window applies plugin settings (e.g., PAD delivery type) to all of them in one action. <strong>Breaking for plugin authors:</strong> <code>IManifestEditorPluginModule.OnManifestInspectorGUI</code> now receives a <code>TAssetBundleManifest[]</code> instead of a single manifest.</li>
+</ul>
+<h3 id="460">4.6.0</h3>
+<ul>
+<li><strong>[Android] Added Google Play Asset Delivery plugin</strong> — install-time / fast-follow / on-demand delivery with automatic AAB integration, <code>OnDownloadProgress</code> event, concurrent download dedup, and Split Application Binary compatibility</li>
+<li>Added <code>UpdateTempCatalogAsync</code> — check for catalog updates and calculate download sizes without replacing the active catalog</li>
+<li>Fixed <code>TagUtil.SetDirty</code> to check <code>IsPersistent</code> before marking dirty</li>
+<li>Added <code>[Serializable]</code> to <code>CompositionStrategy</code> Data class and removed unnecessary <code>SetDirty</code> calls</li>
+</ul>
+<h3 id="450">4.5.0</h3>
+<ul>
+<li>Added Cross-Reference Analyzer — detect and visualize cross-bundle asset references at build time</li>
+<li>Redesigned Dependency Checker with TreeView + SearchField</li>
+<li>Browser manifest headers now show Builtin/Encrypt/Tags at a glance</li>
+<li>Added ManifestPluginData system — per-manifest plugin data with build hook</li>
+<li>Improved plugin Inspector UI</li>
+<li>Converted async void to async Task for safer exception handling</li>
+<li>Added enum-based <code>errorType</code> to <code>UnityWebRequestError</code></li>
+<li>Improved catalog/AssetBundle data corruption resilience and IO error protection</li>
+<li>Added <code>AssetBundleRuntimeInfo.TryGetCustomData()</code></li>
+<li>Renamed &quot;Shrink All&quot; to &quot;Collapse All&quot;</li>
+</ul>
+<h3 id="440">4.4.0</h3>
+<ul>
+<li>Added asset search API to <code>TAssetBundleManifest</code> (<code>SearchAssets</code>, <code>TryGetAssetInfo</code>)</li>
+<li>Added asset search feature to TAssetBundle Browser</li>
+</ul>
+<h3 id="431">4.3.1</h3>
+<ul>
+<li>Fixed GetNotIncludedAssets() to correctly evaluate asset inclusion across the entire manifest tree, including child manifests.</li>
+<li>Resolved cases where parent folders or already-included assets could be incorrectly reported as not included.</li>
+<li>Improved internal asset inclusion checks and related logic.</li>
+</ul>
+<h3 id="430">4.3.0</h3>
+<ul>
+<li>Added a new sample demonstrating <strong>FilePathCollector</strong> usage for runtime path-based asset loading.</li>
+<li>Improved sample code with additional comments for better clarity and understanding.</li>
+<li>Enhanced download result handling to include detailed error information.</li>
+<li>Build process optimizations and minor internal refactoring for improved stability.</li>
+</ul>
+<h3 id="420">4.2.0</h3>
+<ul>
+<li>Added FilePathCollector, which collects asset path information at runtime.</li>
+<li>Added an extensible plugin system.</li>
+<li>Fixed an issue where the RemoteUrl in the catalog was cached, making previously downloaded assets inaccessible before the new RemoteUrl was applied.</li>
+<li>Other optimizations and minor bug fixes.</li>
+</ul>
+<h3 id="411">4.1.1</h3>
+<ul>
+<li>Fixed <code>DefaultAssetCatalogComparer</code> comparison operation bug.</li>
+</ul>
+<h3 id="410">4.1.0</h3>
+<ul>
+<li>Optimized the build process to significantly reduce build times.</li>
+</ul>
+<h3 id="400">4.0.0</h3>
+<ul>
+<li>Changed <code>TAssetBundle.AssetManager</code> to <code>TAssetBundle.TAssetBundles</code> for a clearer API.</li>
+<li>Added an extended <code>AssetManager</code> with easy asset loading, unloading, prefab pooling, and object usage tracking using <code>TAssetBundle</code>.</li>
+<li>Added <code>Asset Usage Tracker</code> to the editor, allowing users to view, sort, and search objects currently using specific assets during play mode with regex.</li>
+<li>Added a new <code>PrefabPoolManager</code> for efficient pooling of frequently used prefabs..</li>
+<li>Made asset bundles containing video assets uncompressed.</li>
+<li>Added sorting and regex search features to the <code>Asset Reference Tracker</code>.</li>
+<li>Various bug fixes, refactoring, and optimization.</li>
+</ul>
+<h3 id="3111">3.11.1</h3>
+<ul>
+<li>Fixed null reference error in list field when generating TAssetBundleManifest in Unity versions after 2022.</li>
+</ul>
+<h3 id="3110">3.11.0</h3>
+<ul>
+<li>When building AssetBundles, an option has been added to output built-in AssetBundles to a separate folder. The option is named &quot;Builtin Asset Bundles Use Separate Folder&quot;</li>
+<li>Built-in AssetBundles that are compressed with LZMA (smaller size) now undergo recompression to LZ4 the first time they are accessed for use.</li>
+<li>Fixed to not use Unity's default AssetBundle provider since native caching is not available on the WebGL platform. Instead, a specific managed AssetBundle provider is used. This fixes a bug in previous versions where the download size was unknown when using Unity's default AssetBundle provider.</li>
+</ul>
+<h3 id="3100">3.10.0</h3>
+<ul>
+<li>Added an option to automatically abort web requests when download latency exceeds a specified time. (This feature is intended to resolve situations where there is no response for up to 2 minutes when switching to Wi-Fi.)</li>
+<li>Fixed an issue where apps would throw an exception saying there was no catalog when not using TAssetBundle.</li>
+</ul>
+<h3 id="392">3.9.2</h3>
+<ul>
+<li>Fixed a bug where references would be lost when using AssetRef inside an asset that has already been AssetBundled when playing in AssetBundle mode in the editor.</li>
+</ul>
+<h3 id="391">3.9.1</h3>
+<ul>
+<li><p>Fixed so that if an exception occurs during AssetBundle building, the exception is also passed to the parent. (this is mainly an issue where the next command is executed even if an exception occurs when building with a script)</p>
+</li>
+<li><p>Improved way of catching duplicate assets in TAssetBundleManifest.</p>
+</li>
+</ul>
+<h3 id="390">3.9.0</h3>
+<ul>
+<li>Added Asset Dependency Finder (Right click on the asset in the project window [TAssetBundle] Run Dependency Finder)</li>
+</ul>
+<h3 id="381">3.8.1</h3>
+<ul>
+<li>Fixed bug where assets were not excluded from the build cache if only their properties were changed</li>
+</ul>
+<h3 id="380">3.8.0</h3>
+<ul>
+<li>Build number has been added to settings. When loading a catalog, it has been modified to use the catalog with the higher build number between the local catalog and the remote catalog.</li>
+</ul>
+<h3 id="373">3.7.3</h3>
+<ul>
+<li>Fixed bug where local AssetBundle could not be found on Android</li>
+</ul>
+<h3 id="372">3.7.2</h3>
+<ul>
+<li>Fixed initialization in AssetManager to support Unity EnterPlayMode.</li>
+</ul>
+<h3 id="371">3.7.1</h3>
+<ul>
+<li>Fixed bug where disk space check was incorrect in SpecificAssetBundleProvider</li>
+</ul>
+<h3 id="370">3.7.0</h3>
+<ul>
+<li>The scene path to be saved in the catalog has been modified to be saved as is rather than converted to lowercase letters.</li>
+<li>Changed the remote url to one for more efficient networking and simplicity.</li>
+<li>Cleaned up source code and added help menu</li>
+</ul>
+<h3 id="361">3.6.1</h3>
+<ul>
+<li>Fixed a bug where an error occurred during build if an embedded asset bundle exists when using 'Append Hash From File Name' in the build options in Settings.</li>
+<li>Fixed a bug where an error occurred in the log when reading a remotely updated AssetBundle as if it were an AssetBundle included in the build.</li>
+</ul>
+<h3 id="360">3.6.0</h3>
+<ul>
+<li>WebGL platform supports all Unity versions and bug fixes</li>
+<li>Limitations related to the WebGL platform: When using UnityRemoteAssetBundleProvider in versions after 2022, the cache information of remotely received asset bundles cannot be obtained. We recommend disabling the Use UnityRemoteAssetBundleProvider option.</li>
+</ul>
+<h3 id="350">3.5.0</h3>
+<ul>
+<li>Added tag rename function to tag editor</li>
+<li>Added context menu to tag editor</li>
+<li>Added a function to check the manifest using the tag in the tag editor</li>
+</ul>
+<h3 id="340">3.4.0</h3>
+<ul>
+<li>Added ignore assets to allow specific assets to be ignored in the manifest</li>
+<li>Efficient modifications to the method for finding embeddable assets</li>
+</ul>
+<h3 id="330">3.3.0</h3>
+<ul>
+<li>Fixed a bug where the AssetBundle could not be released when the AssetBundle scene loaded with Additive was unloaded</li>
+<li>Fixed a bug where dependent AssetBundles would not be rebuilt if they were not cached</li>
+<li>Support scene loading from scene path</li>
+<li>Support for loading progress of assets and scenes</li>
+<li>Added scene activation callback after scene loading</li>
+</ul>
+<h3 id="321">3.2.1</h3>
+<ul>
+<li>Fixed bug with AssetRef not updating in editor</li>
+</ul>
+<h3 id="320">3.2.0</h3>
+<ul>
+<li>Added Manual</li>
+<li>Added Api Documentation</li>
+<li>Added api comment</li>
+<li>Added TAssetBundle, TAssetBundle.Editor asmdef</li>
+<li>Class scope refactoring</li>
+</ul>
+<h3 id="310">3.1.0</h3>
+<ul>
+<li>Added Runtime Asset Reference Tracker</li>
+<li>Added AssetBundle Dependency Checker</li>
+</ul>
+<h3 id="300">3.0.0</h3>
+<ul>
+<li>Added TAssetBundle Browser</li>
+<li>Added AssetReference</li>
+<li>Added Web Server Test</li>
+<li>Newly developed simple tag system</li>
+<li>Added downloads as Assets and AssetReference</li>
+<li>Optimize asset bundle loading</li>
+<li>Build cache bug fixed</li>
+<li>TAssetBundleManifest bug fixed</li>
+<li>WebGL support</li>
+</ul>
+<h3 id="200">2.0.0</h3>
+<ul>
+<li>added catalog compress and encryption</li>
+<li>added asset bundle encryption</li>
+<li>added inherit based tag system</li>
+<li>check download size based on tags, download based on tags</li>
+<li>optimize and refactoring</li>
+<li>minor bug fixes</li>
+</ul>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

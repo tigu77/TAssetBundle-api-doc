@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>TAssetBundle Manual | TAssetBundle 5.2 (stable) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="TAssetBundle Manual | TAssetBundle 5.2 (stable) ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime=""><nav aria-label="Documentation version" data-docs-version="5.2" data-page="manual/manual.html" data-site-root="../../../" style="padding:.75rem;background:#eee;color:#111"><strong>Documentation: 5.2 (stable; product 5.2.0)</strong> <label>Switch version: <select disabled><option value="legacy">Legacy (version unverified)</option><option value="5.2" selected>5.2 (stable; product 5.2.0)</option></select></label><span> Version homepages: <a href="../../../index.html">Legacy (version unverified)</a> <a href="../../../versions/5.2/index.html">5.2 (stable; product 5.2.0)</a></span></nav><script defer src="../docs-version-selector.js"></script>
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="tassetbundle-manual">TAssetBundle Manual</h1>
+
+<p><em>TAssetBundle is a powerful, integrated asset bundle management system.</em></p>
+<hr>
+<h2 id="editions-v50">Editions (v5.0+)</h2>
+<p>TAssetBundle ships in two editions:</p>
+<ul>
+<li><strong>Lite (free)</strong> — Core runtime + Manifest/Strategy + incremental build + all editor tools (Browser, Cross-Reference Analyzer, Dependency Checker, Asset Reference Tracker, Catalog Diff) + Play Asset Delivery plugin + full source. The runtime API is <code>TAssetBundles</code> (low-level handles).</li>
+<li><strong>Pro</strong> — Lite + the <code>TAssetBundle.Extensions</code> module: <code>AssetManager</code> (context-based loading with GameObject auto-release), <code>LinkAsset</code>, <code>PrefabPoolManager</code>, <code>PathAliasTable</code>, and the runtime Asset Usage Tracker.</li>
+</ul>
+<p>This manual covers both editions. <strong>Sections that describe Pro-only features are clearly marked at their headings.</strong> If you are using Lite, follow the <code>TAssetBundles</code> examples and skip the AssetManager / PrefabPoolManager / Path Aliases / Asset Usage Tracker sections.</p>
+<hr>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><strong>Unity Version</strong>: 2021.3 LTS or later</li>
+<li><strong>Supported Platforms</strong>: Windows, macOS, iOS, Android, WebGL</li>
+</ul>
+<hr>
+<h2 id="quick-start">Quick Start</h2>
+<p>Get started with TAssetBundle in 3 steps:</p>
+<h3 id="step-1-create-tassetbundlemanifest">Step 1: Create TAssetBundleManifest</h3>
+<p>Right-click on a folder containing assets you want to bundle, then select <strong>Create &gt; TAssetBundle &gt; TAssetBundleManifest</strong>.</p>
+<p><img src="images/create_manifest.jpg" alt="create_manifest"></p>
+<h3 id="step-2-configure-and-build">Step 2: Configure and Build</h3>
+<ol>
+<li>Select the created TAssetBundleManifest</li>
+<li>Add a composition strategy (e.g., <strong>all_together</strong>)</li>
+<li>Right-click and select <strong>Run Composition Strategy</strong></li>
+<li>Go to <strong>TAssetBundle &gt; Build Asset Bundle</strong> menu</li>
+</ol>
+<p><img src="images/build_asset_bundle.jpg" alt="build_asset_bundle"></p>
+<h3 id="step-3-load-assets">Step 3: Load Assets</h3>
+<p><strong>Lite — low-level <code>TAssetBundles</code> API</strong> (also works in Pro):</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle;
+
+public class QuickStartLite : MonoBehaviour
+{
+    public string spritePath;
+
+    async void Start()
+    {
+        await TAssetBundles.InitializeAsync().ToTask();
+
+        // Load by path — returns a handle
+        var handle = await TAssetBundles.LoadAssetAsync&lt;Sprite&gt;(spritePath).ToTask();
+        GetComponent&lt;SpriteRenderer&gt;().sprite = handle.Get();
+
+        // Unload when no longer needed
+        // TAssetBundles.UnloadAsset(handle);
+    }
+}
+</code></pre>
+<p><strong>Pro — high-level <code>AssetManager</code></strong> (auto-released when this GameObject is destroyed):</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle;
+using TAssetBundle.Extensions;
+
+public class QuickStartPro : MonoBehaviour
+{
+    public string spritePath;
+
+    async void Start()
+    {
+        await TAssetBundles.InitializeAsync().ToTask();
+
+        // Load and link to this GameObject — auto-released on destroy
+        AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, spritePath)
+            .OnCompleted += asset =&gt;
+            {
+                GetComponent&lt;SpriteRenderer&gt;().sprite = asset.Get();
+            };
+    }
+}
+</code></pre>
+<p>That's it! For development, you can also use <strong>Editor Asset</strong> mode to skip building.</p>
+<blockquote>
+<p>If a catalog file exists but cannot be read (for example it is locked by another process), <code>InitializeAsync</code> still completes. The error and the original exception are logged, and that catalog is treated as missing: a downloaded catalog that cannot be read falls back to the built-in catalog, and with no readable catalog no asset is found. Initialization does not run again after it has completed; call <code>TAssetBundles.LoadCatalogInfoAsync(catalogName)</code> to retry reading the catalog.</p>
+</blockquote>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#core-concept-manifest">Core Concept: Manifest</a>
+<ul>
+<li><a href="#how-manifests-work">How Manifests Work</a></li>
+<li><a href="#explicit-asset-collection-lite-and-pro">Explicit Asset Collection (Lite and Pro)</a></li>
+<li><a href="#multiple-manifests-per-folder">Multiple Manifests per Folder</a></li>
+<li><a href="#per-manifest-options">Per-Manifest Options</a></li>
+<li><a href="#creating-a-manifest">Creating a Manifest</a></li>
+<li><a href="#composition-strategies">Composition Strategies</a></li>
+</ul>
+</li>
+<li><a href="#assetmanager-recommended">AssetManager (Recommended)</a>
+<ul>
+<li><a href="#context-based-loading">Context-Based Loading</a></li>
+<li><a href="#manual-linking">Manual Linking</a></li>
+<li><a href="#prefab-pooling">Prefab Pooling</a></li>
+<li><a href="#unloading-strategies">Unloading Strategies</a></li>
+<li><a href="#usage-tracking">Usage Tracking</a></li>
+<li><a href="#path-aliases">Path Aliases</a></li>
+</ul>
+</li>
+<li><a href="#tassetbundles-low-level-api">TAssetBundles (Low-Level API)</a>
+<ul>
+<li><a href="#using-asset-path">Using Asset Path</a></li>
+<li><a href="#using-asset-reference">Using Asset Reference</a></li>
+</ul>
+</li>
+<li><a href="#prefabpoolmanager">PrefabPoolManager</a></li>
+<li><a href="#remote-download">Remote Download</a></li>
+<li><a href="#tassetbundle-settings">TAssetBundle Settings</a></li>
+<li><a href="#building-asset-bundles">Building Asset Bundles</a></li>
+<li><a href="#plugin-system">Plugin System</a></li>
+<li><a href="#editor-tools">Editor Tools</a>
+<ul>
+<li><a href="#tassetbundle-browser">TAssetBundle Browser</a></li>
+<li><a href="#tassetbundle-menu">TAssetBundle Menu</a></li>
+<li><a href="#catalog-diff">Catalog Diff</a></li>
+<li><a href="#asset-usage-tracker">Asset Usage Tracker</a></li>
+</ul>
+</li>
+<li><a href="#editor-play-modes">Editor Play Modes</a></li>
+<li><a href="#sample-materials-on-urp">Sample Materials on URP</a></li>
+</ul>
+<hr>
+<h2 id="core-concept-manifest">Core Concept: Manifest</h2>
+<h3 id="how-manifests-work">How Manifests Work</h3>
+<p><strong>TAssetBundleManifest is the central unit of TAssetBundle.</strong></p>
+<p>When you create a <code>TAssetBundleManifest</code> in a folder, <strong>every file and subfolder under that folder becomes a managed target</strong> of that manifest. The manifest defines <em>how</em> those assets are grouped into AssetBundles.</p>
+<p><strong>Runtime code never needs to know about bundle structure.</strong> You always load assets by path — which bundle they belong to, how bundles are split, and what the dependencies are is all handled automatically. This means you can freely restructure your bundles at any time without changing a single line of runtime code.</p>
+<p>There are two ways to configure bundles:</p>
+<p><strong>Auto Configuration</strong> — Use built-in <code>CompositionStrategy</code> assets to automatically configure bundles. Several strategies are included by default (<code>all_together</code>, <code>all_separately</code>, <code>regex_match</code>, <code>clear</code>, etc.). Add strategies to the manifest and run them to auto-generate the bundle configuration. Strategies are executed in order, so you can combine them: for example, bundle everything together first, then exclude specific assets.</p>
+<p><strong>Manual Configuration</strong> — Drag assets directly into the manifest's <code>AssetBundleBuildInfo</code> list to manually define exactly which assets go into which bundle.</p>
+<h3 id="explicit-asset-collection-lite-and-pro">Explicit Asset Collection (Lite and Pro)</h3>
+<p>Settings &gt; <strong>Explicit Asset Collection &gt; Excluded Extensions</strong> applies the same explicit-root policy to direct registrations, expanded folder leaves and composition-strategy candidates. New settings default to <code>.lighting</code>; legacy settings receive this default once on first load, without a separate approval step. Customized or intentionally empty lists are preserved on subsequent loads and updates. An intentionally empty list is supported; <strong>Restore Default Exclusions (.lighting)</strong> restores the default. Matching ignores case and accepts extensions with or without a leading dot.</p>
+<p>The manifest <strong>Ignore Assets</strong> list works without a strategy. Ignoring files/folders removes their leaves from final roots without deleting registrations, including managed descendant Ignore entries. The <strong>Excluded [N]</strong> foldout explains paths and reasons. Compiler inputs and narrowly identified editor authoring objects are not explicit data roots; runtime TextAssets, ScriptableObjects, shaders, lightmap textures, LightingData and NavMesh data are not blanket-excluded.</p>
+<p><strong>Excluded from explicit collection; may still be included as a dependency.</strong> Unity's scene/lighting dependency closure is preserved; this does not force-strip dependencies or change runtime FilePathCollector patterns. Explicit-root fingerprints invalidate incremental caches even if the dependency union is unchanged (older caches rebuild once). Settings/Undo/Redo/project changes refresh derived search/included caches without dirtying unchanged manifests.</p>
+<h3 id="multiple-manifests-per-folder">Multiple Manifests per Folder</h3>
+<p>You can create <strong>multiple manifests in the same folder</strong>, each with its own bundling strategy. This lets you apply different rules to different subsets of assets within the same directory tree.</p>
+<p>For example, in an <code>Assets/Characters/</code> folder:</p>
+<ul>
+<li><strong>Manifest A</strong> — Bundles all textures together (using regex to match <code>.png</code> files)</li>
+<li><strong>Manifest B</strong> — Bundles each prefab separately (using file filter on <code>.prefab</code>)</li>
+</ul>
+<h3 id="per-manifest-options">Per-Manifest Options</h3>
+<p>Each manifest also controls:</p>
+<ul>
+<li><strong>Builtin</strong> — Include bundles in StreamingAssets (shipped with the app, no download needed)</li>
+<li><strong>Encrypt</strong> — Encrypt bundle contents for security</li>
+<li><strong>Tags</strong> — Categorize bundles for selective downloads (e.g., <code>&quot;hd&quot;</code>, <code>&quot;lang-en&quot;</code>, <code>&quot;level1&quot;</code>)</li>
+</ul>
+<h3 id="creating-a-manifest">Creating a Manifest</h3>
+<p>Right-click on a folder &gt; <strong>Create &gt; TAssetBundle &gt; TAssetBundleManifest</strong></p>
+<p><img src="images/create_manifest.jpg" alt="create_manifest"></p>
+<p><strong>Manifest Inspector:</strong></p>
+<p><img src="images/tassetbundle_manifest.jpg" alt="tassetbundle_manifest"></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Enabled</td>
+<td>Include in AssetBundle build target</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Built-in</td>
+<td>Include AssetBundles in the app</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Encrypt</td>
+<td>Encrypt the configured AssetBundles</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Tags</td>
+<td>Set tags for download filtering</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Composition Strategies</td>
+<td>List of strategies to auto-configure bundles</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Asset Bundle Build List</td>
+<td>Configured AssetBundle information</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Manual Configuration:</strong></p>
+<p>You can manually add assets by clicking <strong>Add Asset Bundle Build Info</strong> and dragging assets.</p>
+<p><img src="images/add_assetbundle_build_info.jpg" alt="add_assetbundle_build_info"></p>
+<p><img src="images/drag_and_drop_assets_manifest.jpg" alt="drag_and_drop_assets"></p>
+<p><strong>Auto Configuration:</strong></p>
+<p>Use composition strategies for automatic configuration. Add a strategy, then right-click the manifest and select <strong>Run Composition Strategy</strong>.</p>
+<p><img src="images/add_composition_strategy.jpg" alt="add_composition_strategy"></p>
+<p><img src="images/select_composition_strategy.jpg" alt="select_composition_strategy"></p>
+<p><img src="images/run_composition_strategy.jpg" alt="run_composition_strategy"></p>
+<hr>
+<h3 id="composition-strategies">Composition Strategies</h3>
+<p>Composition strategies automatically configure how assets are grouped into AssetBundles.</p>
+<p><img src="images/default_composition_strategy.jpg" alt="default_composition_strategy"></p>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>all_separately</strong></td>
+<td>Add assets as individual asset bundles</td>
+</tr>
+<tr>
+<td><strong>all_together</strong></td>
+<td>Add assets as one asset bundle</td>
+</tr>
+<tr>
+<td><strong>clear</strong></td>
+<td>Clear asset bundle build information</td>
+</tr>
+<tr>
+<td><strong>exclude_objects</strong></td>
+<td>Exclude specific assets from build info</td>
+</tr>
+<tr>
+<td><strong>file_separately</strong></td>
+<td>Add only files as individual asset bundles</td>
+</tr>
+<tr>
+<td><strong>file_together</strong></td>
+<td>Add only files as one asset bundle</td>
+</tr>
+<tr>
+<td><strong>fixed_objects</strong></td>
+<td>Add only specific assets to one asset bundle</td>
+</tr>
+<tr>
+<td><strong>folder_separately</strong></td>
+<td>Add only folders as individual asset bundles</td>
+</tr>
+<tr>
+<td><strong>folder_together</strong></td>
+<td>Add only folders as one asset bundle</td>
+</tr>
+<tr>
+<td><strong>regex_match</strong></td>
+<td>Add assets matching regex to one asset bundle</td>
+</tr>
+<tr>
+<td><strong>regex_match_delete</strong></td>
+<td>Remove build info if filename matches regex</td>
+</tr>
+<tr>
+<td><strong>regex_not_match_delete</strong></td>
+<td>Remove build info if filename doesn't match regex</td>
+</tr>
+<tr>
+<td><strong>same_name_together</strong></td>
+<td>Add assets with same filename as one asset bundle</td>
+</tr>
+</tbody>
+</table>
+<p>You can also create custom strategies by extending <code>TAssetBundleCompositionStrategy&lt;Data&gt;</code>.</p>
+<hr>
+<h2 id="assetmanager-recommended">AssetManager (Recommended)</h2>
+<blockquote>
+<p><strong>Pro edition only.</strong> <code>AssetManager</code> ships in the <code>TAssetBundle.Extensions</code> module, which is included with TAssetBundle Pro. The Lite (free) edition exposes the low-level <code>TAssetBundles</code> API directly — see the earlier sections of this manual.</p>
+</blockquote>
+<p><code>AssetManager</code> (in <code>TAssetBundle.Extensions</code>) is the recommended way to load and manage assets. It provides automatic lifecycle management, usage tracking, and prefab pooling in one unified interface.</p>
+<h3 id="context-based-loading">Context-Based Loading</h3>
+<p>The key feature of AssetManager is <strong>context-based loading</strong>. When you pass a GameObject as context, the asset is automatically linked to it. When the GameObject is destroyed, the asset reference is released — no manual cleanup needed. If the GameObject was never active (Unity does not call <code>OnDestroy</code> then), the reference is released by the next <code>UnloadUnusedAssets()</code>, <code>UnloadUnusedAssetsAfterLastUse()</code>, or <code>GetUsingAssets()</code> call.</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+using TAssetBundle.Extensions;
+
+public class ContextLoadingExample : MonoBehaviour
+{
+    public string spritePath;
+
+    void Start()
+    {
+        // Load and link to this GameObject
+        // Asset is automatically released when this GameObject is destroyed
+        AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, spritePath)
+            .OnCompleted += asset =&gt;
+            {
+                GetComponent&lt;Image&gt;().sprite = asset.Get();
+            };
+    }
+    // No OnDestroy cleanup needed!
+}
+</code></pre>
+<p>You can also load with <code>AssetRef</code> for Inspector drag &amp; drop:</p>
+<pre><code class="lang-csharp">[AssetType(typeof(Sprite))]
+public AssetRef spriteRef;
+
+void Start()
+{
+    AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, spriteRef)
+        .OnCompleted += asset =&gt;
+        {
+            GetComponent&lt;Image&gt;().sprite = asset.Get();
+        };
+}
+</code></pre>
+<h3 id="manual-linking">Manual Linking</h3>
+<p>If you need to load without a context first, you can manually link the asset later:</p>
+<pre><code class="lang-csharp">AssetManager.LoadAssetAsync&lt;Sprite&gt;(spritePath).OnCompleted += asset =&gt;
+{
+    image.sprite = asset.Get();
+    image.LinkAsset(asset);  // Manual link — auto-released when image is destroyed
+};
+</code></pre>
+<h3 id="prefab-pooling">Prefab Pooling</h3>
+<p>AssetManager integrates prefab loading from AssetBundles with automatic pooling:</p>
+<pre><code class="lang-csharp">// Preload a prefab without instantiation
+await AssetManager.PreloadPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;).ToTask();
+
+// Load and instantiate from pool
+var bullet = await AssetManager.GetPrefabAsync(&quot;Assets/Prefabs/Bullet.prefab&quot;, parent).ToTask();
+
+// Also works with AssetRef
+AssetManager.GetPrefabAsync(bulletAssetRef, transform).OnCompleted += go =&gt;
+{
+    // use the instantiated prefab
+};
+
+// Return to pool when done (not Destroy!)
+bullet.FreePrefab();
+
+// Clear a specific prefab pool
+AssetManager.ClearPrefabPool(&quot;Assets/Prefabs/Bullet.prefab&quot;);
+
+// Clear all prefab pools
+AssetManager.ClearPrefabPools();
+</code></pre>
+<h3 id="unloading-strategies">Unloading Strategies</h3>
+<p>AssetManager provides multiple unloading strategies:</p>
+<pre><code class="lang-csharp">// Unload all loaded assets (also runs automatically on TAssetBundles.UnloadAll)
+AssetManager.UnloadAssetsAll();
+
+// Unload only unused assets (reference count = 0)
+AssetManager.UnloadUnusedAssets();
+
+// Unload assets unused for more than N seconds
+AssetManager.UnloadUnusedAssetsAfterLastUse(30f);
+
+// Unload a specific asset
+AssetManager.UnloadAsset(&quot;Assets/Sprites/icon.png&quot;);
+AssetManager.UnloadAsset(myAssetRef);
+</code></pre>
+<h3 id="usage-tracking">Usage Tracking</h3>
+<p>Query loaded assets and their usage:</p>
+<pre><code class="lang-csharp">// Iterate all assets currently in use
+foreach (var asset in AssetManager.GetUsingAssets())
+{
+    Debug.Log($&quot;{asset.AssetPath} — UsageCount: {asset.UsageCount}&quot;);
+}
+
+// Query a specific asset
+if (AssetManager.TryGetAssetInfo(&quot;Assets/Sprites/icon.png&quot;, out var info))
+{
+    Debug.Log($&quot;Loaded: {info.IsLoaded}, Using: {info.IsUsing}&quot;);
+}
+
+// Check if any assets are still loading
+bool loading = AssetManager.IsLoading();
+
+// Protect an asset from auto-unloading
+info.SetDontDestroy(true);
+</code></pre>
+<p>Use the <a href="#asset-usage-tracker">Asset Usage Tracker</a> editor window to visualize these relationships at runtime.</p>
+<h3 id="path-aliases">Path Aliases</h3>
+<p>Path Aliases let you refer to assets by a short, user-facing prefix instead of the full canonical catalog path. Assign a resolver to <code>AssetManager.PathResolver</code> once — every AssetManager API that takes a path string then translates aliases transparently before any catalog lookup or tracking occurs.</p>
+<p><strong>Two ways to configure</strong></p>
+<p><strong>1. Code — <code>PrefixAliasResolver</code></strong></p>
+<pre><code class="lang-csharp">using TAssetBundle;
+using TAssetBundle.Extensions;
+
+var resolver = new PrefixAliasResolver
+{
+    // Required only when any prefix has more than one folder.
+    AssetExists = TAssetBundles.ExistAsset,
+};
+
+// Single folder — the prefix is replaced by the folder.
+// A prefix ending with '/' keeps that '/' after the folder.
+resolver.Add(&quot;@char/&quot;, &quot;Assets/Characters&quot;);
+
+// Multiple folders — priority-ordered search path.
+// First folder that contains the asset wins (falls back to the first folder
+// when AssetExists is not set or no match is found).
+resolver.Add(&quot;@ui/&quot;, new[]
+{
+    &quot;Assets/DLC/UI&quot;,        // checked first — DLC override
+    &quot;Assets/Shared/UI&quot;,     // base fallback
+});
+
+AssetManager.PathResolver = resolver;
+</code></pre>
+<p><strong>2. Inspector — <code>PathAliasTable</code> ScriptableObject</strong></p>
+<p>Right-click in the Project window and choose <code>Create &gt; TAssetBundle &gt; Path Alias Table</code>. Add entries in the Inspector: each entry has a prefix and one or more folders (drag folders directly from the Project window — <code>FolderAssetRef</code> uses GUID-based serialization).</p>
+<pre><code class="lang-csharp">public PathAliasTable aliasTable; // assign in Inspector
+
+void Start()
+{
+    // BuildResolver() wires AssetExists to TAssetBundles.ExistAsset automatically.
+    AssetManager.PathResolver = aliasTable.BuildResolver();
+}
+</code></pre>
+<p><strong>Loading with aliases</strong></p>
+<pre><code class="lang-csharp">// &quot;@char/hero.prefab&quot; resolves to &quot;Assets/Characters/hero.prefab&quot;
+AssetManager.GetPrefabAsync(&quot;@char/hero.prefab&quot;, parent);
+
+// Works with every AssetManager loading API
+AssetManager.LoadAssetAsync&lt;Sprite&gt;(gameObject, &quot;@ui/icons/close.png&quot;);
+AssetManager.PreloadPrefabAsync(&quot;@char/enemy.prefab&quot;);
+</code></pre>
+<p><strong>Behavior notes</strong></p>
+<ul>
+<li><strong>Aliases are input-only.</strong> Return values, <code>AssetInfo.AssetPath</code>, event callbacks, and tracking keys all use canonical paths. This keeps logs, usage tracker, and manifest tooling consistent regardless of which alias was used to load the asset.</li>
+<li><strong>Longer prefixes match first.</strong> <code>@char/boss/</code> takes precedence over <code>@char/</code> when both are registered — useful for nested namespaces.</li>
+<li><strong>Joining.</strong> A prefix that ends with <code>/</code> keeps that <code>/</code> between the folder and the rest of the path, so <code>&quot;@char/&quot;</code> and <code>&quot;@char&quot;</code> both resolve <code>&quot;@char/hero.prefab&quot;</code> to <code>&quot;Assets/Characters/hero.prefab&quot;</code>. Any other prefix is replaced by the folder as is.</li>
+<li><strong>Caching.</strong> Single-folder results are cached. Multi-folder entries check the catalog on every call, so catalogs loaded later (including <code>LoadCatalogInfoAsync</code>) are used without a manual reset.</li>
+<li><strong>Common use cases</strong> — DLC overrides (multi-folder priority search) and keeping call sites short when asset folder layouts are deep.</li>
+</ul>
+<p>See <code>Sample03_PathAliasTable</code> for a runnable example wiring a <code>PathAliasTable</code> to <code>AssetManager.PathResolver</code>.</p>
+<hr>
+<h2 id="tassetbundles-low-level-api">TAssetBundles (Low-Level API)</h2>
+<p>For cases where you need direct control over asset handles, use the <code>TAssetBundles</code> API. You are responsible for manually unloading assets.</p>
+<h3 id="using-asset-path">Using Asset Path</h3>
+<p>Load assets using their project path:</p>
+<p><img src="images/01_load_asset_get_asset_path.jpg" alt="get_asset_path"></p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle;
+
+public class TestLoadAsset : MonoBehaviour
+{
+    public string prefabPath; // Asset Path
+
+    void Awake()
+    {
+        var loadAsset = TAssetBundles.LoadAssetAsync&lt;GameObject&gt;(prefabPath);
+        loadAsset.OnComplete += (AssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        {
+            var asset = assetHandle.Get();
+            Instantiate(asset);
+        };
+    }
+
+    void OnDestroy()
+    {
+        TAssetBundles.UnloadAsset(prefabPath);
+    }
+}
+</code></pre>
+<hr>
+<h3 id="using-asset-reference">Using Asset Reference</h3>
+<p>Asset references allow drag-and-drop in the inspector and remain valid even if the asset is moved.</p>
+<p><img src="images/01_load_asset_assetref_inspector.jpg" alt="drag_and_drop_asset"></p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle;
+
+public class TestLoadAssetReference : MonoBehaviour
+{
+    [AssetType(typeof(GameObject))]
+    public AssetRef prefab;
+
+    private AssetHandle prefabHandle;
+
+    void Awake()
+    {
+        var loadAsset = TAssetBundles.LoadAssetAsync&lt;GameObject&gt;(prefab);
+        loadAsset.OnComplete += (AssetHandle&lt;GameObject&gt; assetHandle) =&gt;
+        {
+            prefabHandle = assetHandle;
+            var asset = assetHandle.Get();
+            Instantiate(asset);
+        };
+    }
+
+    void OnDestroy()
+    {
+        TAssetBundles.UnloadAsset(prefabHandle);
+    }
+}
+</code></pre>
+<hr>
+<h3 id="unloading-everything-unloadall">Unloading Everything (UnloadAll)</h3>
+<p><code>TAssetBundles.UnloadAll()</code> unloads every loaded asset and AssetBundle at once (for example between game sessions, or right after <code>UpdateCatalogAsync</code> to apply new content immediately).</p>
+<ul>
+<li>Handles obtained before <code>UnloadAll</code> refer to unloaded assets. Releasing them with <code>TAssetBundles.UnloadAsset(handle)</code> is still safe and never affects anything loaded afterwards.</li>
+<li>Asset requests that have already started loading complete <strong>once as failures</strong> (<code>AssetHandle.IsValid == false</code>). Requests made afterwards start new loads; a new load of the same AssetBundle waits until the canceled one has ended.</li>
+<li>A scene request in progress completes once with an error logged and releases its scene bundle. If Unity was already loading the scene itself, Unity may still activate it — unload that scene yourself if it is not wanted.</li>
+<li>In the Editor Asset Mode nothing is destroyed, so requests in progress still succeed there; use the Asset Bundle Mode to test this behavior.</li>
+<li><code>TAssetBundles.OnUnloadedAll</code> is raised afterwards. <code>AssetManager</code> subscribes to it automatically: all of its entries (including ones marked &quot;Don't Destroy&quot;) and prefab pools are dropped, so the next <code>AssetManager</code> request loads again. Instances already taken out of a pool are not destroyed, but the assets they use are unloaded with their bundles, so spawn them again.</li>
+</ul>
+<pre><code class="lang-csharp">// Drop your own caches of handles or loaded assets when everything is unloaded
+TAssetBundles.OnUnloadedAll += () =&gt; myIconCache.Clear();
+
+// Apply a catalog update to content that is already loaded
+TAssetBundles.UpdateCatalogAsync().OnComplete += updated =&gt;
+{
+    if (updated)
+    {
+        TAssetBundles.UnloadAll();
+    }
+};
+</code></pre>
+<blockquote>
+<p>Without <code>UnloadAll</code>, assets and AssetBundles that are already loaded keep being used after a catalog update until all their references are released. While such an AssetBundle is still loaded, an asset that the update added to it cannot be loaded (the request fails) until the AssetBundle is released.</p>
+</blockquote>
+<hr>
+<h2 id="prefabpoolmanager">PrefabPoolManager</h2>
+<blockquote>
+<p><strong>Pro edition only.</strong> <code>PrefabPoolManager</code> ships in the <code>TAssetBundle.Extensions</code> module, which is included with TAssetBundle Pro.</p>
+</blockquote>
+<p><code>PrefabPoolManager</code> provides standalone prefab pooling — independent of AssetBundles. Use this when you already have a prefab reference and want efficient reuse.</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using TAssetBundle.Extensions;
+
+public class PoolExample : MonoBehaviour
+{
+    public GameObject bulletPrefab;
+
+    void Start()
+    {
+        // Pre-allocate 20 instances
+        PrefabPoolManager.Reserve(bulletPrefab, 20);
+    }
+
+    void Fire()
+    {
+        // Get from pool (creates new if pool is empty)
+        var bullet = PrefabPoolManager.Get(bulletPrefab, transform);
+    }
+
+    void OnBulletHit(GameObject bullet)
+    {
+        // Return to pool instead of destroying
+        bullet.FreePrefab();
+    }
+
+    void OnDestroy()
+    {
+        // Clear the pool
+        PrefabPoolManager.Clear(bulletPrefab);
+    }
+}
+</code></pre>
+<p><code>PrefabPoolManager</code> also supports typed components:</p>
+<pre><code class="lang-csharp">public Rigidbody projectilePrefab;
+
+void Fire()
+{
+    var rb = PrefabPoolManager.Get(projectilePrefab, transform);
+    rb.AddForce(transform.forward * 1000f);
+}
+</code></pre>
+<hr>
+<h3 id="asynchronous-prefab-creation-pro">Asynchronous Prefab Creation (Pro)</h3>
+<p><code>PrefabPool.CreateAsync</code> and <code>PrefabPool.GetOrCreateAsync</code> use Unity's asynchronous instantiation API and are available only when the Extensions assembly defines <code>TASSETBUNDLE_INSTANTIATE_ASYNC</code>: Unity <code>[2022.3.20f1,2023.1)</code> or <code>2023.3</code> and later (including Unity 6). They are not compiled for Unity 2021.3, 2023.1, or 2023.2. API reference snapshots generated against Unity 2021.3 therefore do not list these conditional methods.</p>
+<p><code>AssetManager.GetPrefabAsync</code> remains available on older supported Unity versions for asynchronous prefab loading; its name does not mean that Unity's asynchronous instantiation APIs are available. The standalone <code>PrefabPoolManager.Get</code> and <code>Reserve</code> methods shown above instantiate synchronously.</p>
+<hr>
+<h2 id="remote-download">Remote Download</h2>
+<p>Download AssetBundles from a remote server.</p>
+<p><strong>Download Flow:</strong></p>
+<ol>
+<li>Check for Catalog Update</li>
+<li>Update the Catalog</li>
+<li>Get the Download Size</li>
+<li>Download the Assets</li>
+</ol>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+using TAssetBundle;
+
+public class RemoteDownloadExample : MonoBehaviour
+{
+    public string remoteDownloadUrl;
+    public Text statusText;
+
+    private void Awake()
+    {
+        // [BuildTarget] is replaced with actual platform
+        TAssetBundles.SetRemoteUrl(remoteDownloadUrl);
+    }
+
+    private void OnGUI()
+    {
+        if (GUILayout.Button(&quot;Check Catalog Update&quot;))
+        {
+            TAssetBundles.CheckCatalogUpdateAsync().OnComplete += result =&gt;
+            {
+                statusText.text = &quot;Need update: &quot; + result;
+            };
+        }
+
+        if (GUILayout.Button(&quot;Update Catalog&quot;))
+        {
+            TAssetBundles.UpdateCatalogAsync().OnComplete += result =&gt;
+            {
+                statusText.text = &quot;Update result: &quot; + result;
+            };
+        }
+
+        if (GUILayout.Button(&quot;Get Download Size&quot;))
+        {
+            TAssetBundles.GetDownloadSizeAsync().OnComplete += size =&gt;
+            {
+                statusText.text = &quot;Size: &quot; + FileSizeFormatter.FormatSize(size);
+            };
+        }
+
+        if (GUILayout.Button(&quot;Download All&quot;))
+        {
+            var download = TAssetBundles.DownloadAsync();
+            download.OnProgress += info =&gt;
+            {
+                double percent = info.DownloadedSize / (double)info.TotalDownloadSize * 100;
+                statusText.text = $&quot;Downloading: {percent:0.0}%&quot;;
+            };
+            download.OnComplete += info =&gt;
+            {
+                statusText.text = info.IsDownloadComplete() ? &quot;Complete!&quot; : &quot;Failed&quot;;
+            };
+        }
+    }
+}
+</code></pre>
+<p><strong>When an update or a download fails:</strong></p>
+<ul>
+<li><code>UpdateCatalogAsync</code> returns <code>false</code> when there is nothing to update (the catalog is up to date, or the remote hash cannot be fetched), and when the catalog cannot be downloaded, cannot be read (corrupted, or built with other catalog settings) or cannot be saved. In these cases the catalog in use and the catalog saved on the device stay as they were, also after a restart, and <code>OnCatalogLoaded</code> is not raised. (This does not cover the app being killed or the device losing power while the catalog file is being replaced, or a failure of the operating system's file replace itself.) <code>TAssetBundles.GetLastWebRequestError()</code> holds the network or save error. Calling <code>UpdateCatalogAsync</code> again retries.</li>
+<li>On <code>true</code> the new catalog replaces the current one within the same frame, so requests made during the update are always served by one of the two catalogs. AssetBundles that are already loaded keep being used (see <a href="#unloading-everything-unloadall">Unloading Everything</a>).</li>
+<li>A download is complete only when every AssetBundle could be stored (<code>IsDownloadComplete()</code>). A failed AssetBundle has <code>state == Failed</code> and an <code>Error</code>; calling the download again fetches only what is still missing. With the separately managed cache (encrypted AssetBundles, WebGL, or <em>Use Unity Remote AssetBundle Provider</em> off) this includes a response that is not a valid AssetBundle or could not be written to the cache. A file enters this cache only once it is completely written, so a write interrupted by an error or by the app being closed is downloaded again (a power loss during the write is not covered).</li>
+</ul>
+<p><strong>Starting without a remote URL:</strong></p>
+<p>AssetBundles that are already cached load without a remote URL; the URL is needed only to fetch what is missing. An app can start from its saved catalog and cache before it knows the server address (for example when the address comes from your own backend), and set the URL only when something has to be downloaded.</p>
+<ul>
+<li>Without a remote URL, loading a remote AssetBundle uses only the cache and sends no remote HTTP request. An AssetBundle that is not cached fails at once, like any AssetBundle that cannot be loaded; loading never downloads for the separately managed cache, with or without a URL.</li>
+<li>This is not a guarantee of zero HTTP requests from the app. In WebGL, <code>buildIncludeAssetBundle = All</code> also makes the local provider check <code>StreamingAssets/TA/&lt;name&gt;_&lt;hash&gt;</code> on the page host, independently of the remote URL; a file that is not included can produce an HTTP 404. With the default <code>BuiltinOnly</code>, non-builtin AssetBundles do not cause these local-provider checks (included builtin AssetBundles still use the page host). The cache-only remote load does not contact the remote server; other providers and app code can still use the network.</li>
+<li><code>GetDownloadSize*</code> counts only the AssetBundles that are not cached, with or without a URL.</li>
+<li>A download that has AssetBundles to fetch from the remote URL fails without sending a request: each of those AssetBundles is <code>Failed</code> with <code>Error.errorType == EUnityWebRequestErrorResult.RemoteUrlNotSet</code>, and <code>IsDownloadComplete()</code> is <code>false</code> (earlier versions returned an empty result with <code>true</code>). When nothing needs to be fetched the result is empty and complete, as before. <code>GetLastWebRequestError()</code> is not changed, since no request was made.</li>
+<li>The remote URL is saved on the device. A saved empty URL counts as not set, so the next start uses <code>defaultRemoteUrl</code> again: to start without a URL, call <code>TAssetBundles.SetRemoteUrl(&quot;&quot;)</code> before <code>InitializeAsync</code> on every start.</li>
+<li>AssetBundles handled by a plugin provider (such as Play Asset Delivery) are left out of the download result without a URL, as before: a pack that is not installed yet is fetched by that provider. This includes such AssetBundles whose hash changed in a catalog update, although those do need the remote URL — a load shows whether they are available.</li>
+<li><code>ExistAsset</code> for every path plus a download size of 0 means the files are in the cache, not that they can be read: a damaged file, or one removed from the cache in the meantime, shows up only as a failed load. Treat a failed load as &quot;needs the server&quot;: set the URL, download, and load again.</li>
+<li>On a first install the cache is empty, so the address for the first download has to come from outside the AssetBundles (<code>defaultRemoteUrl</code> or your own code).</li>
+<li>Play Asset Delivery packs are fetched by Google Play (on-demand packs use the network even without a remote URL).</li>
+</ul>
+<pre><code class="lang-csharp">IEnumerator Boot(string[] startPaths)
+{
+    TAssetBundles.SetRemoteUrl(&quot;&quot;);                      // start from the cache only
+    yield return TAssetBundles.InitializeAsync();
+
+    long size = -1;
+    TAssetBundles.GetDownloadSizeByAssetsAsync(startPaths).OnComplete += s =&gt; size = s;
+    yield return new WaitUntil(() =&gt; size &gt;= 0);
+
+    // A path missing from the catalog also has a download size of 0, so check it too.
+    bool ready = size == 0 &amp;&amp; startPaths.All(TAssetBundles.ExistAsset);
+
+    if (!ready)
+    {
+        TAssetBundles.SetRemoteUrl(GetContentUrl());     // your code: default or from your backend
+        AssetBundleDownloadInfo info = null;
+        TAssetBundles.DownloadByAssetsAsync(startPaths).OnComplete += i =&gt; info = i;
+        yield return new WaitUntil(() =&gt; info != null);
+
+        if (!info.IsDownloadComplete())
+        {
+            // info.downloads[i].state == Failed, info.downloads[i].Error: network, HTTP, cache write or RemoteUrlNotSet
+        }
+    }
+
+    // Load; if a load still fails, set the URL, download and load again.
+}
+</code></pre>
+<p><strong>Updating content on the server:</strong></p>
+<p>By default AssetBundle files are requested by name (<code>{RemoteUrl}/{name}{extension}</code>), without their hash, and the catalog decides which version is expected. If a new build overwrites the files of the previous one at the same URL, a device that still uses the previous catalog (its update failed, it is offline when checking, or the CDN still serves the old catalog) downloads new AssetBundle files under the previous version. They are cached as the previous version and can be combined with other previous-version AssetBundles already in the cache. The catalog cannot detect this: it records a hash for each AssetBundle but no checksum of the file content.</p>
+<p>There are two ways to avoid it: file names with the hash (below), or a separate folder per build.</p>
+<p><em>File names with the hash (Remote File Name With Hash):</em></p>
+<p>Turn on <strong>Remote File Name With Hash</strong> in the settings (off by default). Each build then also writes every AssetBundle as <code>{name}_{hash}{extension}</code> next to <code>{name}{extension}</code> in the output folder (same bytes), and the catalog it writes makes the runtime request <code>{RemoteUrl}/{name}_{hash}{extension}</code>. A device that still uses the previous catalog requests the previous hashed files, so it does not receive a newer file under an older version - as long as a published hashed file is never replaced.</p>
+<ul>
+<li>The runtime follows the catalog, not the settings of the app: each AssetBundle is requested the way its own catalog was built. A catalog built without the option, or by an earlier version (it has no such field), requests the plain names as before. With several catalogs, each follows its own.</li>
+<li>The cache is not affected: AssetBundles cached before the option was turned on (or with it off) stay cached and are not downloaded again. Turning the option on or off changes the catalog file once (devices download the catalog again, not the AssetBundles), and it does not invalidate the build cache (no rebuild). The first build after updating TAssetBundle changes the catalog file once in the same way, since the catalog now also stores the value (false when off).</li>
+<li>A hashed file that is not on the server fails the download (HTTP 404). The runtime never falls back to the plain name.</li>
+<li>A custom catalog serializer must write and read the <code>remoteFileNameWithHash</code> field of <code>AssetCatalog</code>. The build fails when the serializer loses it (the saved catalog is read back to check). A serializer in the app that drops the field makes that app request the plain names.</li>
+<li>The hash in the file name is not a content check: nothing verifies that the file under a hashed name holds that version. Never replace a published hashed file.</li>
+<li>Apps built with a version before this option, and devices that can still use a catalog built without it (a built-in catalog of an app that shipped without the option, or a catalog saved before the switch), request the plain names. As long as such apps or catalogs are in use, keep uploading the plain files with every build, as before. With <strong>Builtin AssetBundles Use Separate Folder</strong>, the plain files of built-in AssetBundles are in the separate <code>…Builtin</code> folder (their hashed files stay in the output folder); upload them to the same relative path on the server. Stopping the plain uploads, or removing them, is your decision once no such app or catalog is in use; leaving outdated plain files on the server while old apps read them is the worst case (they get mixed versions as described above).</li>
+</ul>
+<p>Publishing and keeping files (TAssetBundle does not upload or delete anything on your server):</p>
+<ol>
+<li>Upload the new <code>*_{hash}{extension}</code> files. Skip names that already exist on the server; never overwrite them.</li>
+<li>If apps or catalogs that use the plain names are still in use, upload the plain files (overwriting, as before).</li>
+<li>Upload the catalog (<code>{catalogName}{catalogExtension}</code>).</li>
+<li>Upload <code>{catalogName}.hash</code> last.</li>
+</ol>
+<p>This order keeps the update signal (<code>.hash</code>) from appearing before the files it points to. It is not atomic and not a guarantee: CDN propagation or caching can still show a device an older catalog or hash for a while (for example, the catalog is downloaded again later), and this option does not change that.</p>
+<p>The output folder holds only the current build; the server has to keep the hashed files of earlier builds. Do not mirror the output folder to the server with deletion (for example <code>sync --delete</code>): that removes the files earlier catalogs still request. Keep every hashed file referenced by any catalog a device may still use - remote catalogs published during your support period and the built-in catalogs of app versions you still support. Clean up only files outside that set.</p>
+<p>A separate folder per build (below) also works with this option: the hashed names do not replace the folder, and a catalog that can reach a folder needs its hashed files there.</p>
+<p>Validation scope of this option: Windows editor, Unity 2021.3.45f2 and 2022.3.62f2, <code>StandaloneWindows64</code>, both remote providers, a local HTTP test server. Also validated on one Samsung SM-G955N (Android 9, ARM64 IL2CPP, Unity 6000.3.18f1) using a device-local HTTP server with both remote providers. This does not cover PAD, real CDNs, or all Android devices; iOS and WebGL players remain unverified for this option. Other editor platforms and other Unity versions are not verified.</p>
+<p><em>A separate folder per build:</em></p>
+<p>Do not overwrite a published build:</p>
+<ol>
+<li>Upload every build to its own folder (for example <code>https://cdn.example.com/builds/42/[BuildTarget]</code>) and keep older folders while devices may still use them. Upload all files of a build before devices are pointed at it.</li>
+<li>Set <code>defaultRemoteUrl</code> of each app version to the folder of the build whose catalog ships in that app.</li>
+<li>To move devices to a newer build, call <code>TAssetBundles.SetRemoteUrl(newFolder)</code> and then <code>UpdateCatalogAsync()</code>. If it returns <code>false</code>, call <code>SetRemoteUrl(previousFolder)</code> again: the catalog in use is still the previous one, and its AssetBundles must come from its own folder. The remote URL is saved on the device (<code>PlayerPrefs</code>), so store the folder of the last successful update yourself and set it again at startup before loading remote content.</li>
+</ol>
+<pre><code class="lang-csharp">void UpdateToBuild(string newFolder)
+{
+    var previousFolder = PlayerPrefs.GetString(&quot;MyGame.ContentFolder&quot;, defaultFolder);
+    TAssetBundles.SetRemoteUrl(newFolder);
+
+    TAssetBundles.UpdateCatalogAsync().OnComplete += updated =&gt;
+    {
+        if (updated)
+        {
+            PlayerPrefs.SetString(&quot;MyGame.ContentFolder&quot;, newFolder);
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            // Keep loading the content of the catalog that is still in use from its own folder.
+            TAssetBundles.SetRemoteUrl(previousFolder);
+        }
+    };
+}
+</code></pre>
+<p><strong>Download by Tags:</strong></p>
+<pre><code class="lang-csharp">// Get size for specific tags
+TAssetBundles.GetDownloadSizeByTagsAsync(new[] { &quot;character&quot;, &quot;level1&quot; });
+
+// Download specific tags
+TAssetBundles.DownloadByTagsAsync(new[] { &quot;character&quot; });
+</code></pre>
+<p><strong>Download by Assets:</strong></p>
+<pre><code class="lang-csharp">// Download specific assets
+TAssetBundles.DownloadByAssetsAsync(new AssetRef[] { myAssetRef });
+</code></pre>
+<p><strong>Download by Scenes:</strong></p>
+<pre><code class="lang-csharp">// Download scenes
+TAssetBundles.DownloadByScenesAsync(new[] { &quot;MyScene&quot; });
+</code></pre>
+<hr>
+<h2 id="device-cache-cleanup">Device Cache Cleanup</h2>
+<p>This is a Core feature shared by Lite and Pro. The methods return <code>TAsyncOperation&lt;CacheClearResult&gt;</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ClearCacheByTagsAsync(string[])</code></td>
+<td>Tags, using the current <code>TagComparer</code></td>
+</tr>
+<tr>
+<td><code>ClearCacheByAssetsAsync(string[])</code> / <code>ClearCacheByAssetsAsync(AssetRef[])</code></td>
+<td>Asset paths / references</td>
+</tr>
+<tr>
+<td><code>ClearCacheByScenesAsync(string[])</code> / <code>ClearCacheByScenesAsync(SceneAssetRef[])</code></td>
+<td>Scene names or paths / references</td>
+</tr>
+<tr>
+<td><code>ClearUnusedCacheAsync()</code></td>
+<td>Old versions absent from current and temporary catalogs</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-csharp">TAssetBundles.ClearCacheByAssetsAsync(new[] { &quot;Assets/Levels/Level1.prefab&quot; }).OnComplete += result =&gt;
+{
+    Debug.Log($&quot;Removed {result.DeletedCount}; managed-file bytes {result.DeletedFileBytes}&quot;);
+    foreach (var entry in result.Skipped)
+        Debug.Log($&quot;Kept {entry.AssetBundleName} ({entry.Hash}): {entry.Reason}&quot;);
+};
+</code></pre>
+<p>Selected cleanup includes old hashes and unneeded dependencies; there is no dependency-inclusion option. It waits for Core downloads and performs deletion without yielding. Loaded/loading names are skipped (<code>InUse</code>). The exact dependency versions required by another cached, built-in, or conservatively retained provider bundle remain (<code>RequiredByCachedAssetBundle</code>); a deletion failure (<code>DeleteFailed</code>) also retains dependencies. Unity cache entries are cleared by exact cache name and hash, with same-name aliases handled together. Empty cache names are unsupported (<code>UnsupportedCacheEntry</code>).</p>
+<p><code>DeletedCount</code> counts removed Unity versions and managed files. <code>DeletedFileBytes</code> counts managed files only, not Unity cache bytes. EditorAsset mode returns an empty result immediately. Only names in loaded current/temporary catalogs are inspected: unloaded catalogs and bundle names removed from all loaded catalogs are not reclaimed. Built-in files are not deleted. Existing disk-space automatic cleanup is unchanged; its in-use protection is outside this API's scope.</p>
+<hr>
+<h2 id="tassetbundle-settings">TAssetBundle Settings</h2>
+<p>Access via <strong>TAssetBundle &gt; Settings</strong> menu.</p>
+<p><img src="images/tassetbundle_settings.jpg" alt="tassetbundle_settings"></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Catalog Name</td>
+<td>Name of the catalog file</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Output Folder</td>
+<td>AssetBundle build output folder; relative to the project, or a Windows drive-absolute path (see below)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Catalog Extension</td>
+<td>Catalog file extension</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Bundle Extension</td>
+<td>AssetBundle file extension</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Compress Catalog</td>
+<td>Enable catalog compression</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Encrypt Catalog</td>
+<td>Enable catalog encryption</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Encryption Key</td>
+<td>Key for encryption</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Append Hash</td>
+<td>Add hash to asset bundle filename</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Editor Play Mode</td>
+<td>Asset loading mode in editor</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Force Remote Only</td>
+<td>Force remote AssetBundles in editor</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Max Concurrent Requests</td>
+<td>Maximum concurrent web requests</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Max Retry Count</td>
+<td>Maximum web request retries</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Retry Wait Duration</td>
+<td>Wait time between retries</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Use Build Cache</td>
+<td>Only build changed AssetBundles</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Debug Log</td>
+<td>Enable debug logging</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Include Catalog</td>
+<td>Include catalog in app</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Embed Method</td>
+<td>How to embed AssetBundles</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Recompress to LZ4</td>
+<td>Recompress built-in bundles to LZ4</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Use Unity Provider</td>
+<td>Use UnityRemoteAssetBundleProvider</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Custom Catalog Serializer</td>
+<td>Custom catalog serializer</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Custom Crypto Serializer</td>
+<td>Custom crypto serializer</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Default Remote URL</td>
+<td>Default remote download URL, used at startup when no non-empty URL was saved with <code>SetRemoteUrl</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>Explicit Asset Collection &gt; Excluded Extensions (<code>ExcludedExtensions</code>)</td>
+<td>Case-insensitive explicit-root exclusions; defaults to <code>.lighting</code>. See <a href="#excluded-extensions">Excluded Extensions</a>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Remote File Name With Hash</strong> (below <em>Builtin AssetBundles Use Separate Folder</em>, off by default): the build also writes <code>{name}_{hash}{extension}</code> copies and the catalog makes the runtime request them. Build only - the runtime reads the value from the catalog. See <a href="#remote-download">Updating content on the server</a>.</p>
+<h3 id="excluded-extensions">Excluded Extensions</h3>
+<p><strong>Excluded from explicit collection; may still be included as a dependency.</strong> <code>ExcludedExtensions</code> affects direct registrations, folder leaves and composition-strategy candidates, not Unity's dependency closure. Extensions may include or omit the leading dot. Legacy settings receive <code>.lighting</code> once on first load; subsequent updates preserve customized and intentionally empty lists. <strong>Restore Default Exclusions (.lighting)</strong> restores the default. See <a href="#explicit-asset-collection-lite-and-pro">Explicit Asset Collection</a> for Ignore Assets and cache behavior.</p>
+<hr>
+<h2 id="building-asset-bundles">Building Asset Bundles</h2>
+<h3 id="output-folder-and-editor-copies">Output folder and editor copies</h3>
+<p>Relative output paths retain their existing layout: <code>AssetBundle</code> produces <code>AssetBundle/&lt;target&gt;</code> and the editor's local bundle copy remains in <code>EditorRuntimeAssetBundle/&lt;target&gt;</code>. <strong>Do not use relative paths containing parent-directory traversal (<code>..</code>)</strong>: the existing relative-path contract can resolve the output and editor-copy directories to the same location, and the builder replaces the editor-copy target directory. This change does not alter that legacy behavior.</p>
+<p>On Windows, a drive-absolute output path such as <code>D:\Builds\Out</code> (or <code>D:/Builds/Out</code>, including a trailing separator) produces deployment files in <code>D:/Builds/Out/&lt;target&gt;</code>. The editor reads the catalog from that output, but keeps its local bundle copies <strong>inside the project</strong>, at <code>EditorRuntime/Drive/D/Builds/Out/&lt;target&gt;</code>. These copies are not added to the deployment output. Different drives are kept separate.</p>
+<p>With <strong>Remote File Name With Hash</strong>, the output folder has a <code>{name}_{hash}{extension}</code> copy of every AssetBundle of the catalog next to <code>{name}{extension}</code>, including built-in AssetBundles whose plain file moved to the separate <code>…Builtin</code> folder. The build cache keeps the plain names only, and the editor copies and the files added to the app keep their existing names; the hashed copies are made again by every build (also when all AssetBundles come from the build cache).</p>
+<p>Exclude the generated project <code>EditorRuntime/</code> directory from version control, in addition to your existing editor-copy directories. Each build replaces only the selected output's editor-copy target directory. Changing Output Folder does not remove copies left by previous settings; clearing the build cache does not remove these copies either. Do not place unrelated files in generated output or editor-copy target directories, or nest one output inside another output's target directory.</p>
+<p>Validation scope: Windows editor, Unity <strong>2021.3.45f2 and 2022.3.62f2</strong>, <code>StandaloneWindows64</code>, relative and Windows drive-absolute outputs. UNC inputs map separately to <code>EditorRuntime/UNC/&lt;server&gt;/&lt;share&gt;/.../&lt;target&gt;</code>, but <strong>actual network-share I/O is unverified</strong>. macOS/Linux execution, paths over 260 characters, other build targets (including Android), and drive-root output are not verified by this change. Windows root-relative (<code>\Out</code>), drive-relative (<code>D:Out</code>), and extended/device (<code>\\?\...</code>) paths are outside this supported path contract.</p>
+<h3 id="build-command">Build command</h3>
+<p>After configuring your manifests, build AssetBundles via <strong>TAssetBundle &gt; Build Asset Bundle</strong> menu.</p>
+<p><img src="images/build_asset_bundle.jpg" alt="build_asset_bundle"></p>
+<p><strong>Build Features:</strong></p>
+<ul>
+<li><strong>Incremental Build</strong>: Only changed bundles are rebuilt (when Build Cache is enabled). The cache tracks file hashes (MD5) and propagates changes through the full dependency graph — both forward and reverse.</li>
+<li><strong>Automatic Dependency Management</strong>: Dependencies between bundles are handled automatically</li>
+<li><strong>Cross-Platform</strong>: Build for any supported platform</li>
+</ul>
+<hr>
+<h2 id="plugin-system">Plugin System</h2>
+<p>TAssetBundle supports a plugin architecture for extending its functionality. Plugins can hook into:</p>
+<ul>
+<li><strong>Build Pipeline</strong> — Add custom build steps (e.g., copying bundles to asset packs)</li>
+<li><strong>Runtime Loading</strong> — Provide custom asset bundle loading providers</li>
+<li><strong>Inspector UI</strong> — Add per-manifest configuration UI</li>
+</ul>
+<p>Plugins are implemented as ScriptableObject assets (<code>PluginBase</code>) with associated plugin modules (<code>PluginModuleBase&lt;T&gt;</code>) discovered via the <code>[PluginModule]</code> attribute.</p>
+<p>👉 <strong><a href="plugin-development.html">Plugin Development Guide</a></strong> — step-by-step guide to building your own plugin, with module interfaces, per-manifest data, and execution order.</p>
+<p><strong>Included Plugin: Play Asset Delivery</strong></p>
+<p>The Play Asset Delivery plugin demonstrates the plugin system. It integrates Google Play's asset pack system for Android AAB builds, allowing bundles to be delivered via install-time, fast-follow, or on-demand delivery. See the <code>TAssetBundlePlugins/PlayAssetDelivery/</code> folder for details.</p>
+<hr>
+<h2 id="editor-tools">Editor Tools</h2>
+<h3 id="tassetbundle-browser">TAssetBundle Browser</h3>
+<p>A unified view of all manifests and bundles. Access via <strong>TAssetBundle &gt; TAssetBundle Browser</strong>.</p>
+<p><img src="images/tassetbundle_browser_4_4_0.jpg" alt="tassetbundle_browser"></p>
+<p><strong>Features:</strong></p>
+<ul>
+<li><strong>Search</strong>: Filter manifests by name, or search assets across all manifests</li>
+<li><strong>Sort</strong>: Sort by Name, Bundle Count, or Asset Count</li>
+<li><strong>Show Options</strong>: Toggle included, not included, or ignored assets</li>
+</ul>
+<p><strong>Toolbar Actions:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clear All Asset Bundle Build Infos</td>
+<td>Remove all bundle configurations</td>
+</tr>
+<tr>
+<td>Run All Composition Strategy</td>
+<td>Execute strategies on all manifests</td>
+</tr>
+<tr>
+<td>Build Asset Bundle</td>
+<td>Build all configured bundles</td>
+</tr>
+<tr>
+<td>Check Dependencies</td>
+<td>Analyze bundle dependencies</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="tassetbundle-menu">TAssetBundle Menu</h3>
+<p><img src="images/tassetbundle_menu.jpg" alt="tassetbundle_menu"></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Menu Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Settings</td>
+<td>Open TAssetBundle Settings</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Clear Build Cache</td>
+<td>Remove build cache for current platform</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Build Asset Bundle</td>
+<td>Build AssetBundles</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Run All Composition Strategy</td>
+<td>Run strategies on all manifests</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Clear All Composition Strategy</td>
+<td>Clear all manifest build info</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Open Build Folder</td>
+<td>Open build output folder</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Open Cache Folder</td>
+<td>Open downloaded assets cache folder</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Clear Cached Assets</td>
+<td>Remove downloaded asset cache</td>
+</tr>
+<tr>
+<td>9</td>
+<td>TAssetBundle Browser</td>
+<td>Open browser window</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Tag Editor</td>
+<td>Open tag editor</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Web Server Test</td>
+<td>Open web server test window</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Catalog Diff</td>
+<td>Compare two catalogs and list changed bundles</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Dependency Checker</td>
+<td>Check AssetBundle dependencies</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Asset Reference Tracker</td>
+<td>Track active assets at runtime</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="catalog-diff">Catalog Diff</h3>
+<p>Compare two asset catalogs and see exactly which bundles changed between them. Useful before shipping a content update — you can confirm that only the bundles you expected were rebuilt, and check how much the download size moved.</p>
+<p>Access via <strong>TAssetBundle &gt; Catalog Diff</strong>.</p>
+<p><strong>Usage:</strong></p>
+<ol>
+<li><strong>Catalog A (current)</strong> is prefilled with the catalog of the active build target, if it exists. <strong>Catalog B (comparison target)</strong> is remembered from your last comparison; use <strong>Browse</strong> to pick either one.</li>
+<li>Press <strong>Compare</strong>. The diff is reported in the <code>B → A</code> direction, so B is treated as the older catalog and A as the newer one.</li>
+</ol>
+<p><strong>What it shows:</strong></p>
+<ul>
+<li><strong>Catalog Info</strong> — a <code>B → A</code> comparison of the catalog header (TAssetBundle version, catalog version, build number, bundle version, MD5 hash, file size). Values that differ are shown in bold.</li>
+<li><strong>Added / Removed / Modified / Unchanged</strong> sections — each bundle is grouped by its diff state, with a count per section. Toggle sections with the filter checkboxes and narrow the list with the search field.</li>
+<li><strong>Per-bundle detail</strong> — expand a bundle row to see its hash transition (Modified) and the individual asset paths that were added or removed. Each asset and the manifest that owns the bundle are shown as ObjectFields, so you can click through to them in the Project window.</li>
+<li><strong>Size summary</strong> — per-bundle size delta for Modified bundles, total size for Added/Removed bundles.</li>
+</ul>
+<p><strong>Warnings:</strong></p>
+<p>The window warns you when a comparison is likely to be misleading:</p>
+<ul>
+<li>The two catalogs report different <code>catalogVersion</code> values (schema mismatch).</li>
+<li>The two catalog paths appear to belong to different build targets (for example, comparing an Android catalog against a StandaloneWindows64 one).</li>
+</ul>
+<hr>
+<h3 id="asset-usage-tracker">Asset Usage Tracker</h3>
+<blockquote>
+<p><strong>Pro edition only.</strong> This editor window depends on <code>AssetManager</code> bookkeeping and ships with the <code>TAssetBundle.Extensions</code> module. The Lite edition includes the runtime <strong>Asset Reference Tracker</strong> (under <code>TAssetBundle &gt; Asset Reference Tracker</code>) which shows currently loaded assets; Usage Tracker adds GameObject-level visibility on top.</p>
+</blockquote>
+<p>Track which GameObjects are using which assets during play mode. This works with <code>AssetManager</code>'s context-based loading and <code>LinkAsset</code>.</p>
+<p>Access via <strong>TAssetBundle &gt; Extensions &gt; Asset Usage Tracker</strong>.</p>
+<p><img src="images/asset_usage_tracker.jpg" alt="asset_usage_tracker"></p>
+<p><strong>Features:</strong></p>
+<ul>
+<li>View assets in use, with the number of linked GameObjects and how long each asset has been loaded</li>
+<li>View the GameObjects linked to each asset, and how long each link has been held</li>
+<li>Show Active / Show Inactive filters, sort by name, path, or load time, and regex search</li>
+<li>Find GameObjects that still hold assets you expected to be released</li>
+</ul>
+<hr>
+<h2 id="editor-play-modes">Editor Play Modes</h2>
+<p>TAssetBundle supports two play modes in the editor:</p>
+<h3 id="editor-asset-mode-development">Editor Asset Mode (Development)</h3>
+<p>Load assets directly without building AssetBundles. Fast iteration during development.</p>
+<ol>
+<li>Go to <strong>TAssetBundle &gt; Settings</strong></li>
+<li>Set <strong>Editor Play Mode</strong> to <strong>Editor Asset</strong></li>
+</ol>
+<p><img src="images/editor_asset_hilight.jpg" alt="editor_asset_mode"></p>
+<h3 id="asset-bundle-mode-testing">Asset Bundle Mode (Testing)</h3>
+<p>Load assets from built AssetBundles. Test production behavior.</p>
+<ol>
+<li>Build your AssetBundles first</li>
+<li>Go to <strong>TAssetBundle &gt; Settings</strong></li>
+<li>Set <strong>Editor Play Mode</strong> to <strong>Asset Bundle</strong></li>
+</ol>
+<p><img src="images/setting_playmode_assetbundle.jpg" alt="setting_playmode_assetbundle"></p>
+<hr>
+<h2 id="sample-materials-on-urp">Sample Materials on URP</h2>
+<p>The bundled samples include materials that use Built-in render pipeline shaders. New Unity 6 projects default to URP, where those shaders are not compatible — sample meshes render as pink. This is a one-time project-wide fix:</p>
+<ol>
+<li>Open <strong>Window &gt; Rendering &gt; Render Pipeline Converter</strong>.</li>
+<li>Select <strong>Built-in to URP</strong> (or <strong>Built-in to HDRP</strong> for HDRP projects) in the dropdown.</li>
+<li>Check <strong>Material Shader Converter</strong>.</li>
+<li>Click <strong>Initialize Converters</strong> to scan, then <strong>Convert Assets</strong> to apply.</li>
+</ol>
+<p><img src="images/image_render_pipeline_converter.png" alt="image_render_pipeline_converter"></p>
+<p>The converter rewrites the materials in place; the samples then render correctly under your project's render pipeline.</p>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

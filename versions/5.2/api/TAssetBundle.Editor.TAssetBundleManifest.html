@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TAssetBundleManifest | TAssetBundle 5.2 (stable) </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TAssetBundleManifest | TAssetBundle 5.2 (stable) ">
+      
+      <meta name="description" content="The main manifest file that manages AssetBundle builds. This ScriptableObject defines:  Which assets belong to which AssetBundle How assets are grouped (via composition strategies) Build options (builtin, encryption, tags)  Create via: Right-click &amp;gt; Create &amp;gt; TAssetBundle &amp;gt; TAssetBundleManifest">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference"><nav aria-label="Documentation version" data-docs-version="5.2" data-page="api/TAssetBundle.Editor.TAssetBundleManifest.html" data-site-root="../../../" style="padding:.75rem;background:#eee;color:#111"><strong>Documentation: 5.2 (stable; product 5.2.0)</strong> <label>Switch version: <select disabled><option value="legacy">Legacy (version unverified)</option><option value="5.2" selected>5.2 (stable; product 5.2.0)</option></select></label><span> Version homepages: <a href="../../../index.html">Legacy (version unverified)</a> <a href="../../../versions/5.2/index.html">5.2 (stable; product 5.2.0)</a></span></nav><script defer src="../docs-version-selector.js"></script>
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TAssetBundle.Editor.TAssetBundleManifest">
+
+
+
+  <h1 id="TAssetBundle_Editor_TAssetBundleManifest" data-uid="TAssetBundle.Editor.TAssetBundleManifest" class="text-break">
+Class TAssetBundleManifest  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TAssetBundle.html">TAssetBundle</a>.<a class="xref" href="TAssetBundle.Editor.html">Editor</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>TAssetBundle.Editor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The main manifest file that manages AssetBundle builds.</p>
+<p>This ScriptableObject defines:</p>
+<ul>
+<li>Which assets belong to which AssetBundle</li>
+<li>How assets are grouped (via composition strategies)</li>
+<li>Build options (builtin, encryption, tags)</li>
+</ul>
+<p>Create via: Right-click &gt; Create &gt; TAssetBundle &gt; TAssetBundleManifest</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(menuName = &quot;TAssetBundle/TAssetBundleManifest&quot;)]
+public class TAssetBundleManifest : ScriptableObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">ScriptableObject</span></div>
+      <div><span class="xref">TAssetBundleManifest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">ScriptableObject.CreateInstance(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">ScriptableObject.CreateInstance(Type)</a>
+    </div>
+    <div>
+      <span class="xref">ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="TAssetBundle.Editor.TAssetBundleManifestUtil.html#TAssetBundle_Editor_TAssetBundleManifestUtil_AddAssetBundleBuild_TAssetBundle_Editor_TAssetBundleManifest_System_Collections_Generic_List_UnityEngine_Object__TAssetBundle_Editor_EAssetBundleBuildName_">TAssetBundleManifestUtil.AddAssetBundleBuild(TAssetBundleManifest, List&lt;Object&gt;, EAssetBundleBuildName)</a>
+  </div>
+  <div>
+      <a class="xref" href="TAssetBundle.Editor.TAssetBundleManifestUtil.html#TAssetBundle_Editor_TAssetBundleManifestUtil_GetAssetBundleBuildName_TAssetBundle_Editor_TAssetBundleManifest_System_Collections_Generic_List_UnityEngine_Object__TAssetBundle_Editor_EAssetBundleBuildName_">TAssetBundleManifestUtil.GetAssetBundleBuildName(TAssetBundleManifest, List&lt;Object&gt;, EAssetBundleBuildName)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_assetBundleBuildInfos" data-uid="TAssetBundle.Editor.TAssetBundleManifest.assetBundleBuildInfos">
+  assetBundleBuildInfos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The actual list of AssetBundles to build.
+Each entry defines one bundle with its name and contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AssetBundleBuildInfo&gt; assetBundleBuildInfos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TAssetBundle.Editor.AssetBundleBuildInfo.html">AssetBundleBuildInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_builtin" data-uid="TAssetBundle.Editor.TAssetBundleManifest.builtin">
+  builtin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true, bundles are included in the app's StreamingAssets folder.
+When false, bundles must be downloaded from a remote server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Are AssetBundles built into the app?&quot;)]
+public bool builtin</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_compositionStrategyInfos" data-uid="TAssetBundle.Editor.TAssetBundleManifest.compositionStrategyInfos">
+  compositionStrategyInfos
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>List of strategies that auto-generate AssetBundle groupings.
+Run via context menu &quot;Run Composition Strategy&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CompositionStrategyInfo&gt; compositionStrategyInfos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TAssetBundle.Editor.CompositionStrategyInfo.html">CompositionStrategyInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_enabled" data-uid="TAssetBundle.Editor.TAssetBundleManifest.enabled">
+  enabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When false, this manifest is skipped during AssetBundle builds.
+Useful for temporarily disabling certain bundles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Activation options (excluded from build when inactive)&quot;)]
+public bool enabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_encrypt" data-uid="TAssetBundle.Editor.TAssetBundleManifest.encrypt">
+  encrypt
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true, bundles from this manifest will be encrypted.
+Provides basic protection against casual inspection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Are the AssetBundles in this manifest encrypted?&quot;)]
+public bool encrypt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_ignoreAssets" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ignoreAssets">
+  ignoreAssets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assets in this list are excluded from AssetBundle builds.
+They won't appear in &quot;not included&quot; warnings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Object&gt; ignoreAssets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_pluginData" data-uid="TAssetBundle.Editor.TAssetBundleManifest.pluginData">
+  pluginData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plugin-specific data attached to this manifest.
+Each plugin can store its own data (e.g., PlayAssetDeliveryData).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeReference]
+public List&lt;ManifestPluginData&gt; pluginData</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TAssetBundle.Editor.ManifestPluginData.html">ManifestPluginData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_tag" data-uid="TAssetBundle.Editor.TAssetBundleManifest.tag">
+  tag
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tags for categorizing and filtering this manifest.
+Useful for selective downloads (e.g., &quot;hd&quot;, &quot;lang-en&quot;, &quot;optional&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Tags&quot;)]
+public TagInfo tag</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TAssetBundle.Editor.TagInfo.html">TagInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_Depth_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.Depth*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_Depth" data-uid="TAssetBundle.Editor.TAssetBundleManifest.Depth">
+  Depth
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The folder depth of this manifest (number of '/' in path).
+Used to process deeper manifests first during builds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Depth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_IncludedAssetCount_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_IncludedAssetCount" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IncludedAssetCount">
+  IncludedAssetCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the total count of included assets.
+Uses cached data for O(1) performance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IncludedAssetCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_IsPersistent_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsPersistent*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_IsPersistent" data-uid="TAssetBundle.Editor.TAssetBundleManifest.IsPersistent">
+  IsPersistent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this manifest is saved as an asset file.
+False for runtime-created instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPersistent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_ManifestPath_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ManifestPath*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_ManifestPath" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ManifestPath">
+  ManifestPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The project-relative path to this manifest file.
+Example: &quot;Assets/Bundles/Characters/manifest.asset&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ManifestPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_AddAssetBundleBuildInfo_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.AddAssetBundleBuildInfo*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_AddAssetBundleBuildInfo_TAssetBundle_Editor_AssetBundleBuildInfo_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.AddAssetBundleBuildInfo(TAssetBundle.Editor.AssetBundleBuildInfo)">
+  AddAssetBundleBuildInfo(AssetBundleBuildInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new AssetBundle entry to this manifest.
+Logs the bundle name and included file names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAssetBundleBuildInfo(AssetBundleBuildInfo assetBundleBuildInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetBundleBuildInfo</code> <a class="xref" href="TAssetBundle.Editor.AssetBundleBuildInfo.html">AssetBundleBuildInfo</a></dt>
+    <dd><p>The bundle configuration to add</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_AddNewAssetsAllTogether_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.AddNewAssetsAllTogether*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_AddNewAssetsAllTogether" data-uid="TAssetBundle.Editor.TAssetBundleManifest.AddNewAssetsAllTogether">
+  AddNewAssetsAllTogether()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collects all assets not yet assigned to any bundle and adds them
+as a single new AssetBundle. The bundle is named after the first asset.
+Useful for quickly bundling remaining loose assets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Add New Asset All Together&quot;)]
+public void AddNewAssetsAllTogether()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_ClearAssetBundleBuildInfos_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ClearAssetBundleBuildInfos*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_ClearAssetBundleBuildInfos" data-uid="TAssetBundle.Editor.TAssetBundleManifest.ClearAssetBundleBuildInfos">
+  ClearAssetBundleBuildInfos()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all AssetBundle build entries from this manifest.
+Use with caution - this clears the entire bundle configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Clear Asset Bundle Build Infos&quot;)]
+public void ClearAssetBundleBuildInfos()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetAllIncludedAssetPaths_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetAllIncludedAssetPaths" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetAllIncludedAssetPaths">
+  GetAllIncludedAssetPaths()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all included asset paths in this manifest.
+Uses cached list for fast enumeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; GetAllIncludedAssetPaths()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Read-only collection of all asset paths</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssetPaths_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssetPaths*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssetPaths" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssetPaths">
+  GetNotIncludedAssetPaths()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the file paths of all unassigned assets.
+Convenience wrapper around GetNotIncludedAssets().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetNotIncludedAssetPaths()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of asset paths (e.g., &quot;Assets/Textures/foo.png&quot;)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssets_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssets*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetNotIncludedAssets" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetNotIncludedAssets">
+  GetNotIncludedAssets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all assets in this manifest's folder that are not assigned
+to any bundle (including child manifests) and not in ignoreAssets.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object[] GetNotIncludedAssets()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Object</span>[]</dt>
+    <dd><p>Array of unassigned asset objects</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetOrCreatePluginData_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetOrCreatePluginData__1" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetOrCreatePluginData``1">
+  GetOrCreatePluginData&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or creates plugin data of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetOrCreatePluginData&lt;T&gt;() where T : ManifestPluginData, new()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_GetPluginData_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetPluginData*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_GetPluginData__1" data-uid="TAssetBundle.Editor.TAssetBundleManifest.GetPluginData``1">
+  GetPluginData&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets plugin data of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetPluginData&lt;T&gt;() where T : ManifestPluginData</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_MarkAsDirty_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.MarkAsDirty*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_MarkAsDirty" data-uid="TAssetBundle.Editor.TAssetBundleManifest.MarkAsDirty">
+  MarkAsDirty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks this manifest for saving, invalidates its caches and notifies subscribers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkAsDirty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_RemovePluginData_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_RemovePluginData__1" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RemovePluginData``1">
+  RemovePluginData&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all plugin data of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemovePluginData&lt;T&gt;() where T : ManifestPluginData</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_RemoveTag_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RemoveTag*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_RemoveTag_System_String_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RemoveTag(System.String)">
+  RemoveTag(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a tag from this manifest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTag(string removeTag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>removeTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The tag string to remove</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_RenameTag_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RenameTag*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_RenameTag_System_String_System_String_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RenameTag(System.String,System.String)">
+  RenameTag(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renames an existing tag to a new value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameTag(string oldTag, string newTag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The current tag name</p>
+</dd>
+    <dt><code>newTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new tag name to use</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_RunCompositionStrategy_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RunCompositionStrategy*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_RunCompositionStrategy" data-uid="TAssetBundle.Editor.TAssetBundleManifest.RunCompositionStrategy">
+  RunCompositionStrategy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes all composition strategies in order.
+Strategies auto-generate bundle groupings based on their rules.
+Empty bundles are automatically removed after execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Run Composition Strategy&quot;)]
+public void RunCompositionStrategy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_Save_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.Save*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_Save" data-uid="TAssetBundle.Editor.TAssetBundleManifest.Save">
+  Save()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the manifest to disk.
+Call this after making changes to persist them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Save&quot;)]
+public void Save()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_SearchAssets_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.SearchAssets*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_SearchAssets_System_String_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.SearchAssets(System.String)">
+  SearchAssets(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Searches for assets by path or name.
+Uses cached data for O(n) search where n is the number of matching assets.
+Case-insensitive search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;AssetSearchResult&gt; SearchAssets(string query)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Search query (partial path or filename)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TAssetBundle.Editor.AssetSearchResult.html">AssetSearchResult</a>&gt;</dt>
+    <dd><p>Enumerable of matching search results with bundle info</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TAssetBundle_Editor_TAssetBundleManifest_TryGetAssetInfo_" data-uid="TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo*"></a>
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_TryGetAssetInfo_System_String_TAssetBundle_Editor_AssetSearchResult__" data-uid="TAssetBundle.Editor.TAssetBundleManifest.TryGetAssetInfo(System.String,TAssetBundle.Editor.AssetSearchResult@)">
+  TryGetAssetInfo(string, out AssetSearchResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the bundle info for a specific asset path.
+Uses cached dictionary for O(1) lookup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetAssetInfo(string assetPath, out AssetSearchResult result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The exact asset path to look up</p>
+</dd>
+    <dt><code>result</code> <a class="xref" href="TAssetBundle.Editor.AssetSearchResult.html">AssetSearchResult</a></dt>
+    <dd><p>The search result if found</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the asset was found, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="TAssetBundle_Editor_TAssetBundleManifest_OnChanged" data-uid="TAssetBundle.Editor.TAssetBundleManifest.OnChanged">
+  OnChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fired whenever this manifest is modified.
+Subscribers can refresh their UI or update dependencies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;TAssetBundleManifest&gt; OnChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="TAssetBundle.Editor.TAssetBundleManifest.html">TAssetBundleManifest</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
